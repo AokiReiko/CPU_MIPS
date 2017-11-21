@@ -1,0 +1,15 @@
+所有控制信号说明
+
+信号					值为‘0’					值为‘1‘
+PCWrite			保持当前地址			改变当前地址为Mux输出
+IFIDWrite		保持当前地址			改变当前地址为指令Memory输出
+IF_Flush		无					将IDIE的寄存器的指令设置为0
+RegWrite		见134
+ctrl_flush		无					ID阶段强制清空控制信号
+sign_extend		0扩展				符号扩展
+alu_src			使用寄存器 			使用立即数
+MemRead
+MemWrite
+MemtoReg		来自alu				来自mem	
+RegDist		写回的通用寄存器号
+PCSrc			00:PC+1				01:PC+offset	10:reg_data
