@@ -34,6 +34,14 @@ begin
 				else 
 					fout <= (others => '1');
 				end if;
+			when op_rpc =>
+				fout <= input_b + 1;--rpc ,input_b use immediate 
+			when op_lt => 
+				if (input_a >= input_b) then
+					fout <= (others => '0');
+				else 
+					fout <= (others => '1');
+				end if;
 			when others => fout <= (others => '0');
 			when op_nothing => fout <= (others => '0');
 		end case;

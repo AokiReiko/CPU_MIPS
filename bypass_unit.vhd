@@ -5,7 +5,8 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 
 entity bypass_unit is
-    Port ( rs: in  STD_LOGIC_VECTOR(2 downto 0);
+    Port ( rs: in  STD_LOGIC_VECTOR(3 downto 0);
+         alusrc: in STD_LOGIC;
     	   rt: in  STD_LOGIC_VECTOR(2 downto 0);
     	   exmem_rd: in  STD_LOGIC_VECTOR(2 downto 0);
     	   exmem_regwrite: in  STD_LOGIC_VECTOR(2 downto 0);
@@ -19,9 +20,9 @@ architecture Behavioral of bypass_unit is
 begin
 	process (rs, exmem_regwrite, exmem_rd, memwb_regwrite, memwb_rd) 
 	begin
-		if (exmem_regwrite = "001" and exmem_rd /="000" and exmem_rd = rs) then
+		if ((exmem_regwrite = "001" and exmem_rd = rs(2 downto 0) and rs(3) = '0') || (exmem_regwrite = "010" and rs = "1000"))then
 			forwarda <= "01";
-    elsif (memwb_regwrite = "001" and memwb_rd /= "000" and memwb_rd = rs) then 
+    elsif ((memwb_regwrite = "001" and memwb_rd = rs(2 downto 0) and rs(3) = '0') || (memwb_regwrite = "010" and rs = "1000") ) then 
       forwarda <= "10";
     else 
       forwarda <= "00";
@@ -29,9 +30,9 @@ begin
 	end process;
   process (rt, exmem_regwrite, exmem_rd, memwb_regwrite, memwb_rd) 
   begin
-    if (exmem_regwrite = "001" and exmem_rd /="000" and exmem_rd = rt) then
+    if (exmem_regwrite = "001" and exmem_rd = rt and alusrc = '0') then
       forwardb <= "01";
-    elsif (memwb_regwrite = "001" and memwb_rd /= "000" and memwb_rd = rt) then 
+    elsif (memwb_regwrite = "001" and memwb_rd = rt and alusrc = '0') then 
       forwardb<= "10";
     else 
       forwardb <= "00";

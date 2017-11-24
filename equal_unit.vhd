@@ -8,13 +8,12 @@ entity equal_unit is
     Port ( rs_alu: in  STD_LOGIC_VECTOR(15 downto 0);
            rs_mem: in  STD_LOGIC_VECTOR(15 downto 0);
            rs_reg: in  STD_LOGIC_VECTOR(15 downto 0);
-           rpc: in  STD_LOGIC_VECTOR(15 downto 0);
 
            idex_regwrite: in STD_LOGIC_VECTOR(2 downto 0);
            idex_regdist: in STD_LOGIC_VECTOR(15 downto 0);
            instruction: in  STD_LOGIC_VECTOR(15 downto 0);
            t: in STD_LOGIC;
-           pc_src: out  STD_LOGIC_VECTOR;	
+           pc_src: out  STD_LOGIC_VECTOR(1 downto 0);	
 end equal_unit;
 
 architecture Behavioral of equal_unit is

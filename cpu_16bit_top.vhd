@@ -62,7 +62,7 @@ signal IDEX_RegWrite: STD_LOGIC_VECTOR (2 downto 0) := (others => '0');
 signal IDEX_RegA: STD_LOGIC_VECTOR (15 downto 0) := (others => '0');
 signal IDEX_RegB: STD_LOGIC_VECTOR (15 downto 0) := (others => '0');
 signal IDEX_im: STD_LOGIC_VECTOR (15 downto 0) := (others => '0');
-signal IDEX_rs: STD_LOGIC_VECTOR (2 downto 0) := (others => '0');
+signal IDEX_rs: STD_LOGIC_VECTOR (3 downto 0) := (others => '0');
 signal IDEX_rt: STD_LOGIC_VECTOR (2 downto 0) := (others => '0');
 
 signal EX_Muxa_oprandA: STD_LOGIC_VECTOR (15 downto 0) := (others => '0');
@@ -151,7 +151,8 @@ u5: ctrl_unit port map(
 					RegWrite=>ID_Ctrl_RegWrite,
 					MemtoReg=>ID_Ctrl_MemtoReg,
 					immediate=>ID_Ctrl_immediate,
-					rega=>ID_Ctrl_rega);
+					rega=>ID_Ctrl_rega,
+					ctrl_clear=>HD_Ctrl_Flush);
 u5: equal_unit port map(
 					rs_alu=>,
 					rs_mem=>,
@@ -174,7 +175,7 @@ u6: IDEX_Reg port map(
 					in_immediate=>ID_Ctrl_immediate,
 					in_rega=>ID_Reg_A,
 					in_regb=>ID_Reg_B,
-					in_rs=>Instruction(10 downto 8),
+					in_rs=>ID_Ctrl_rega,
 					in_rt=>Instruction(7 downto 5),
 
 					out_ALUOp=>IDEX_ALUop,
@@ -237,6 +238,7 @@ u8: MEMWB_Reg port map(
 u9: bypass_unit port map(
 					rs=>IDEX_rs,
 					rt=>IDEX_rt,
+					ALUsrc=>IDEX_ALUsrc,
 					exmem_rd=>EXMEM_regdist,
 					exmem_regwrite=>EXMEM_regwrite,
 					memwb_rd=>MEMWB_regdist,
@@ -249,7 +251,8 @@ u10: hazard_unit port map(--这里存疑
 					ifid_rs=>,
 					ifid_rt=>,
 					ifid_write=>HD_IFIDWrite,
-					pc_write=>HD_PCWrite);
+					pc_write=>HD_PCWrite,
+					ctrl_clear=>HD_Ctrl_Flush);
 
 
 	

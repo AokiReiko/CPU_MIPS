@@ -55,6 +55,7 @@ reg_num <= RegA(2 downto 0);
 			case reg_num is
 				when "000" => outA <= SP;
 				when "001" => outA <= IH;
+				when "010" => outA <= RA;
 				when "111" => outA <= (others => '0');
 				when others => outA <= (others => '0');--输出全0
 			end case;

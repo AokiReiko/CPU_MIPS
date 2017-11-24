@@ -18,7 +18,7 @@ entity IDEX_Reg is
 		   in_immediate: in STD_LOGIC_VECTOR (15 downto 0) := (others => '0');
 		   in_rega: in STD_LOGIC_VECTOR (15 downto 0) := (others => '0');
 		   in_regb: in STD_LOGIC_VECTOR (15 downto 0) := (others => '0');
-		   in_rs: in STD_LOGIC_VECTOR (2 downto 0) := (others => '0');
+		   in_rs: in STD_LOGIC_VECTOR (3 downto 0) := (others => '0');
 		   in_rt: in STD_LOGIC_VECTOR (2 downto 0) := (others => '0');
 
 		   out_ALUOp: out STD_LOGIC_VECTOR (3 downto 0) := (others => '0');
@@ -31,7 +31,7 @@ entity IDEX_Reg is
 		   out_immediate: out STD_LOGIC_VECTOR (15 downto 0) := (others => '0');
 		   out_rega: out STD_LOGIC_VECTOR (15 downto 0) := (others => '0');
 		   out_regb: out STD_LOGIC_VECTOR (15 downto 0) := (others => '0');
-		   out_rs: in STD_LOGIC_VECTOR (2 downto 0) := (others => '0');
+		   out_rs: in STD_LOGIC_VECTOR (3 downto 0) := (others => '0');
 		   out_rt: in STD_LOGIC_VECTOR (2 downto 0) := (others => '0'));
 
 
