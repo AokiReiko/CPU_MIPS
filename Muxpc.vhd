@@ -8,7 +8,7 @@ entity Muxpc is
     Port ( PCSrc : in  STD_LOGIC_VECTOR(1 downto 0);
            PCNext: in  STD_LOGIC_VECTOR(15 downto 0);
            PCOffset: in  STD_LOGIC_VECTOR(15 downto 0);
-           PCJR: in STD_LOGIC_VECTOR(15 downto 0)
+           PCJR: in STD_LOGIC_VECTOR(15 downto 0);
            pc_out: out  STD_LOGIC_VECTOR(15 downto 0));	
 end Muxpc;
 

@@ -22,7 +22,7 @@ package operation is
 	constant op_srl : std_logic_vector(3 downto 0) := "0111";
 	constant op_sra : std_logic_vector(3 downto 0) := "1000";
 	constant op_rol : std_logic_vector(3 downto 0) := "1001";
-	constant op_equal: std_logic_vector(3 downto 0) := "1010"
+	constant op_equal: std_logic_vector(3 downto 0) := "1010";
 	constant op_nothing: std_logic_vector(3 downto 0) := "1011";
 	constant op_rpc: std_logic_vector(3 downto 0) := "1100";
 	constant op_lt: std_logic_vector(3 downto 0) := "1101";

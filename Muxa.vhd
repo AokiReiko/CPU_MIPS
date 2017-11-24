@@ -8,8 +8,8 @@ entity Muxa is
     Port ( reg: in  STD_LOGIC_VECTOR(15 downto 0);
     	   alu: in  STD_LOGIC_VECTOR(15 downto 0);
     	   mem: in  STD_LOGIC_VECTOR(15 downto 0);
-    	   forward: in  STD_LOGIC_VECTOR(2 downto 0);
-           src_out: out  STD_LOGIC_VECTOR(15 downto 0));	
+    	   forward: in  STD_LOGIC_VECTOR(1 downto 0);
+          src_out: out  STD_LOGIC_VECTOR(15 downto 0));	
 end Muxa;
 
 architecture Behavioral of Muxa is
@@ -23,6 +23,7 @@ begin
 			when "01" => src_out <= alu;
 			when "10" => src_out <= mem;
 			when others => src_out <= reg;
+		end case;
 	end process;
 		
 end Behavioral;

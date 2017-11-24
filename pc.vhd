@@ -24,8 +24,6 @@ begin
 		elsif (clk'event and clk = '1' and en = '1') then
 			if (PCWrite = '1') then
 				PC_out <= Mux_in;
-			else 
-				PC_out <= PC_out;
 			end if;
 		end if;
 	end process;

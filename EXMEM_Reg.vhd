@@ -21,7 +21,7 @@ entity EXMEM_Reg is
 		   out_MemWrite: out STD_LOGIC := '0';
 		   out_RegWrite: out STD_LOGIC_VECTOR (2 downto 0) := (others => '0');
 		   out_MemtoReg: out STD_LOGIC := '0';
-		   out_regdata: out STD_LOGIC_VECTOR (15 downto 0) := (others => '0');
+		   out_regdata: out STD_LOGIC_VECTOR (15 downto 0) := (others => '0'));
 		  
 end EXMEM_Reg;
 
@@ -39,7 +39,7 @@ begin
 			out_RegWrite <= in_RegWrite;
 			out_MemtoReg <= in_MemtoReg;
 			out_regdata <= in_regdata;
-			
+		end if;
 	end process;
 		
 end Behavioral;

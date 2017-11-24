@@ -20,9 +20,9 @@ architecture Behavioral of bypass_unit is
 begin
 	process (rs, exmem_regwrite, exmem_rd, memwb_regwrite, memwb_rd) 
 	begin
-		if ((exmem_regwrite = "001" and exmem_rd = rs(2 downto 0) and rs(3) = '0') || (exmem_regwrite = "010" and rs = "1000"))then
+		if ((exmem_regwrite = "001" and exmem_rd = rs(2 downto 0) and rs(3) = '0') or (exmem_regwrite = "010" and rs = "1000"))then
 			forwarda <= "01";
-    elsif ((memwb_regwrite = "001" and memwb_rd = rs(2 downto 0) and rs(3) = '0') || (memwb_regwrite = "010" and rs = "1000") ) then 
+    elsif ((memwb_regwrite = "001" and memwb_rd = rs(2 downto 0) and rs(3) = '0') or (memwb_regwrite = "010" and rs = "1000") ) then 
       forwarda <= "10";
     else 
       forwarda <= "00";

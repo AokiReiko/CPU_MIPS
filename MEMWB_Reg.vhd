@@ -32,7 +32,6 @@ begin
 	begin
 		if (clk'event and clk = '1') then
 			out_RegDist <= in_RegDist;
-			temp_MemtoReg <= in_MemtoReg;
 			if (in_MemtoReg = '1') then
 				out_data <= in_memdata;
 			else 

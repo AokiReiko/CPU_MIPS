@@ -2,15 +2,30 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_ARITH.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
-
+library work;
+use work.my_components.ALL;
+--ctrl_clear没有连接
 
 entity cpu_16bit_top is
     Port ( clk : in  STD_LOGIC;
-           rst : in  STD_LOGIC);	
+           rst : in  STD_LOGIC;
+           addr_1: out STD_LOGIC_VECTOR(17 downto 0);
+    	   addr_2: out STD_LOGIC_VECTOR(17 downto 0);
+    	   data_1: inout STD_LOGIC_VECTOR(15 downto 0);
+    	   data_2: inout STD_LOGIC_VECTOR(15 downto 0);
+			oe_1: out STD_LOGIC;
+			we_1: out STD_LOGIC;
+			en_1: out STD_LOGIC;
+			oe_2: out STD_LOGIC;
+			we_2: out STD_LOGIC;
+			en_2: out STD_LOGIC);	
 end cpu_16bit_top;
 
 architecture Behavioral of cpu_16bit_top is
---信号命名规则: 前缀（产生信号的周期）+部件名称+描述
+
+signal b_register_num: STD_LOGIC_VECTOR (2 downto 0) := (others => '0');
+
+--信号命名规则: 前缀（产生信号的周期�部件名称+描述
 --IF部分
 signal IF_Mux_addr: STD_LOGIC_VECTOR (15 downto 0) := (others => '0');
 signal IF_PC_addr: STD_LOGIC_VECTOR (15 downto 0) := (others => '0');
@@ -68,7 +83,7 @@ signal IDEX_rt: STD_LOGIC_VECTOR (2 downto 0) := (others => '0');
 signal EX_Muxa_oprandA: STD_LOGIC_VECTOR (15 downto 0) := (others => '0');
 signal EX_Muxb_oprandB: STD_LOGIC_VECTOR (15 downto 0) := (others => '0');
 signal EX_ALU_res: STD_LOGIC_VECTOR (15 downto 0) := (others => '0');
-signal EX_ALU_zero: STD_LOGIC_VECTOR (15 downto 0) := (others => '0');--ID阶段已经检测,存疑
+signal EX_ALU_zero: STD_LOGIC_VECTOR (15 downto 0) := (others => '0');--ID阶段已经检�存疑
 signal EX_Muxc_regdist: STD_LOGIC_VECTOR (2 downto 0) := (others => '0');
 
 --MEM部分
@@ -109,6 +124,7 @@ signal ED_pcsrc: STD_LOGIC_VECTOR (1 downto 0) := (others => '0');
 
 
 begin
+b_register_num <= IFID_inst(10 downto 8) when IFID_inst(15 downto 11) = "11010" else IFID_inst(10 downto 8);
 
 u1: Muxpc port map(
 					PCSrc=>ED_pcsrc,
@@ -135,7 +151,7 @@ u3: IFID_Reg port map(
 u4: registers port map(
 					RegWrite=>MEMWB_RegWrite,
 					RegA=>ID_Ctrl_rega,
-					RegB=>IFID_inst(7 downto 5),
+					RegB=>b_register_num,
 					RegW=>MEMWB_regdist,--!!
 					WRData=>MeMWB_Mux_data,
 					outA=>ID_Reg_A,
@@ -151,20 +167,21 @@ u5: ctrl_unit port map(
 					RegWrite=>ID_Ctrl_RegWrite,
 					MemtoReg=>ID_Ctrl_MemtoReg,
 					immediate=>ID_Ctrl_immediate,
-					rega=>ID_Ctrl_rega,
-					ctrl_clear=>HD_Ctrl_Flush);
-u5: equal_unit port map(
-					rs_alu=>,
-					rs_mem=>,
-					rs_reg=>,
-					rpc=>,
-					idex_regwrite=>,
-					idex_regdist=>,
-					t=>,
-					pc_src=>);
+					rega=>ID_Ctrl_rega);
+u12: equal_unit port map(
+					instruction=>IFID_inst,
+					rs_alu=>EX_ALU_res,
+					rs_mem=>MEM_Mem_out,
+					rs_reg=>ID_Reg_A,
+					idex_regwrite=>IDEX_RegWrite,
+					idex_regdist=>IDEX_RegDist,
+					exmem_regwrite=>EXMEM_regwrite,
+					exmem_regdist=>EXMEM_regdist,
+					t=>ID_Reg_T,
+					pc_src=>ED_pcsrc);
 u6: IDEX_Reg port map(
-					clk=>,
-					rst=>,
+					clk=>clk,
+					rst=>rst,
 					in_ALUOp=>ID_Ctrl_ALUOp,
 					in_ALUsrc=>ID_Ctrl_ALUsrc,
 					in_RegDist=>ID_Ctrl_RegDist,
@@ -176,8 +193,8 @@ u6: IDEX_Reg port map(
 					in_rega=>ID_Reg_A,
 					in_regb=>ID_Reg_B,
 					in_rs=>ID_Ctrl_rega,
-					in_rt=>Instruction(7 downto 5),
-
+					in_rt=>IFID_inst(7 downto 5),
+					
 					out_ALUOp=>IDEX_ALUop,
 					out_ALUsrc=>IDEX_ALUsrc,
 					out_RegDist=>IDEX_RegDist,
@@ -196,7 +213,7 @@ u7: Muxa port map(
 					mem=>MeMWB_Memdata,
 					forward=>BP_forwardA,
 					src_out=>EX_Muxa_oprandA);
-u7: Muxb port map(
+u8: Muxb port map(
 					reg=>IDEX_RegA,
 					alu=>EXMEM_AluData,
 					mem=>MeMWB_Memdata,
@@ -205,15 +222,15 @@ u7: Muxb port map(
 					alu_src=>IDEX_ALUsrc,
 					src_out=>EX_Muxb_oprandB);
 u9: EXMEM_Reg port map(
-					clk=>,
-					rst=>,
+					clk=>clk,
+					rst=>rst,
 					
 					in_RegDist=>IDEX_RegDist,
 					in_MemRead=>IDEX_MemRead,
 					in_MemWrite=>IDEX_MemWrite,
 					in_RegWrite=>IDEX_RegWrite,
 					in_MemtoReg=>IDEX_MemtoReg,
-					in_regdata=>,
+					in_regdata=>IDEX_RegB,
 
 					out_RegDist=>EXMEM_regdist,
 					out_MemRead=>EXMEM_MemRead,
@@ -221,9 +238,9 @@ u9: EXMEM_Reg port map(
 					out_RegWrite=>EXMEM_regwrite,
 					out_MemtoReg=>EXMEM_Memtoreg,
 					out_regdata=>EXMEM_data);
-u8: MEMWB_Reg port map(
-					clk=>,
-					rst=>,
+u13: MEMWB_Reg port map(
+					clk=>clk,
+					rst=>rst,
 					
 					in_RegDist=>EXMEM_regdist,
 					in_RegWrite=>EXMEM_regwrite,
@@ -232,10 +249,8 @@ u8: MEMWB_Reg port map(
 
 					out_RegDist=>MEMWB_regdist,
 					out_RegWrite=>MEMWB_RegWrite,
-					out_MemtoReg=>MEMWB_MemtoReg,
-					out_memdata=>MeMWB_Memdata,
-					out_regdata=>MeMWB_Mux_data);
-u9: bypass_unit port map(
+					out_memdata=>MeMWB_Memdata);
+u14: bypass_unit port map(
 					rs=>IDEX_rs,
 					rt=>IDEX_rt,
 					ALUsrc=>IDEX_ALUsrc,
@@ -248,13 +263,29 @@ u9: bypass_unit port map(
 u10: hazard_unit port map(--这里存疑
 					idex_memread=>IDEX_MemRead,
 					idex_rt=>IDEX_rt,
-					ifid_rs=>,
-					ifid_rt=>,
+					alu_src=>ID_Ctrl_ALUsrc,
+					rega=>ID_Ctrl_rega,
+					ifid_rt=>IFID_inst(7 downto 5),
 					ifid_write=>HD_IFIDWrite,
-					pc_write=>HD_PCWrite,
-					ctrl_clear=>HD_Ctrl_Flush);
+					pc_write=>HD_PCWrite);
 
+memory0: mymemory port map(
+					oe_1=>oe_1,
+					we_1=>wE_1,
+					en_1=>en_1,
+					oe_2=>oe_2,
+					we_2=>we_2,
+					en_2=>en_2,
+					addr_1=>addr_1,
+					addr_2=>addr_2,
+					data_1=>data_1,
+					data_2=>data_2,
 
+					memread=>EXMEM_MemRead,
+					memwrite=>EXMEM_MemWrite,
+
+					addr_in=>EXMEM_AluData,
+					data_in=>EXMEM_data);
 	
 end Behavioral;
 

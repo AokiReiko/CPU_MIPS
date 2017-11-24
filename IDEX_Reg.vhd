@@ -31,8 +31,8 @@ entity IDEX_Reg is
 		   out_immediate: out STD_LOGIC_VECTOR (15 downto 0) := (others => '0');
 		   out_rega: out STD_LOGIC_VECTOR (15 downto 0) := (others => '0');
 		   out_regb: out STD_LOGIC_VECTOR (15 downto 0) := (others => '0');
-		   out_rs: in STD_LOGIC_VECTOR (3 downto 0) := (others => '0');
-		   out_rt: in STD_LOGIC_VECTOR (2 downto 0) := (others => '0'));
+		   out_rs: out STD_LOGIC_VECTOR (3 downto 0) := (others => '0');
+		   out_rt: out STD_LOGIC_VECTOR (2 downto 0) := (others => '0'));
 
 
 end IDEX_Reg;
@@ -45,7 +45,7 @@ begin
 	begin
 		if (clk'event and clk = '1') then
 			out_ALUOp <= in_ALUOp;
-			out_ALUsrc <= in+out_ALUsrc;
+			out_ALUsrc <= in_ALUsrc;
 			out_RegDist <= in_RegDist;
 			out_MemRead <= in_MemRead;
 			out_MemWrite <= in_MemWrite;

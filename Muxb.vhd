@@ -4,17 +4,17 @@ use IEEE.STD_LOGIC_ARITH.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 
-entity Muxa is
+entity Muxb is
     Port ( reg: in  STD_LOGIC_VECTOR(15 downto 0);
     	   alu: in  STD_LOGIC_VECTOR(15 downto 0);
     	   mem: in  STD_LOGIC_VECTOR(15 downto 0);
     	   immediate: in  STD_LOGIC_VECTOR(15 downto 0);
     	   alu_src: in  STD_LOGIC;
-    	   forward: in  STD_LOGIC_VECTOR(2 downto 0);
+    	   forward: in  STD_LOGIC_VECTOR(1 downto 0);
            src_out: out  STD_LOGIC_VECTOR(15 downto 0));	
-end Muxa;
+end Muxb;
 
-architecture Behavioral of Muxa is
+architecture Behavioral of Muxb is
 
 begin
 

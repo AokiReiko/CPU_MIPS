@@ -4,7 +4,7 @@ use IEEE.STD_LOGIC_ARITH.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 
-entity IEID_Reg is
+entity IFID_Reg is
     Port ( clk : in  STD_LOGIC;
            rst : in  STD_LOGIC;
            IF_Flush: in  STD_LOGIC;
@@ -14,9 +14,9 @@ entity IEID_Reg is
            Instruction: in  STD_LOGIC_VECTOR(15 downto 0);
            PCNext_out: out  STD_LOGIC_VECTOR(15 downto 0);
            Instruction_out: out  STD_LOGIC_VECTOR(15 downto 0));	
-end IEID_Reg;
+end IFID_Reg;
 
-architecture Behavioral of IEID_Reg is
+architecture Behavioral of IFID_Reg is
 
 begin
 
