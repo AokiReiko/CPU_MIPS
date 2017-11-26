@@ -43,7 +43,20 @@ begin
 
 	process(clk, rst)
 	begin
-		if (clk'event and clk = '1') then
+		if (rst = '1') then
+			out_ALUOp <= "1111";
+			out_ALUsrc <= '0';
+			out_RegDist <= (others => '0');
+			out_MemRead <= '0';
+			out_MemWrite <= '0';
+			out_RegWrite <= (others => '0');
+			out_MemtoReg <= '0';
+			out_immediate <= (others => '0');
+			out_rega <= (others => '0');
+			out_regb <= (others => '0');
+			out_rs <= (others => '0');
+			out_rt <= (others => '0');
+		elsif (clk'event and clk = '1') then--rst = ctrl_flush
 			out_ALUOp <= in_ALUOp;
 			out_ALUsrc <= in_ALUsrc;
 			out_RegDist <= in_RegDist;

@@ -21,13 +21,15 @@ architecture Behavioral of IFID_Reg is
 begin
 
 	process(clk, rst, IF_Flush)
-	begin
-		if (IF_Flush = '1') then
-			Instruction_out <= (others => '0');
-			PCNext_out <= (others => '0');
-		elsif (clk'event and clk = '1' and IFIDWrite = '1') then
-			Instruction_out <= Instruction;
-			PCNext_out <= PCNext; 
+	begin	
+		if(clk'event and clk = '1' ) then
+			if (IF_Flush = '1') then 
+				Instruction_out <= "0000100000000000";
+				PCNext_out <= PCNext;
+			elsif (IFIDWrite = '1') then
+				Instruction_out <= Instruction;
+				PCNext_out <= PCNext;
+			end if;
 		end if;
 	end process;
 		

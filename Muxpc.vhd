@@ -16,15 +16,18 @@ architecture Behavioral of Muxpc is
 
 begin
 
-	process(PCSrc, PCNext, PCOffset)
+	process(PCSrc, PCNext, PCOffset, PCJR)
 	begin
-		if (PCSrc = "00") then
-			pc_out <= PCNext;
-		elsif (PCSrc = "01") then 
-			pc_out <= PCOffset;
-		elsif (PCSrc = "10") then 
-			pc_out <= PCJR;
-		end if;
+		case PCsrc is
+			when "00" =>
+				pc_out <= PCNext;
+			when "01" =>
+				pc_out <= PCOffset;
+			when "10" =>
+				pc_out <=PCJR;
+			when others =>
+				pc_out <= PCNext;
+		end case;
 	end process;
 		
 end Behavioral;

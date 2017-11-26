@@ -28,7 +28,7 @@ begin
       forwarda <= "00";
 		end if;
 	end process;
-  process (rt, exmem_regwrite, exmem_rd, memwb_regwrite, memwb_rd) 
+  process (rt, exmem_regwrite, exmem_rd, memwb_regwrite, memwb_rd, alusrc) 
   begin
     if (exmem_regwrite = "001" and exmem_rd = rt and alusrc = '0') then
       forwardb <= "01";

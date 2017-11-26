@@ -2,8 +2,8 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_ARITH.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
-library mypackage;
-use mypackage.alu_defination.all;
+library work;
+use work.operation.all;
 
 entity ALU is
     Port ( alu_op: in  STD_LOGIC_VECTOR(3 downto 0);
@@ -14,7 +14,7 @@ end ALU;
 
 architecture Behavioral of ALU is
 begin
-	process (alu_op, srcA, srcB) 
+	process (alu_op, input_a, input_b) 
 	begin
 
 		case alu_op is
@@ -42,8 +42,8 @@ begin
 				else 
 					fout <= (others => '1');
 				end if;
-			when others => fout <= (others => '0');
 			when op_nothing => fout <= (others => '0');
+			when others => fout <= (others => '0');
 		end case;
 	end process;
 end Behavioral;

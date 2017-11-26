@@ -23,12 +23,12 @@ end equal_unit;
 architecture Behavioral of equal_unit is
 
 begin
-  process (instruction, idex_regdist, idex_regwrite, exmem_regdist, exmem_regwrite)
+  process (instruction, idex_regdist, idex_regwrite, exmem_regdist, exmem_regwrite, rs_alu, rs_mem, rs_reg)
   begin
     if (instruction(15 downto 11) = "11101" and (instruction(7 downto 5) = "000" or instruction(7 downto 5) = "110")) then
-      if (idex_regwrite = "001" and idex_regdist = instruction) then
+      if (idex_regwrite = "001" and idex_regdist = instruction(10 downto 8)) then
         jr_reg <= rs_alu;
-      elsif exmem_regwrite = "001" and exmem_regdist = instruction then 
+      elsif exmem_regwrite = "001" and exmem_regdist = instruction(10 downto 8) then 
         jr_reg <= rs_mem;
       else 
         jr_reg <= rs_reg;
@@ -48,7 +48,7 @@ begin
             pc_src <= "00";
           end if;
         when "01100" =>  -- BTNEZ????~!!!!!!!!!
-          case( instruction(10 downto 8) ) is 
+          case( instruction(10 downto 8)) is 
             when "000" =>  
               if (t = '1') then
                 pc_src <= "01";

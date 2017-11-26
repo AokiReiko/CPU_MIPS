@@ -25,7 +25,7 @@ package my_components is
 	end component;
 
 	component registers is
-    Port ( 
+    Port ( clk : in STD_LOGIC;
            RegWrite : in STD_LOGIC_VECTOR (2 downto 0):= (others => '0');
            RegA: in  STD_LOGIC_VECTOR(3 downto 0);
            RegB: in  STD_LOGIC_VECTOR(2 downto 0);
@@ -96,11 +96,18 @@ package my_components is
     	   data_1: inout STD_LOGIC_VECTOR(15 downto 0);
     	   data_2: inout STD_LOGIC_VECTOR(15 downto 0);
 
+			wrn: out STD_LOGIC;
+    	   rdn: out STD_LOGIC;
+			tbre: in STD_LOGIC;
+    	   tsre: in STD_LOGIC;
+			data_ready: in STD_LOGIC;
     	   memread: in STD_LOGIC;
     	   memwrite: in STD_LOGIC;
 
     	   addr_in: in STD_LOGIC_VECTOR(15 downto 0);
-    	   data_in: in STD_LOGIC_VECTOR(15 downto 0));	
+    	   data_in: in STD_LOGIC_VECTOR(15 downto 0);
+			pc_addr:in STD_LOGIC_VECTOR(15 downto 0);
+			if_nop: out STD_LOGIC);	
 	end component;
 	
 	component IDEX_Reg is
@@ -154,8 +161,9 @@ package my_components is
 		   in_RegWrite: in STD_LOGIC_VECTOR (2 downto 0) := (others => '0');
 		   in_MemtoReg: in STD_LOGIC := '0';
 		   in_regdata: in STD_LOGIC_VECTOR (15 downto 0) := (others => '0');
-		  
-		   
+		   in_alu_data: in std_logic_vector(15 downto 0);
+			
+		   out_alu_data: out std_logic_vector(15 downto 0);
 		   out_RegDist: out STD_LOGIC_VECTOR (2 downto 0) := (others => '0');
 		   out_MemRead: out STD_LOGIC := '0';
 		   out_MemWrite: out STD_LOGIC := '0';
@@ -202,6 +210,17 @@ package my_components is
     	   memwb_regwrite: in  STD_LOGIC_VECTOR(2 downto 0);
          forwarda: out  STD_LOGIC_VECTOR(1 downto 0);
          forwardb: out  STD_LOGIC_VECTOR(1 downto 0));	
+	end component;
+	component Adder is
+    Port ( OpranA: in  STD_LOGIC_VECTOR(15 downto 0);
+           OpranB: in  STD_LOGIC_VECTOR(15 downto 0);
+           res: out  STD_LOGIC_VECTOR(15 downto 0));	
+	end component;
+	component ALU is
+    Port ( alu_op: in  STD_LOGIC_VECTOR(3 downto 0);
+           input_a: in  STD_LOGIC_VECTOR(15 downto 0);
+           input_b: in  STD_LOGIC_VECTOR(15 downto 0);
+           fout: out  STD_LOGIC_VECTOR(15 downto 0));	
 	end component;
 
 end my_components;

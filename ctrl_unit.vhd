@@ -9,9 +9,9 @@ entity ctrl_unit is
     Port ( instruction: in  STD_LOGIC_VECTOR(15 downto 0);
     	   pc: in  STD_LOGIC_VECTOR(15 downto 0);
 
-    	   ALUOp: out STD_LOGIC_VECTOR (3 downto 0) := (others => '0');
-		   ALUsrc: out STD_LOGIC := '0';
-		   RegDist: out STD_LOGIC_VECTOR (2 downto 0) := (others => '0');
+    	   ALUOp: out STD_LOGIC_VECTOR (3 downto 0);
+		   ALUsrc: out STD_LOGIC;
+		   RegDist: out STD_LOGIC_VECTOR (2 downto 0);
 		   MemRead: out STD_LOGIC := '0';
 		   MemWrite: out STD_LOGIC := '0'; 
 		   RegWrite: out STD_LOGIC_VECTOR (2 downto 0) := (others => '0');
@@ -21,12 +21,10 @@ entity ctrl_unit is
 end ctrl_unit;
 
 architecture Behavioral of ctrl_unit is
-signal fifteen_ten: STD_LOGIC_VECTOR (4 downto 0) := (others => '0');
 begin
-	fifteen_ten <= instruction(15 downto 11);
 	process (instruction)
 	begin 
-		case fifteen_ten is
+		case instruction(15 downto 11) is
 		when "01001" => -- ADDIU
 			ALUOp <= op_add;
 			ALUsrc <= '1';--立即�			RegDist <= instruction(10 downto 8);
@@ -213,7 +211,7 @@ begin
 			else 
 				immediate <= "11111111111" & instruction(4 downto 0);
 			end if;
-			rega <= "1" & "111";--读全0
+			rega <= "0" & instruction(10 downto 8);--读全0
 		when "11011" => -- SW
 			ALUOp <= op_add; -- 0 + immediate
 			ALUsrc <= '1';--使用立即�			
@@ -227,7 +225,7 @@ begin
 			else 
 				immediate <= "11111111111" & instruction(4 downto 0);
 			end if;
-			rega <= "1" & "111";--读全0
+			rega <= "0" & instruction(10 downto 8);--读全0
 		when "10010" => -- LW_SP
 			ALUOp <= op_add; -- 0 + immediate
 			ALUsrc <= '1';--使用立即�			
@@ -241,7 +239,7 @@ begin
 			else 
 				immediate <= "11111111" & instruction(7 downto 0);
 			end if;
-			rega <= "1" & "111";--读全0
+			rega <= "1" & "000";--读全0
 		when "11010" => -- SW_SP
 			ALUOp <= op_add; -- 0 + immediate
 			ALUsrc <= '1';--使用立即�			
@@ -255,7 +253,7 @@ begin
 			else 
 				immediate <= "11111111" & instruction(7 downto 0);
 			end if;
-			rega <= "1" & "111";--读全0
+			rega <= "1" & "000";--读全0
 		when "11110" => -- MFIH + MTIH
 			ALUOp <= op_add; -- IH + 0
 			ALUsrc <= '1';--使用立即�0
@@ -282,7 +280,7 @@ begin
 			MemtoReg <= '0';
 			RegWrite <= "000";--不写
 			immediate <= (others => '0');
-			rega <= "0" & "000";--�
+			rega <= "1" & "111";--�
 		when "00010" => -- B
 			ALUOp <= op_nothing; 
 			ALUsrc <= '0';
@@ -296,7 +294,7 @@ begin
 			else 
 				immediate <= "00000" & instruction(10 downto 0);
 			end if;
-			rega <= "0" & "000";--�
+			rega <= "1" & "111";--�
 		when "00100" => -- BEQZ
 			ALUOp <= op_nothing; 
 			ALUsrc <= '0';

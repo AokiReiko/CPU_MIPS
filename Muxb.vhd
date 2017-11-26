@@ -18,7 +18,7 @@ architecture Behavioral of Muxb is
 
 begin
 
-	process(reg, alu, mem, forward)
+	process(reg, alu, mem, forward, alu_src)
 	begin
 		if (alu_src = '0') then
 			case forward is
