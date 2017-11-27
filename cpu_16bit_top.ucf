@@ -75,7 +75,7 @@ NET "oe_2" LOC = R9;
 NET "rst" LOC = U10;
 NET "we_1" LOC = M18;
 NET "we_2" LOC = M9;
-NET "clk" LOC = B8;
+NET "clk" LOC = U9;
 
 
 NET "data_ready" LOC = A16;
@@ -84,7 +84,6 @@ NET "tbre" LOC = D14;
 NET "tsre" LOC = N9;
 NET "wrn" LOC = U5;
 
-# PlanAhead Generated physical constraints 
 
 NET "led[15]" LOC = A14;
 NET "led[14]" LOC = E13;
@@ -102,3 +101,8 @@ NET "led[3]" LOC = B11;
 NET "led[2]" LOC = A11;
 NET "led[1]" LOC = E10;
 NET "led[0]" LOC = D10;
+
+# PlanAhead Generated physical constraints 
+
+NET "clk11" LOC = B8;
+NET "clk50" LOC = B9;

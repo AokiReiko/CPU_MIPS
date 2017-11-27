@@ -20,7 +20,7 @@ architecture Behavioral of IFID_Reg is
 
 begin
 
-	process(clk, rst, IF_Flush)
+	process(clk)
 	begin	
 		if(clk'event and clk = '1' ) then
 			if (IF_Flush = '1') then 

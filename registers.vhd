@@ -37,48 +37,44 @@ signal reg_num: STD_LOGIC_VECTOR (2 downto 0) := (others => '0');
 begin
 outT <= T;
 reg_num <= RegA(2 downto 0);
-	process(clk)
+	process(RegA, R0, R1, R2, R3, R4, R5, R6, R7, SP, IH, RA)
 	begin
-		if (clk'event and clk = '1') then
-			if (RegA(3) = '0') then
-				case reg_num is
-					when "000" => outA <= R0;
-					when "001" => outA <= R1;
-					when "010" => outA <= R2;
-					when "011" => outA <= R3;
-					when "100" => outA <= R4;
-					when "101" => outA <= R5;
-					when "110" => outA <= R6;
-					when "111" => outA <= R7;
-					when others => outA <= R0;
-				end case;
-			elsif RegA(3) = '1' then
-				case reg_num is
-					when "000" => outA <= SP;
-					when "001" => outA <= IH;
-					when "010" => outA <= RA;
-					when "111" => outA <= (others => '0');
-					when others => outA <= (others => '0');--输出�
-				end case;
-			end if; 
-		end if;
+		if (RegA(3) = '0') then
+			case reg_num is
+				when "000" => outA <= R0;
+				when "001" => outA <= R1;
+				when "010" => outA <= R2;
+				when "011" => outA <= R3;
+				when "100" => outA <= R4;
+				when "101" => outA <= R5;
+				when "110" => outA <= R6;
+				when "111" => outA <= R7;
+				when others => outA <= R0;
+			end case;
+		elsif RegA(3) = '1' then
+			case reg_num is
+				when "000" => outA <= SP;
+				when "001" => outA <= IH;
+				when "010" => outA <= RA;
+				when "111" => outA <= (others => '0');
+				when others => outA <= (others => '0');--输出�
+			end case;
+		end if; 
 	end process;
 
-	process(clk)
+	process(RegB, R0, R1, R2, R3, R4, R5, R6, R7)
 	begin
-		if (clk'event and clk = '1') then
-			case RegB is
-				when "000" => outB <= R0;
-				when "001" => outB <= R1;
-				when "010" => outB <= R2;
-				when "011" => outB <= R3;
-				when "100" => outB <= R4;
-				when "101" => outB <= R5;
-				when "110" => outB <= R6;
-				when "111" => outB <= R7;
-				when others => outB <= R0;
-			end case;
-		end if;
+		case RegB is
+			when "000" => outB <= R0;
+			when "001" => outB <= R1;
+			when "010" => outB <= R2;
+			when "011" => outB <= R3;
+			when "100" => outB <= R4;
+			when "101" => outB <= R5;
+			when "110" => outB <= R6;
+			when "111" => outB <= R7;
+			when others => outB <= R0;
+		end case;
 	end process;
 
 	process(clk)--WB阶段的信号赋值需要注�	begin

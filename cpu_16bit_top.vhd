@@ -132,9 +132,10 @@ signal mem_nop: STD_LOGIC;
 
 signal b_register_num: STD_LOGIC_VECTOR (2 downto 0) := (others => '0');
 signal sig_pcwrite: STD_LOGIC;
+
 begin
-led <= IF_PC_addr;
-dyp0 <= "0000000";
+led <= data_2;
+dyp0 <= "00000" & EXMEM_MemWrite & EXMEM_MemRead;
 dyp1 <= "0000000";
 my_clk <= clk;
 b_register_num <= IFID_inst(10 downto 8) when IFID_inst(15 downto 11) = "11010" else IFID_inst(7 downto 5);
@@ -228,13 +229,15 @@ u7: Muxa port map(
 					reg=>IDEX_RegA,
 					alu=>EXMEM_AluData,
 					mem=>MeMWB_Memdata,
+					
 					forward=>BP_forwardA,
 					src_out=>EX_Muxa_oprandA);
 u8: Muxb port map(
-					reg=>IDEX_RegA,
+					reg=>IDEX_RegB,
 					alu=>EXMEM_AluData,
 					mem=>MeMWB_Memdata,
 					immediate=>IDEX_im,
+					
 					forward=>BP_forwardB,
 					alu_src=>IDEX_ALUsrc,
 					src_out=>EX_Muxb_oprandB);
@@ -317,8 +320,8 @@ memory0: mymemory port map(
 					if_nop=>mem_nop);
 u15: alu port map(
 					alu_op=>IDEX_ALUop,
-					input_a=>IDEX_RegA,
-					input_b=>IDEX_RegB,
+					input_a=>EX_Muxa_oprandA,
+					input_b=>EX_Muxb_oprandB,
 					fout=>EX_ALU_res);
 u16_pcnext: Adder port map(
 					opranA=>IF_PC_addr,

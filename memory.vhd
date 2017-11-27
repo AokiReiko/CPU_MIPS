@@ -38,19 +38,17 @@ begin
 	BF01 <= "00000000000000" & data_ready & (tbre and tsre);
 	process(memread, memwrite, addr_in, data_in)
 	begin
-		if (memread = '1') then 
-			if (addr_in > x"7999") then -- ram1
-				oe_1 <= '0';
-				we_1 <= '1';
-				
-				oe_2 <= '0';
-				we_2 <= '1';
-				en_2 <= '0';
-				addr_1 <= "00" & addr_in;
-				addr_2 <= "00" & pc_addr;
-				data_2 <= (others => 'Z');
-				if_nop <= '0';
-			end if;
+		if (memread = '1' and addr_in > x"7fff") then -- ram1
+			oe_1 <= '0';
+			we_1 <= '1';
+			
+			oe_2 <= '0';
+			we_2 <= '1';
+			en_2 <= '0';
+			addr_1 <= "00" & addr_in;
+			addr_2 <= "00" & pc_addr;
+			data_2 <= (others => 'Z');
+			if_nop <= '0';
 		elsif memwrite = '1' then
 			if (addr_in > x"7fff") then -- ram1
 				oe_1 <= '1';
@@ -75,6 +73,18 @@ begin
 				data_2 <= data_in;
 				if_nop <= '1';	
 			end if;
+		else 
+			oe_1 <= '1';
+			we_1 <= '1';
+
+			oe_2 <= '0';
+			we_2 <= '1';
+			en_2 <= '0';
+			addr_1 <= (others => '0');
+			addr_2 <= "00" & pc_addr;
+			data_1 <= (others => 'Z');
+			data_2 <= (others => 'Z');
+			if_nop <= '0';	
 		end if;
 	end process;
 	
