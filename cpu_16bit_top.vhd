@@ -132,11 +132,13 @@ signal mem_nop: STD_LOGIC;
 
 signal b_register_num: STD_LOGIC_VECTOR (2 downto 0) := (others => '0');
 signal sig_pcwrite: STD_LOGIC;
+signal temp: STD_LOGIC_VECTOR (17 downto 0) := (others => '0');
 
 begin
-led <= data_2;
-dyp0 <= "00000" & EXMEM_MemWrite & EXMEM_MemRead;
-dyp1 <= "0000000";
+addr_2 <= temp;
+led <= IF_mux_addr;
+dyp0 <= "11111" & EXMEM_MemWrite & EXMEM_MemRead;
+dyp1 <= "00000" & ED_pcsrc;
 my_clk <= clk;
 b_register_num <= IFID_inst(10 downto 8) when IFID_inst(15 downto 11) = "11010" else IFID_inst(7 downto 5);
 IF_Mem_inst <= data_2;
@@ -302,7 +304,7 @@ memory0: mymemory port map(
 					we_2=>we_2,
 					en_2=>en_2,
 					addr_1=>addr_1,
-					addr_2=>addr_2,
+					addr_2=>temp,
 					data_1=>data_1,
 					data_2=>data_2,
 					

@@ -65,7 +65,8 @@ begin
               pc_src <="00";
           end case ;
         when "11101" =>
-          case( instruction(7 downto 5) ) is 
+          if (instruction(4 downto 0) = "00000") then
+            case( instruction(7 downto 5) ) is 
             when "000" =>  
               pc_src <= "10";
             when "110" =>
@@ -73,6 +74,7 @@ begin
             when others => 
               pc_src <="00";
             end case ;
+          end if;
         when others => 
           pc_src <= "00";
     end case;

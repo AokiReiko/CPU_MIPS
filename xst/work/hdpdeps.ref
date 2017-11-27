@@ -1,120 +1,120 @@
 V3 87
 FL //mac/home/Desktop/desptop/CPU_MIPS/Adder.vhd 2017/11/15.08:44:38 P.20131013
-EN work/Adder 1511791641 FL //mac/home/Desktop/desptop/CPU_MIPS/Adder.vhd \
+EN work/Adder 1511806297 FL //mac/home/Desktop/desptop/CPU_MIPS/Adder.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/Adder/Behavioral 1511791642 \
-      FL //mac/home/Desktop/desptop/CPU_MIPS/Adder.vhd EN work/Adder 1511791641
+AR work/Adder/Behavioral 1511806298 \
+      FL //mac/home/Desktop/desptop/CPU_MIPS/Adder.vhd EN work/Adder 1511806297
 FL //mac/home/Desktop/desptop/CPU_MIPS/alu.vhd 2017/11/26.20:31:46 P.20131013
-EN work/ALU 1511791639 FL //mac/home/Desktop/desptop/CPU_MIPS/alu.vhd \
+EN work/ALU 1511806295 FL //mac/home/Desktop/desptop/CPU_MIPS/alu.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
-      PB ieee/STD_LOGIC_UNSIGNED 1381692179 PH work/operation 1511791609
-AR work/ALU/Behavioral 1511791640 \
-      FL //mac/home/Desktop/desptop/CPU_MIPS/alu.vhd EN work/ALU 1511791639
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 PH work/operation 1511806265
+AR work/ALU/Behavioral 1511806296 \
+      FL //mac/home/Desktop/desptop/CPU_MIPS/alu.vhd EN work/ALU 1511806295
 FL //mac/home/Desktop/desptop/CPU_MIPS/alu_defination.vhd 2017/11/24.11:28:07 P.20131013
-PH work/operation 1511791609 \
+PH work/operation 1511806265 \
       FL //mac/home/Desktop/desptop/CPU_MIPS/alu_defination.vhd \
       PB ieee/std_logic_1164 1381692176
 FL //mac/home/Desktop/desptop/CPU_MIPS/bypass_unit.vhd 2017/11/26.21:15:03 P.20131013
-EN work/bypass_unit 1511791633 \
+EN work/bypass_unit 1511806289 \
       FL //mac/home/Desktop/desptop/CPU_MIPS/bypass_unit.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/bypass_unit/Behavioral 1511791634 \
-      FL //mac/home/Desktop/desptop/CPU_MIPS/bypass_unit.vhd EN work/bypass_unit 1511791633
+AR work/bypass_unit/Behavioral 1511806290 \
+      FL //mac/home/Desktop/desptop/CPU_MIPS/bypass_unit.vhd EN work/bypass_unit 1511806289
 FL //mac/home/Desktop/desptop/CPU_MIPS/components.vhd 2017/11/26.22:14:38 P.20131013
-PH work/my_components 1511791610 \
+PH work/my_components 1511806266 \
       FL //mac/home/Desktop/desptop/CPU_MIPS/components.vhd \
       PB ieee/std_logic_1164 1381692176 CD IFID_Reg CD registers CD PC CD Muxpc \
       CD Muxb CD Muxa CD MEMWB_Reg CD mymemory CD IDEX_Reg CD hazard_unit CD EXMEM_Reg \
       CD equal_unit CD ctrl_unit CD bypass_unit CD Adder CD ALU
-FL //mac/home/Desktop/desptop/CPU_MIPS/cpu_16bit_top.vhd 2017/11/27.20:37:51 P.20131013
-EN work/cpu_16bit_top 1511791643 \
+FL //mac/home/Desktop/desptop/CPU_MIPS/cpu_16bit_top.vhd 2017/11/28.02:10:57 P.20131013
+EN work/cpu_16bit_top 1511806299 \
       FL //mac/home/Desktop/desptop/CPU_MIPS/cpu_16bit_top.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
-      PB ieee/STD_LOGIC_UNSIGNED 1381692179 PH work/my_components 1511791610
-AR work/cpu_16bit_top/Behavioral 1511791644 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 PH work/my_components 1511806266
+AR work/cpu_16bit_top/Behavioral 1511806300 \
       FL //mac/home/Desktop/desptop/CPU_MIPS/cpu_16bit_top.vhd \
-      EN work/cpu_16bit_top 1511791643 CP Muxpc CP pc CP IFID_Reg CP registers \
+      EN work/cpu_16bit_top 1511806299 CP Muxpc CP pc CP IFID_Reg CP registers \
       CP ctrl_unit CP equal_unit CP IDEX_Reg CP Muxa CP Muxb CP EXMEM_Reg CP MEMWB_Reg \
       CP bypass_unit CP hazard_unit CP mymemory CP alu CP Adder
 FL //mac/home/Desktop/desptop/CPU_MIPS/ctrl_unit.vhd 2017/11/26.22:12:57 P.20131013
-EN work/ctrl_unit 1511791619 FL //mac/home/Desktop/desptop/CPU_MIPS/ctrl_unit.vhd \
+EN work/ctrl_unit 1511806275 FL //mac/home/Desktop/desptop/CPU_MIPS/ctrl_unit.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
-      PB ieee/STD_LOGIC_UNSIGNED 1381692179 PH work/operation 1511791609
-AR work/ctrl_unit/Behavioral 1511791620 \
-      FL //mac/home/Desktop/desptop/CPU_MIPS/ctrl_unit.vhd EN work/ctrl_unit 1511791619
-FL //mac/home/Desktop/desptop/CPU_MIPS/equal_unit.vhd 2017/11/26.21:15:03 P.20131013
-EN work/equal_unit 1511791621 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 PH work/operation 1511806265
+AR work/ctrl_unit/Behavioral 1511806276 \
+      FL //mac/home/Desktop/desptop/CPU_MIPS/ctrl_unit.vhd EN work/ctrl_unit 1511806275
+FL //mac/home/Desktop/desptop/CPU_MIPS/equal_unit.vhd 2017/11/28.01:33:56 P.20131013
+EN work/equal_unit 1511806277 \
       FL //mac/home/Desktop/desptop/CPU_MIPS/equal_unit.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/equal_unit/Behavioral 1511791622 \
-      FL //mac/home/Desktop/desptop/CPU_MIPS/equal_unit.vhd EN work/equal_unit 1511791621
+AR work/equal_unit/Behavioral 1511806278 \
+      FL //mac/home/Desktop/desptop/CPU_MIPS/equal_unit.vhd EN work/equal_unit 1511806277
 FL //mac/home/Desktop/desptop/CPU_MIPS/EXMEM_Reg.vhd 2017/11/26.22:13:15 P.20131013
-EN work/EXMEM_Reg 1511791629 FL //mac/home/Desktop/desptop/CPU_MIPS/EXMEM_Reg.vhd \
+EN work/EXMEM_Reg 1511806285 FL //mac/home/Desktop/desptop/CPU_MIPS/EXMEM_Reg.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/EXMEM_Reg/Behavioral 1511791630 \
-      FL //mac/home/Desktop/desptop/CPU_MIPS/EXMEM_Reg.vhd EN work/EXMEM_Reg 1511791629
+AR work/EXMEM_Reg/Behavioral 1511806286 \
+      FL //mac/home/Desktop/desptop/CPU_MIPS/EXMEM_Reg.vhd EN work/EXMEM_Reg 1511806285
 FL //mac/home/Desktop/desptop/CPU_MIPS/hazard_unit.vhd 2017/11/26.21:15:03 P.20131013
-EN work/hazard_unit 1511791635 \
+EN work/hazard_unit 1511806291 \
       FL //mac/home/Desktop/desptop/CPU_MIPS/hazard_unit.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/hazard_unit/Behavioral 1511791636 \
-      FL //mac/home/Desktop/desptop/CPU_MIPS/hazard_unit.vhd EN work/hazard_unit 1511791635
+AR work/hazard_unit/Behavioral 1511806292 \
+      FL //mac/home/Desktop/desptop/CPU_MIPS/hazard_unit.vhd EN work/hazard_unit 1511806291
 FL //mac/home/Desktop/desptop/CPU_MIPS/IDEX_Reg.vhd 2017/11/26.21:51:01 P.20131013
-EN work/IDEX_Reg 1511791623 FL //mac/home/Desktop/desptop/CPU_MIPS/IDEX_Reg.vhd \
+EN work/IDEX_Reg 1511806279 FL //mac/home/Desktop/desptop/CPU_MIPS/IDEX_Reg.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/IDEX_Reg/Behavioral 1511791624 \
-      FL //mac/home/Desktop/desptop/CPU_MIPS/IDEX_Reg.vhd EN work/IDEX_Reg 1511791623
+AR work/IDEX_Reg/Behavioral 1511806280 \
+      FL //mac/home/Desktop/desptop/CPU_MIPS/IDEX_Reg.vhd EN work/IDEX_Reg 1511806279
 FL //mac/home/Desktop/desptop/CPU_MIPS/IFID_Reg.vhd 2017/11/27.16:31:25 P.20131013
-EN work/IFID_Reg 1511791615 FL //mac/home/Desktop/desptop/CPU_MIPS/IFID_Reg.vhd \
+EN work/IFID_Reg 1511806271 FL //mac/home/Desktop/desptop/CPU_MIPS/IFID_Reg.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/IFID_Reg/Behavioral 1511791616 \
-      FL //mac/home/Desktop/desptop/CPU_MIPS/IFID_Reg.vhd EN work/IFID_Reg 1511791615
+AR work/IFID_Reg/Behavioral 1511806272 \
+      FL //mac/home/Desktop/desptop/CPU_MIPS/IFID_Reg.vhd EN work/IFID_Reg 1511806271
 FL //mac/home/Desktop/desptop/CPU_MIPS/memory.vhd 2017/11/27.22:05:51 P.20131013
-EN work/mymemory 1511791637 FL //mac/home/Desktop/desptop/CPU_MIPS/memory.vhd \
+EN work/mymemory 1511806293 FL //mac/home/Desktop/desptop/CPU_MIPS/memory.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/mymemory/Behavioral 1511791638 \
-      FL //mac/home/Desktop/desptop/CPU_MIPS/memory.vhd EN work/mymemory 1511791637
+AR work/mymemory/Behavioral 1511806294 \
+      FL //mac/home/Desktop/desptop/CPU_MIPS/memory.vhd EN work/mymemory 1511806293
 FL //mac/home/Desktop/desptop/CPU_MIPS/MEMWB_Reg.vhd 2017/11/24.12:50:50 P.20131013
-EN work/MEMWB_Reg 1511791631 FL //mac/home/Desktop/desptop/CPU_MIPS/MEMWB_Reg.vhd \
+EN work/MEMWB_Reg 1511806287 FL //mac/home/Desktop/desptop/CPU_MIPS/MEMWB_Reg.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/MEMWB_Reg/Behavioral 1511791632 \
-      FL //mac/home/Desktop/desptop/CPU_MIPS/MEMWB_Reg.vhd EN work/MEMWB_Reg 1511791631
+AR work/MEMWB_Reg/Behavioral 1511806288 \
+      FL //mac/home/Desktop/desptop/CPU_MIPS/MEMWB_Reg.vhd EN work/MEMWB_Reg 1511806287
 FL //mac/home/Desktop/desptop/CPU_MIPS/Muxa.vhd 2017/11/24.13:09:19 P.20131013
-EN work/Muxa 1511791625 FL //mac/home/Desktop/desptop/CPU_MIPS/Muxa.vhd \
+EN work/Muxa 1511806281 FL //mac/home/Desktop/desptop/CPU_MIPS/Muxa.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/Muxa/Behavioral 1511791626 \
-      FL //mac/home/Desktop/desptop/CPU_MIPS/Muxa.vhd EN work/Muxa 1511791625
+AR work/Muxa/Behavioral 1511806282 \
+      FL //mac/home/Desktop/desptop/CPU_MIPS/Muxa.vhd EN work/Muxa 1511806281
 FL //mac/home/Desktop/desptop/CPU_MIPS/Muxb.vhd 2017/11/26.21:15:03 P.20131013
-EN work/Muxb 1511791627 FL //mac/home/Desktop/desptop/CPU_MIPS/Muxb.vhd \
+EN work/Muxb 1511806283 FL //mac/home/Desktop/desptop/CPU_MIPS/Muxb.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/Muxb/Behavioral 1511791628 \
-      FL //mac/home/Desktop/desptop/CPU_MIPS/Muxb.vhd EN work/Muxb 1511791627
+AR work/Muxb/Behavioral 1511806284 \
+      FL //mac/home/Desktop/desptop/CPU_MIPS/Muxb.vhd EN work/Muxb 1511806283
 FL //mac/home/Desktop/desptop/CPU_MIPS/Muxpc.vhd 2017/11/26.21:19:59 P.20131013
-EN work/Muxpc 1511791611 FL //mac/home/Desktop/desptop/CPU_MIPS/Muxpc.vhd \
+EN work/Muxpc 1511806267 FL //mac/home/Desktop/desptop/CPU_MIPS/Muxpc.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/Muxpc/Behavioral 1511791612 \
-      FL //mac/home/Desktop/desptop/CPU_MIPS/Muxpc.vhd EN work/Muxpc 1511791611
+AR work/Muxpc/Behavioral 1511806268 \
+      FL //mac/home/Desktop/desptop/CPU_MIPS/Muxpc.vhd EN work/Muxpc 1511806267
 FL //mac/home/Desktop/desptop/CPU_MIPS/pc.vhd 2017/11/24.11:27:22 P.20131013
-EN work/PC 1511791613 FL //mac/home/Desktop/desptop/CPU_MIPS/pc.vhd \
+EN work/PC 1511806269 FL //mac/home/Desktop/desptop/CPU_MIPS/pc.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/PC/Behavioral 1511791614 \
-      FL //mac/home/Desktop/desptop/CPU_MIPS/pc.vhd EN work/PC 1511791613
+AR work/PC/Behavioral 1511806270 \
+      FL //mac/home/Desktop/desptop/CPU_MIPS/pc.vhd EN work/PC 1511806269
 FL //mac/home/Desktop/desptop/CPU_MIPS/registers.vhd 2017/11/27.20:20:31 P.20131013
-EN work/registers 1511791617 FL //mac/home/Desktop/desptop/CPU_MIPS/registers.vhd \
+EN work/registers 1511806273 FL //mac/home/Desktop/desptop/CPU_MIPS/registers.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/registers/Behavioral 1511791618 \
-      FL //mac/home/Desktop/desptop/CPU_MIPS/registers.vhd EN work/registers 1511791617
+AR work/registers/Behavioral 1511806274 \
+      FL //mac/home/Desktop/desptop/CPU_MIPS/registers.vhd EN work/registers 1511806273
