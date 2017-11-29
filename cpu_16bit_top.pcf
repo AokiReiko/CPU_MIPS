@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Tue Nov 28 02:11:38 2017
+// Written by: Map P.20131013 on Tue Nov 28 22:26:58 2017
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -53,6 +53,20 @@ COMP "led<12>" LOCATE = SITE "B13" LEVEL 1;
 COMP "led<13>" LOCATE = SITE "D13" LEVEL 1;
 COMP "led<14>" LOCATE = SITE "E13" LEVEL 1;
 COMP "led<15>" LOCATE = SITE "A14" LEVEL 1;
+COMP "dyp0<0>" LOCATE = SITE "F8" LEVEL 1;
+COMP "dyp0<1>" LOCATE = SITE "E8" LEVEL 1;
+COMP "dyp0<2>" LOCATE = SITE "A8" LEVEL 1;
+COMP "dyp0<3>" LOCATE = SITE "F7" LEVEL 1;
+COMP "dyp1<0>" LOCATE = SITE "B10" LEVEL 1;
+COMP "dyp0<4>" LOCATE = SITE "E7" LEVEL 1;
+COMP "dyp1<1>" LOCATE = SITE "A10" LEVEL 1;
+COMP "dyp0<5>" LOCATE = SITE "D7" LEVEL 1;
+COMP "dyp1<2>" LOCATE = SITE "G9" LEVEL 1;
+COMP "dyp0<6>" LOCATE = SITE "C7" LEVEL 1;
+COMP "dyp1<3>" LOCATE = SITE "F9" LEVEL 1;
+COMP "dyp1<4>" LOCATE = SITE "E9" LEVEL 1;
+COMP "dyp1<5>" LOCATE = SITE "D9" LEVEL 1;
+COMP "dyp1<6>" LOCATE = SITE "C9" LEVEL 1;
 COMP "clk11" LOCATE = SITE "B8" LEVEL 1;
 COMP "clk50" LOCATE = SITE "B9" LEVEL 1;
 COMP "data_ready" LOCATE = SITE "A16" LEVEL 1;

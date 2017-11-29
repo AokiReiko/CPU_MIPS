@@ -48,7 +48,6 @@ signal IF_Mem_inst: STD_LOGIC_VECTOR (15 downto 0) := (others => '0');
 signal IF_Adder_res: STD_LOGIC_VECTOR (15 downto 0) := (others => '0');
 --ID部分
 signal IFID_inst: STD_LOGIC_VECTOR (15 downto 0) := (others => '0');
-signal IFID_instruction: STD_LOGIC_VECTOR (2 downto 0) := (others => '0');
 signal IFID_addr: STD_LOGIC_VECTOR (15 downto 0) := (others => '0');
 
 signal ID_Reg_A: STD_LOGIC_VECTOR (15 downto 0) := (others => '0');
@@ -88,9 +87,9 @@ signal IDEX_rt: STD_LOGIC_VECTOR (2 downto 0) := (others => '0');
 
 signal EX_Muxa_oprandA: STD_LOGIC_VECTOR (15 downto 0) := (others => '0');
 signal EX_Muxb_oprandB: STD_LOGIC_VECTOR (15 downto 0) := (others => '0');
+signal EX_muxb_regb: STD_LOGIC_VECTOR (15 downto 0) := (others => '0');
+
 signal EX_ALU_res: STD_LOGIC_VECTOR (15 downto 0) := (others => '0');
-signal EX_ALU_zero: STD_LOGIC_VECTOR (15 downto 0) := (others => '0');--ID阶段已经检�存疑
-signal EX_Muxc_regdist: STD_LOGIC_VECTOR (2 downto 0) := (others => '0');
 
 --MEM部分
 --MemRead
@@ -103,7 +102,6 @@ signal EXMEM_AluData: STD_LOGIC_VECTOR (15 downto 0) := (others => '0');
 signal EXMEM_data: STD_LOGIC_VECTOR (15 downto 0) := (others => '0');
 signal EXMEM_regdist: STD_LOGIC_VECTOR (2 downto 0) := (others => '0');
 signal EXMEM_regwrite: STD_LOGIC_VECTOR (2 downto 0) := (others => '0');
-signal MEM_Mem_out: STD_LOGIC_VECTOR (15 downto 0) := (others => '0');
 
 --WB部分
 --RegWrite
@@ -132,13 +130,19 @@ signal mem_nop: STD_LOGIC;
 
 signal b_register_num: STD_LOGIC_VECTOR (2 downto 0) := (others => '0');
 signal sig_pcwrite: STD_LOGIC;
+
 signal temp: STD_LOGIC_VECTOR (17 downto 0) := (others => '0');
+signal temp1: STD_LOGIC;
+signal temp2: STD_LOGIC;
+
 
 begin
+we_2 <= temp1;
+oe_2 <= temp2;
 addr_2 <= temp;
-led <= IF_mux_addr;
-dyp0 <= "11111" & EXMEM_MemWrite & EXMEM_MemRead;
-dyp1 <= "00000" & ED_pcsrc;
+led <= temp(15 downto 0);
+dyp0 <= temp1&temp2& mem_nop&"0000" ;
+dyp1 <= temp1&temp2& mem_nop&"0000" ;
 my_clk <= clk;
 b_register_num <= IFID_inst(10 downto 8) when IFID_inst(15 downto 11) = "11010" else IFID_inst(7 downto 5);
 IF_Mem_inst <= data_2;
@@ -161,7 +165,7 @@ u3: IFID_Reg port map(
 					rst=>rst,
 					IF_Flush=>mem_nop,
 					IFIDWrite=>HD_IFIDWrite,
-					PCNext=>IF_PC_addr,
+					PCNext=>IF_Adder_res,
 					Instruction=>IF_Mem_inst,
 					PCNext_out=>IFID_addr,
 					Instruction_out=>IFID_inst);
@@ -213,7 +217,7 @@ u6: IDEX_Reg port map(
 					in_rega=>ID_Reg_A,
 					in_regb=>ID_Reg_B,
 					in_rs=>ID_Ctrl_rega,
-					in_rt=>IFID_inst(7 downto 5),
+					in_rt=>b_register_num,--11-29 error should be b_register_num instead of inst(7 to 5)
 					
 					out_ALUOp=>IDEX_ALUop,
 					out_ALUsrc=>IDEX_ALUsrc,
@@ -242,6 +246,7 @@ u8: Muxb port map(
 					
 					forward=>BP_forwardB,
 					alu_src=>IDEX_ALUsrc,
+					reg_out=>EX_muxb_regb;
 					src_out=>EX_Muxb_oprandB);
 u9: EXMEM_Reg port map(
 					clk=>clk,
@@ -252,7 +257,7 @@ u9: EXMEM_Reg port map(
 					in_MemWrite=>IDEX_MemWrite,
 					in_RegWrite=>IDEX_RegWrite,
 					in_MemtoReg=>IDEX_MemtoReg,
-					in_regdata=>EX_Muxb_oprandB,
+					in_regdata=>EX_muxb_regb,
 					in_alu_data=>EX_ALU_res,
 
 					out_alu_data => EXMEM_AluData,
@@ -291,7 +296,7 @@ u10: hazard_unit port map(--这里存疑
 					idex_rt=>IDEX_rt,
 					alu_src=>ID_Ctrl_ALUsrc,
 					rega=>ID_Ctrl_rega,
-					ifid_rt=>IFID_inst(7 downto 5),
+					ifid_rt=>b_register_num, --11-29 error
 					ifid_write=>HD_IFIDWrite,
 					pc_write=>HD_PCWrite,
 					ctrl_clear=>HD_Ctrl_Flush);
@@ -300,8 +305,8 @@ memory0: mymemory port map(
 					oe_1=>oe_1,
 					we_1=>wE_1,
 					en_1=>en_1,
-					oe_2=>oe_2,
-					we_2=>we_2,
+					oe_2=>temp2,
+					we_2=>temp1,
 					en_2=>en_2,
 					addr_1=>addr_1,
 					addr_2=>temp,

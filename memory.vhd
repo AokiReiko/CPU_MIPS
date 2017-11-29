@@ -38,7 +38,7 @@ begin
 	BF01 <= "00000000000000" & data_ready & (tbre and tsre);
 	process(memread, memwrite, addr_in, data_in)
 	begin
-		if (memread = '1' and addr_in > x"7fff") then -- ram1
+		if (memread = '1' and addr_in(15) = '1') then -- ram1
 			oe_1 <= '0';
 			we_1 <= '1';
 			
@@ -50,7 +50,7 @@ begin
 			data_2 <= (others => 'Z');
 			if_nop <= '0';
 		elsif memwrite = '1' then
-			if (addr_in > x"7fff") then -- ram1
+			if ( addr_in(15) = '1') then -- ram1
 				oe_1 <= '1';
 				we_1 <= '0';				
 				oe_2 <= '0';
@@ -126,6 +126,11 @@ begin
 					rdn <= '1';
 					en_1 <= '0';
 			end case;
+		else
+			data_1 <= (others => 'Z');
+			wrn <= '1';
+			rdn <= '1';
+			en_1 <= '0';
 		end if;
 	end process;
 end Behavioral;

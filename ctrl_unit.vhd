@@ -27,7 +27,8 @@ begin
 		case instruction(15 downto 11) is
 		when "01001" => -- ADDIU
 			ALUOp <= op_add;
-			ALUsrc <= '1';--立即�			RegDist <= instruction(10 downto 8);
+			ALUsrc <= '1';--立即�			
+			RegDist <= instruction(10 downto 8);
 			MemRead <= '0';
 			MemWrite <= '0';
 			MemtoReg <= '0';
@@ -40,7 +41,8 @@ begin
 			end if;
 		when "01000" => -- ADDIU3
 			ALUOp <= op_add;
-			ALUsrc <= '1';--使用立即�			RegDist <= instruction(7 downto 5);
+			ALUsrc <= '1';--使用立即�			
+			RegDist <= instruction(7 downto 5);
 			MemRead <= '0';
 			MemWrite <= '0';
 			MemtoReg <= '0';
@@ -160,8 +162,18 @@ begin
 						RegWrite <= "000";
 						immediate <= (others => '0');	
 					when others => 
+						rega <= "1111"; -- 读RA
+						ALUsrc <= '0';
+						ALUOp <= op_nothing; 
+						RegWrite <= "000";
+						immediate <= (others => '0');
 				end case ;
-			when others => 
+			when others =>
+				rega <= "1111"; -- 读RA
+				ALUsrc <= '0';
+				ALUOp <= op_nothing; 
+				RegWrite <= "000";
+				immediate <= (others => '0'); 
 			end case ;
 			RegDist <= instruction(10 downto 8);--rz
 			MemRead <= '0';
@@ -184,7 +196,7 @@ begin
 			else 
 				immediate <= "0000000000000" & instruction(4 downto 2);
 			end if;
-			rega <= "0" & instruction(10 downto 8);--读rx
+			rega <= "0" & instruction(7 downto 5);--读rx
 
 			
 

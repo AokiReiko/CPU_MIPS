@@ -67,13 +67,15 @@ begin
         when "11101" =>
           if (instruction(4 downto 0) = "00000") then
             case( instruction(7 downto 5) ) is 
-            when "000" =>  
-              pc_src <= "10";
-            when "110" =>
-              pc_src <= "10";
-            when others => 
-              pc_src <="00";
-            end case ;
+              when "000" =>  
+                pc_src <= "10";
+              when "110" =>
+                pc_src <= "10";
+              when others => 
+                pc_src <="00";
+              end case ;
+          else 
+            pc_src <= "00";
           end if;
         when others => 
           pc_src <= "00";

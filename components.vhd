@@ -58,6 +58,7 @@ package my_components is
     	   immediate: in  STD_LOGIC_VECTOR(15 downto 0);
     	   alu_src: in  STD_LOGIC;
     	   forward: in  STD_LOGIC_VECTOR(1 downto 0);
+         reg_out: out  STD_LOGIC_VECTOR(15 downto 0);
            src_out: out  STD_LOGIC_VECTOR(15 downto 0));	
 	end component;
 	component Muxa is
