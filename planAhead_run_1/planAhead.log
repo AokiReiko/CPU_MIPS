@@ -1,14 +1,14 @@
 #-----------------------------------------------------------
 # PlanAhead v14.7 (64-bit)
 # Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
-# Start of session at: Sun Nov 26 22:27:55 2017
-# Process ID: 1488
+# Start of session at: Wed Nov 29 14:17:44 2017
+# Process ID: 3504
 # Log file: Y:/Desktop/desptop/CPU_MIPS/planAhead_run_1/planAhead.log
 # Journal file: Y:/Desktop/desptop/CPU_MIPS/planAhead_run_1/planAhead.jou
 #-----------------------------------------------------------
 INFO: [Common 17-78] Attempting to get a license: PlanAhead
 INFO: [Common 17-290] Got license for PlanAhead
-INFO: [Common 17-86] Your PlanAhead license expires in -330 day(s)
+INFO: [Common 17-86] Your PlanAhead license expires in -333 day(s)
 INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
 Parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
 Finished parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
@@ -36,7 +36,7 @@ Processing design ...
    Preping design's macros ...
   finished :Prep
 Writing EDIF netlist file cpu_16bit_top.edif ...
-ngc2edif: Total memory usage is 85172 kilobytes
+ngc2edif: Total memory usage is 81448 kilobytes
 
 Parsing EDIF File [./planAhead_run_1/cpu_mips.data/cache/cpu_16bit_top_ngc_zx.edif]
 Finished Parsing EDIF File [./planAhead_run_1/cpu_mips.data/cache/cpu_16bit_top_ngc_zx.edif]
@@ -57,64 +57,19 @@ Finished Parsing UCF File [Y:/Desktop/desptop/CPU_MIPS/cpu_16bit_top.ucf]
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Phase 0 | Netlist Checksum: 4bf7f9f1
-link_design: Time (s): elapsed = 00:00:12 . Memory (MB): peak = 514.297 ; gain = 101.348
+Phase 0 | Netlist Checksum: 18dd0d5f
+link_design: Time (s): elapsed = 00:00:13 . Memory (MB): peak = 518.090 ; gain = 126.418
 startgroup
-set_property package_pin A14 [get_ports {led[15]}]
-endgroup
-startgroup
-set_property package_pin E13 [get_ports {led[14]}]
-endgroup
-startgroup
-set_property package_pin D13 [get_ports {led[13]}]
-endgroup
-startgroup
-set_property package_pin B13 [get_ports {led[12]}]
-endgroup
-startgroup
-set_property package_pin A13 [get_ports {led[11]}]
-endgroup
-startgroup
-set_property package_pin F12 [get_ports {led[10]}]
-endgroup
-startgroup
-set_property package_pin E12 [get_ports {led[9]}]
-endgroup
-startgroup
-set_property package_pin A12 [get_ports {led[8]}]
-endgroup
-startgroup
-set_property package_pin F11 [get_ports {led[7]}]
-endgroup
-startgroup
-set_property package_pin E11 [get_ports {led[6]}]
-endgroup
-startgroup
-set_property package_pin D11 [get_ports {led[5]}]
-endgroup
-startgroup
-set_property package_pin C11 [get_ports {led[4]}]
-endgroup
-startgroup
-set_property package_pin B11 [get_ports {led[3]}]
-endgroup
-startgroup
-set_property package_pin A11 [get_ports {led[2]}]
-endgroup
-startgroup
-set_property package_pin E10 [get_ports {led[1]}]
-endgroup
-startgroup
-set_property package_pin D10 [get_ports {led[0]}]
+set_property package_pin U15 [get_ports {addr_2[17]}]
 endgroup
 save_constraints
 exit
 ERROR: [PlanAhead 12-106] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
-HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
-HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
 HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
 HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
- (See Y:/Desktop/desptop/CPU_MIPS\planAhead_pid1488.debug)
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+ (See Y:/Desktop/desptop/CPU_MIPS\planAhead_pid3504.debug)
 ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
-INFO: [Common 17-206] Exiting PlanAhead at Sun Nov 26 22:29:48 2017...
+INFO: [Common 17-206] Exiting PlanAhead at Wed Nov 29 14:19:38 2017...
 INFO: [Common 17-83] Releasing license: PlanAhead

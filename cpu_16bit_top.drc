@@ -1,18 +1,14 @@
 Release 14.7 Drc P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Tue Nov 28 22:27:39 2017
+Wed Nov 29 19:58:19 2017
 
 drc -z cpu_16bit_top.ncd cpu_16bit_top.pcf
 
-WARNING:PhysDesignRules:372 - Gated clock. Clock net u5/immediate_not0001 is
+WARNING:PhysDesignRules:372 - Gated clock. Clock net u12/jr_reg_cmp_eq0000 is
    sourced by a combinatorial pin. This is not good design practice. Use the CE
    pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   memory0/Mtridata_data_1_and0000 is sourced by a combinatorial pin. This is
-   not good design practice. Use the CE pin to control the loading of data into
-   the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net u12/jr_reg_cmp_eq0000 is
+WARNING:PhysDesignRules:372 - Gated clock. Clock net u5/immediate_not0001 is
    sourced by a combinatorial pin. This is not good design practice. Use the CE
    pin to control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net u5/ALUOp_not0001 is sourced
@@ -25,5 +21,5 @@ WARNING:PhysDesignRules:367 - The signal <clk11_IBUF> is incomplete. The signal
    does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <clk50_IBUF> is incomplete. The signal
    does not drive any load pins in the design.
-DRC detected 0 errors and 7 warnings.  Please see the previously displayed
+DRC detected 0 errors and 6 warnings.  Please see the previously displayed
 individual error or warning messages for more details.

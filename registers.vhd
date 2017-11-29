@@ -40,7 +40,7 @@ reg_num <= RegA(2 downto 0);
 	process(RegA, R0, R1, R2, R3, R4, R5, R6, R7, SP, IH, RA)
 	begin
 		if (RegA(3) = '0') then
-			case reg_num is
+			case RegA(2 downto 0) is
 				when "000" => outA <= R0;
 				when "001" => outA <= R1;
 				when "010" => outA <= R2;

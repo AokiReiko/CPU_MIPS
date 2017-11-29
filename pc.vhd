@@ -7,6 +7,7 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 entity PC is
     Port ( clk : in  STD_LOGIC;
            rst : in  STD_LOGIC;
+			  en : in std_logic;
            PCWrite : in  STD_LOGIC;
            Mux_in: in  STD_LOGIC_VECTOR(15 downto 0);
            PC_out: out  STD_LOGIC_VECTOR(15 downto 0));	

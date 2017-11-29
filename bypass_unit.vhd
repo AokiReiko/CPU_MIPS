@@ -30,9 +30,9 @@ begin
 	end process;
   process (rt, exmem_regwrite, exmem_rd, memwb_regwrite, memwb_rd, alusrc) 
   begin
-    if (exmem_regwrite = "001" and exmem_rd = rt and alusrc = '0') then
+    if (exmem_regwrite = "001" and exmem_rd = rt ) then--and alusrc = '0') then
       forwardb <= "01";
-    elsif (memwb_regwrite = "001" and memwb_rd = rt and alusrc = '0') then 
+    elsif (memwb_regwrite = "001" and memwb_rd = rt ) then--and alusrc = '0') then 
       forwardb<= "10";
     else 
       forwardb <= "00";

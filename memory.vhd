@@ -36,7 +36,7 @@ architecture Behavioral of mymemory is
 signal BF01: std_logic_vector(15 downto 0);
 begin
 	BF01 <= "00000000000000" & data_ready & (tbre and tsre);
-	process(memread, memwrite, addr_in, data_in)
+	process(memread, memwrite, addr_in, data_in, pc_addr)
 	begin
 		if (memread = '1' and addr_in(15) = '1') then -- ram1
 			oe_1 <= '0';
@@ -58,7 +58,6 @@ begin
 				en_2 <= '0';
 				addr_1 <= "00" & addr_in;
 				addr_2 <= "00" & pc_addr;
-				data_1 <= data_in;
 				data_2 <= (others => 'Z');
 				if_nop <= '0';
 			else -- ram2
@@ -69,7 +68,6 @@ begin
 				en_2 <= '0';
 				addr_1 <= (others => '0');
 				addr_2 <= "00" & addr_in;
-				data_1 <= (others => 'Z');
 				data_2 <= data_in;
 				if_nop <= '1';	
 			end if;
@@ -82,7 +80,6 @@ begin
 			en_2 <= '0';
 			addr_1 <= (others => '0');
 			addr_2 <= "00" & pc_addr;
-			data_1 <= (others => 'Z');
 			data_2 <= (others => 'Z');
 			if_nop <= '0';	
 		end if;

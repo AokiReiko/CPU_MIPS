@@ -17,11 +17,7 @@
 <msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">clk50_IBUF</arg> has no load.  PAR will not attempt to route this signal.
 </msg>
 
-<msg type="warning" file="Route" num="455" delta="new" >CLK Net:<arg fmt="%s" index="1">memory0/Mtridata_data_1_and0000</arg> may have excessive skew because 
-   <arg fmt="%d" index="2">1</arg> CLK pins and <arg fmt="%d" index="3">0</arg> NON_CLK pins failed to route using a CLK template.
-</msg>
-
-<msg type="warning" file="Route" num="455" delta="old" >CLK Net:<arg fmt="%s" index="1">u12/jr_reg_cmp_eq0000</arg> may have excessive skew because 
+<msg type="warning" file="Route" num="455" delta="new" >CLK Net:<arg fmt="%s" index="1">u12/jr_reg_cmp_eq0000</arg> may have excessive skew because 
    <arg fmt="%d" index="2">0</arg> CLK pins and <arg fmt="%d" index="3">1</arg> NON_CLK pins failed to route using a CLK template.
 </msg>
 

@@ -106,7 +106,6 @@ NET "led[0]" LOC = D10;
 NET "clk11" LOC = B8;
 NET "clk50" LOC = B9;
 
-# PlanAhead Generated physical constraints 
 
 NET "dyp0[6]" LOC = C7;
 NET "dyp0[5]" LOC = D7;

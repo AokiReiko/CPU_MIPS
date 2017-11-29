@@ -142,7 +142,7 @@ oe_2 <= temp2;
 addr_2 <= temp;
 led <= temp(15 downto 0);
 dyp0 <= temp1&temp2& mem_nop&"0000" ;
-dyp1 <= temp1&temp2& mem_nop&"0000" ;
+dyp1 <=temp1&temp2& mem_nop&"0000" ;
 my_clk <= clk;
 b_register_num <= IFID_inst(10 downto 8) when IFID_inst(15 downto 11) = "11010" else IFID_inst(7 downto 5);
 IF_Mem_inst <= data_2;
@@ -234,19 +234,19 @@ u6: IDEX_Reg port map(
 u7: Muxa port map(
 					reg=>IDEX_RegA,
 					alu=>EXMEM_AluData,
-					mem=>MeMWB_Memdata,
+					mem=>MeMWB_Mux_data,
 					
 					forward=>BP_forwardA,
 					src_out=>EX_Muxa_oprandA);
 u8: Muxb port map(
 					reg=>IDEX_RegB,
 					alu=>EXMEM_AluData,
-					mem=>MeMWB_Memdata,
+					mem=>MeMWB_Mux_data,
 					immediate=>IDEX_im,
 					
 					forward=>BP_forwardB,
 					alu_src=>IDEX_ALUsrc,
-					reg_out=>EX_muxb_regb;
+					reg_out=>EX_muxb_regb,
 					src_out=>EX_Muxb_oprandB);
 u9: EXMEM_Reg port map(
 					clk=>clk,
