@@ -91,7 +91,7 @@ begin
 						en_1 <= '0';
 				end case;
 			else 
-				oe_1 <= '0';
+				oe_1 <= '1';
 				we_1 <= '1';
 
 				oe_2 <= '0';
@@ -108,9 +108,9 @@ begin
 			we_1 <= '1';
 			en_1 <= '0';
 
-			oe_2 <= '1';
+			oe_2 <= '0';
 			we_2 <= '1';
-			en_2 <= '1';
+			en_2 <= '0';
 
 			wrn <= '1';
 			rdn <= '1';
@@ -126,10 +126,10 @@ begin
 				data_2 <= (others => 'Z');
 				if_nop <= '0';
 			else 
-				addr_1 <= "00" & addr_in;
-				addr_2 <= "00" & pc_addr;
+				addr_1 <= (others => '0');
+				addr_2 <= "00" & addr_in;
 				data_2 <= (others => 'Z');
-				if_nop <= '0';
+				if_nop <= '1';
 			end if;
 		elsif memwrite = '1' then
 			if ( addr_in(15) = '1') then -- ram1

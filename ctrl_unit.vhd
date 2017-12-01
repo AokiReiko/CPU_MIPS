@@ -225,13 +225,13 @@ begin
 			end if;
 			rega <= "0" & instruction(10 downto 8);--读全0
 		when "11011" => -- SW
-			ALUOp <= op_add; -- 0 + immediate
-			ALUsrc <= '1';--使用立即�			
-			RegDist <= instruction(10 downto 8);--写回rx
+			ALUOp <= op_add; -- rx + immediate
+			ALUsrc <= '1';--		
+			RegDist <= instruction(10 downto 8);--
 			MemRead <= '0';
 			MemWrite <= '1';
 			MemtoReg <= '0';
-			RegWrite <= "000";--不写
+			RegWrite <= "000";--
 			if(instruction(4) = '0') then
 				immediate <= "00000000000" & instruction(4 downto 0);
 			else 

@@ -10,7 +10,7 @@ Target Device  : xc3s1200e
 Target Package : fg320
 Target Speed   : -5
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Fri Dec 01 22:46:25 2017
+Mapped Date    : Sat Dec 02 01:08:23 2017
 
 vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 INFO:Security:54 - 'xc3s1200e' is a WebPack part.
@@ -27,43 +27,41 @@ Total REAL time at the beginning of Placer: 3 secs
 Total CPU  time at the beginning of Placer: 3 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:116d3e07) REAL time: 4 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:e210203d) REAL time: 3 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:116d3e07) REAL time: 4 secs 
+Phase 2.7  Design Feasibility Check (Checksum:e210203d) REAL time: 3 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:116d3e07) REAL time: 4 secs 
+Phase 3.31  Local Placement Optimization (Checksum:e210203d) REAL time: 3 secs 
 
 Phase 4.2  Initial Clock and IO Placement
 
-Phase 4.2  Initial Clock and IO Placement (Checksum:201a0617) REAL time: 4 secs 
+Phase 4.2  Initial Clock and IO Placement (Checksum:ad647f65) REAL time: 4 secs 
 
 Phase 5.30  Global Clock Region Assignment
-Phase 5.30  Global Clock Region Assignment (Checksum:201a0617) REAL time: 4 secs 
+Phase 5.30  Global Clock Region Assignment (Checksum:ad647f65) REAL time: 4 secs 
 
 Phase 6.36  Local Placement Optimization
-Phase 6.36  Local Placement Optimization (Checksum:201a0617) REAL time: 4 secs 
+Phase 6.36  Local Placement Optimization (Checksum:ad647f65) REAL time: 4 secs 
 
 Phase 7.8  Global Placement
-...........................................................
-....
+...........................................
+.....
 ...................................
-................
-................
-Phase 7.8  Global Placement (Checksum:69b4cbe6) REAL time: 8 secs 
+Phase 7.8  Global Placement (Checksum:f87ff589) REAL time: 7 secs 
 
 Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:69b4cbe6) REAL time: 9 secs 
+Phase 8.5  Local Placement Optimization (Checksum:f87ff589) REAL time: 7 secs 
 
 Phase 9.18  Placement Optimization
-Phase 9.18  Placement Optimization (Checksum:e6feec0e) REAL time: 13 secs 
+Phase 9.18  Placement Optimization (Checksum:ae73b41) REAL time: 10 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:e6feec0e) REAL time: 13 secs 
+Phase 10.5  Local Placement Optimization (Checksum:ae73b41) REAL time: 10 secs 
 
-Total REAL time to Placer completion: 13 secs 
-Total CPU  time to Placer completion: 12 secs 
+Total REAL time to Placer completion: 10 secs 
+Total CPU  time to Placer completion: 10 secs 
 Running post-placement packing...
 WARNING:PhysDesignRules:372 - Gated clock. Clock net u5/rega_not0001 is sourced
    by a combinatorial pin. This is not good design practice. Use the CE pin to
@@ -89,14 +87,14 @@ Logic Utilization:
   Total Number Slice Registers:         420 out of  17,344    2%
     Number used as Flip Flops:          389
     Number used as Latches:              31
-  Number of 4 input LUTs:             1,205 out of  17,344    6%
+  Number of 4 input LUTs:             1,206 out of  17,344    6%
 Logic Distribution:
-  Number of occupied Slices:            867 out of   8,672    9%
-    Number of Slices containing only related logic:     867 out of     867 100%
-    Number of Slices containing unrelated logic:          0 out of     867   0%
+  Number of occupied Slices:            905 out of   8,672   10%
+    Number of Slices containing only related logic:     905 out of     905 100%
+    Number of Slices containing unrelated logic:          0 out of     905   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:       1,250 out of  17,344    7%
-    Number used as logic:             1,205
+  Total Number of 4 input LUTs:       1,251 out of  17,344    7%
+    Number used as logic:             1,206
     Number used as a route-thru:         45
 
   The Slice Logic Distribution report is not meaningful if the design is
@@ -108,8 +106,8 @@ Logic Distribution:
 Average Fanout of Non-Clock Nets:                3.61
 
 Peak Memory Usage:  320 MB
-Total REAL time to MAP completion:  13 secs 
-Total CPU time to MAP completion:   12 secs 
+Total REAL time to MAP completion:  11 secs 
+Total CPU time to MAP completion:   11 secs 
 
 Mapping completed.
 See MAP report file "cpu_16bit_top_map.mrp" for details.

@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="Xst" timeStamp="Fri Dec 01 22:45:55 2017">
+  <application stringID="Xst" timeStamp="Sat Dec 02 01:07:52 2017">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -167,19 +167,19 @@
         <item stringID="XST_IOS" value="129"/>
       </section>
       <section stringID="XST_CELL_USAGE">
-        <item dataType="int" stringID="XST_BELS" value="1591">
+        <item dataType="int" stringID="XST_BELS" value="1592">
           <item dataType="int" stringID="XST_GND" value="1"/>
           <item dataType="int" stringID="XST_INV" value="4"/>
           <item dataType="int" stringID="XST_LUT1" value="44"/>
-          <item dataType="int" stringID="XST_LUT2" value="39"/>
+          <item dataType="int" stringID="XST_LUT2" value="41"/>
           <item dataType="int" stringID="XST_LUT2D" value="8"/>
           <item dataType="int" stringID="XST_LUT2L" value="15"/>
-          <item dataType="int" stringID="XST_LUT3" value="296"/>
-          <item dataType="int" stringID="XST_LUT3D" value="13"/>
+          <item dataType="int" stringID="XST_LUT3" value="279"/>
+          <item dataType="int" stringID="XST_LUT3D" value="14"/>
           <item dataType="int" stringID="XST_LUT3L" value="14"/>
-          <item dataType="int" stringID="XST_LUT4" value="672"/>
-          <item dataType="int" stringID="XST_LUT4D" value="51"/>
-          <item dataType="int" stringID="XST_LUT4L" value="90"/>
+          <item dataType="int" stringID="XST_LUT4" value="687"/>
+          <item dataType="int" stringID="XST_LUT4D" value="52"/>
+          <item dataType="int" stringID="XST_LUT4L" value="89"/>
           <item dataType="int" stringID="XST_MUXCY" value="106"/>
           <item dataType="int" stringID="XST_MUXF5" value="143"/>
           <item dataType="int" stringID="XST_MUXF6" value="16"/>
@@ -211,7 +211,7 @@
       <item stringID="XST_SELECTED_DEVICE" value="3s1200efg320-5"/>
       <item AVAILABLE="8672" dataType="int" label="Number of Slices" stringID="XST_NUMBER_OF_SLICES" value="655"/>
       <item AVAILABLE="17344" dataType="int" label="Number of Slice Flip Flops" stringID="XST_NUMBER_OF_SLICE_FLIP_FLOPS" value="420"/>
-      <item AVAILABLE="17344" dataType="int" label="Number of 4 input LUTs" stringID="XST_NUMBER_OF_4_INPUT_LUTS" value="1246"/>
+      <item AVAILABLE="17344" dataType="int" label="Number of 4 input LUTs" stringID="XST_NUMBER_OF_4_INPUT_LUTS" value="1247"/>
       <item dataType="int" label="Number of IOs" stringID="XST_NUMBER_OF_IOS" value="129"/>
       <item AVAILABLE="250" dataType="int" label="Number of bonded IOBs" stringID="XST_NUMBER_OF_BONDED_IOBS" value="111"/>
       <item AVAILABLE="24" dataType="int" label="Number of GCLKs" stringID="XST_NUMBER_OF_GCLKS" value="2"/>
@@ -221,7 +221,7 @@
     </section>
     <section stringID="XST_ERRORS_STATISTICS">
       <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_ERRORS" value="0"/>
-      <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_WARNINGS" value="37"/>
+      <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_WARNINGS" value="38"/>
       <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_INFOS" value="13"/>
     </section>
   </application>

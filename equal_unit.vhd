@@ -42,7 +42,7 @@ begin
       end if;
   end process;
 
-  process (exmem_regwrite, idex_regwrite, exmem_regdist, idex_regdist, t, rs_alu, rs_mem)
+  process (exmem_regwrite, idex_regwrite, exmem_regdist, idex_regdist, t)
   begin
     if (idex_regwrite = "011") then
         real_object_TData <= rs_alu(0);

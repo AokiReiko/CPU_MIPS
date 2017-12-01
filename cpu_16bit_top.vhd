@@ -153,7 +153,7 @@ begin
 	end if;
 end process;
 addr_2 <= temp;
-led <= instruction;
+led <= x"0000";
 dyp0 <= "0000000";
 dyp1 <="0000000" ;
 my_clk <= clk10;

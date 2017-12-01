@@ -45,14 +45,13 @@ Clock clk11 to Pad
             | clk (edge) |                  | Clock  |
 Destination |   to PAD   |Internal Clock(s) | Phase  |
 ------------+------------+------------------+--------+
-en_1        |   10.053(R)|clk11_BUFGP       |   0.000|
-en_2        |   10.260(R)|clk11_BUFGP       |   0.000|
-oe_1        |   10.038(R)|clk11_BUFGP       |   0.000|
-oe_2        |   11.449(R)|clk11_BUFGP       |   0.000|
-rdn         |    9.778(R)|clk11_BUFGP       |   0.000|
-we_1        |   10.231(R)|clk11_BUFGP       |   0.000|
-we_2        |   11.925(R)|clk11_BUFGP       |   0.000|
-wrn         |   13.996(R)|clk11_BUFGP       |   0.000|
+en_1        |   10.267(R)|clk11_BUFGP       |   0.000|
+oe_1        |    9.914(R)|clk11_BUFGP       |   0.000|
+oe_2        |   12.064(R)|clk11_BUFGP       |   0.000|
+rdn         |   10.205(R)|clk11_BUFGP       |   0.000|
+we_1        |   10.193(R)|clk11_BUFGP       |   0.000|
+we_2        |   12.131(R)|clk11_BUFGP       |   0.000|
+wrn         |   13.283(R)|clk11_BUFGP       |   0.000|
 ------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clk11
@@ -60,27 +59,27 @@ Clock to Setup on destination clock clk11
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk11          |    4.638|         |         |         |
+clk11          |    5.023|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Pad to Pad
 ---------------+---------------+---------+
 Source Pad     |Destination Pad|  Delay  |
 ---------------+---------------+---------+
-data_ready     |data_1<1>      |    6.746|
-tbre           |data_1<0>      |    7.401|
-tsre           |data_1<0>      |    7.857|
+data_ready     |data_1<1>      |    6.673|
+tbre           |data_1<0>      |    7.463|
+tsre           |data_1<0>      |    8.346|
 ---------------+---------------+---------+
 
 
-Analysis completed Fri Dec 01 22:47:06 2017 
+Analysis completed Sat Dec 02 01:09:00 2017 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 196 MB
+Peak Memory Usage: 195 MB
 
 
 
