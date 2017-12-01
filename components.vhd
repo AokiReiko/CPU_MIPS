@@ -86,7 +86,9 @@ package my_components is
 		   out_data: out STD_LOGIC_VECTOR (15 downto 0) := (others => '0'));
 	end component;
 	component mymemory is
-    Port ( oe_1: out STD_LOGIC;
+    Port ( 
+         clk: in STD_LOGIC;
+         oe_1: out STD_LOGIC;
     	   we_1: out STD_LOGIC;
     	   en_1: out STD_LOGIC;
     	   oe_2: out STD_LOGIC;

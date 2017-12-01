@@ -4,7 +4,6 @@ use IEEE.STD_LOGIC_ARITH.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 library work;
 use work.my_components.ALL;
---ctrl_clear没有连接
 
 entity cpu_16bit_top is
     Port ( clk : in  STD_LOGIC;
@@ -40,13 +39,12 @@ end cpu_16bit_top;
 architecture Behavioral of cpu_16bit_top is
 
 signal my_clk: std_logic;
---信号命名规则: 前缀（产生信号的周期�部件名称+描述
---IF部分
+--IF
 signal IF_Mux_addr: STD_LOGIC_VECTOR (15 downto 0) := (others => '0');
 signal IF_PC_addr: STD_LOGIC_VECTOR (15 downto 0) := (others => '0');
 signal IF_Mem_inst: STD_LOGIC_VECTOR (15 downto 0) := (others => '0');
 signal IF_Adder_res: STD_LOGIC_VECTOR (15 downto 0) := (others => '0');
---ID部分
+--ID
 signal IFID_inst: STD_LOGIC_VECTOR (15 downto 0) := (others => '0');
 signal IFID_addr: STD_LOGIC_VECTOR (15 downto 0) := (others => '0');
 
@@ -67,7 +65,7 @@ signal ID_Ctrl_rega: STD_LOGIC_VECTOR (3 downto 0) := (others => '0');
 
 signal ID_Adder_res: STD_LOGIC_VECTOR (15 downto 0) := (others => '0');
 
---EX部分	
+--EX
 --ALUOp
 --ALUsrc
 --RegDist
@@ -130,23 +128,39 @@ signal mem_nop: STD_LOGIC;
 
 signal b_register_num: STD_LOGIC_VECTOR (2 downto 0) := (others => '0');
 signal sig_pcwrite: STD_LOGIC;
+signal memdata_to_equal_unit: STD_LOGIC_VECTOR (15 downto 0) := (others => '0');
+
+
 
 signal temp: STD_LOGIC_VECTOR (17 downto 0) := (others => '0');
 signal temp1: STD_LOGIC;
 signal temp2: STD_LOGIC;
 
+signal clk1M:std_logic;
+signal clk10:std_logic:='0';
+signal count10 : std_logic_vector(29 downto 0):=( others => '0');
 
 begin
-we_2 <= temp1;
-oe_2 <= temp2;
+process (clk11)
+begin
+	if (clk11'event and clk11 = '1') then
+		if (conv_integer(count10) = 10) then
+			count10 <= (others => '0');
+			clk10 <= not clk10;
+		else
+			count10 <= count10 + 1;
+		end if;
+	end if;
+end process;
 addr_2 <= temp;
-led <= temp(15 downto 0);
-dyp0 <= temp1&temp2& mem_nop&"0000" ;
-dyp1 <=temp1&temp2& mem_nop&"0000" ;
-my_clk <= clk;
+led <= instruction;
+dyp0 <= "0000000";
+dyp1 <="0000000" ;
+my_clk <= clk10;
 b_register_num <= IFID_inst(10 downto 8) when IFID_inst(15 downto 11) = "11010" else IFID_inst(7 downto 5);
 IF_Mem_inst <= data_2;
 sig_pcwrite <= (HD_PCWrite and (not mem_nop));
+memdata_to_equal_unit <= data_1 when EXMEM_Memtoreg = '1' else EXMEM_AluData;
 u1: Muxpc port map(
 					PCSrc=>ED_pcsrc,
 					PCNext=>IF_Adder_res,
@@ -154,14 +168,14 @@ u1: Muxpc port map(
 					PCJR=>ED_jr_addr,
 					pc_out=>IF_Mux_addr);	
 u2: pc port map(
-					clk=>clk,
+					clk=>my_clk,
 					rst=>rst,
 					en=>'1',
 					PCWrite=>sig_pcwrite,
 					Mux_in=>IF_Mux_addr,
 					PC_out=>IF_PC_addr);
 u3: IFID_Reg port map(
-					clk=>clk,
+					clk=>my_clk,
 					rst=>rst,
 					IF_Flush=>mem_nop,
 					IFIDWrite=>HD_IFIDWrite,
@@ -194,7 +208,7 @@ u5: ctrl_unit port map(
 u12: equal_unit port map(
 					instruction=>IFID_inst,
 					rs_alu=>EX_ALU_res,
-					rs_mem=>data_1,
+					rs_mem=>memdata_to_equal_unit,
 					rs_reg=>ID_Reg_A,
 					idex_regwrite=>IDEX_RegWrite,
 					idex_regdist=>IDEX_RegDist,
@@ -204,7 +218,7 @@ u12: equal_unit port map(
 					pc_src=>ED_pcsrc,
 					jr_reg=>ED_jr_addr);
 u6: IDEX_Reg port map(
-					clk=>clk,
+					clk=>my_clk,
 					rst=>HD_Ctrl_Flush,
 					in_ALUOp=>ID_Ctrl_ALUOp,
 					in_ALUsrc=>ID_Ctrl_ALUsrc,
@@ -249,7 +263,7 @@ u8: Muxb port map(
 					reg_out=>EX_muxb_regb,
 					src_out=>EX_Muxb_oprandB);
 u9: EXMEM_Reg port map(
-					clk=>clk,
+					clk=>my_clk,
 					rst=>rst,
 					
 					in_RegDist=>IDEX_RegDist,
@@ -268,7 +282,7 @@ u9: EXMEM_Reg port map(
 					out_MemtoReg=>EXMEM_Memtoreg,
 					out_regdata=>EXMEM_data);
 u13: MEMWB_Reg port map(
-					clk=>clk,
+					clk=>my_clk,
 					rst=>rst,
 					
 					in_RegDist=>EXMEM_regdist,
@@ -302,11 +316,12 @@ u10: hazard_unit port map(--这里存疑
 					ctrl_clear=>HD_Ctrl_Flush);
 
 memory0: mymemory port map(
+					clk=>my_clk,
 					oe_1=>oe_1,
 					we_1=>wE_1,
 					en_1=>en_1,
-					oe_2=>temp2,
-					we_2=>temp1,
+					oe_2=>oe_2,
+					we_2=>we_2,
 					en_2=>en_2,
 					addr_1=>addr_1,
 					addr_2=>temp,

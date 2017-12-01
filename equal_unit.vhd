@@ -22,41 +22,64 @@ end equal_unit;
 
 architecture Behavioral of equal_unit is
 
+signal real_object_regData: STD_LOGIC_VECTOR(15 downto 0) := (others => '0');
+signal real_object_TData: STD_LOGIC := '0';
+
+
 begin
   process (instruction, idex_regdist, idex_regwrite, exmem_regdist, exmem_regwrite, rs_alu, rs_mem, rs_reg)
   begin
-    if (instruction(15 downto 11) = "11101" and (instruction(7 downto 5) = "000" or instruction(7 downto 5) = "110")) then
+    --if (instruction(15 downto 11) = "11101" and (instruction(7 downto 5) = "000" or instruction(7 downto 5) = "110")) then
       if (idex_regwrite = "001" and idex_regdist = instruction(10 downto 8)) then
         jr_reg <= rs_alu;
+        real_object_regData <= rs_alu;
       elsif exmem_regwrite = "001" and exmem_regdist = instruction(10 downto 8) then 
         jr_reg <= rs_mem;
+        real_object_regData <= rs_mem;
       else 
         jr_reg <= rs_reg;
+        real_object_regData <= rs_reg;
       end if;
-    end if;
   end process;
 
-	process (instruction, rs_reg, rs_mem, rs_alu, t) 
+  process (exmem_regwrite, idex_regwrite, exmem_regdist, idex_regdist, t, rs_alu, rs_mem)
+  begin
+    if (idex_regwrite = "011") then
+        real_object_TData <= rs_alu(0);
+      elsif exmem_regwrite = "011" then 
+        real_object_TData <= rs_mem(0);
+      else 
+        real_object_TData <= t;
+    end if;
+
+  end process;
+	process (instruction, real_object_TData, real_object_regData) 
 	begin
 	  case instruction(15 downto 11) is
         when "00010" => -- B
           pc_src <= "01";
         when "00100" => --BEQZ
-          if (rs_reg = "0000000000000000") then
+          if (real_object_regData = "0000000000000000") then
             pc_src <= "01";
           else 
             pc_src <= "00";
           end if;
+        when "00101" => --BNEZ
+          if (real_object_regData = "0000000000000000") then
+            pc_src <= "00";
+          else 
+            pc_src <= "01";
+          end if;
         when "01100" =>  -- BTNEZ????~!!!!!!!!!
           case( instruction(10 downto 8)) is 
-            when "000" =>  
-              if (t = '1') then
+            when "001" =>  
+              if (real_object_TData = '1') then
                 pc_src <= "01";
               else 
                 pc_src <= "00";
               end if;
-            when "001" => --BTEQZ
-              if (t = '0') then
+            when "000" => --BTEQZ
+              if (real_object_TData = '0') then
                 pc_src <= "01";
               else 
                 pc_src <= "00";

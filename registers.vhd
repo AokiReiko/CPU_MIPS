@@ -52,7 +52,7 @@ reg_num <= RegA(2 downto 0);
 				when others => outA <= R0;
 			end case;
 		elsif RegA(3) = '1' then
-			case reg_num is
+			case RegA(2 downto 0) is
 				when "000" => outA <= SP;
 				when "001" => outA <= IH;
 				when "010" => outA <= RA;

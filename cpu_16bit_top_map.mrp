@@ -3,61 +3,44 @@ Xilinx Mapping Report File for Design 'cpu_16bit_top'
 
 Design Information
 ------------------
-Command Line   : map -intstyle ise -p xc3s1200e-fg320-5 -cm area -ir off -pr off
--c 100 -o cpu_16bit_top_map.ncd cpu_16bit_top.ngd cpu_16bit_top.pcf 
+Command Line   : map -intstyle ise -p xc3s1200e-fg320-5 -timing -logic_opt off
+-ol high -t 1 -register_duplication off -cm area -ir off -pr off -power off -o
+cpu_16bit_top_map.ncd cpu_16bit_top.ngd cpu_16bit_top.pcf 
 Target Device  : xc3s1200e
 Target Package : fg320
 Target Speed   : -5
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Wed Nov 29 19:56:55 2017
+Mapped Date    : Fri Dec 01 22:46:25 2017
 
 Design Summary
 --------------
 Number of errors:      0
-Number of warnings:    6
+Number of warnings:    5
 Logic Utilization:
-  Total Number Slice Registers:         403 out of  17,344    2%
-    Number used as Flip Flops:          356
-    Number used as Latches:              47
-  Number of 4 input LUTs:             1,090 out of  17,344    6%
+  Total Number Slice Registers:         420 out of  17,344    2%
+    Number used as Flip Flops:          389
+    Number used as Latches:              31
+  Number of 4 input LUTs:             1,205 out of  17,344    6%
 Logic Distribution:
-  Number of occupied Slices:            684 out of   8,672    7%
-    Number of Slices containing only related logic:     684 out of     684 100%
-    Number of Slices containing unrelated logic:          0 out of     684   0%
+  Number of occupied Slices:            867 out of   8,672    9%
+    Number of Slices containing only related logic:     867 out of     867 100%
+    Number of Slices containing unrelated logic:          0 out of     867   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:       1,105 out of  17,344    6%
-    Number used as logic:             1,090
-    Number used as a route-thru:         15
+  Total Number of 4 input LUTs:       1,250 out of  17,344    7%
+    Number used as logic:             1,205
+    Number used as a route-thru:         45
 
   The Slice Logic Distribution report is not meaningful if the design is
   over-mapped for a non-slice resource or if Placement fails.
 
   Number of bonded IOBs:                113 out of     250   45%
-  Number of BUFGMUXs:                     1 out of      24    4%
+  Number of BUFGMUXs:                     2 out of      24    8%
 
-Average Fanout of Non-Clock Nets:                3.84
+Average Fanout of Non-Clock Nets:                3.61
 
-Peak Memory Usage:  275 MB
-Total REAL time to MAP completion:  3 secs 
-Total CPU time to MAP completion:   3 secs 
-
-NOTES:
-
-   Related logic is defined as being logic that shares connectivity - e.g. two
-   LUTs are "related" if they share common inputs.  When assembling slices,
-   Map gives priority to combine logic that is related.  Doing so results in
-   the best timing performance.
-
-   Unrelated logic shares no connectivity.  Map will only begin packing
-   unrelated logic into a slice once 99% of the slices are occupied through
-   related logic packing.
-
-   Note that once logic distribution reaches the 99% level through related
-   logic packing, this does not mean the device is completely utilized.
-   Unrelated logic packing will then begin, continuing until all usable LUTs
-   and FFs are occupied.  Depending on your timing budget, increased levels of
-   unrelated logic packing may adversely affect the overall timing performance
-   of your design.
+Peak Memory Usage:  320 MB
+Total REAL time to MAP completion:  13 secs 
+Total CPU time to MAP completion:   12 secs 
 
 Table of Contents
 -----------------
@@ -83,19 +66,16 @@ Section 2 - Warnings
 WARNING:Security:42 - Your software subscription period has lapsed. Your current
 version of Xilinx tools will continue to function, but you no longer qualify for
 Xilinx software updates or new releases.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net u12/jr_reg_cmp_eq0000 is
-   sourced by a combinatorial pin. This is not good design practice. Use the CE
-   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net u5/rega_not0001 is sourced
+   by a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net u5/immediate_not0001 is
    sourced by a combinatorial pin. This is not good design practice. Use the CE
    pin to control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net u5/ALUOp_not0001 is sourced
    by a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net u5/rega_not0001 is sourced
-   by a combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:367 - The signal <clk11_IBUF> is incomplete. The signal
+WARNING:PhysDesignRules:367 - The signal <clk_IBUF> is incomplete. The signal
    does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <clk50_IBUF> is incomplete. The signal
    does not drive any load pins in the design.
@@ -103,26 +83,46 @@ WARNING:PhysDesignRules:367 - The signal <clk50_IBUF> is incomplete. The signal
 Section 3 - Informational
 -------------------------
 INFO:Security:54 - 'xc3s1200e' is a WebPack part.
-INFO:LIT:243 - Logical network sw<15> has no load.
-INFO:LIT:395 - The above info message is repeated 17 more times for the
+INFO:LIT:243 - Logical network u15/fout_shift0006<15>1/LO has no load.
+INFO:LIT:395 - The above info message is repeated 18 more times for the
    following (max. 5 shown):
+   sw<15>,
    sw<14>,
    sw<13>,
    sw<12>,
-   sw<11>,
-   sw<10>
+   sw<11>
    To see the details of these info messages, please use the -detail switch.
 INFO:MapLib:562 - No environment variables are currently set.
 INFO:LIT:244 - All of the single ended outputs in this design are using slew
    rate limited output drivers. The delay on speed critical single ended outputs
    can be dramatically reduced by designating them as fast outputs.
+INFO:Pack:1716 - Initializing temperature to 85.000 Celsius. (default - Range:
+   -40.000 to 100.000 Celsius)
+INFO:Pack:1720 - Initializing voltage to 1.140 Volts. (default - Range: 1.140 to
+   1.320 Volts)
+INFO:Pack:1650 - Map created a placed design.
 
 Section 4 - Removed Logic Summary
 ---------------------------------
+   1 block(s) removed
    2 block(s) optimized away
+   1 signal(s) removed
 
 Section 5 - Removed Logic
 -------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+The signal "u15/fout_shift0006<15>1/LO" is loadless and has been removed.
+ Loadless block "u15/fout_shift0006<15>1/LUT3_D_BUF" (BUF) removed.
 
 Optimized Block(s):
 TYPE 		BLOCK
@@ -280,7 +280,15 @@ Area Group Information
 
 Section 10 - Timing Report
 --------------------------
-This design was not run using timing mode.
+A logic-level (pre-route) timing report can be generated by using Xilinx static
+timing analysis tools, Timing Analyzer (GUI) or TRCE (command line), with the
+mapped NCD and PCF files. Please note that this timing report will be generated
+using estimated delay information. For accurate numbers, please generate a
+timing report with the post Place and Route NCD file.
+
+For more information about the Timing Analyzer, consult the Xilinx Timing
+Analyzer Reference Manual; for more information about TRCE, consult the Xilinx
+Command Line Tools User Guide "TRACE" chapter.
 
 Section 11 - Configuration String Details
 -----------------------------------------

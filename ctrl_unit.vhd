@@ -22,7 +22,7 @@ end ctrl_unit;
 
 architecture Behavioral of ctrl_unit is
 begin
-	process (instruction)
+	process (instruction, pc)
 	begin 
 		case instruction(15 downto 11) is
 		when "01001" => -- ADDIU
@@ -308,6 +308,20 @@ begin
 			end if;
 			rega <= "1" & "111";--�
 		when "00100" => -- BEQZ
+			ALUOp <= op_nothing; 
+			ALUsrc <= '0';
+			RegDist <= (others => '0');
+			MemRead <= '0';
+			MemWrite <= '0';
+			MemtoReg <= '0';
+			RegWrite <= "000";
+			if (instruction(7) = '1') then--符号扩展
+				immediate <= "11111111" & instruction(7 downto 0);
+			else 
+				immediate <= "00000000" & instruction(7 downto 0);
+			end if;
+			rega <= "0" & instruction(10 downto 8);--读rx
+		when "00101" => -- BNEZ
 			ALUOp <= op_nothing; 
 			ALUsrc <= '0';
 			RegDist <= (others => '0');

@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-11-29T14:17:18</DateModified>
+  <DateModified>2017-12-01T19:38:35</DateModified>
   <ModuleName>cpu_16bit_top</ModuleName>
-  <SummaryTimeStamp>2017-11-29T13:59:44</SummaryTimeStamp>
+  <SummaryTimeStamp>2017-12-01T19:10:29</SummaryTimeStamp>
   <SavedFilePath>Y:/Desktop/desptop/CPU_MIPS/iseconfig/cpu_16bit_top.xreport</SavedFilePath>
   <ImplementationReportsDirectory>Y:/Desktop/desptop/CPU_MIPS\</ImplementationReportsDirectory>
   <DateInitialized>2017-11-24T10:52:21</DateInitialized>
