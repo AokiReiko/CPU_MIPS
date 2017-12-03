@@ -77,9 +77,9 @@ reg_num <= RegA(2 downto 0);
 		end case;
 	end process;
 
-	process(clk)--WB阶段的信号赋值需要注�	begin
+	process(clk,RegW,RegWrite,WRData )--WB阶段的信号赋值需要注�	begin
 	begin
-		if (clk'event and clk = '1') then
+		if (clk = '0') then
 			case RegWrite is
 			when "001" =>
 				case RegW is

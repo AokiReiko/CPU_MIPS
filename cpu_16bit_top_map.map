@@ -10,7 +10,7 @@ Target Device  : xc3s1200e
 Target Package : fg320
 Target Speed   : -5
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Sat Dec 02 01:08:23 2017
+Mapped Date    : Sun Dec 03 12:21:22 2017
 
 vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 INFO:Security:54 - 'xc3s1200e' is a WebPack part.
@@ -27,54 +27,59 @@ Total REAL time at the beginning of Placer: 3 secs
 Total CPU  time at the beginning of Placer: 3 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:e210203d) REAL time: 3 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:ae58d6d5) REAL time: 4 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:e210203d) REAL time: 3 secs 
+Phase 2.7  Design Feasibility Check (Checksum:ae58d6d5) REAL time: 4 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:e210203d) REAL time: 3 secs 
+Phase 3.31  Local Placement Optimization (Checksum:ae58d6d5) REAL time: 4 secs 
 
 Phase 4.2  Initial Clock and IO Placement
 
-Phase 4.2  Initial Clock and IO Placement (Checksum:ad647f65) REAL time: 4 secs 
+Phase 4.2  Initial Clock and IO Placement (Checksum:32f87e6d) REAL time: 4 secs 
 
 Phase 5.30  Global Clock Region Assignment
-Phase 5.30  Global Clock Region Assignment (Checksum:ad647f65) REAL time: 4 secs 
+Phase 5.30  Global Clock Region Assignment (Checksum:32f87e6d) REAL time: 4 secs 
 
 Phase 6.36  Local Placement Optimization
-Phase 6.36  Local Placement Optimization (Checksum:ad647f65) REAL time: 4 secs 
+Phase 6.36  Local Placement Optimization (Checksum:32f87e6d) REAL time: 4 secs 
 
 Phase 7.8  Global Placement
-...........................................
-.....
-...................................
-Phase 7.8  Global Placement (Checksum:f87ff589) REAL time: 7 secs 
+........................................................................................
+...
+........................................................................................
+................
+................
+Phase 7.8  Global Placement (Checksum:d08eccf9) REAL time: 8 secs 
 
 Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:f87ff589) REAL time: 7 secs 
+Phase 8.5  Local Placement Optimization (Checksum:d08eccf9) REAL time: 8 secs 
 
 Phase 9.18  Placement Optimization
-Phase 9.18  Placement Optimization (Checksum:ae73b41) REAL time: 10 secs 
+Phase 9.18  Placement Optimization (Checksum:d8fce665) REAL time: 12 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:ae73b41) REAL time: 10 secs 
+Phase 10.5  Local Placement Optimization (Checksum:d8fce665) REAL time: 12 secs 
 
-Total REAL time to Placer completion: 10 secs 
-Total CPU  time to Placer completion: 10 secs 
+Total REAL time to Placer completion: 12 secs 
+Total CPU  time to Placer completion: 12 secs 
 Running post-placement packing...
+WARNING:PhysDesignRules:372 - Gated clock. Clock net u5/ALUOp_not0001 is sourced
+   by a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net u5/rega_not0001 is sourced
    by a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net u5/immediate_not0001 is
    sourced by a combinatorial pin. This is not good design practice. Use the CE
    pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net u5/ALUOp_not0001 is sourced
+WARNING:PhysDesignRules:372 - Gated clock. Clock net u4/T_cmp_eq0000 is sourced
    by a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:367 - The signal <clk_IBUF> is incomplete. The signal
-   does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <clk50_IBUF> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <clk_IBUF> is incomplete. The signal
    does not drive any load pins in the design.
 
 Design Summary
@@ -82,20 +87,20 @@ Design Summary
 
 Design Summary:
 Number of errors:      0
-Number of warnings:    5
+Number of warnings:    6
 Logic Utilization:
-  Total Number Slice Registers:         420 out of  17,344    2%
-    Number used as Flip Flops:          389
-    Number used as Latches:              31
-  Number of 4 input LUTs:             1,206 out of  17,344    6%
+  Total Number Slice Registers:         421 out of  17,344    2%
+    Number used as Flip Flops:          213
+    Number used as Latches:             208
+  Number of 4 input LUTs:             1,395 out of  17,344    8%
 Logic Distribution:
-  Number of occupied Slices:            905 out of   8,672   10%
-    Number of Slices containing only related logic:     905 out of     905 100%
-    Number of Slices containing unrelated logic:          0 out of     905   0%
+  Number of occupied Slices:            938 out of   8,672   10%
+    Number of Slices containing only related logic:     938 out of     938 100%
+    Number of Slices containing unrelated logic:          0 out of     938   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:       1,251 out of  17,344    7%
-    Number used as logic:             1,206
-    Number used as a route-thru:         45
+  Total Number of 4 input LUTs:       1,439 out of  17,344    8%
+    Number used as logic:             1,395
+    Number used as a route-thru:         44
 
   The Slice Logic Distribution report is not meaningful if the design is
   over-mapped for a non-slice resource or if Placement fails.
@@ -103,11 +108,11 @@ Logic Distribution:
   Number of bonded IOBs:                113 out of     250   45%
   Number of BUFGMUXs:                     2 out of      24    8%
 
-Average Fanout of Non-Clock Nets:                3.61
+Average Fanout of Non-Clock Nets:                3.60
 
 Peak Memory Usage:  320 MB
-Total REAL time to MAP completion:  11 secs 
-Total CPU time to MAP completion:   11 secs 
+Total REAL time to MAP completion:  13 secs 
+Total CPU time to MAP completion:   13 secs 
 
 Mapping completed.
 See MAP report file "cpu_16bit_top_map.mrp" for details.

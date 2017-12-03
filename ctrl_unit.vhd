@@ -100,7 +100,7 @@ begin
 					ALUsrc <= '1';--使用立即�0
 					RegDist <= (others => '0');--无所�					
 					immediate <= (others => '0');
-					RegWrite <= "101";--写SP
+					RegWrite <= "010";--写SP
 					rega <= "0" & instruction(7 downto 5);--读rx
 				when "000" => --BTEQZ
 					ALUOp <= op_nothing; -- return 0
