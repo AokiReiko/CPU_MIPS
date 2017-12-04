@@ -15,7 +15,7 @@ entity hazard_unit is
           pc_write: out  STD_LOGIC;--ï¼          
 			 ctrl_clear: out STD_LOGIC);	
 end hazard_unit;
-
+ 
 architecture Behavioral of hazard_unit is
 begin
 	process (idex_memread, rega, idex_rt, alu_src, ifid_rt) 

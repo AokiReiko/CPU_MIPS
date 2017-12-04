@@ -17,7 +17,7 @@ architecture Behavioral of Muxa is
 begin
 
 	process(reg, alu, mem, forward)
-	begin
+	begin 
 		case forward is
 			when "00" => src_out <= reg;
 			when "01" => src_out <= alu;

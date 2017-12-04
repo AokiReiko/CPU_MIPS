@@ -20,7 +20,7 @@ begin
 	process(clk, rst, en, PCWrite)
 	begin
 		if (rst = '0') then
-			PC_out <= "0000000000000000";--(others => '0');
+			PC_out <=(others => '0');
 		elsif (clk'event and clk = '1' and en = '1') then
 			if (PCWrite = '1') then
 				PC_out <= Mux_in;

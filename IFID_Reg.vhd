@@ -23,10 +23,7 @@ begin
 	process(clk)
 	begin	
 		if(clk'event and clk = '1' ) then
-			if (IF_Flush = '1') then 
-				Instruction_out <= "0000100000000000";
-				PCNext_out <= PCNext;
-			elsif (IFIDWrite = '1') then
+			if (IFIDWrite = '1' and IF_Flush = '0') then
 				Instruction_out <= Instruction;
 				PCNext_out <= PCNext;
 			end if;

@@ -69,6 +69,7 @@ signal ID_Adder_res: STD_LOGIC_VECTOR (15 downto 0) := (others => '0');
 --ALUOp
 --ALUsrc
 --RegDist
+signal IDEX_clear: STD_LOGIC := '0';
 signal IDEX_ALUop: STD_LOGIC_VECTOR (3 downto 0) := (others => '0');
 signal IDEX_ALUsrc: STD_LOGIC := '0';
 signal IDEX_MemRead: STD_LOGIC := '0';
@@ -100,6 +101,8 @@ signal EXMEM_AluData: STD_LOGIC_VECTOR (15 downto 0) := (others => '0');
 signal EXMEM_data: STD_LOGIC_VECTOR (15 downto 0) := (others => '0');
 signal EXMEM_regdist: STD_LOGIC_VECTOR (2 downto 0) := (others => '0');
 signal EXMEM_regwrite: STD_LOGIC_VECTOR (2 downto 0) := (others => '0');
+signal MEM_Muxc_dataout: STD_LOGIC_VECTOR (15 downto 0) := (others => '0');
+
 
 --WB部分
 --RegWrite
@@ -167,8 +170,8 @@ begin
 	end if;
 end process;
 addr_2 <= temp;
---led <= temp_inst & temp_hazard & HD_Ctrl_Flush& exmem_memread
---& "0000" & temp(7 downto 0);
+--led <= temp_inst & temp_hazard & HD_Ctrl_Flush & exmem_memread
+--& ID_Reg_T & "000" & temp(7 downto 0);
 dyp0 <= "0000000" ;
 dyp1 <= "0000000" ;
 led <= (others => '0');
@@ -178,7 +181,9 @@ my_clk <= clk10;
 b_register_num <= IFID_inst(10 downto 8) when IFID_inst(15 downto 11) = "11010" else IFID_inst(7 downto 5);
 IF_Mem_inst <= data_2;
 sig_pcwrite <= (HD_PCWrite and (not mem_nop));
-memdata_to_equal_unit <= data_1 when EXMEM_Memtoreg = '1' else EXMEM_AluData;
+memdata_to_equal_unit <= MeMWB_Mux_data when EXMEM_Memtoreg = '1' else EXMEM_AluData;
+IDEX_clear <= HD_Ctrl_Flush or mem_nop;
+
 u1: Muxpc port map(
 					PCSrc=>ED_pcsrc,
 					PCNext=>IF_Adder_res,
@@ -237,7 +242,7 @@ u12: equal_unit port map(
 					jr_reg=>ED_jr_addr);
 u6: IDEX_Reg port map(
 					clk=>my_clk,
-					rst=>HD_Ctrl_Flush,
+					rst=>IDEX_clear,
 					in_ALUOp=>ID_Ctrl_ALUOp,
 					in_ALUsrc=>ID_Ctrl_ALUsrc,
 					in_RegDist=>ID_Ctrl_RegDist,
@@ -307,7 +312,7 @@ u13: MEMWB_Reg port map(
 					in_RegWrite=>EXMEM_regwrite,
 					in_MemtoReg=>EXMEM_Memtoreg,
 					in_aludata=>EXMEM_AluData,
-					in_memdata=>data_1,
+					in_memdata=>MEM_Muxc_dataout,
 					
 					out_data=>MeMWB_Mux_data,
 					out_RegDist=>MEMWB_regdist,
@@ -370,6 +375,11 @@ u16_pcnext: Adder port map(
 u17_pcoffset: Adder port map(
 					opranA=>IFID_addr,
 					opranB=>ID_Ctrl_immediate,
-					res=>ID_Adder_res);					
+					res=>ID_Adder_res);		
+u_muxc: Muxc port map(
+					data_1=>data_1,
+					data_2=> data_2,
+					addr=>EXMEM_AluData,
+					data_out=>MEM_Muxc_dataout);			
 end Behavioral;
 

@@ -225,6 +225,12 @@ package my_components is
            input_b: in  STD_LOGIC_VECTOR(15 downto 0);
            fout: out  STD_LOGIC_VECTOR(15 downto 0));	
 	end component;
+  component Muxc is
+    Port ( data_1: in  STD_LOGIC_VECTOR(15 downto 0);
+         data_2: in  STD_LOGIC_VECTOR(15 downto 0);
+         addr: in  STD_LOGIC_VECTOR(15 downto 0);
+           data_out: out  STD_LOGIC_VECTOR(15 downto 0)); 
+end component;
 
 end my_components;
 

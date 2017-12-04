@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-AOKIREIKOC8E2::  Mon Dec 04 10:02:49 2017
+AOKIREIKOC8E2::  Mon Dec 04 13:25:16 2017
 
 par -w -intstyle ise -ol std -t 1 cpu_16bit_top_map.ncd cpu_16bit_top.ncd
 cpu_16bit_top.pcf 
@@ -55,7 +55,7 @@ Design Summary Report:
 
 
    Number of BUFGMUXs                        2 out of 24      8%
-   Number of Slices                        868 out of 8672   10%
+   Number of Slices                        849 out of 8672    9%
       Number of SLICEMs                      0 out of 4336    0%
 
 
@@ -71,30 +71,30 @@ WARNING:Par:288 - The signal clk50_IBUF has no load.  PAR will not attempt to ro
 Starting Router
 
 
-Phase  1  : 5477 unrouted;      REAL time: 11 secs 
+Phase  1  : 5516 unrouted;      REAL time: 12 secs 
 
-Phase  2  : 5084 unrouted;      REAL time: 11 secs 
+Phase  2  : 5132 unrouted;      REAL time: 12 secs 
 
-Phase  3  : 1497 unrouted;      REAL time: 12 secs 
+Phase  3  : 1635 unrouted;      REAL time: 13 secs 
 
-Phase  4  : 1502 unrouted; (Par is working to improve performance)     REAL time: 13 secs 
+Phase  4  : 1640 unrouted; (Par is working to improve performance)     REAL time: 14 secs 
 
-Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 14 secs 
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 15 secs 
 
 Updating file: cpu_16bit_top.ncd with current fully routed design.
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 14 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 15 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 14 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 16 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 14 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 16 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 14 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 16 secs 
 
-Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 15 secs 
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 16 secs 
 
-Total REAL time to Router completion: 15 secs 
-Total CPU time to Router completion: 15 secs 
+Total REAL time to Router completion: 16 secs 
+Total CPU time to Router completion: 16 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -112,16 +112,16 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|               clk10 | BUFGMUX_X1Y10| No   |  337 |  0.181     |  0.329      |
+|               clk10 | BUFGMUX_X1Y10| No   |  330 |  0.181     |  0.329      |
 +---------------------+--------------+------+------+------------+-------------+
-|         clk11_BUFGP | BUFGMUX_X2Y11| No   |   16 |  0.014     |  0.249      |
+|         clk11_BUFGP | BUFGMUX_X2Y11| No   |   16 |  0.065     |  0.244      |
 +---------------------+--------------+------+------+------------+-------------+
 |u5/immediate_not0001 |              |      |      |            |             |
-|                     |         Local|      |   17 |  0.054     |  1.527      |
+|                     |         Local|      |   15 |  0.088     |  1.559      |
 +---------------------+--------------+------+------+------------+-------------+
-|     u5/rega_not0001 |         Local|      |   10 |  0.021     |  1.595      |
+|     u5/rega_not0001 |         Local|      |   10 |  0.075     |  1.681      |
 +---------------------+--------------+------+------+------------+-------------+
-|    u5/ALUOp_not0001 |         Local|      |    4 |  0.000     |  1.271      |
+|    u5/ALUOp_not0001 |         Local|      |    4 |  0.074     |  1.667      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -141,11 +141,11 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clk | SETUP       |         N/A|    22.547ns|     N/A|           0
-  10                                        | HOLD        |     1.038ns|            |       0|           0
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|    20.229ns|     N/A|           0
+  10                                        | HOLD        |     1.119ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clk | SETUP       |         N/A|     5.077ns|     N/A|           0
-  11_BUFGP                                  | HOLD        |     0.892ns|            |       0|           0
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|     5.273ns|     N/A|           0
+  11_BUFGP                                  | HOLD        |     1.429ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
 
@@ -163,8 +163,8 @@ All signals are completely routed.
 
 WARNING:Par:283 - There are 2 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
-Total REAL time to PAR completion: 17 secs 
-Total CPU time to PAR completion: 16 secs 
+Total REAL time to PAR completion: 19 secs 
+Total CPU time to PAR completion: 18 secs 
 
 Peak Memory Usage:  298 MB
 
