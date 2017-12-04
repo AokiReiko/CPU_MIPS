@@ -93,7 +93,7 @@ begin
 					else 
 						immediate <= "00000000" & instruction(7 downto 0);
 					end if;
-					RegWrite <= "101";--写SP
+					RegWrite <= "010";--写SP
 					rega <= "1000";--读sp
 				when "100" => --MTSP
 					ALUOp <= op_add; -- rx + 0

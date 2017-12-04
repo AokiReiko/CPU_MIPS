@@ -162,15 +162,8 @@ begin
 				when others =>
 					data_1 <= (others => 'Z');
 				end case;
-			elsif (memwrite = '1') then
-				case addr_in is
-				when x"BF01" =>
-					data_1 <= BF01;
-				when x"BF00" =>
-					data_1 <= data_in;
-				when others =>
-					data_1 <= data_in;
-			end case;
+		elsif (memwrite = '1') then
+				data_1 <= data_in;
 		else
 			data_1 <= (others => 'Z');
 		end if;

@@ -43,6 +43,7 @@ begin
 
 	process(clk, rst)
 	begin
+	if (clk'event and clk = '1') then
 		if (rst = '1') then
 			out_ALUOp <= "1111";
 			out_ALUsrc <= '0';
@@ -56,7 +57,7 @@ begin
 			out_regb <= (others => '0');
 			out_rs <= (others => '0');
 			out_rt <= (others => '0');
-		elsif (clk'event and clk = '1') then--rst = ctrl_flush
+		else
 			out_ALUOp <= in_ALUOp;
 			out_ALUsrc <= in_ALUsrc;
 			out_RegDist <= in_RegDist;
@@ -70,6 +71,7 @@ begin
 			out_rs <= in_rs;
 			out_rt <= in_rt;
 		end if;
+	end if;
 	end process;
 		
 end Behavioral;

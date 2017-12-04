@@ -133,8 +133,8 @@ signal memdata_to_equal_unit: STD_LOGIC_VECTOR (15 downto 0) := (others => '0');
 
 
 signal temp: STD_LOGIC_VECTOR (17 downto 0) := (others => '0');
-signal temp1: STD_LOGIC;
-signal temp2: STD_LOGIC;
+signal temp_inst: STD_LOGIC:='0';
+signal temp_hazard: STD_LOGIC:='0';
 
 signal clk1M:std_logic;
 signal clk10:std_logic:='0';
@@ -152,10 +152,28 @@ begin
 		end if;
 	end if;
 end process;
+process(IFID_inst)
+begin
+	if (IFID_inst(15 downto 8) = "01100011") then
+		temp_inst <= '1';
+	
+	end if;
+end process;
+process(HD_Ctrl_Flush)
+begin
+	if( HD_Ctrl_Flush='1') then
+		temp_hazard <= '1';
+	
+	end if;
+end process;
 addr_2 <= temp;
-led <= x"0000";
-dyp0 <= "0000000";
-dyp1 <="0000000" ;
+--led <= temp_inst & temp_hazard & HD_Ctrl_Flush& exmem_memread
+--& "0000" & temp(7 downto 0);
+dyp0 <= "0000000" ;
+dyp1 <= "0000000" ;
+led <= (others => '0');
+--dyp0 <= "000" & bp_forwarda & bp_forwardb;
+--dyp1 <= "000" & bp_forwarda & bp_forwardb ;
 my_clk <= clk10;
 b_register_num <= IFID_inst(10 downto 8) when IFID_inst(15 downto 11) = "11010" else IFID_inst(7 downto 5);
 IF_Mem_inst <= data_2;

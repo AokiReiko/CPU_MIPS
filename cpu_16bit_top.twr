@@ -45,13 +45,13 @@ Clock clk11 to Pad
             | clk (edge) |                  | Clock  |
 Destination |   to PAD   |Internal Clock(s) | Phase  |
 ------------+------------+------------------+--------+
-en_1        |   12.592(R)|clk11_BUFGP       |   0.000|
-oe_1        |   14.513(R)|clk11_BUFGP       |   0.000|
-oe_2        |   11.166(R)|clk11_BUFGP       |   0.000|
-rdn         |   10.304(R)|clk11_BUFGP       |   0.000|
-we_1        |   12.648(R)|clk11_BUFGP       |   0.000|
-we_2        |   11.302(R)|clk11_BUFGP       |   0.000|
-wrn         |   12.341(R)|clk11_BUFGP       |   0.000|
+en_1        |   11.793(R)|clk11_BUFGP       |   0.000|
+oe_1        |   11.872(R)|clk11_BUFGP       |   0.000|
+oe_2        |   15.459(R)|clk11_BUFGP       |   0.000|
+rdn         |   10.785(R)|clk11_BUFGP       |   0.000|
+we_1        |   11.966(R)|clk11_BUFGP       |   0.000|
+we_2        |   15.063(R)|clk11_BUFGP       |   0.000|
+wrn         |   16.841(R)|clk11_BUFGP       |   0.000|
 ------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clk11
@@ -59,27 +59,27 @@ Clock to Setup on destination clock clk11
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk11          |    4.472|         |         |         |
+clk11          |    5.077|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Pad to Pad
 ---------------+---------------+---------+
 Source Pad     |Destination Pad|  Delay  |
 ---------------+---------------+---------+
-data_ready     |data_1<1>      |    6.605|
-tbre           |data_1<0>      |    6.929|
-tsre           |data_1<0>      |    7.773|
+data_ready     |data_1<1>      |    6.615|
+tbre           |data_1<0>      |    8.886|
+tsre           |data_1<0>      |    8.607|
 ---------------+---------------+---------+
 
 
-Analysis completed Sun Dec 03 12:22:01 2017 
+Analysis completed Mon Dec 04 10:03:12 2017 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 197 MB
+Peak Memory Usage: 196 MB
 
 
 
