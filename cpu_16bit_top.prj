@@ -1,5 +1,8 @@
+vhdl work "debounce.vhd"
+vhdl work "ps2_keyboard.vhd"
 vhdl work "alu_defination.vhd"
 vhdl work "registers.vhd"
+vhdl work "ps2_keyboard_to_ascii.vhd"
 vhdl work "pc.vhd"
 vhdl work "Muxpc.vhd"
 vhdl work "Muxc.vhd"

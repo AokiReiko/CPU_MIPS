@@ -6,6 +6,10 @@ library work;
 use work.my_components.ALL;
 
 entity cpu_16bit_top is
+  GENERIC(
+      ps2_clk_freq              : INTEGER := 50_000_000; --clock frequency in Hz
+      ps2_debounce_counter_size : INTEGER := 8  --set such that 2^size/clk_freq = 5us (size = 8 for 50MHz)
+	);
     Port ( clk : in  STD_LOGIC;
 			  clk11: in std_logic;
 			  clk50: in std_logic;
@@ -31,7 +35,10 @@ entity cpu_16bit_top is
 			sw: in std_logic_vector(15 downto 0);
 			led: out std_logic_vector(15 downto 0);--instruction addr
 			dyp0: out std_logic_vector(6 downto 0);
-			dyp1: out std_logic_vector(6 downto 0)
+			dyp1: out std_logic_vector(6 downto 0);
+
+			ps2_clk    : IN  STD_LOGIC;  --clock signal from PS2 keyboard
+			ps2_data   : IN  STD_LOGIC  --data signal from PS2 keyboard
 			
 			);	
 end cpu_16bit_top;
@@ -143,6 +150,10 @@ signal clk1M:std_logic;
 signal clk10:std_logic:='0';
 signal count10 : std_logic_vector(29 downto 0):=( others => '0');
 
+-- for keyboard
+signal kb_ascii_new: std_logic:='0';
+signal kb_ascii_code: std_logic_vector(6 downto 0):=( others => '0');
+
 begin
 process (clk11)
 begin
@@ -174,7 +185,7 @@ addr_2 <= temp;
 --& ID_Reg_T & "000" & temp(7 downto 0);
 dyp0 <= "0000000" ;
 dyp1 <= "0000000" ;
-led <= (others => '0');
+led <= "0000000"& kb_ascii_new & "0" & kb_ascii_code;--(others => '0');
 --dyp0 <= "000" & bp_forwarda & bp_forwardb;
 --dyp1 <= "000" & bp_forwarda & bp_forwardb ;
 my_clk <= clk10;
@@ -356,6 +367,10 @@ memory0: mymemory port map(
 					tbre=>tbre,
 					tsre=>tsre,
 					data_ready=>data_ready,
+
+					ascii_new=>kb_ascii_new,
+					ascii_code=>kb_ascii_code,
+
 					memread=>EXMEM_MemRead,
 					memwrite=>EXMEM_MemWrite,
 
@@ -380,6 +395,18 @@ u_muxc: Muxc port map(
 					data_1=>data_1,
 					data_2=> data_2,
 					addr=>EXMEM_AluData,
-					data_out=>MEM_Muxc_dataout);			
+					data_out=>MEM_Muxc_dataout);	
+
+keyboard_ascii: ps2_keyboard_to_ascii
+				    GENERIC MAP(
+				    	clk_freq => ps2_clk_freq, 
+				    	ps2_debounce_counter_size => ps2_debounce_counter_size)
+				    PORT MAP(
+				    	clk => clk50, 
+				    	ps2_clk => ps2_clk, 
+				    	ps2_data => ps2_data, 
+				    	ascii_new => kb_ascii_new, 
+				    	ascii_code => kb_ascii_code);
+	
 end Behavioral;
 

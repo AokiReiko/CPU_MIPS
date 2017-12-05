@@ -12,6 +12,18 @@ use IEEE.STD_LOGIC_1164.all;
 
 package my_components is
 
+  component ps2_keyboard_to_ascii IS
+  GENERIC(
+      clk_freq                  : INTEGER;  --system clock frequency in Hz
+      ps2_debounce_counter_size : INTEGER);  --set such that 2^size/clk_freq = 5us (size = 8 for 50MHz)
+  PORT(
+      clk        : IN  STD_LOGIC;                     --system clock input
+      ps2_clk    : IN  STD_LOGIC;                     --clock signal from PS2 keyboard
+      ps2_data   : IN  STD_LOGIC;                     --data signal from PS2 keyboard
+      ascii_new  : OUT STD_LOGIC;                     --output flag indicating new ASCII value
+      ascii_code : OUT STD_LOGIC_VECTOR(6 DOWNTO 0)); --ASCII value
+  end component;
+
 	component IFID_Reg is
     Port ( clk : in  STD_LOGIC;
            rst : in  STD_LOGIC;
@@ -104,6 +116,10 @@ package my_components is
 			tbre: in STD_LOGIC;
     	   tsre: in STD_LOGIC;
 			data_ready: in STD_LOGIC;
+
+      ascii_new  : in STD_LOGIC;     --flag indicating new ASCII value
+      ascii_code : in STD_LOGIC_VECTOR(6 DOWNTO 0);  --ASCII value
+
     	   memread: in STD_LOGIC;
     	   memwrite: in STD_LOGIC;
 

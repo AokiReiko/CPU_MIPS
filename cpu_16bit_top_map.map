@@ -10,7 +10,7 @@ Target Device  : xc3s1200e
 Target Package : fg320
 Target Speed   : -5
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Mon Dec 04 13:25:00 2017
+Mapped Date    : Tue Dec 05 17:46:03 2017
 
 vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 INFO:Security:54 - 'xc3s1200e' is a WebPack part.
@@ -27,56 +27,54 @@ Total REAL time at the beginning of Placer: 3 secs
 Total CPU  time at the beginning of Placer: 3 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:b42ca9a0) REAL time: 4 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:41e713b8) REAL time: 4 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:b42ca9a0) REAL time: 4 secs 
+Phase 2.7  Design Feasibility Check (Checksum:41e713b8) REAL time: 4 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:b42ca9a0) REAL time: 4 secs 
+Phase 3.31  Local Placement Optimization (Checksum:41e713b8) REAL time: 4 secs 
 
 Phase 4.2  Initial Clock and IO Placement
 
-Phase 4.2  Initial Clock and IO Placement (Checksum:255e8b30) REAL time: 4 secs 
+Phase 4.2  Initial Clock and IO Placement (Checksum:5fe02cb0) REAL time: 4 secs 
 
 Phase 5.30  Global Clock Region Assignment
-Phase 5.30  Global Clock Region Assignment (Checksum:255e8b30) REAL time: 4 secs 
+Phase 5.30  Global Clock Region Assignment (Checksum:5fe02cb0) REAL time: 4 secs 
 
 Phase 6.36  Local Placement Optimization
-Phase 6.36  Local Placement Optimization (Checksum:255e8b30) REAL time: 4 secs 
+Phase 6.36  Local Placement Optimization (Checksum:5fe02cb0) REAL time: 4 secs 
 
 Phase 7.8  Global Placement
-...........................
-...
-............................................
+..........................
+..
+.................................................
 ................
 ................
-Phase 7.8  Global Placement (Checksum:282bf9d3) REAL time: 8 secs 
+Phase 7.8  Global Placement (Checksum:b686252e) REAL time: 8 secs 
 
 Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:282bf9d3) REAL time: 8 secs 
+Phase 8.5  Local Placement Optimization (Checksum:b686252e) REAL time: 8 secs 
 
 Phase 9.18  Placement Optimization
-Phase 9.18  Placement Optimization (Checksum:8f3a6c63) REAL time: 12 secs 
+Phase 9.18  Placement Optimization (Checksum:5ec2ef56) REAL time: 15 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:8f3a6c63) REAL time: 12 secs 
+Phase 10.5  Local Placement Optimization (Checksum:5ec2ef56) REAL time: 15 secs 
 
-Total REAL time to Placer completion: 12 secs 
-Total CPU  time to Placer completion: 12 secs 
+Total REAL time to Placer completion: 15 secs 
+Total CPU  time to Placer completion: 15 secs 
 Running post-placement packing...
-WARNING:PhysDesignRules:372 - Gated clock. Clock net u5/immediate_not0001 is
-   sourced by a combinatorial pin. This is not good design practice. Use the CE
-   pin to control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net u5/rega_not0001 is sourced
    by a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net u5/immediate_not0001 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net u5/ALUOp_not0001 is sourced
    by a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:367 - The signal <clk_IBUF> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <clk50_IBUF> is incomplete. The signal
    does not drive any load pins in the design.
 
 Design Summary
@@ -84,32 +82,33 @@ Design Summary
 
 Design Summary:
 Number of errors:      0
-Number of warnings:    5
+Number of warnings:    4
 Logic Utilization:
-  Total Number Slice Registers:         418 out of  17,344    2%
-    Number used as Flip Flops:          387
+  Total Number Slice Registers:         500 out of  17,344    2%
+    Number used as Flip Flops:          469
     Number used as Latches:              31
-  Number of 4 input LUTs:             1,169 out of  17,344    6%
+  Number of 4 input LUTs:             1,425 out of  17,344    8%
 Logic Distribution:
-  Number of occupied Slices:            849 out of   8,672    9%
-    Number of Slices containing only related logic:     849 out of     849 100%
-    Number of Slices containing unrelated logic:          0 out of     849   0%
+  Number of occupied Slices:          1,039 out of   8,672   11%
+    Number of Slices containing only related logic:   1,039 out of   1,039 100%
+    Number of Slices containing unrelated logic:          0 out of   1,039   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:       1,232 out of  17,344    7%
-    Number used as logic:             1,169
-    Number used as a route-thru:         63
+  Total Number of 4 input LUTs:       1,516 out of  17,344    8%
+    Number used as logic:             1,423
+    Number used as a route-thru:         91
+    Number used as Shift registers:       2
 
   The Slice Logic Distribution report is not meaningful if the design is
   over-mapped for a non-slice resource or if Placement fails.
 
-  Number of bonded IOBs:                113 out of     250   45%
-  Number of BUFGMUXs:                     2 out of      24    8%
+  Number of bonded IOBs:                115 out of     250   46%
+  Number of BUFGMUXs:                     3 out of      24   12%
 
-Average Fanout of Non-Clock Nets:                3.62
+Average Fanout of Non-Clock Nets:                3.59
 
-Peak Memory Usage:  319 MB
-Total REAL time to MAP completion:  13 secs 
-Total CPU time to MAP completion:   12 secs 
+Peak Memory Usage:  375 MB
+Total REAL time to MAP completion:  15 secs 
+Total CPU time to MAP completion:   15 secs 
 
 Mapping completed.
 See MAP report file "cpu_16bit_top_map.mrp" for details.

@@ -40,18 +40,49 @@ Data Sheet report:
 -----------------
 All values displayed in nanoseconds (ns)
 
+Setup/Hold to clock clk50
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+ps2_clk     |    0.554(R)|    0.970(R)|clk50_BUFGP       |   0.000|
+ps2_data    |    0.819(R)|    0.759(R)|clk50_BUFGP       |   0.000|
+------------+------------+------------+------------------+--------+
+
 Clock clk11 to Pad
 ------------+------------+------------------+--------+
             | clk (edge) |                  | Clock  |
 Destination |   to PAD   |Internal Clock(s) | Phase  |
 ------------+------------+------------------+--------+
-en_1        |   10.355(R)|clk11_BUFGP       |   0.000|
-oe_1        |   10.414(R)|clk11_BUFGP       |   0.000|
-oe_2        |   12.856(R)|clk11_BUFGP       |   0.000|
-rdn         |    9.665(R)|clk11_BUFGP       |   0.000|
-we_1        |   10.417(R)|clk11_BUFGP       |   0.000|
-we_2        |   12.460(R)|clk11_BUFGP       |   0.000|
-wrn         |   15.039(R)|clk11_BUFGP       |   0.000|
+en_1        |   11.668(R)|clk11_BUFGP       |   0.000|
+oe_1        |   12.603(R)|clk11_BUFGP       |   0.000|
+oe_2        |   10.106(R)|clk11_BUFGP       |   0.000|
+rdn         |   10.357(R)|clk11_BUFGP       |   0.000|
+we_1        |   11.954(R)|clk11_BUFGP       |   0.000|
+we_2        |    9.909(R)|clk11_BUFGP       |   0.000|
+wrn         |   11.857(R)|clk11_BUFGP       |   0.000|
+------------+------------+------------------+--------+
+
+Clock clk50 to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+data_1<0>   |   12.850(R)|clk50_BUFGP       |   0.000|
+data_1<1>   |   11.859(R)|clk50_BUFGP       |   0.000|
+data_1<2>   |   10.140(R)|clk50_BUFGP       |   0.000|
+data_1<3>   |   10.158(R)|clk50_BUFGP       |   0.000|
+data_1<4>   |    9.983(R)|clk50_BUFGP       |   0.000|
+data_1<5>   |   11.063(R)|clk50_BUFGP       |   0.000|
+data_1<6>   |    9.960(R)|clk50_BUFGP       |   0.000|
+led<0>      |    7.095(R)|clk50_BUFGP       |   0.000|
+led<1>      |    7.179(R)|clk50_BUFGP       |   0.000|
+led<2>      |    7.364(R)|clk50_BUFGP       |   0.000|
+led<3>      |    7.821(R)|clk50_BUFGP       |   0.000|
+led<4>      |    7.731(R)|clk50_BUFGP       |   0.000|
+led<5>      |    7.383(R)|clk50_BUFGP       |   0.000|
+led<6>      |    7.492(R)|clk50_BUFGP       |   0.000|
+led<8>      |    7.440(R)|clk50_BUFGP       |   0.000|
 ------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clk11
@@ -59,27 +90,35 @@ Clock to Setup on destination clock clk11
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk11          |    5.273|         |         |         |
+clk11          |    4.626|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk50
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk50          |    9.376|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Pad to Pad
 ---------------+---------------+---------+
 Source Pad     |Destination Pad|  Delay  |
 ---------------+---------------+---------+
-data_ready     |data_1<1>      |    6.663|
-tbre           |data_1<0>      |    8.379|
-tsre           |data_1<0>      |    8.623|
+data_ready     |data_1<1>      |    7.864|
+tbre           |data_1<0>      |    9.882|
+tsre           |data_1<0>      |   10.826|
 ---------------+---------------+---------+
 
 
-Analysis completed Mon Dec 04 13:25:41 2017 
+Analysis completed Tue Dec 05 17:46:47 2017 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 196 MB
+Peak Memory Usage: 219 MB
 
 
 

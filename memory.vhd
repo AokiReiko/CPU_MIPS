@@ -18,6 +18,11 @@ entity mymemory is
 			tbre: in STD_LOGIC;
     	   tsre: in STD_LOGIC;
 			data_ready: in STD_LOGIC;
+
+			-- from keyboard
+			ascii_new  : in STD_LOGIC;     --flag indicating new ASCII value
+			ascii_code : in STD_LOGIC_VECTOR(6 DOWNTO 0);  --ASCII value
+
     	   addr_1: out STD_LOGIC_VECTOR(17 downto 0);
     	   addr_2: out STD_LOGIC_VECTOR(17 downto 0);
     	   data_1: inout STD_LOGIC_VECTOR(15 downto 0);
@@ -34,9 +39,13 @@ entity mymemory is
 end mymemory;
 
 architecture Behavioral of mymemory is
-signal BF01: std_logic_vector(15 downto 0);
+signal BF01: std_logic_vector(15 downto 0); -- COM
+signal BF0E: std_logic_vector(15 downto 0); -- keyboard ascii code
+signal BF0F: std_logic_vector(15 downto 0); -- keyboard dataready
 begin
 	BF01 <= "00000000000000" & data_ready & (tbre and tsre);
+	BF0E <= "000000000" & ascii_code;
+	BF0F <= "000000000000000" & ascii_new;
 	
 	process(clk, memread, memwrite, addr_in)
 	begin
@@ -151,7 +160,7 @@ begin
 		end if;
 	end process;
 	
-	process(memwrite, memread, addr_in, data_in, BF01, data_in)
+	process(memwrite, memread, addr_in, data_in, BF01, BF0E, BF0F, data_in)
 	begin
 		if (memread = '1') then
 			case (addr_in) is
@@ -159,6 +168,10 @@ begin
 					data_1 <= BF01;
 				when x"BF00" =>
 					data_1 <= (others => 'Z');
+				when x"BF0E" =>
+					data_1 <= BF0E;
+				when x"BF0F" =>
+					data_1 <= BF0F;
 				when others =>
 					data_1 <= (others => 'Z');
 				end case;

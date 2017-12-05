@@ -1,8 +1,8 @@
 INTSTYLE=ise
-INFILE=Y:\Desktop\desptop\CPU_MIPS\cpu_16bit_top.ncd
-OUTFILE=Y:\Desktop\desptop\CPU_MIPS\cpu_16bit_top.bit
+INFILE=D:\17fall\ComputerOrganization\120402\CPU_MIPS\cpu_16bit_top.ncd
+OUTFILE=D:\17fall\ComputerOrganization\120402\CPU_MIPS\cpu_16bit_top.bit
 FAMILY=Spartan3E
 PART=xc3s1200e-5fg320
-WORKINGDIR=Y:\Desktop\desptop\CPU_MIPS
+WORKINGDIR=D:\17fall\ComputerOrganization\120402\CPU_MIPS
 LICENSE=ISE
 USER_INFO=135256_15690819_173552794_661

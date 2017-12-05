@@ -121,3 +121,8 @@ NET "dyp1[3]" LOC = F9;
 NET "dyp1[2]" LOC = G9;
 NET "dyp1[1]" LOC = A10;
 NET "dyp1[0]" LOC = B10;
+
+# PlanAhead Generated physical constraints 
+
+NET "ps2_clk" LOC = U6;
+NET "ps2_data" LOC = V6;

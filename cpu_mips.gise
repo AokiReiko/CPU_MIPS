@@ -52,6 +52,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="cpu_16bit_top.ut" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:fileType="FILE_XPI" xil_pn:name="cpu_16bit_top.xpi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="cpu_16bit_top.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="cpu_16bit_top_envsettings.html"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="cpu_16bit_top_guide.ncd" xil_pn:origination="imported"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="cpu_16bit_top_map.map" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="cpu_16bit_top_map.mrp" xil_pn:subbranch="Map"/>
@@ -62,10 +63,12 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="cpu_16bit_top_pad.csv" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="cpu_16bit_top_pad.txt" xil_pn:subbranch="Par"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="cpu_16bit_top_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="cpu_16bit_top_summary.html"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="cpu_16bit_top_summary.xml"/>
     <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="cpu_16bit_top_usage.xml"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="cpu_16bit_top_vhdl.prj"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="cpu_16bit_top_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_3"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
@@ -98,7 +101,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1512365092" xil_pn:in_ck="6726239611117826481" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-6504571411700143242" xil_pn:start_ts="1512365064">
+    <transform xil_pn:end_ts="1512467155" xil_pn:in_ck="286683895857416730" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-6504571411700143242" xil_pn:start_ts="1512467126">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -117,11 +120,11 @@
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1512362126" xil_pn:in_ck="-329503481356469173" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-7325339398555664745" xil_pn:start_ts="1512362126">
+    <transform xil_pn:end_ts="1512464014" xil_pn:in_ck="-329503481356469173" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-7325339398555664745" xil_pn:start_ts="1512464014">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1512365099" xil_pn:in_ck="-922093461068519952" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="3087306863312981861" xil_pn:start_ts="1512365092">
+    <transform xil_pn:end_ts="1512467162" xil_pn:in_ck="-922093461068519952" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="3087306863312981861" xil_pn:start_ts="1512467155">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_ngo"/>
@@ -130,7 +133,7 @@
       <outfile xil_pn:name="cpu_16bit_top.ngd"/>
       <outfile xil_pn:name="cpu_16bit_top_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1512365115" xil_pn:in_ck="1969254912862914577" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-9158291228156352464" xil_pn:start_ts="1512365099">
+    <transform xil_pn:end_ts="1512467181" xil_pn:in_ck="1969254912862914577" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-9158291228156352464" xil_pn:start_ts="1512467162">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -144,7 +147,7 @@
       <outfile xil_pn:name="cpu_16bit_top_summary.xml"/>
       <outfile xil_pn:name="cpu_16bit_top_usage.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1512365142" xil_pn:in_ck="-8422275803455382966" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-1607638419597400795" xil_pn:start_ts="1512365115">
+    <transform xil_pn:end_ts="1512467208" xil_pn:in_ck="-8422275803455382966" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-1607638419597400795" xil_pn:start_ts="1512467181">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -159,7 +162,7 @@
       <outfile xil_pn:name="cpu_16bit_top_pad.txt"/>
       <outfile xil_pn:name="cpu_16bit_top_par.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1512365158" xil_pn:in_ck="-329503481356476798" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="-7817169320884990698" xil_pn:start_ts="1512365142">
+    <transform xil_pn:end_ts="1512467224" xil_pn:in_ck="-329503481356476798" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="-7817169320884990698" xil_pn:start_ts="1512467208">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -172,7 +175,11 @@
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1512365142" xil_pn:in_ck="7692895101814140685" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416187" xil_pn:start_ts="1512365137">
+    <transform xil_pn:end_ts="1512467333" xil_pn:in_ck="-329503481356489652" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="5582947192412673156" xil_pn:start_ts="1512467224">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1512467208" xil_pn:in_ck="7692895101814140685" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416187" xil_pn:start_ts="1512467203">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
