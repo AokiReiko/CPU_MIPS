@@ -1,191 +1,216 @@
-V3 125
-FL //mac/home/Desktop/desptop/CPU_MIPS/Adder.vhd 2017/11/15.08:44:38 P.20131013
-FL //mac/home/Desktop/desptop/CPU_MIPS/alu.vhd 2017/11/26.20:31:46 P.20131013
-FL //mac/home/Desktop/desptop/CPU_MIPS/alu_defination.vhd 2017/11/24.11:28:07 P.20131013
-FL //mac/home/Desktop/desptop/CPU_MIPS/bypass_unit.vhd 2017/12/02.16:21:16 P.20131013
-FL //mac/home/Desktop/desptop/CPU_MIPS/components.vhd 2017/12/04.10:58:13 P.20131013
-FL //mac/home/Desktop/desptop/CPU_MIPS/cpu_16bit_top.vhd 2017/12/04.12:34:44 P.20131013
-FL //mac/home/Desktop/desptop/CPU_MIPS/ctrl_unit.vhd 2017/12/03.13:58:42 P.20131013
-FL //mac/home/Desktop/desptop/CPU_MIPS/equal_unit.vhd 2017/12/03.13:58:25 P.20131013
-FL //mac/home/Desktop/desptop/CPU_MIPS/EXMEM_Reg.vhd 2017/12/02.01:30:00 P.20131013
-FL //mac/home/Desktop/desptop/CPU_MIPS/hazard_unit.vhd 2017/12/04.10:57:42 P.20131013
-FL //mac/home/Desktop/desptop/CPU_MIPS/IDEX_Reg.vhd 2017/12/04.09:54:39 P.20131013
-FL //mac/home/Desktop/desptop/CPU_MIPS/IFID_Reg.vhd 2017/12/04.12:27:23 P.20131013
-FL //mac/home/Desktop/desptop/CPU_MIPS/memory.vhd 2017/12/03.13:34:20 P.20131013
-FL //mac/home/Desktop/desptop/CPU_MIPS/MEMWB_Reg.vhd 2017/11/24.12:50:50 P.20131013
-FL //mac/home/Desktop/desptop/CPU_MIPS/Muxa.vhd 2017/12/04.11:01:30 P.20131013
-FL //mac/home/Desktop/desptop/CPU_MIPS/Muxb.vhd 2017/11/28.23:53:10 P.20131013
-FL //mac/home/Desktop/desptop/CPU_MIPS/Muxc.vhd 2017/12/04.11:01:22 P.20131013
-FL //mac/home/Desktop/desptop/CPU_MIPS/Muxpc.vhd 2017/11/26.21:19:59 P.20131013
-FL //mac/home/Desktop/desptop/CPU_MIPS/pc.vhd 2017/12/04.12:00:23 P.20131013
-FL //mac/home/Desktop/desptop/CPU_MIPS/registers.vhd 2017/12/03.13:25:10 P.20131013
-FL D:/17fall/ComputerOrganization/120402/CPU_MIPS/Adder.vhd 2017/12/05.08:45:48 P.20131013
-EN work/Adder 1512467165 \
-      FL D:/17fall/ComputerOrganization/120402/CPU_MIPS/Adder.vhd \
-      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
-      PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/Adder/Behavioral 1512467166 \
-      FL D:/17fall/ComputerOrganization/120402/CPU_MIPS/Adder.vhd EN work/Adder 1512467165
-FL D:/17fall/ComputerOrganization/120402/CPU_MIPS/alu.vhd 2017/12/05.08:45:48 P.20131013
-EN work/ALU 1512467163 FL D:/17fall/ComputerOrganization/120402/CPU_MIPS/alu.vhd \
-      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
-      PB ieee/STD_LOGIC_UNSIGNED 1381692179 PH work/operation 1512467133
-AR work/ALU/Behavioral 1512467164 \
-      FL D:/17fall/ComputerOrganization/120402/CPU_MIPS/alu.vhd EN work/ALU 1512467163
-FL D:/17fall/ComputerOrganization/120402/CPU_MIPS/alu_defination.vhd 2017/12/05.08:45:48 P.20131013
-PH work/operation 1512467133 \
-      FL D:/17fall/ComputerOrganization/120402/CPU_MIPS/alu_defination.vhd \
-      PB ieee/std_logic_1164 1381692176
-FL D:/17fall/ComputerOrganization/120402/CPU_MIPS/bypass_unit.vhd 2017/12/05.08:45:48 P.20131013
-EN work/bypass_unit 1512467157 \
-      FL D:/17fall/ComputerOrganization/120402/CPU_MIPS/bypass_unit.vhd \
-      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
-      PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/bypass_unit/Behavioral 1512467158 \
-      FL D:/17fall/ComputerOrganization/120402/CPU_MIPS/bypass_unit.vhd \
-      EN work/bypass_unit 1512467157
-FL D:/17fall/ComputerOrganization/120402/CPU_MIPS/components.vhd 2017/12/05.16:46:35 P.20131013
-PH work/my_components 1512467134 \
-      FL D:/17fall/ComputerOrganization/120402/CPU_MIPS/components.vhd \
-      PB ieee/std_logic_1164 1381692176 CD ps2_keyboard_to_ascii CD IFID_Reg \
+V3 142
+FL C:/Users/lzm/Desktop/CPU_MIPS/Adder.vhd 2017/12/05.22:24:52 P.20131013
+FL C:/Users/lzm/Desktop/CPU_MIPS/alu.vhd 2017/12/05.22:24:52 P.20131013
+FL C:/Users/lzm/Desktop/CPU_MIPS/alu_defination.vhd 2017/12/05.22:24:52 P.20131013
+FL C:/Users/lzm/Desktop/CPU_MIPS/bypass_unit.vhd 2017/12/05.22:24:52 P.20131013
+FL C:/Users/lzm/Desktop/CPU_MIPS/components.vhd 2017/12/05.22:29:55 P.20131013
+FL C:/Users/lzm/Desktop/CPU_MIPS/constants.vhd 2017/12/01.21:23:44 P.20131013
+FL C:/Users/lzm/Desktop/CPU_MIPS/cpu_16bit_top.vhd 2017/12/05.22:28:19 P.20131013
+FL C:/Users/lzm/Desktop/CPU_MIPS/ctrl_unit.vhd 2017/12/05.22:24:52 P.20131013
+FL C:/Users/lzm/Desktop/CPU_MIPS/debounce.vhd 2017/12/05.22:24:52 P.20131013
+FL C:/Users/lzm/Desktop/CPU_MIPS/equal_unit.vhd 2017/12/05.22:24:52 P.20131013
+FL C:/Users/lzm/Desktop/CPU_MIPS/EXMEM_Reg.vhd 2017/12/05.22:24:52 P.20131013
+FL C:/Users/lzm/Desktop/CPU_MIPS/hazard_unit.vhd 2017/12/05.22:24:52 P.20131013
+FL C:/Users/lzm/Desktop/CPU_MIPS/IDEX_Reg.vhd 2017/12/05.22:24:52 P.20131013
+FL C:/Users/lzm/Desktop/CPU_MIPS/IFID_Reg.vhd 2017/12/05.22:24:52 P.20131013
+FL C:/Users/lzm/Desktop/CPU_MIPS/memory.vhd 2017/12/05.22:24:52 P.20131013
+FL C:/Users/lzm/Desktop/CPU_MIPS/MEMWB_Reg.vhd 2017/12/05.22:24:52 P.20131013
+FL C:/Users/lzm/Desktop/CPU_MIPS/Muxa.vhd 2017/12/05.22:24:52 P.20131013
+FL C:/Users/lzm/Desktop/CPU_MIPS/Muxb.vhd 2017/12/05.22:24:52 P.20131013
+FL C:/Users/lzm/Desktop/CPU_MIPS/Muxc.vhd 2017/12/05.22:24:52 P.20131013
+FL C:/Users/lzm/Desktop/CPU_MIPS/Muxpc.vhd 2017/12/05.22:24:52 P.20131013
+FL C:/Users/lzm/Desktop/CPU_MIPS/pc.vhd 2017/12/05.22:24:52 P.20131013
+FL C:/Users/lzm/Desktop/CPU_MIPS/ps2_keyboard.vhd 2017/12/05.22:24:52 P.20131013
+FL C:/Users/lzm/Desktop/CPU_MIPS/ps2_keyboard_to_ascii.vhd 2017/12/05.22:24:52 P.20131013
+FL C:/Users/lzm/Desktop/CPU_MIPS/registers.vhd 2017/12/05.22:24:52 P.20131013
+FL C:/Users/lzm/Desktop/CPU_MIPS/vga.vhd 2017/12/05.21:56:28 P.20131013
+FL C:/Users/lzm/Desktop/CPU_MIPS/vga_char.vhd 2017/12/05.18:28:01 P.20131013
+FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/Adder.vhd 2017/12/05.22:24:54 P.20131013
+EN work/Adder 1512549770 \
+      FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/Adder.vhd \
+      PB ieee/std_logic_1164 1341906176 PB ieee/std_logic_arith 1341906177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1341906179
+AR work/Adder/Behavioral 1512549771 \
+      FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/Adder.vhd EN work/Adder 1512549770
+FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/alu.vhd 2017/12/05.22:24:54 P.20131013
+EN work/ALU 1512549768 FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/alu.vhd \
+      PB ieee/std_logic_1164 1341906176 PB ieee/std_logic_arith 1341906177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1341906179 PH work/operation 1512549738
+AR work/ALU/Behavioral 1512549769 \
+      FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/alu.vhd EN work/ALU 1512549768
+FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/alu_defination.vhd 2017/12/05.22:24:54 P.20131013
+PH work/operation 1512549738 \
+      FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/alu_defination.vhd \
+      PB ieee/std_logic_1164 1341906176
+FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/bypass_unit.vhd 2017/12/05.22:24:54 P.20131013
+EN work/bypass_unit 1512549762 \
+      FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/bypass_unit.vhd \
+      PB ieee/std_logic_1164 1341906176 PB ieee/std_logic_arith 1341906177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1341906179
+AR work/bypass_unit/Behavioral 1512549763 \
+      FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/bypass_unit.vhd \
+      EN work/bypass_unit 1512549762
+FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/components.vhd 2017/12/06.16:10:39 P.20131013
+PH work/my_components 1512549739 \
+      FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/components.vhd \
+      PB ieee/std_logic_1164 1341906176 CD vga CD ps2_keyboard_to_ascii CD IFID_Reg \
       CD registers CD PC CD Muxpc CD Muxb CD Muxa CD MEMWB_Reg CD mymemory CD IDEX_Reg \
       CD hazard_unit CD EXMEM_Reg CD equal_unit CD ctrl_unit CD bypass_unit CD Adder \
       CD ALU CD Muxc
-FL D:/17fall/ComputerOrganization/120402/CPU_MIPS/cpu_16bit_top.vhd 2017/12/05.17:39:34 P.20131013
-EN work/cpu_16bit_top 1512467171 \
-      FL D:/17fall/ComputerOrganization/120402/CPU_MIPS/cpu_16bit_top.vhd \
-      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
-      PB ieee/STD_LOGIC_UNSIGNED 1381692179 PH work/my_components 1512467134
-AR work/cpu_16bit_top/Behavioral 1512467172 \
-      FL D:/17fall/ComputerOrganization/120402/CPU_MIPS/cpu_16bit_top.vhd \
-      EN work/cpu_16bit_top 1512467171 CP Muxpc CP pc CP IFID_Reg CP registers \
+FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/constants.vhd 2017/12/01.21:23:46 P.20131013
+PH work/constants 1512549731 \
+      FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/constants.vhd \
+      PB ieee/std_logic_1164 1341906176
+FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/cpu_16bit_top.vhd 2017/12/06.16:33:50 P.20131013
+EN work/cpu_16bit_top 1512549778 \
+      FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/cpu_16bit_top.vhd \
+      PB ieee/std_logic_1164 1341906176 PB ieee/std_logic_arith 1341906177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1341906179 PH work/my_components 1512549739
+AR work/cpu_16bit_top/Behavioral 1512549779 \
+      FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/cpu_16bit_top.vhd \
+      EN work/cpu_16bit_top 1512549778 CP Muxpc CP pc CP IFID_Reg CP registers \
       CP ctrl_unit CP equal_unit CP IDEX_Reg CP Muxa CP Muxb CP EXMEM_Reg CP MEMWB_Reg \
       CP bypass_unit CP hazard_unit CP mymemory CP alu CP Adder CP Muxc \
-      CP ps2_keyboard_to_ascii
-FL D:/17fall/ComputerOrganization/120402/CPU_MIPS/ctrl_unit.vhd 2017/12/05.08:45:48 P.20131013
-EN work/ctrl_unit 1512467143 \
-      FL D:/17fall/ComputerOrganization/120402/CPU_MIPS/ctrl_unit.vhd \
-      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
-      PB ieee/STD_LOGIC_UNSIGNED 1381692179 PH work/operation 1512467133
-AR work/ctrl_unit/Behavioral 1512467144 \
-      FL D:/17fall/ComputerOrganization/120402/CPU_MIPS/ctrl_unit.vhd \
-      EN work/ctrl_unit 1512467143
-FL D:/17fall/ComputerOrganization/120402/CPU_MIPS/debounce.vhd 2017/11/30.20:19:02 P.20131013
-EN work/debounce 1512467129 \
-      FL D:/17fall/ComputerOrganization/120402/CPU_MIPS/debounce.vhd \
-      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/debounce/logic 1512467130 \
-      FL D:/17fall/ComputerOrganization/120402/CPU_MIPS/debounce.vhd \
-      EN work/debounce 1512467129
-FL D:/17fall/ComputerOrganization/120402/CPU_MIPS/equal_unit.vhd 2017/12/05.08:45:48 P.20131013
-EN work/equal_unit 1512467145 \
-      FL D:/17fall/ComputerOrganization/120402/CPU_MIPS/equal_unit.vhd \
-      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
-      PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/equal_unit/Behavioral 1512467146 \
-      FL D:/17fall/ComputerOrganization/120402/CPU_MIPS/equal_unit.vhd \
-      EN work/equal_unit 1512467145
-FL D:/17fall/ComputerOrganization/120402/CPU_MIPS/EXMEM_Reg.vhd 2017/12/05.08:45:48 P.20131013
-EN work/EXMEM_Reg 1512467153 \
-      FL D:/17fall/ComputerOrganization/120402/CPU_MIPS/EXMEM_Reg.vhd \
-      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
-      PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/EXMEM_Reg/Behavioral 1512467154 \
-      FL D:/17fall/ComputerOrganization/120402/CPU_MIPS/EXMEM_Reg.vhd \
-      EN work/EXMEM_Reg 1512467153
-FL D:/17fall/ComputerOrganization/120402/CPU_MIPS/hazard_unit.vhd 2017/12/05.08:45:48 P.20131013
-EN work/hazard_unit 1512467159 \
-      FL D:/17fall/ComputerOrganization/120402/CPU_MIPS/hazard_unit.vhd \
-      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
-      PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/hazard_unit/Behavioral 1512467160 \
-      FL D:/17fall/ComputerOrganization/120402/CPU_MIPS/hazard_unit.vhd \
-      EN work/hazard_unit 1512467159
-FL D:/17fall/ComputerOrganization/120402/CPU_MIPS/IDEX_Reg.vhd 2017/12/05.08:45:48 P.20131013
-EN work/IDEX_Reg 1512467147 \
-      FL D:/17fall/ComputerOrganization/120402/CPU_MIPS/IDEX_Reg.vhd \
-      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
-      PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/IDEX_Reg/Behavioral 1512467148 \
-      FL D:/17fall/ComputerOrganization/120402/CPU_MIPS/IDEX_Reg.vhd \
-      EN work/IDEX_Reg 1512467147
-FL D:/17fall/ComputerOrganization/120402/CPU_MIPS/IFID_Reg.vhd 2017/12/05.08:45:48 P.20131013
-EN work/IFID_Reg 1512467139 \
-      FL D:/17fall/ComputerOrganization/120402/CPU_MIPS/IFID_Reg.vhd \
-      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
-      PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/IFID_Reg/Behavioral 1512467140 \
-      FL D:/17fall/ComputerOrganization/120402/CPU_MIPS/IFID_Reg.vhd \
-      EN work/IFID_Reg 1512467139
-FL D:/17fall/ComputerOrganization/120402/CPU_MIPS/memory.vhd 2017/12/05.17:45:06 P.20131013
-EN work/mymemory 1512467161 \
-      FL D:/17fall/ComputerOrganization/120402/CPU_MIPS/memory.vhd \
-      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
-      PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/mymemory/Behavioral 1512467162 \
-      FL D:/17fall/ComputerOrganization/120402/CPU_MIPS/memory.vhd \
-      EN work/mymemory 1512467161
-FL D:/17fall/ComputerOrganization/120402/CPU_MIPS/MEMWB_Reg.vhd 2017/12/05.08:45:48 P.20131013
-EN work/MEMWB_Reg 1512467155 \
-      FL D:/17fall/ComputerOrganization/120402/CPU_MIPS/MEMWB_Reg.vhd \
-      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
-      PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/MEMWB_Reg/Behavioral 1512467156 \
-      FL D:/17fall/ComputerOrganization/120402/CPU_MIPS/MEMWB_Reg.vhd \
-      EN work/MEMWB_Reg 1512467155
-FL D:/17fall/ComputerOrganization/120402/CPU_MIPS/Muxa.vhd 2017/12/05.08:45:48 P.20131013
-EN work/Muxa 1512467149 \
-      FL D:/17fall/ComputerOrganization/120402/CPU_MIPS/Muxa.vhd \
-      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
-      PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/Muxa/Behavioral 1512467150 \
-      FL D:/17fall/ComputerOrganization/120402/CPU_MIPS/Muxa.vhd EN work/Muxa 1512467149
-FL D:/17fall/ComputerOrganization/120402/CPU_MIPS/Muxb.vhd 2017/12/05.08:45:48 P.20131013
-EN work/Muxb 1512467151 \
-      FL D:/17fall/ComputerOrganization/120402/CPU_MIPS/Muxb.vhd \
-      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
-      PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/Muxb/Behavioral 1512467152 \
-      FL D:/17fall/ComputerOrganization/120402/CPU_MIPS/Muxb.vhd EN work/Muxb 1512467151
-FL D:/17fall/ComputerOrganization/120402/CPU_MIPS/Muxc.vhd 2017/12/05.08:45:48 P.20131013
-EN work/Muxc 1512467167 \
-      FL D:/17fall/ComputerOrganization/120402/CPU_MIPS/Muxc.vhd \
-      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
-      PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/Muxc/Behavioral 1512467168 \
-      FL D:/17fall/ComputerOrganization/120402/CPU_MIPS/Muxc.vhd EN work/Muxc 1512467167
-FL D:/17fall/ComputerOrganization/120402/CPU_MIPS/Muxpc.vhd 2017/12/05.08:45:48 P.20131013
-EN work/Muxpc 1512467135 \
-      FL D:/17fall/ComputerOrganization/120402/CPU_MIPS/Muxpc.vhd \
-      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
-      PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/Muxpc/Behavioral 1512467136 \
-      FL D:/17fall/ComputerOrganization/120402/CPU_MIPS/Muxpc.vhd EN work/Muxpc 1512467135
-FL D:/17fall/ComputerOrganization/120402/CPU_MIPS/pc.vhd 2017/12/05.08:45:48 P.20131013
-EN work/PC 1512467137 FL D:/17fall/ComputerOrganization/120402/CPU_MIPS/pc.vhd \
-      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
-      PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/PC/Behavioral 1512467138 \
-      FL D:/17fall/ComputerOrganization/120402/CPU_MIPS/pc.vhd EN work/PC 1512467137
-FL D:/17fall/ComputerOrganization/120402/CPU_MIPS/ps2_keyboard.vhd 2017/11/30.20:15:17 P.20131013
-EN work/ps2_keyboard 1512467131 \
-      FL D:/17fall/ComputerOrganization/120402/CPU_MIPS/ps2_keyboard.vhd \
-      PB ieee/std_logic_1164 1381692176
-AR work/ps2_keyboard/logic 1512467132 \
-      FL D:/17fall/ComputerOrganization/120402/CPU_MIPS/ps2_keyboard.vhd \
-      EN work/ps2_keyboard 1512467131 CP debounce
-FL D:/17fall/ComputerOrganization/120402/CPU_MIPS/ps2_keyboard_to_ascii.vhd 2017/12/04.14:44:09 P.20131013
-EN work/ps2_keyboard_to_ascii 1512467169 \
-      FL D:/17fall/ComputerOrganization/120402/CPU_MIPS/ps2_keyboard_to_ascii.vhd \
-      PB ieee/std_logic_1164 1381692176
-AR work/ps2_keyboard_to_ascii/behavior 1512467170 \
-      FL D:/17fall/ComputerOrganization/120402/CPU_MIPS/ps2_keyboard_to_ascii.vhd \
-      EN work/ps2_keyboard_to_ascii 1512467169 CP ps2_keyboard
-FL D:/17fall/ComputerOrganization/120402/CPU_MIPS/registers.vhd 2017/12/05.08:45:48 P.20131013
-EN work/registers 1512467141 \
-      FL D:/17fall/ComputerOrganization/120402/CPU_MIPS/registers.vhd \
-      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
-      PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/registers/Behavioral 1512467142 \
-      FL D:/17fall/ComputerOrganization/120402/CPU_MIPS/registers.vhd \
-      EN work/registers 1512467141
+      CP ps2_keyboard_to_ascii CP vga
+FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/ctrl_unit.vhd 2017/12/05.22:24:54 P.20131013
+EN work/ctrl_unit 1512549748 \
+      FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/ctrl_unit.vhd \
+      PB ieee/std_logic_1164 1341906176 PB ieee/std_logic_arith 1341906177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1341906179 PH work/operation 1512549738
+AR work/ctrl_unit/Behavioral 1512549749 \
+      FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/ctrl_unit.vhd \
+      EN work/ctrl_unit 1512549748
+FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/debounce.vhd 2017/12/05.22:24:54 P.20131013
+EN work/debounce 1512549732 \
+      FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/debounce.vhd \
+      PB ieee/std_logic_1164 1341906176 PB ieee/STD_LOGIC_UNSIGNED 1341906179
+AR work/debounce/logic 1512549733 \
+      FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/debounce.vhd \
+      EN work/debounce 1512549732
+FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/equal_unit.vhd 2017/12/05.22:24:54 P.20131013
+EN work/equal_unit 1512549750 \
+      FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/equal_unit.vhd \
+      PB ieee/std_logic_1164 1341906176 PB ieee/std_logic_arith 1341906177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1341906179
+AR work/equal_unit/Behavioral 1512549751 \
+      FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/equal_unit.vhd \
+      EN work/equal_unit 1512549750
+FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/EXMEM_Reg.vhd 2017/12/05.22:24:54 P.20131013
+EN work/EXMEM_Reg 1512549758 \
+      FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/EXMEM_Reg.vhd \
+      PB ieee/std_logic_1164 1341906176 PB ieee/std_logic_arith 1341906177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1341906179
+AR work/EXMEM_Reg/Behavioral 1512549759 \
+      FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/EXMEM_Reg.vhd \
+      EN work/EXMEM_Reg 1512549758
+FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/hazard_unit.vhd 2017/12/05.22:24:54 P.20131013
+EN work/hazard_unit 1512549764 \
+      FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/hazard_unit.vhd \
+      PB ieee/std_logic_1164 1341906176 PB ieee/std_logic_arith 1341906177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1341906179
+AR work/hazard_unit/Behavioral 1512549765 \
+      FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/hazard_unit.vhd \
+      EN work/hazard_unit 1512549764
+FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/IDEX_Reg.vhd 2017/12/05.22:24:54 P.20131013
+EN work/IDEX_Reg 1512549752 \
+      FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/IDEX_Reg.vhd \
+      PB ieee/std_logic_1164 1341906176 PB ieee/std_logic_arith 1341906177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1341906179
+AR work/IDEX_Reg/Behavioral 1512549753 \
+      FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/IDEX_Reg.vhd \
+      EN work/IDEX_Reg 1512549752
+FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/IFID_Reg.vhd 2017/12/05.22:24:54 P.20131013
+EN work/IFID_Reg 1512549744 \
+      FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/IFID_Reg.vhd \
+      PB ieee/std_logic_1164 1341906176 PB ieee/std_logic_arith 1341906177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1341906179
+AR work/IFID_Reg/Behavioral 1512549745 \
+      FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/IFID_Reg.vhd \
+      EN work/IFID_Reg 1512549744
+FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/memory.vhd 2017/12/06.16:41:47 P.20131013
+EN work/mymemory 1512549766 \
+      FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/memory.vhd \
+      PB ieee/std_logic_1164 1341906176 PB ieee/std_logic_arith 1341906177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1341906179
+AR work/mymemory/Behavioral 1512549767 \
+      FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/memory.vhd \
+      EN work/mymemory 1512549766
+FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/MEMWB_Reg.vhd 2017/12/05.22:24:54 P.20131013
+EN work/MEMWB_Reg 1512549760 \
+      FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/MEMWB_Reg.vhd \
+      PB ieee/std_logic_1164 1341906176 PB ieee/std_logic_arith 1341906177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1341906179
+AR work/MEMWB_Reg/Behavioral 1512549761 \
+      FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/MEMWB_Reg.vhd \
+      EN work/MEMWB_Reg 1512549760
+FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/Muxa.vhd 2017/12/05.22:24:54 P.20131013
+EN work/Muxa 1512549754 \
+      FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/Muxa.vhd \
+      PB ieee/std_logic_1164 1341906176 PB ieee/std_logic_arith 1341906177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1341906179
+AR work/Muxa/Behavioral 1512549755 \
+      FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/Muxa.vhd EN work/Muxa 1512549754
+FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/Muxb.vhd 2017/12/05.22:24:54 P.20131013
+EN work/Muxb 1512549756 \
+      FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/Muxb.vhd \
+      PB ieee/std_logic_1164 1341906176 PB ieee/std_logic_arith 1341906177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1341906179
+AR work/Muxb/Behavioral 1512549757 \
+      FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/Muxb.vhd EN work/Muxb 1512549756
+FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/Muxc.vhd 2017/12/05.22:24:54 P.20131013
+EN work/Muxc 1512549772 \
+      FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/Muxc.vhd \
+      PB ieee/std_logic_1164 1341906176 PB ieee/std_logic_arith 1341906177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1341906179
+AR work/Muxc/Behavioral 1512549773 \
+      FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/Muxc.vhd EN work/Muxc 1512549772
+FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/Muxpc.vhd 2017/12/05.22:24:54 P.20131013
+EN work/Muxpc 1512549740 \
+      FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/Muxpc.vhd \
+      PB ieee/std_logic_1164 1341906176 PB ieee/std_logic_arith 1341906177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1341906179
+AR work/Muxpc/Behavioral 1512549741 \
+      FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/Muxpc.vhd EN work/Muxpc 1512549740
+FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/pc.vhd 2017/12/05.22:24:54 P.20131013
+EN work/PC 1512549742 FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/pc.vhd \
+      PB ieee/std_logic_1164 1341906176 PB ieee/std_logic_arith 1341906177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1341906179
+AR work/PC/Behavioral 1512549743 \
+      FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/pc.vhd EN work/PC 1512549742
+FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/ps2_keyboard.vhd 2017/12/05.22:24:54 P.20131013
+EN work/ps2_keyboard 1512549736 \
+      FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/ps2_keyboard.vhd \
+      PB ieee/std_logic_1164 1341906176
+AR work/ps2_keyboard/logic 1512549737 \
+      FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/ps2_keyboard.vhd \
+      EN work/ps2_keyboard 1512549736 CP debounce
+FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/ps2_keyboard_to_ascii.vhd 2017/12/05.22:24:54 P.20131013
+EN work/ps2_keyboard_to_ascii 1512549774 \
+      FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/ps2_keyboard_to_ascii.vhd \
+      PB ieee/std_logic_1164 1341906176
+AR work/ps2_keyboard_to_ascii/behavior 1512549775 \
+      FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/ps2_keyboard_to_ascii.vhd \
+      EN work/ps2_keyboard_to_ascii 1512549774 CP ps2_keyboard
+FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/registers.vhd 2017/12/05.22:24:54 P.20131013
+EN work/registers 1512549746 \
+      FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/registers.vhd \
+      PB ieee/std_logic_1164 1341906176 PB ieee/std_logic_arith 1341906177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1341906179
+AR work/registers/Behavioral 1512549747 \
+      FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/registers.vhd \
+      EN work/registers 1512549746
+FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/vga.vhd 2017/12/06.16:41:08 P.20131013
+EN work/vga 1512549776 FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/vga.vhd \
+      PB ieee/std_logic_1164 1341906176 PB ieee/STD_LOGIC_UNSIGNED 1341906179 \
+      PB ieee/std_logic_arith 1341906177
+AR work/vga/Behavioral 1512549777 \
+      FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/vga.vhd EN work/vga 1512549776 \
+      CP vga_char
+FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/vga_char.vhd 2017/12/05.18:28:02 P.20131013
+EN work/vga_char 1512549734 \
+      FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/vga_char.vhd \
+      PB ieee/std_logic_1164 1341906176 PB ieee/std_logic_arith 1341906177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1341906179 PH work/constants 1512549731
+AR work/vga_char/Behavioral 1512549735 \
+      FL D:/17fall/ComputerOrganization/120501/CPU_MIPS/vga_char.vhd \
+      EN work/vga_char 1512549734

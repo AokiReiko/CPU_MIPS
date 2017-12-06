@@ -38,8 +38,13 @@ entity cpu_16bit_top is
 			dyp1: out std_logic_vector(6 downto 0);
 
 			ps2_clk    : IN  STD_LOGIC;  --clock signal from PS2 keyboard
-			ps2_data   : IN  STD_LOGIC  --data signal from PS2 keyboard
+			ps2_data   : IN  STD_LOGIC;  --data signal from PS2 keyboard
 			
+			hs : out  STD_LOGIC;   --vga
+         vs : out  STD_LOGIC;
+         r : out  STD_LOGIC_VECTOR (2 downto 0);
+         g : out  STD_LOGIC_VECTOR (2 downto 0);
+         b : out  STD_LOGIC_VECTOR (2 downto 0)
 			);	
 end cpu_16bit_top;
 
@@ -154,6 +159,16 @@ signal count10 : std_logic_vector(29 downto 0):=( others => '0');
 signal kb_ascii_new: std_logic:='0';
 signal kb_ascii_code: std_logic_vector(6 downto 0):=( others => '0');
 
+--vga
+signal vga_data: std_logic_vector(15 downto 0):=( others => '0');
+signal vga_addr: std_logic_vector(15 downto 0):=( others => '0');
+signal vga_enable: std_logic:='0';
+signal vga_led: STD_LOGIC:='0';
+signal memwrite_led: STD_LOGIC:='0';
+signal addr_in_led: STD_LOGIC:='0';
+signal addr_cmp_led: STD_LOGIC:='0';
+signal vga_enable_led: STD_LOGIC:='0';
+
 begin
 process (clk11)
 begin
@@ -183,9 +198,32 @@ end process;
 addr_2 <= temp;
 --led <= temp_inst & temp_hazard & HD_Ctrl_Flush & exmem_memread
 --& ID_Reg_T & "000" & temp(7 downto 0);
-dyp0 <= "0000000" ;
-dyp1 <= "0000000" ;
-led <= "0000000"& kb_ascii_new & "0" & kb_ascii_code;--(others => '0');
+dyp0 <= "0000000";
+dyp1 <= "0000000";
+--led <= "0000000"& kb_ascii_new & "0" & kb_ascii_code;
+led <= vga_enable_led&"00000000000" & vga_led & memwrite_led & addr_in_led & addr_cmp_led;
+process(EXMEM_MemWrite)
+begin
+	if (EXMEM_MemWrite = '1') then
+		memwrite_led <= '1';
+	end if;
+end process;
+process(EXMEM_AluData)
+begin
+	if (EXMEM_AluData = x"FFB2") then
+		addr_in_led <= '1';
+	end if;
+	if ( "0"&EXMEM_AluData >= "0"& x"FFB0" ) then
+		addr_cmp_led <= '1';
+	end if;
+end process;
+process(vga_enable)
+begin
+	if (vga_enable'event and vga_enable = '0') then
+		vga_enable_led <= '1';
+	end if ;
+end process ;
+--led <= (others => '0');
 --dyp0 <= "000" & bp_forwarda & bp_forwardb;
 --dyp1 <= "000" & bp_forwarda & bp_forwardb ;
 my_clk <= clk10;
@@ -371,6 +409,11 @@ memory0: mymemory port map(
 					ascii_new=>kb_ascii_new,
 					ascii_code=>kb_ascii_code,
 
+					vga_data=>vga_data,
+					vga_addr=>vga_addr,
+					vga_enable=>vga_enable,
+					vga_led=>vga_led,
+
 					memread=>EXMEM_MemRead,
 					memwrite=>EXMEM_MemWrite,
 
@@ -407,6 +450,18 @@ keyboard_ascii: ps2_keyboard_to_ascii
 				    	ps2_data => ps2_data, 
 				    	ascii_new => kb_ascii_new, 
 				    	ascii_code => kb_ascii_code);
+						
+vga: vga port map(
+				clk50 =>clk50,
+				reset =>'1',
+				write_enable => vga_enable,
+				data =>vga_data,--"0000000000110011",
+				adress=>vga_addr,--"1111111110010000",
+				hs => hs,
+				vs =>vs,
+				r=>r,
+				g=>g,
+				b=>b);
 	
 end Behavioral;
 

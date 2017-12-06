@@ -23,6 +23,12 @@ entity mymemory is
 			ascii_new  : in STD_LOGIC;     --flag indicating new ASCII value
 			ascii_code : in STD_LOGIC_VECTOR(6 DOWNTO 0);  --ASCII value
 
+			-- vga
+			vga_addr : out STD_LOGIC_VECTOR(15 downto 0);
+			vga_data : out STD_LOGIC_VECTOR(15 downto 0);
+			vga_enable : out STD_LOGIC;
+			vga_led : out STD_LOGIC;
+
     	   addr_1: out STD_LOGIC_VECTOR(17 downto 0);
     	   addr_2: out STD_LOGIC_VECTOR(17 downto 0);
     	   data_1: inout STD_LOGIC_VECTOR(15 downto 0);
@@ -42,10 +48,20 @@ architecture Behavioral of mymemory is
 signal BF01: std_logic_vector(15 downto 0); -- COM
 signal BF0E: std_logic_vector(15 downto 0); -- keyboard ascii code
 signal BF0F: std_logic_vector(15 downto 0); -- keyboard dataready
+signal ascii_rising_edge : STD_LOGIC := '0'; -- whether keyboard data is new
 begin
 	BF01 <= "00000000000000" & data_ready & (tbre and tsre);
 	BF0E <= "000000000" & ascii_code;
-	BF0F <= "000000000000000" & ascii_new;
+	BF0F <= "00000000000000" & ascii_new & ascii_rising_edge;
+
+	process(ascii_new, memread, addr_in)
+	begin
+		if (memread = '1' and addr_in = x"BF0E") then
+			ascii_rising_edge <= '0';
+		elsif (ascii_new'event and ascii_new='1') then
+			ascii_rising_edge <= '1';
+		end if;
+	end process;
 	
 	process(clk, memread, memwrite, addr_in)
 	begin
@@ -57,20 +73,29 @@ begin
 				oe_2 <= '0';
 				we_2 <= '1';
 				en_2 <= '0';
-				case (addr_in) is
-					when x"BF01" =>
-						wrn <= '1';
-						rdn <= '1';
-						en_1 <= '1';
-					when x"BF00" =>
-						wrn <= '1';
-						rdn <= '0';
-						en_1 <= '1';
-					when others =>
-						en_1 <= '0';
-						wrn <= '1';
-						rdn <= '1';
-				end case;
+
+				if (addr_in = x"BF0E" or addr_in = x"BF0F") then
+					wrn <= '1';
+					rdn <= '1';
+					en_1 <= '1';
+					vga_enable <= '1';
+				else
+					vga_enable <= '1';
+					case (addr_in) is
+						when x"BF01" =>
+							wrn <= '1';
+							rdn <= '1';
+							en_1 <= '1';
+						when x"BF00" =>
+							wrn <= '1';
+							rdn <= '0';
+							en_1 <= '1';
+						when others =>
+							en_1 <= '0';
+							wrn <= '1';
+							rdn <= '1';
+					end case;
+				end if ;
 			elsif (memwrite = '1') then
 				if ( addr_in(15) = '1') then -- ram1
 					oe_1 <= '1';
@@ -85,20 +110,28 @@ begin
 					we_2 <= '0';
 					en_2 <= '0';
 				end if;
-				case addr_in is
-					when x"BF01" =>
-						wrn <= '1';
-						rdn <= '1';
-						en_1 <= '1';
-					when x"BF00" =>
-						wrn <= '0';
-						rdn <= '1';
-						en_1 <= '1';
-					when others =>
-						wrn <= '1';
-						rdn <= '1';
-						en_1 <= '0';
-				end case;
+				if ("0"&addr_in >= "0"& x"FFB0") then
+					wrn <= '1';
+					rdn <= '1';
+					en_1 <= '1';
+					vga_enable <= '0';
+				else
+					vga_enable <= '1';
+					case addr_in is
+						when x"BF01" =>
+							wrn <= '1';
+							rdn <= '1';
+							en_1 <= '1';
+						when x"BF00" =>
+							wrn <= '0';
+							rdn <= '1';
+							en_1 <= '1';
+						when others =>
+							wrn <= '1';
+							rdn <= '1';
+							en_1 <= '0';
+					end case;
+				end if;
 			else 
 				oe_1 <= '1';
 				we_1 <= '1';
@@ -110,6 +143,7 @@ begin
 				wrn <= '1';
 				rdn <= '1';
 				en_1 <= '0';
+				vga_enable <= '1';
 
 			end if; 
 		else 
@@ -123,6 +157,7 @@ begin
 
 			wrn <= '1';
 			rdn <= '1';
+			vga_enable <= '1';
 
 		end if;
 	end process;
@@ -176,7 +211,13 @@ begin
 					data_1 <= (others => 'Z');
 				end case;
 		elsif (memwrite = '1') then
+			if ( "0"&addr_in >= "0"& x"FFB0" ) then
+				vga_data <= data_in;
+				vga_addr <= addr_in;
+				vga_led <= '1';
+			else
 				data_1 <= data_in;
+			end if;
 		else
 			data_1 <= (others => 'Z');
 		end if;

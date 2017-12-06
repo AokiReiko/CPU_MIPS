@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Reading design: cpu_16bit_top.prj
 
@@ -99,7 +99,7 @@ Auto BRAM Packing                  : NO
 Slice Utilization Ratio Delta      : 5
 
 ---- Other Options
-Cores Search Directories           : {"D:/17fall/ComputerOrganization/120402/CPU_MIPS"  }
+Cores Search Directories           : {"D:/17fall/ComputerOrganization/120501/CPU_MIPS"  }
 
 =========================================================================
 
@@ -107,50 +107,56 @@ Cores Search Directories           : {"D:/17fall/ComputerOrganization/120402/CPU
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "D:/17fall/ComputerOrganization/120402/CPU_MIPS/debounce.vhd" in Library work.
+Compiling vhdl file "D:/17fall/ComputerOrganization/120501/CPU_MIPS/constants.vhd" in Library work.
+Compiling vhdl file "D:/17fall/ComputerOrganization/120501/CPU_MIPS/debounce.vhd" in Library work.
 Architecture logic of Entity debounce is up to date.
-Compiling vhdl file "D:/17fall/ComputerOrganization/120402/CPU_MIPS/ps2_keyboard.vhd" in Library work.
+Compiling vhdl file "D:/17fall/ComputerOrganization/120501/CPU_MIPS/vga_char.vhd" in Library work.
+Architecture behavioral of Entity vga_char is up to date.
+Compiling vhdl file "D:/17fall/ComputerOrganization/120501/CPU_MIPS/ps2_keyboard.vhd" in Library work.
 Architecture logic of Entity ps2_keyboard is up to date.
-Compiling vhdl file "D:/17fall/ComputerOrganization/120402/CPU_MIPS/alu_defination.vhd" in Library work.
-Compiling vhdl file "D:/17fall/ComputerOrganization/120402/CPU_MIPS/components.vhd" in Library work.
-Compiling vhdl file "D:/17fall/ComputerOrganization/120402/CPU_MIPS/Muxpc.vhd" in Library work.
+Compiling vhdl file "D:/17fall/ComputerOrganization/120501/CPU_MIPS/alu_defination.vhd" in Library work.
+Compiling vhdl file "D:/17fall/ComputerOrganization/120501/CPU_MIPS/components.vhd" in Library work.
+Compiling vhdl file "D:/17fall/ComputerOrganization/120501/CPU_MIPS/Muxpc.vhd" in Library work.
 Architecture behavioral of Entity muxpc is up to date.
-Compiling vhdl file "D:/17fall/ComputerOrganization/120402/CPU_MIPS/pc.vhd" in Library work.
+Compiling vhdl file "D:/17fall/ComputerOrganization/120501/CPU_MIPS/pc.vhd" in Library work.
 Architecture behavioral of Entity pc is up to date.
-Compiling vhdl file "D:/17fall/ComputerOrganization/120402/CPU_MIPS/IFID_Reg.vhd" in Library work.
+Compiling vhdl file "D:/17fall/ComputerOrganization/120501/CPU_MIPS/IFID_Reg.vhd" in Library work.
 Architecture behavioral of Entity ifid_reg is up to date.
-Compiling vhdl file "D:/17fall/ComputerOrganization/120402/CPU_MIPS/registers.vhd" in Library work.
+Compiling vhdl file "D:/17fall/ComputerOrganization/120501/CPU_MIPS/registers.vhd" in Library work.
 Architecture behavioral of Entity registers is up to date.
-Compiling vhdl file "D:/17fall/ComputerOrganization/120402/CPU_MIPS/ctrl_unit.vhd" in Library work.
+Compiling vhdl file "D:/17fall/ComputerOrganization/120501/CPU_MIPS/ctrl_unit.vhd" in Library work.
 Architecture behavioral of Entity ctrl_unit is up to date.
-Compiling vhdl file "D:/17fall/ComputerOrganization/120402/CPU_MIPS/equal_unit.vhd" in Library work.
+Compiling vhdl file "D:/17fall/ComputerOrganization/120501/CPU_MIPS/equal_unit.vhd" in Library work.
 Architecture behavioral of Entity equal_unit is up to date.
-Compiling vhdl file "D:/17fall/ComputerOrganization/120402/CPU_MIPS/IDEX_Reg.vhd" in Library work.
+Compiling vhdl file "D:/17fall/ComputerOrganization/120501/CPU_MIPS/IDEX_Reg.vhd" in Library work.
 Architecture behavioral of Entity idex_reg is up to date.
-Compiling vhdl file "D:/17fall/ComputerOrganization/120402/CPU_MIPS/Muxa.vhd" in Library work.
+Compiling vhdl file "D:/17fall/ComputerOrganization/120501/CPU_MIPS/Muxa.vhd" in Library work.
 Architecture behavioral of Entity muxa is up to date.
-Compiling vhdl file "D:/17fall/ComputerOrganization/120402/CPU_MIPS/Muxb.vhd" in Library work.
+Compiling vhdl file "D:/17fall/ComputerOrganization/120501/CPU_MIPS/Muxb.vhd" in Library work.
 Architecture behavioral of Entity muxb is up to date.
-Compiling vhdl file "D:/17fall/ComputerOrganization/120402/CPU_MIPS/EXMEM_Reg.vhd" in Library work.
+Compiling vhdl file "D:/17fall/ComputerOrganization/120501/CPU_MIPS/EXMEM_Reg.vhd" in Library work.
 Architecture behavioral of Entity exmem_reg is up to date.
-Compiling vhdl file "D:/17fall/ComputerOrganization/120402/CPU_MIPS/MEMWB_Reg.vhd" in Library work.
+Compiling vhdl file "D:/17fall/ComputerOrganization/120501/CPU_MIPS/MEMWB_Reg.vhd" in Library work.
 Architecture behavioral of Entity memwb_reg is up to date.
-Compiling vhdl file "D:/17fall/ComputerOrganization/120402/CPU_MIPS/bypass_unit.vhd" in Library work.
+Compiling vhdl file "D:/17fall/ComputerOrganization/120501/CPU_MIPS/bypass_unit.vhd" in Library work.
 Architecture behavioral of Entity bypass_unit is up to date.
-Compiling vhdl file "D:/17fall/ComputerOrganization/120402/CPU_MIPS/hazard_unit.vhd" in Library work.
+Compiling vhdl file "D:/17fall/ComputerOrganization/120501/CPU_MIPS/hazard_unit.vhd" in Library work.
 Architecture behavioral of Entity hazard_unit is up to date.
-Compiling vhdl file "D:/17fall/ComputerOrganization/120402/CPU_MIPS/memory.vhd" in Library work.
+Compiling vhdl file "D:/17fall/ComputerOrganization/120501/CPU_MIPS/memory.vhd" in Library work.
 Entity <mymemory> compiled.
 Entity <mymemory> (Architecture <behavioral>) compiled.
-Compiling vhdl file "D:/17fall/ComputerOrganization/120402/CPU_MIPS/alu.vhd" in Library work.
+Compiling vhdl file "D:/17fall/ComputerOrganization/120501/CPU_MIPS/alu.vhd" in Library work.
 Architecture behavioral of Entity alu is up to date.
-Compiling vhdl file "D:/17fall/ComputerOrganization/120402/CPU_MIPS/Adder.vhd" in Library work.
+Compiling vhdl file "D:/17fall/ComputerOrganization/120501/CPU_MIPS/Adder.vhd" in Library work.
 Architecture behavioral of Entity adder is up to date.
-Compiling vhdl file "D:/17fall/ComputerOrganization/120402/CPU_MIPS/Muxc.vhd" in Library work.
+Compiling vhdl file "D:/17fall/ComputerOrganization/120501/CPU_MIPS/Muxc.vhd" in Library work.
 Architecture behavioral of Entity muxc is up to date.
-Compiling vhdl file "D:/17fall/ComputerOrganization/120402/CPU_MIPS/ps2_keyboard_to_ascii.vhd" in Library work.
+Compiling vhdl file "D:/17fall/ComputerOrganization/120501/CPU_MIPS/ps2_keyboard_to_ascii.vhd" in Library work.
 Architecture behavior of Entity ps2_keyboard_to_ascii is up to date.
-Compiling vhdl file "D:/17fall/ComputerOrganization/120402/CPU_MIPS/cpu_16bit_top.vhd" in Library work.
+Compiling vhdl file "D:/17fall/ComputerOrganization/120501/CPU_MIPS/vga.vhd" in Library work.
+Entity <vga> compiled.
+Entity <vga> (Architecture <behavioral>) compiled.
+Compiling vhdl file "D:/17fall/ComputerOrganization/120501/CPU_MIPS/cpu_16bit_top.vhd" in Library work.
 Architecture behavioral of Entity cpu_16bit_top is up to date.
 
 =========================================================================
@@ -198,9 +204,13 @@ Analyzing hierarchy for entity <ps2_keyboard_to_ascii> in library <work> (archit
 	clk_freq = 50000000
 	ps2_debounce_counter_size = 8
 
+Analyzing hierarchy for entity <vga> in library <work> (architecture <behavioral>).
+
 Analyzing hierarchy for entity <ps2_keyboard> in library <work> (architecture <logic>) with generics.
 	clk_freq = 50000000
 	debounce_counter_size = 8
+
+Analyzing hierarchy for entity <vga_char> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <debounce> in library <work> (architecture <logic>) with generics.
 	counter_size = 8
@@ -224,9 +234,9 @@ Analyzing Entity <IFID_Reg> in library <work> (Architecture <behavioral>).
 Entity <IFID_Reg> analyzed. Unit <IFID_Reg> generated.
 
 Analyzing Entity <registers> in library <work> (Architecture <behavioral>).
-INFO:Xst:1561 - "D:/17fall/ComputerOrganization/120402/CPU_MIPS/registers.vhd" line 51: Mux is complete : default of case is discarded
-INFO:Xst:1561 - "D:/17fall/ComputerOrganization/120402/CPU_MIPS/registers.vhd" line 75: Mux is complete : default of case is discarded
-INFO:Xst:1561 - "D:/17fall/ComputerOrganization/120402/CPU_MIPS/registers.vhd" line 93: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "D:/17fall/ComputerOrganization/120501/CPU_MIPS/registers.vhd" line 51: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "D:/17fall/ComputerOrganization/120501/CPU_MIPS/registers.vhd" line 75: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "D:/17fall/ComputerOrganization/120501/CPU_MIPS/registers.vhd" line 93: Mux is complete : default of case is discarded
 Entity <registers> analyzed. Unit <registers> generated.
 
 Analyzing Entity <ctrl_unit> in library <work> (Architecture <behavioral>).
@@ -257,6 +267,7 @@ Analyzing Entity <hazard_unit> in library <work> (Architecture <behavioral>).
 Entity <hazard_unit> analyzed. Unit <hazard_unit> generated.
 
 Analyzing Entity <mymemory> in library <work> (Architecture <behavioral>).
+INFO:Xst:2679 - Register <vga_led> in unit <mymemory> has a constant value of 1 during circuit operation. The register is replaced by logic.
 Entity <mymemory> analyzed. Unit <mymemory> generated.
 
 Analyzing Entity <ALU> in library <work> (Architecture <behavioral>).
@@ -282,6 +293,13 @@ Analyzing generic Entity <debounce> in library <work> (Architecture <logic>).
 	counter_size = 8
 Entity <debounce> analyzed. Unit <debounce> generated.
 
+Analyzing Entity <vga> in library <work> (Architecture <behavioral>).
+Entity <vga> analyzed. Unit <vga> generated.
+
+Analyzing Entity <vga_char> in library <work> (Architecture <behavioral>).
+WARNING:Xst:1610 - "D:/17fall/ComputerOrganization/120501/CPU_MIPS/vga_char.vhd" line 62: Width mismatch. <word0> has a width of 7 bits but assigned expression is 8-bit wide.
+Entity <vga_char> analyzed. Unit <vga_char> generated.
+
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -290,7 +308,7 @@ Entity <debounce> analyzed. Unit <debounce> generated.
 Performing bidirectional port resolution...
 
 Synthesizing Unit <Muxpc>.
-    Related source file is "D:/17fall/ComputerOrganization/120402/CPU_MIPS/Muxpc.vhd".
+    Related source file is "D:/17fall/ComputerOrganization/120501/CPU_MIPS/Muxpc.vhd".
     Found 16-bit 4-to-1 multiplexer for signal <pc_out>.
     Summary:
 	inferred  16 Multiplexer(s).
@@ -298,7 +316,7 @@ Unit <Muxpc> synthesized.
 
 
 Synthesizing Unit <PC>.
-    Related source file is "D:/17fall/ComputerOrganization/120402/CPU_MIPS/pc.vhd".
+    Related source file is "D:/17fall/ComputerOrganization/120501/CPU_MIPS/pc.vhd".
     Found 16-bit register for signal <PC_out>.
     Summary:
 	inferred  16 D-type flip-flop(s).
@@ -306,7 +324,7 @@ Unit <PC> synthesized.
 
 
 Synthesizing Unit <IFID_Reg>.
-    Related source file is "D:/17fall/ComputerOrganization/120402/CPU_MIPS/IFID_Reg.vhd".
+    Related source file is "D:/17fall/ComputerOrganization/120501/CPU_MIPS/IFID_Reg.vhd".
 WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 16-bit register for signal <PCNext_out>.
     Found 16-bit register for signal <Instruction_out>.
@@ -316,7 +334,7 @@ Unit <IFID_Reg> synthesized.
 
 
 Synthesizing Unit <registers>.
-    Related source file is "D:/17fall/ComputerOrganization/120402/CPU_MIPS/registers.vhd".
+    Related source file is "D:/17fall/ComputerOrganization/120501/CPU_MIPS/registers.vhd".
 WARNING:Xst:646 - Signal <reg_num> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
     Found 16-bit 8-to-1 multiplexer for signal <outB>.
     Found 16-bit register for signal <IH>.
@@ -338,7 +356,7 @@ Unit <registers> synthesized.
 
 
 Synthesizing Unit <ctrl_unit>.
-    Related source file is "D:/17fall/ComputerOrganization/120402/CPU_MIPS/ctrl_unit.vhd".
+    Related source file is "D:/17fall/ComputerOrganization/120501/CPU_MIPS/ctrl_unit.vhd".
 WARNING:Xst:737 - Found 4-bit latch for signal <rega>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
 WARNING:Xst:737 - Found 3-bit latch for signal <RegWrite>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -355,7 +373,7 @@ Unit <ctrl_unit> synthesized.
 
 
 Synthesizing Unit <equal_unit>.
-    Related source file is "D:/17fall/ComputerOrganization/120402/CPU_MIPS/equal_unit.vhd".
+    Related source file is "D:/17fall/ComputerOrganization/120501/CPU_MIPS/equal_unit.vhd".
     Found 4x2-bit ROM for signal <pc_src$mux0002> created at line 92.
     Found 3-bit comparator equal for signal <real_object_regData$cmp_eq0001> created at line 35.
     Found 3-bit comparator equal for signal <real_object_regData$cmp_eq0003> created at line 33.
@@ -366,7 +384,7 @@ Unit <equal_unit> synthesized.
 
 
 Synthesizing Unit <IDEX_Reg>.
-    Related source file is "D:/17fall/ComputerOrganization/120402/CPU_MIPS/IDEX_Reg.vhd".
+    Related source file is "D:/17fall/ComputerOrganization/120501/CPU_MIPS/IDEX_Reg.vhd".
     Found 3-bit register for signal <out_RegDist>.
     Found 16-bit register for signal <out_rega>.
     Found 16-bit register for signal <out_regb>.
@@ -385,7 +403,7 @@ Unit <IDEX_Reg> synthesized.
 
 
 Synthesizing Unit <Muxa>.
-    Related source file is "D:/17fall/ComputerOrganization/120402/CPU_MIPS/Muxa.vhd".
+    Related source file is "D:/17fall/ComputerOrganization/120501/CPU_MIPS/Muxa.vhd".
     Found 16-bit 4-to-1 multiplexer for signal <src_out>.
     Summary:
 	inferred  16 Multiplexer(s).
@@ -393,7 +411,7 @@ Unit <Muxa> synthesized.
 
 
 Synthesizing Unit <Muxb>.
-    Related source file is "D:/17fall/ComputerOrganization/120402/CPU_MIPS/Muxb.vhd".
+    Related source file is "D:/17fall/ComputerOrganization/120501/CPU_MIPS/Muxb.vhd".
     Found 16-bit 4-to-1 multiplexer for signal <reg_out>.
     Summary:
 	inferred  16 Multiplexer(s).
@@ -401,7 +419,7 @@ Unit <Muxb> synthesized.
 
 
 Synthesizing Unit <EXMEM_Reg>.
-    Related source file is "D:/17fall/ComputerOrganization/120402/CPU_MIPS/EXMEM_Reg.vhd".
+    Related source file is "D:/17fall/ComputerOrganization/120501/CPU_MIPS/EXMEM_Reg.vhd".
 WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 3-bit register for signal <out_RegDist>.
     Found 3-bit register for signal <out_RegWrite>.
@@ -416,7 +434,7 @@ Unit <EXMEM_Reg> synthesized.
 
 
 Synthesizing Unit <MEMWB_Reg>.
-    Related source file is "D:/17fall/ComputerOrganization/120402/CPU_MIPS/MEMWB_Reg.vhd".
+    Related source file is "D:/17fall/ComputerOrganization/120501/CPU_MIPS/MEMWB_Reg.vhd".
 WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 3-bit register for signal <out_RegDist>.
     Found 3-bit register for signal <out_RegWrite>.
@@ -428,7 +446,7 @@ Unit <MEMWB_Reg> synthesized.
 
 
 Synthesizing Unit <bypass_unit>.
-    Related source file is "D:/17fall/ComputerOrganization/120402/CPU_MIPS/bypass_unit.vhd".
+    Related source file is "D:/17fall/ComputerOrganization/120501/CPU_MIPS/bypass_unit.vhd".
 WARNING:Xst:647 - Input <alusrc> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 3-bit comparator equal for signal <forwarda$cmp_eq0001> created at line 23.
     Found 3-bit comparator equal for signal <forwarda$cmp_eq0005> created at line 24.
@@ -440,7 +458,7 @@ Unit <bypass_unit> synthesized.
 
 
 Synthesizing Unit <hazard_unit>.
-    Related source file is "D:/17fall/ComputerOrganization/120402/CPU_MIPS/hazard_unit.vhd".
+    Related source file is "D:/17fall/ComputerOrganization/120501/CPU_MIPS/hazard_unit.vhd".
     Found 3-bit comparator equal for signal <pc_write$cmp_eq0000> created at line 23.
     Found 3-bit comparator equal for signal <pc_write$cmp_eq0001> created at line 26.
     Summary:
@@ -449,16 +467,25 @@ Unit <hazard_unit> synthesized.
 
 
 Synthesizing Unit <mymemory>.
-    Related source file is "D:/17fall/ComputerOrganization/120402/CPU_MIPS/memory.vhd".
+    Related source file is "D:/17fall/ComputerOrganization/120501/CPU_MIPS/memory.vhd".
+WARNING:Xst:737 - Found 16-bit latch for signal <vga_data>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 16-bit latch for signal <vga_addr>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:736 - Found 16-bit latch for signal <Mtridata_data_1> created at line 203. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:736 - Found 1-bit latch for signal <Mtrien_data_1> created at line 203. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
     Found 16-bit tristate buffer for signal <data_1>.
     Found 16-bit tristate buffer for signal <data_2>.
+    Found 1-bit register for signal <ascii_rising_edge>.
+    Found 17-bit comparator greatequal for signal <vga_enable$cmp_ge0000> created at line 113.
     Summary:
+	inferred   1 D-type flip-flop(s).
+	inferred   1 Comparator(s).
 	inferred  32 Tristate(s).
 Unit <mymemory> synthesized.
 
 
 Synthesizing Unit <ALU>.
-    Related source file is "D:/17fall/ComputerOrganization/120402/CPU_MIPS/alu.vhd".
+    Related source file is "D:/17fall/ComputerOrganization/120501/CPU_MIPS/alu.vhd".
     Found 16-bit addsub for signal <fout$addsub0000>.
     Found 16-bit comparator equal for signal <fout$cmp_eq0012> created at line 32.
     Found 16-bit comparator greatequal for signal <fout$cmp_ge0000> created at line 40.
@@ -475,7 +502,7 @@ Unit <ALU> synthesized.
 
 
 Synthesizing Unit <Adder>.
-    Related source file is "D:/17fall/ComputerOrganization/120402/CPU_MIPS/Adder.vhd".
+    Related source file is "D:/17fall/ComputerOrganization/120501/CPU_MIPS/Adder.vhd".
     Found 16-bit adder for signal <res>.
     Summary:
 	inferred   1 Adder/Subtractor(s).
@@ -483,13 +510,13 @@ Unit <Adder> synthesized.
 
 
 Synthesizing Unit <Muxc>.
-    Related source file is "D:/17fall/ComputerOrganization/120402/CPU_MIPS/Muxc.vhd".
+    Related source file is "D:/17fall/ComputerOrganization/120501/CPU_MIPS/Muxc.vhd".
 WARNING:Xst:647 - Input <addr<14:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 Unit <Muxc> synthesized.
 
 
 Synthesizing Unit <debounce>.
-    Related source file is "D:/17fall/ComputerOrganization/120402/CPU_MIPS/debounce.vhd".
+    Related source file is "D:/17fall/ComputerOrganization/120501/CPU_MIPS/debounce.vhd".
     Found 1-bit register for signal <result>.
     Found 9-bit up counter for signal <counter_out>.
     Found 1-bit xor2 for signal <counter_set>.
@@ -500,8 +527,57 @@ Synthesizing Unit <debounce>.
 Unit <debounce> synthesized.
 
 
+Synthesizing Unit <vga_char>.
+    Related source file is "D:/17fall/ComputerOrganization/120501/CPU_MIPS/vga_char.vhd".
+WARNING:Xst:647 - Input <word<559:554>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 64x128-bit ROM for signal <Char$mux0002>.
+    Found 1-bit 128-to-1 multiplexer for signal <vout>.
+    Found 7-bit adder for signal <$sub0000> created at line 109.
+    Found 8-bit subtractor for signal <vout$addsub0000> created at line 109.
+    Found 7x3-bit multiplier for signal <word0$mult0000> created at line 60.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   1 Multiplier(s).
+	inferred   1 Multiplexer(s).
+Unit <vga_char> synthesized.
+
+
+Synthesizing Unit <vga>.
+    Related source file is "D:/17fall/ComputerOrganization/120501/CPU_MIPS/vga.vhd".
+WARNING:Xst:647 - Input <data<15:7>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Register <g1> equivalent to <b1> has been removed
+    Register <r1> equivalent to <b1> has been removed
+    Found 1-bit register for signal <hs>.
+    Found 1-bit register for signal <vs>.
+    Found 3-bit register for signal <b1>.
+    Found 17-bit subtractor for signal <bgn$sub0000> created at line 68.
+    Found 1-bit register for signal <clk>.
+    Found 560-bit register for signal <data0>.
+    Found 17-bit comparator less for signal <data0_41$cmp_lt0000> created at line 67.
+    Found 8x3-bit multiplier for signal <data0_41$mult0000> created at line 69.
+    Found 1-bit register for signal <hs1>.
+    Found 11-bit comparator greatequal for signal <hs1$cmp_ge0000> created at line 126.
+    Found 11-bit comparator less for signal <hs1$cmp_lt0000> created at line 126.
+    Found 11-bit comparator greater for signal <r1$cmp_gt0000> created at line 172.
+    Found 11-bit comparator greater for signal <r1$cmp_gt0001> created at line 172.
+    Found 10-bit up counter for signal <vector_x>.
+    Found 10-bit up counter for signal <vector_y>.
+    Found 1-bit register for signal <vs1>.
+    Found 11-bit comparator greatequal for signal <vs1$cmp_ge0000> created at line 139.
+    Found 11-bit comparator less for signal <vs1$cmp_lt0000> created at line 139.
+INFO:Xst:738 - HDL ADVISOR - 560 flip-flops were inferred for signal <data0>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+    Summary:
+	inferred   2 Counter(s).
+	inferred 568 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Multiplier(s).
+	inferred   7 Comparator(s).
+Unit <vga> synthesized.
+
+
 Synthesizing Unit <ps2_keyboard>.
-    Related source file is "D:/17fall/ComputerOrganization/120402/CPU_MIPS/ps2_keyboard.vhd".
+    Related source file is "D:/17fall/ComputerOrganization/120501/CPU_MIPS/ps2_keyboard.vhd".
     Found 1-bit register for signal <ps2_code_new>.
     Found 8-bit register for signal <ps2_code>.
     Found 12-bit up counter for signal <count_idle>.
@@ -516,7 +592,7 @@ Unit <ps2_keyboard> synthesized.
 
 
 Synthesizing Unit <ps2_keyboard_to_ascii>.
-    Related source file is "D:/17fall/ComputerOrganization/120402/CPU_MIPS/ps2_keyboard_to_ascii.vhd".
+    Related source file is "D:/17fall/ComputerOrganization/120501/CPU_MIPS/ps2_keyboard_to_ascii.vhd".
     Found finite state machine <FSM_0> for signal <state>.
     -----------------------------------------------------------------------
     | States             | 4                                              |
@@ -546,7 +622,7 @@ Unit <ps2_keyboard_to_ascii> synthesized.
 
 
 Synthesizing Unit <cpu_16bit_top>.
-    Related source file is "D:/17fall/ComputerOrganization/120402/CPU_MIPS/cpu_16bit_top.vhd".
+    Related source file is "D:/17fall/ComputerOrganization/120501/CPU_MIPS/cpu_16bit_top.vhd".
 WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <sw> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:646 - Signal <temp_inst> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
@@ -555,11 +631,17 @@ WARNING:Xst:1780 - Signal <clk1M> is never used or assigned. This unconnected si
 WARNING:Xst:646 - Signal <MeMWB_Memdata> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <MEMWB_MemtoReg> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <HD_IFFlush> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:737 - Found 1-bit latch for signal <addr_cmp_led>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <memwrite_led>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <addr_in_led>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 17-bit comparator greatequal for signal <addr_cmp_led$cmp_ge0000> created at line 216.
     Found 1-bit register for signal <clk10>.
     Found 30-bit up counter for signal <count10>.
+    Found 1-bit register for signal <vga_enable_led>.
     Summary:
 	inferred   1 Counter(s).
-	inferred   1 D-type flip-flop(s).
+	inferred   2 D-type flip-flop(s).
+	inferred   1 Comparator(s).
 Unit <cpu_16bit_top> synthesized.
 
 INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
@@ -568,33 +650,47 @@ INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmet
 HDL Synthesis Report
 
 Macro Statistics
-# ROMs                                                 : 1
+# ROMs                                                 : 2
  4x2-bit ROM                                           : 1
-# Adders/Subtractors                                   : 3
+ 64x128-bit ROM                                        : 1
+# Multipliers                                          : 2
+ 7x3-bit multiplier                                    : 1
+ 8x3-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 6
  16-bit adder                                          : 2
  16-bit addsub                                         : 1
-# Counters                                             : 4
+ 17-bit subtractor                                     : 1
+ 7-bit adder                                           : 1
+ 8-bit subtractor                                      : 1
+# Counters                                             : 6
+ 10-bit up counter                                     : 2
  12-bit up counter                                     : 1
  30-bit up counter                                     : 1
  9-bit up counter                                      : 2
-# Registers                                            : 68
- 1-bit register                                        : 35
+# Registers                                            : 636
+ 1-bit register                                        : 602
  11-bit register                                       : 1
  16-bit register                                       : 21
- 3-bit register                                        : 7
+ 3-bit register                                        : 8
  4-bit register                                        : 2
  7-bit register                                        : 1
  8-bit register                                        : 1
-# Latches                                              : 6
- 1-bit latch                                           : 1
- 16-bit latch                                          : 1
+# Latches                                              : 13
+ 1-bit latch                                           : 5
+ 16-bit latch                                          : 4
  3-bit latch                                           : 2
  4-bit latch                                           : 2
-# Comparators                                          : 10
+# Comparators                                          : 19
+ 11-bit comparator greatequal                          : 2
+ 11-bit comparator greater                             : 2
+ 11-bit comparator less                                : 2
  16-bit comparator equal                               : 1
  16-bit comparator greatequal                          : 1
+ 17-bit comparator greatequal                          : 2
+ 17-bit comparator less                                : 1
  3-bit comparator equal                                : 8
-# Multiplexers                                         : 4
+# Multiplexers                                         : 5
+ 1-bit 128-to-1 multiplexer                            : 1
  16-bit 4-to-1 multiplexer                             : 3
  16-bit 8-to-1 multiplexer                             : 1
 # Logic shifters                                       : 4
@@ -625,33 +721,56 @@ Optimizing FSM <keyboard_ascii/state/FSM> on signal <state[1:2]> with user encod
  translate | 10
  output    | 11
 -----------------------
+INFO:Xst:2261 - The FF/Latch <b1_0> in Unit <vga> is equivalent to the following 2 FFs/Latches, which will be removed : <b1_1> <b1_2> 
+WARNING:Xst:1426 - The value init of the FF/Latch vga_enable_led hinder the constant cleaning in the block cpu_16bit_top.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch 0 hinder the constant cleaning in the block memwrite_led.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch 0 hinder the constant cleaning in the block addr_in_led.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch 0 hinder the constant cleaning in the block addr_cmp_led.
+   You should achieve better results by setting this init to 1.
 
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
 # FSMs                                                 : 1
-# ROMs                                                 : 1
+# ROMs                                                 : 2
  4x2-bit ROM                                           : 1
-# Adders/Subtractors                                   : 3
+ 64x128-bit ROM                                        : 1
+# Multipliers                                          : 2
+ 7x3-bit multiplier                                    : 1
+ 8x3-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 6
  16-bit adder                                          : 2
  16-bit addsub                                         : 1
-# Counters                                             : 4
+ 7-bit adder                                           : 1
+ 7-bit subtractor                                      : 1
+ 8-bit subtractor                                      : 1
+# Counters                                             : 6
+ 10-bit up counter                                     : 2
  12-bit up counter                                     : 1
  30-bit up counter                                     : 1
  9-bit up counter                                      : 2
-# Registers                                            : 426
- Flip-Flops                                            : 426
-# Latches                                              : 6
- 1-bit latch                                           : 1
- 16-bit latch                                          : 1
+# Registers                                            : 996
+ Flip-Flops                                            : 996
+# Latches                                              : 13
+ 1-bit latch                                           : 5
+ 16-bit latch                                          : 4
  3-bit latch                                           : 2
  4-bit latch                                           : 2
-# Comparators                                          : 10
+# Comparators                                          : 19
+ 11-bit comparator greatequal                          : 2
+ 11-bit comparator greater                             : 2
+ 11-bit comparator less                                : 2
  16-bit comparator equal                               : 1
  16-bit comparator greatequal                          : 1
+ 17-bit comparator greatequal                          : 2
+ 17-bit comparator less                                : 1
  3-bit comparator equal                                : 8
-# Multiplexers                                         : 19
+# Multiplexers                                         : 20
+ 1-bit 128-to-1 multiplexer                            : 1
  1-bit 8-to-1 multiplexer                              : 16
  16-bit 4-to-1 multiplexer                             : 3
 # Logic shifters                                       : 4
@@ -669,6 +788,15 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
+WARNING:Xst:1426 - The value init of the FF/Latch vga_enable_led hinder the constant cleaning in the block cpu_16bit_top.
+   You should achieve better results by setting this init to 1.
+INFO:Xst:2261 - The FF/Latch <b1_0> in Unit <vga> is equivalent to the following 2 FFs/Latches, which will be removed : <b1_1> <b1_2> 
+WARNING:Xst:1426 - The value init of the FF/Latch memwrite_led hinder the constant cleaning in the block cpu_16bit_top.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch addr_in_led hinder the constant cleaning in the block cpu_16bit_top.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch addr_cmp_led hinder the constant cleaning in the block cpu_16bit_top.
+   You should achieve better results by setting this init to 1.
 WARNING:Xst:2170 - Unit ALU : the following signal(s) form a combinatorial loop: fout_shift0006<15>.
 
 Optimizing unit <cpu_16bit_top> ...
@@ -689,11 +817,24 @@ Optimizing unit <MEMWB_Reg> ...
 
 Optimizing unit <ALU> ...
 
+Optimizing unit <vga_char> ...
+
 Optimizing unit <ctrl_unit> ...
+
+Optimizing unit <vga> ...
 
 Optimizing unit <ps2_keyboard> ...
 
 Optimizing unit <ps2_keyboard_to_ascii> ...
+WARNING:Xst:2677 - Node <memory0/vga_data_15> of sequential type is unconnected in block <cpu_16bit_top>.
+WARNING:Xst:2677 - Node <memory0/vga_data_14> of sequential type is unconnected in block <cpu_16bit_top>.
+WARNING:Xst:2677 - Node <memory0/vga_data_13> of sequential type is unconnected in block <cpu_16bit_top>.
+WARNING:Xst:2677 - Node <memory0/vga_data_12> of sequential type is unconnected in block <cpu_16bit_top>.
+WARNING:Xst:2677 - Node <memory0/vga_data_11> of sequential type is unconnected in block <cpu_16bit_top>.
+WARNING:Xst:2677 - Node <memory0/vga_data_10> of sequential type is unconnected in block <cpu_16bit_top>.
+WARNING:Xst:2677 - Node <memory0/vga_data_9> of sequential type is unconnected in block <cpu_16bit_top>.
+WARNING:Xst:2677 - Node <memory0/vga_data_8> of sequential type is unconnected in block <cpu_16bit_top>.
+WARNING:Xst:2677 - Node <memory0/vga_data_7> of sequential type is unconnected in block <cpu_16bit_top>.
 WARNING:Xst:2677 - Node <u13/out_memdata_15> of sequential type is unconnected in block <cpu_16bit_top>.
 WARNING:Xst:2677 - Node <u13/out_memdata_14> of sequential type is unconnected in block <cpu_16bit_top>.
 WARNING:Xst:2677 - Node <u13/out_memdata_13> of sequential type is unconnected in block <cpu_16bit_top>.
@@ -710,13 +851,21 @@ WARNING:Xst:2677 - Node <u13/out_memdata_3> of sequential type is unconnected in
 WARNING:Xst:2677 - Node <u13/out_memdata_2> of sequential type is unconnected in block <cpu_16bit_top>.
 WARNING:Xst:2677 - Node <u13/out_memdata_1> of sequential type is unconnected in block <cpu_16bit_top>.
 WARNING:Xst:2677 - Node <u13/out_memdata_0> of sequential type is unconnected in block <cpu_16bit_top>.
+WARNING:Xst:2677 - Node <vga/data0_559> of sequential type is unconnected in block <cpu_16bit_top>.
+WARNING:Xst:2677 - Node <vga/data0_558> of sequential type is unconnected in block <cpu_16bit_top>.
+WARNING:Xst:2677 - Node <vga/data0_557> of sequential type is unconnected in block <cpu_16bit_top>.
+WARNING:Xst:2677 - Node <vga/data0_556> of sequential type is unconnected in block <cpu_16bit_top>.
+WARNING:Xst:2677 - Node <vga/data0_554> of sequential type is unconnected in block <cpu_16bit_top>.
+WARNING:Xst:2677 - Node <vga/data0_555> of sequential type is unconnected in block <cpu_16bit_top>.
+WARNING:Xst:2677 - Node <vga/data0_553> of sequential type is unconnected in block <cpu_16bit_top>.
 
 Mapping all equations...
 Building and optimizing final netlist ...
 INFO:Xst:2261 - The FF/Latch <u6/out_MemtoReg> in Unit <cpu_16bit_top> is equivalent to the following FF/Latch, which will be removed : <u6/out_MemRead> 
 INFO:Xst:2261 - The FF/Latch <u9/out_MemtoReg> in Unit <cpu_16bit_top> is equivalent to the following FF/Latch, which will be removed : <u9/out_MemRead> 
-Found area constraint ratio of 100 (+ 5) on block cpu_16bit_top, actual ratio is 10.
-FlipFlop u13/out_RegWrite_2 has been replicated 1 time(s)
+Found area constraint ratio of 100 (+ 5) on block cpu_16bit_top, actual ratio is 16.
+FlipFlop vga/vector_x_3 has been replicated 1 time(s)
+Latch memory0/Mtrien_data_1 has been replicated 15 time(s) to handle iob=true attribute.
 
 Final Macro Processing ...
 
@@ -729,8 +878,8 @@ Unit <cpu_16bit_top> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 467
- Flip-Flops                                            : 467
+# Registers                                            : 1048
+ Flip-Flops                                            : 1048
 # Shift Registers                                      : 2
  2-bit shift register                                  : 2
 
@@ -758,47 +907,53 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : No
 
 Design Statistics
-# IOs                              : 131
+# IOs                              : 142
 
 Cell Usage :
-# BELS                             : 1929
+# BELS                             : 3353
 #      GND                         : 1
-#      INV                         : 13
-#      LUT1                        : 71
-#      LUT2                        : 82
-#      LUT2_D                      : 6
+#      INV                         : 24
+#      LUT1                        : 92
+#      LUT2                        : 96
+#      LUT2_D                      : 11
 #      LUT2_L                      : 14
-#      LUT3                        : 298
-#      LUT3_D                      : 15
-#      LUT3_L                      : 33
-#      LUT4                        : 835
-#      LUT4_D                      : 47
-#      LUT4_L                      : 76
-#      MUXCY                       : 133
-#      MUXF5                       : 177
-#      MUXF6                       : 18
-#      MUXF7                       : 1
+#      LUT3                        : 438
+#      LUT3_D                      : 44
+#      LUT3_L                      : 42
+#      LUT4                        : 1473
+#      LUT4_D                      : 50
+#      LUT4_L                      : 87
+#      MUXCY                       : 453
+#      MUXF5                       : 321
+#      MUXF6                       : 60
+#      MUXF7                       : 8
+#      MUXF8                       : 2
 #      VCC                         : 1
-#      XORCY                       : 108
-# FlipFlops/Latches                : 500
-#      FD                          : 72
-#      FD_1                        : 11
+#      XORCY                       : 136
+# FlipFlops/Latches                : 1139
+#      FD                          : 73
+#      FD_1                        : 12
+#      FDC                         : 1
 #      FDCE                        : 16
 #      FDE                         : 62
-#      FDE_1                       : 177
-#      FDR                         : 96
-#      FDRE                        : 30
+#      FDE_1                       : 730
+#      FDR                         : 111
+#      FDRE                        : 40
 #      FDS                         : 5
-#      LD                          : 31
+#      LD                          : 50
+#      LDCP                        : 16
+#      LDE_1                       : 23
 # Shift Registers                  : 2
 #      SRL16                       : 2
-# Clock Buffers                    : 3
-#      BUFG                        : 1
+# Clock Buffers                    : 6
+#      BUFG                        : 4
 #      BUFGP                       : 2
-# IO Buffers                       : 112
+# IO Buffers                       : 123
 #      IBUF                        : 6
 #      IOBUF                       : 32
-#      OBUF                        : 74
+#      OBUF                        : 85
+# MULTs                            : 1
+#      MULT18X18SIO                : 1
 =========================================================================
 
 Device utilization summary:
@@ -806,14 +961,16 @@ Device utilization summary:
 
 Selected Device : 3s1200efg320-5 
 
- Number of Slices:                      791  out of   8672     9%  
- Number of Slice Flip Flops:            500  out of  17344     2%  
- Number of 4 input LUTs:               1492  out of  17344     8%  
-    Number used as logic:              1490
+ Number of Slices:                     1487  out of   8672    17%  
+ Number of Slice Flip Flops:           1103  out of  17344     6%  
+ Number of 4 input LUTs:               2373  out of  17344    13%  
+    Number used as logic:              2371
     Number used as Shift registers:       2
- Number of IOs:                         131
- Number of bonded IOBs:                 114  out of    250    45%  
- Number of GCLKs:                         3  out of     24    12%  
+ Number of IOs:                         142
+ Number of bonded IOBs:                 125  out of    250    50%  
+    IOB Flip Flops:                      36
+ Number of MULT18X18SIOs:                 1  out of     28     3%  
+ Number of GCLKs:                         6  out of     24    25%  
 
 ---------------------------
 Partition Resource Summary:
@@ -833,38 +990,64 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
------------------------------------------------------+-----------------------------------------------+-------+
-Clock Signal                                         | Clock buffer(FF name)                         | Load  |
------------------------------------------------------+-----------------------------------------------+-------+
-clk11                                                | BUFGP                                         | 31    |
-clk101                                               | BUFG                                          | 356   |
-u5/immediate_not0001(u5/immediate_not00011:O)        | NONE(*)(u5/immediate_15)                      | 17    |
-u5/rega_not0001(u5/rega_not000180:O)                 | NONE(*)(u5/rega_3)                            | 10    |
-u5/ALUOp_not0001(u5/ALUOp_not000158:O)               | NONE(*)(u5/ALUOp_3)                           | 4     |
-clk50                                                | BUFGP                                         | 73    |
-keyboard_ascii/ps2_keyboard_0/debounce_ps2_clk/result| NONE(keyboard_ascii/ps2_keyboard_0/ps2_word_0)| 11    |
------------------------------------------------------+-----------------------------------------------+-------+
-(*) These 3 clock signal(s) are generated by combinatorial logic,
+----------------------------------------------------------------------------+-----------------------------------------------+-------+
+Clock Signal                                                                | Clock buffer(FF name)                         | Load  |
+----------------------------------------------------------------------------+-----------------------------------------------+-------+
+clk11                                                                       | BUFGP                                         | 31    |
+vga_enable1(memory0/vga_enable1:O)                                          | BUFG(*)(vga_enable_led)                       | 554   |
+addr_in_led_cmp_eq0000(addr_in_led_cmp_eq000023:O)                          | NONE(*)(addr_in_led)                          | 1     |
+u9/out_MemWrite                                                             | NONE(memwrite_led)                            | 1     |
+addr_cmp_led_cmp_ge0000(Mcompar_addr_cmp_led_cmp_ge0000_cy<4>:O)            | NONE(*)(addr_cmp_led)                         | 1     |
+u9/out_MemtoReg                                                             | BUFG                                          | 23    |
+memory0/Mtrien_data_1_not0001(memory0/Mtrien_data_1_not00011:O)             | NONE(*)(memory0/Mtrien_data_1)                | 16    |
+keyboard_ascii/ascii_new                                                    | NONE(memory0/ascii_rising_edge)               | 1     |
+clk101                                                                      | BUFG                                          | 355   |
+u5/immediate_not0001(u5/immediate_not00011:O)                               | NONE(*)(u5/immediate_15)                      | 17    |
+u5/rega_not0001(u5/rega_not000180:O)                                        | NONE(*)(u5/rega_3)                            | 10    |
+u5/ALUOp_not0001(u5/ALUOp_not000158:O)                                      | NONE(*)(u5/ALUOp_3)                           | 4     |
+vga/clk1                                                                    | BUFG                                          | 26    |
+clk50                                                                       | BUFGP                                         | 74    |
+keyboard_ascii/ps2_keyboard_0/debounce_ps2_clk/result                       | NONE(keyboard_ascii/ps2_keyboard_0/ps2_word_0)| 11    |
+memory0/vga_enable_cmp_ge0000(memory0/Mcompar_vga_enable_cmp_ge0000_cy<4>:O)| NONE(*)(memory0/Mtridata_data_1_15)           | 16    |
+----------------------------------------------------------------------------+-----------------------------------------------+-------+
+(*) These 8 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
 Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
 Asynchronous Control Signals Information:
 ----------------------------------------
------------------------------------+------------------------+-------+
-Control Signal                     | Buffer(FF name)        | Load  |
------------------------------------+------------------------+-------+
-u2/rst_inv(u2/rst_inv1_INV_0:O)    | NONE(u2/PC_out_0)      | 16    |
------------------------------------+------------------------+-------+
+-------------------------------------------------------------------------+---------------------------------+-------+
+Control Signal                                                           | Buffer(FF name)                 | Load  |
+-------------------------------------------------------------------------+---------------------------------+-------+
+u2/rst_inv(u2/rst_inv1_INV_0:O)                                          | NONE(u2/PC_out_0)               | 16    |
+led_4_OBUF(XST_GND:G)                                                    | NONE(memory0/Mtridata_data_1_10)| 9     |
+u9/out_MemtoReg(u9/out_MemtoReg:Q)                                       | NONE(memory0/Mtridata_data_1_10)| 9     |
+memory0/Mtridata_data_1_0__and0000(memory0/Mtridata_data_1_0__and00001:O)| NONE(memory0/Mtridata_data_1_0) | 1     |
+memory0/Mtridata_data_1_0__and0001(memory0/Mtridata_data_1_0__and00011:O)| NONE(memory0/Mtridata_data_1_0) | 1     |
+memory0/Mtridata_data_1_1__and0000(memory0/Mtridata_data_1_1__and00001:O)| NONE(memory0/Mtridata_data_1_1) | 1     |
+memory0/Mtridata_data_1_1__and0001(memory0/Mtridata_data_1_1__and00011:O)| NONE(memory0/Mtridata_data_1_1) | 1     |
+memory0/Mtridata_data_1_2__and0000(memory0/Mtridata_data_1_2__and00001:O)| NONE(memory0/Mtridata_data_1_2) | 1     |
+memory0/Mtridata_data_1_2__and0001(memory0/Mtridata_data_1_2__and00011:O)| NONE(memory0/Mtridata_data_1_2) | 1     |
+memory0/Mtridata_data_1_3__and0000(memory0/Mtridata_data_1_3__and00001:O)| NONE(memory0/Mtridata_data_1_3) | 1     |
+memory0/Mtridata_data_1_3__and0001(memory0/Mtridata_data_1_3__and00011:O)| NONE(memory0/Mtridata_data_1_3) | 1     |
+memory0/Mtridata_data_1_4__and0000(memory0/Mtridata_data_1_4__and00001:O)| NONE(memory0/Mtridata_data_1_4) | 1     |
+memory0/Mtridata_data_1_4__and0001(memory0/Mtridata_data_1_4__and00011:O)| NONE(memory0/Mtridata_data_1_4) | 1     |
+memory0/Mtridata_data_1_5__and0000(memory0/Mtridata_data_1_5__and00001:O)| NONE(memory0/Mtridata_data_1_5) | 1     |
+memory0/Mtridata_data_1_5__and0001(memory0/Mtridata_data_1_5__and00011:O)| NONE(memory0/Mtridata_data_1_5) | 1     |
+memory0/Mtridata_data_1_6__and0000(memory0/Mtridata_data_1_6__and00001:O)| NONE(memory0/Mtridata_data_1_6) | 1     |
+memory0/Mtridata_data_1_6__and0001(memory0/Mtridata_data_1_6__and00011:O)| NONE(memory0/Mtridata_data_1_6) | 1     |
+memory0/ascii_rising_edge_and0000(memory0/ascii_rising_edge_and00001:O)  | NONE(memory0/ascii_rising_edge) | 1     |
+-------------------------------------------------------------------------+---------------------------------+-------+
 
 Timing Summary:
 ---------------
 Speed Grade: -5
 
-   Minimum period: 18.899ns (Maximum Frequency: 52.914MHz)
-   Minimum input arrival time before clock: 2.713ns
-   Maximum output required time after clock: 11.440ns
-   Maximum combinational path delay: 7.641ns
+   Minimum period: 19.632ns (Maximum Frequency: 50.936MHz)
+   Minimum input arrival time before clock: 4.689ns
+   Maximum output required time after clock: 9.788ns
+   Maximum combinational path delay: No path found
 
 Timing Detail:
 --------------
@@ -901,26 +1084,48 @@ Delay:               4.527ns (Levels of Logic = 9)
                                        (64.6% logic, 35.4% route)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'clk101'
-  Clock period: 18.899ns (frequency: 52.914MHz)
-  Total number of paths / destination ports: 3056311 / 602
+Timing constraint: Default period analysis for Clock 'u9/out_MemtoReg'
+  Clock period: 2.623ns (frequency: 381.277MHz)
+  Total number of paths / destination ports: 23 / 23
 -------------------------------------------------------------------------
-Delay:               18.899ns (Levels of Logic = 22)
-  Source:            u6/out_rt_0 (FF)
-  Destination:       u2/PC_out_15 (FF)
-  Source Clock:      clk101 rising
-  Destination Clock: clk101 rising
+Delay:               2.623ns (Levels of Logic = 1)
+  Source:            memory0/vga_data_6 (LATCH)
+  Destination:       memory0/vga_data_6 (LATCH)
+  Source Clock:      u9/out_MemtoReg rising
+  Destination Clock: u9/out_MemtoReg rising
 
-  Data Path: u6/out_rt_0 to u2/PC_out_15
+  Data Path: memory0/vga_data_6 to memory0/vga_data_6
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q             16   0.514   0.909  u6/out_rt_0 (u6/out_rt_0)
-     LUT4:I2->O            3   0.612   0.454  u14/forwardb_and000055_SW0 (N383)
+     LDE_1:G->Q           80   0.588   1.155  memory0/vga_data_6 (memory0/vga_data_6)
+     LUT3:I1->O            1   0.612   0.000  memory0/vga_data_mux0002<6>1 (memory0/vga_data_mux0002<6>)
+     LDE_1:D                   0.268          memory0/vga_data_6
+    ----------------------------------------
+    Total                      2.623ns (1.468ns logic, 1.155ns route)
+                                       (56.0% logic, 44.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk101'
+  Clock period: 19.022ns (frequency: 52.572MHz)
+  Total number of paths / destination ports: 3820172 / 601
+-------------------------------------------------------------------------
+Delay:               19.022ns (Levels of Logic = 22)
+  Source:            u6/out_rt_0 (FF)
+  Destination:       u2/PC_out_14 (FF)
+  Source Clock:      clk101 rising
+  Destination Clock: clk101 rising
+
+  Data Path: u6/out_rt_0 to u2/PC_out_14
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             15   0.514   0.894  u6/out_rt_0 (u6/out_rt_0)
+     LUT4:I2->O            3   0.612   0.454  u14/forwardb_and000055_SW0 (N444)
      LUT4_D:I3->O         41   0.612   1.078  u14/forwardb_and000055 (BP_forwardB<0>)
-     LUT4:I3->O            1   0.612   0.387  u8/src_out<0>16 (u8/src_out<0>16)
-     LUT4:I2->O           80   0.612   1.155  u8/src_out<0>39 (EX_Muxb_oprandB<0>)
-     LUT4:I1->O            1   0.612   0.000  u15/Mcompar_fout_cmp_eq0012_lut<0> (u15/Mcompar_fout_cmp_eq0012_lut<0>)
+     LUT4:I3->O            1   0.612   0.387  u8/src_out<1>16 (u8/src_out<1>16)
+     LUT4:I2->O           55   0.612   1.231  u8/src_out<1>39 (EX_Muxb_oprandB<1>)
+     LUT4:I0->O            1   0.612   0.000  u15/Mcompar_fout_cmp_eq0012_lut<0> (u15/Mcompar_fout_cmp_eq0012_lut<0>)
      MUXCY:S->O            1   0.404   0.000  u15/Mcompar_fout_cmp_eq0012_cy<0> (u15/Mcompar_fout_cmp_eq0012_cy<0>)
      MUXCY:CI->O           1   0.052   0.000  u15/Mcompar_fout_cmp_eq0012_cy<1> (u15/Mcompar_fout_cmp_eq0012_cy<1>)
      MUXCY:CI->O           1   0.052   0.000  u15/Mcompar_fout_cmp_eq0012_cy<2> (u15/Mcompar_fout_cmp_eq0012_cy<2>)
@@ -929,49 +1134,126 @@ Delay:               18.899ns (Levels of Logic = 22)
      MUXCY:CI->O           1   0.052   0.000  u15/Mcompar_fout_cmp_eq0012_cy<5> (u15/Mcompar_fout_cmp_eq0012_cy<5>)
      MUXCY:CI->O           1   0.052   0.000  u15/Mcompar_fout_cmp_eq0012_cy<6> (u15/Mcompar_fout_cmp_eq0012_cy<6>)
      MUXCY:CI->O           2   0.399   0.383  u15/Mcompar_fout_cmp_eq0012_cy<7> (u15/Mcompar_fout_cmp_eq0012_cy<7>)
-     LUT4:I3->O            1   0.612   0.387  u15/fout<15>4_SW0 (N311)
-     LUT4_D:I2->O         14   0.612   1.002  u15/fout<15>4 (u15/N47)
-     LUT4:I0->O            3   0.612   0.603  u15/fout<8>157 (EX_ALU_res<8>)
-     LUT4:I0->O            1   0.612   0.360  u12/pc_src_cmp_eq0002132_SW0_SW0 (N511)
-     LUT4:I3->O            1   0.612   0.360  u12/pc_src_cmp_eq0002132 (u12/pc_src_cmp_eq0002132)
-     LUT4_L:I3->LO         1   0.612   0.103  u12/pc_src_cmp_eq0002210 (u12/pc_src_cmp_eq0002210)
-     LUT4:I3->O            1   0.612   0.360  u12/pc_src_cmp_eq0002332 (u12/pc_src_cmp_eq0002)
-     LUT4_D:I3->O         15   0.612   0.894  u12/pc_src<0>130 (ED_pcsrc<0>)
-     LUT3:I2->O            1   0.612   0.000  u1/Mmux_pc_out679 (IF_Mux_addr<10>)
-     FDCE:D                    0.268          u2/PC_out_10
+     LUT4:I3->O            1   0.612   0.360  u15/fout<15>4_SW1 (N373)
+     LUT4:I3->O           10   0.612   0.753  u15/fout<15>4 (u15/N47)
+     LUT4_D:I3->O          9   0.612   0.700  u15/fout<2>24 (u15/N15)
+     LUT4:I3->O            3   0.612   0.520  u15/fout<12>155 (EX_ALU_res<12>)
+     LUT4:I1->O            1   0.612   0.426  u12/pc_src_cmp_eq0002132_SW1 (N566)
+     LUT4_L:I1->LO         1   0.612   0.103  u12/pc_src_cmp_eq0002210 (u12/pc_src_cmp_eq0002210)
+     LUT4:I3->O            1   0.612   0.360  u12/pc_src_cmp_eq0002331 (u12/pc_src_cmp_eq0002)
+     LUT4:I3->O           16   0.612   0.909  u12/pc_src<0>130 (ED_pcsrc<0>)
+     LUT3:I2->O            1   0.612   0.000  u1/Mmux_pc_out979 (IF_Mux_addr<11>)
+     FDCE:D                    0.268          u2/PC_out_11
     ----------------------------------------
-    Total                     18.899ns (10.463ns logic, 8.436ns route)
-                                       (55.4% logic, 44.6% route)
+    Total                     19.022ns (10.463ns logic, 8.559ns route)
+                                       (55.0% logic, 45.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'vga/clk1'
+  Clock period: 19.632ns (frequency: 50.936MHz)
+  Total number of paths / destination ports: 20792308 / 58
+-------------------------------------------------------------------------
+Delay:               19.632ns (Levels of Logic = 54)
+  Source:            vga/vector_x_4 (FF)
+  Destination:       vga/b1_0 (FF)
+  Source Clock:      vga/clk1 rising
+  Destination Clock: vga/clk1 rising
+
+  Data Path: vga/vector_x_4 to vga/b1_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             11   0.514   0.945  vga/vector_x_4 (vga/vector_x_4)
+     LUT3:I0->O            1   0.612   0.360  vga/char/Mmult_word0_mult0000_Madd_cy<3>11 (vga/char/Mmult_word0_mult0000_Madd_cy<3>)
+     LUT4:I3->O            1   0.612   0.000  vga/char/Mmult_word0_mult0000_Madd1_lut<5> (vga/char/Mmult_word0_mult0000_Madd1_lut<5>)
+     MUXCY:S->O            1   0.404   0.000  vga/char/Mmult_word0_mult0000_Madd1_cy<5> (vga/char/Mmult_word0_mult0000_Madd1_cy<5>)
+     XORCY:CI->O          31   0.699   1.103  vga/char/Mmult_word0_mult0000_Madd1_xor<6> (vga/char/word0_mult0000<6>)
+     LUT3:I2->O            1   0.612   0.387  vga/char/word0_cmp_eq000211_SW0_SW0 (N913)
+     LUT4:I2->O            7   0.612   0.632  vga/char/word0_cmp_eq00262 (vga/char/word0_cmp_eq0026)
+     LUT4:I2->O            1   0.612   0.000  vga/char/word0_mux0001<3>_wg_lut<1> (vga/char/word0_mux0001<3>_wg_lut<1>)
+     MUXCY:S->O            1   0.404   0.000  vga/char/word0_mux0001<3>_wg_cy<1> (vga/char/word0_mux0001<3>_wg_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  vga/char/word0_mux0001<3>_wg_cy<2> (vga/char/word0_mux0001<3>_wg_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  vga/char/word0_mux0001<3>_wg_cy<3> (vga/char/word0_mux0001<3>_wg_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  vga/char/word0_mux0001<3>_wg_cy<4> (vga/char/word0_mux0001<3>_wg_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  vga/char/word0_mux0001<3>_wg_cy<5> (vga/char/word0_mux0001<3>_wg_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  vga/char/word0_mux0001<3>_wg_cy<6> (vga/char/word0_mux0001<3>_wg_cy<6>)
+     MUXCY:CI->O           1   0.052   0.000  vga/char/word0_mux0001<3>_wg_cy<7> (vga/char/word0_mux0001<3>_wg_cy<7>)
+     MUXCY:CI->O           1   0.052   0.000  vga/char/word0_mux0001<3>_wg_cy<8> (vga/char/word0_mux0001<3>_wg_cy<8>)
+     MUXCY:CI->O           1   0.052   0.000  vga/char/word0_mux0001<3>_wg_cy<9> (vga/char/word0_mux0001<3>_wg_cy<9>)
+     MUXCY:CI->O           1   0.052   0.000  vga/char/word0_mux0001<3>_wg_cy<10> (vga/char/word0_mux0001<3>_wg_cy<10>)
+     MUXCY:CI->O           1   0.052   0.000  vga/char/word0_mux0001<3>_wg_cy<11> (vga/char/word0_mux0001<3>_wg_cy<11>)
+     MUXCY:CI->O           1   0.052   0.000  vga/char/word0_mux0001<3>_wg_cy<12> (vga/char/word0_mux0001<3>_wg_cy<12>)
+     MUXCY:CI->O           1   0.052   0.000  vga/char/word0_mux0001<3>_wg_cy<13> (vga/char/word0_mux0001<3>_wg_cy<13>)
+     MUXCY:CI->O           1   0.052   0.000  vga/char/word0_mux0001<3>_wg_cy<14> (vga/char/word0_mux0001<3>_wg_cy<14>)
+     MUXCY:CI->O           1   0.052   0.000  vga/char/word0_mux0001<3>_wg_cy<15> (vga/char/word0_mux0001<3>_wg_cy<15>)
+     MUXCY:CI->O           1   0.052   0.000  vga/char/word0_mux0001<3>_wg_cy<16> (vga/char/word0_mux0001<3>_wg_cy<16>)
+     MUXCY:CI->O           1   0.052   0.000  vga/char/word0_mux0001<3>_wg_cy<17> (vga/char/word0_mux0001<3>_wg_cy<17>)
+     MUXCY:CI->O           1   0.052   0.000  vga/char/word0_mux0001<3>_wg_cy<18> (vga/char/word0_mux0001<3>_wg_cy<18>)
+     MUXCY:CI->O           1   0.052   0.000  vga/char/word0_mux0001<3>_wg_cy<19> (vga/char/word0_mux0001<3>_wg_cy<19>)
+     MUXCY:CI->O           1   0.052   0.000  vga/char/word0_mux0001<3>_wg_cy<20> (vga/char/word0_mux0001<3>_wg_cy<20>)
+     MUXCY:CI->O           1   0.052   0.000  vga/char/word0_mux0001<3>_wg_cy<21> (vga/char/word0_mux0001<3>_wg_cy<21>)
+     MUXCY:CI->O           1   0.052   0.000  vga/char/word0_mux0001<3>_wg_cy<22> (vga/char/word0_mux0001<3>_wg_cy<22>)
+     MUXCY:CI->O           1   0.052   0.000  vga/char/word0_mux0001<3>_wg_cy<23> (vga/char/word0_mux0001<3>_wg_cy<23>)
+     MUXCY:CI->O           1   0.052   0.000  vga/char/word0_mux0001<3>_wg_cy<24> (vga/char/word0_mux0001<3>_wg_cy<24>)
+     MUXCY:CI->O           1   0.052   0.000  vga/char/word0_mux0001<3>_wg_cy<25> (vga/char/word0_mux0001<3>_wg_cy<25>)
+     MUXCY:CI->O           1   0.052   0.000  vga/char/word0_mux0001<3>_wg_cy<26> (vga/char/word0_mux0001<3>_wg_cy<26>)
+     MUXCY:CI->O           1   0.052   0.000  vga/char/word0_mux0001<3>_wg_cy<27> (vga/char/word0_mux0001<3>_wg_cy<27>)
+     MUXCY:CI->O           1   0.052   0.000  vga/char/word0_mux0001<3>_wg_cy<28> (vga/char/word0_mux0001<3>_wg_cy<28>)
+     MUXCY:CI->O           1   0.052   0.000  vga/char/word0_mux0001<3>_wg_cy<29> (vga/char/word0_mux0001<3>_wg_cy<29>)
+     MUXCY:CI->O           1   0.052   0.000  vga/char/word0_mux0001<3>_wg_cy<30> (vga/char/word0_mux0001<3>_wg_cy<30>)
+     MUXCY:CI->O           1   0.052   0.000  vga/char/word0_mux0001<3>_wg_cy<31> (vga/char/word0_mux0001<3>_wg_cy<31>)
+     MUXCY:CI->O           1   0.052   0.000  vga/char/word0_mux0001<3>_wg_cy<32> (vga/char/word0_mux0001<3>_wg_cy<32>)
+     MUXCY:CI->O           1   0.052   0.000  vga/char/word0_mux0001<3>_wg_cy<33> (vga/char/word0_mux0001<3>_wg_cy<33>)
+     MUXCY:CI->O           1   0.052   0.000  vga/char/word0_mux0001<3>_wg_cy<34> (vga/char/word0_mux0001<3>_wg_cy<34>)
+     MUXCY:CI->O           1   0.052   0.000  vga/char/word0_mux0001<3>_wg_cy<35> (vga/char/word0_mux0001<3>_wg_cy<35>)
+     MUXCY:CI->O           1   0.052   0.000  vga/char/word0_mux0001<3>_wg_cy<36> (vga/char/word0_mux0001<3>_wg_cy<36>)
+     MUXCY:CI->O           2   0.399   0.449  vga/char/word0_mux0001<3>_wg_cy<37> (vga/char/word0_mux0001<3>_wg_cy<37>)
+     LUT3:I1->O          151   0.612   1.257  vga/char/word0_mux0001<3>_wg_cy<39>1 (vga/char/word0_mux0001<3>_wg_cy<39>)
+     LUT3_D:I0->O          4   0.612   0.502  vga/char/Mrom_Char_mux0002951121 (vga/char/N121)
+     LUT4:I3->O            3   0.612   0.481  vga/char/Char_mux0000<60>_SW0 (N247)
+     LUT4:I2->O            1   0.612   0.000  vga/char/Mmux_vout_12_f5_21 (vga/char/Mmux_vout_12_f5_2)
+     MUXF5:I0->O           1   0.278   0.000  vga/char/Mmux_vout_12_f5_2 (vga/char/Mmux_vout_12_f53)
+     MUXF6:I1->O           1   0.451   0.000  vga/char/Mmux_vout_11_f6 (vga/char/Mmux_vout_11_f6)
+     MUXF7:I0->O           2   0.451   0.410  vga/char/Mmux_vout_9_f7 (vga/char/Mmux_vout_9_f7)
+     LUT4:I2->O            1   0.612   0.426  vga/char/Mmux_vout_6_f8_SW1 (N954)
+     LUT3:I1->O            1   0.612   0.000  vga/char/Mmux_vout_2_f5_F (N1217)
+     MUXF5:I0->O           1   0.278   0.000  vga/char/Mmux_vout_2_f5 (vga/r1_mux0001<0>_norst)
+     FDR:D                     0.268          vga/b1_0
+    ----------------------------------------
+    Total                     19.632ns (12.681ns logic, 6.951ns route)
+                                       (64.6% logic, 35.4% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk50'
-  Clock period: 11.417ns (frequency: 87.589MHz)
-  Total number of paths / destination ports: 3846 / 154
+  Clock period: 12.084ns (frequency: 82.754MHz)
+  Total number of paths / destination ports: 4053 / 155
 -------------------------------------------------------------------------
-Delay:               11.417ns (Levels of Logic = 9)
-  Source:            keyboard_ascii/ps2_keyboard_0/ps2_code_6 (FF)
+Delay:               12.084ns (Levels of Logic = 11)
+  Source:            keyboard_ascii/ps2_keyboard_0/ps2_code_4 (FF)
   Destination:       keyboard_ascii/ascii_5 (FF)
   Source Clock:      clk50 rising
   Destination Clock: clk50 rising
 
-  Data Path: keyboard_ascii/ps2_keyboard_0/ps2_code_6 to keyboard_ascii/ascii_5
+  Data Path: keyboard_ascii/ps2_keyboard_0/ps2_code_4 to keyboard_ascii/ascii_5
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q             35   0.514   1.226  keyboard_ascii/ps2_keyboard_0/ps2_code_6 (keyboard_ascii/ps2_keyboard_0/ps2_code_6)
-     LUT3:I0->O           11   0.612   0.823  keyboard_ascii/control_l_and000011 (keyboard_ascii/N35)
+     FDE:C->Q             44   0.514   1.228  keyboard_ascii/ps2_keyboard_0/ps2_code_4 (keyboard_ascii/ps2_keyboard_0/ps2_code_4)
+     LUT2_D:I0->O          6   0.612   0.599  keyboard_ascii/ascii_0_or001331 (keyboard_ascii/N49)
      LUT4:I2->O            3   0.612   0.603  keyboard_ascii/ascii_0_cmp_eq00341 (keyboard_ascii/ascii_0_cmp_eq0034)
-     LUT4:I0->O            1   0.612   0.360  keyboard_ascii/ascii_0_mux000012_SW1 (N959)
+     LUT4_L:I0->LO         1   0.612   0.103  keyboard_ascii/ascii_0_mux000012_SW1 (N1307)
      LUT4:I3->O            2   0.612   0.383  keyboard_ascii/ascii_0_mux000012 (keyboard_ascii/N261)
-     LUT4:I3->O            1   0.612   0.426  keyboard_ascii/ascii_4_mux00003_SW0 (N191)
-     LUT4:I1->O            2   0.612   0.410  keyboard_ascii/ascii_4_mux00003 (keyboard_ascii/N13)
-     LUT4:I2->O            1   0.612   0.509  keyboard_ascii/ascii_4_mux000072 (keyboard_ascii/ascii_4_mux000072)
-     LUT4:I0->O            1   0.612   0.387  keyboard_ascii/ascii_4_mux0000101 (keyboard_ascii/ascii_4_mux0000101)
-     LUT4:I2->O            1   0.612   0.000  keyboard_ascii/ascii_4_mux0000128 (keyboard_ascii/ascii_4_mux0000)
-     FDE:D                     0.268          keyboard_ascii/ascii_4
+     LUT4_L:I3->LO         1   0.612   0.169  keyboard_ascii/ascii_4_mux00003_SW0 (N214)
+     LUT4:I1->O            2   0.612   0.383  keyboard_ascii/ascii_4_mux00003 (keyboard_ascii/N13)
+     LUT4_L:I3->LO         1   0.612   0.130  keyboard_ascii/ascii_5_mux000039 (keyboard_ascii/ascii_5_mux000039)
+     LUT4:I2->O            1   0.612   0.360  keyboard_ascii/ascii_5_mux0000175_SW0 (N1367)
+     LUT4_L:I3->LO         1   0.612   0.103  keyboard_ascii/ascii_5_mux0000175 (keyboard_ascii/ascii_5_mux0000175)
+     LUT4:I3->O            1   0.612   0.509  keyboard_ascii/ascii_5_mux0000215_SW0 (N1365)
+     LUT4:I0->O            1   0.612   0.000  keyboard_ascii/ascii_5_mux0000215 (keyboard_ascii/ascii_5_mux0000)
+     FDE:D                     0.268          keyboard_ascii/ascii_5
     ----------------------------------------
-    Total                     11.417ns (6.290ns logic, 5.127ns route)
-                                       (55.1% logic, 44.9% route)
+    Total                     12.084ns (7.514ns logic, 4.570ns route)
+                                       (62.2% logic, 37.8% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'keyboard_ascii/ps2_keyboard_0/debounce_ps2_clk/result'
@@ -1007,13 +1289,36 @@ Offset:              2.713ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IOBUF:IO->O           2   1.106   0.449  data_2_14_IOBUF (N336)
+     IOBUF:IO->O           2   1.106   0.449  data_2_14_IOBUF (N397)
      LUT3:I1->O            1   0.612   0.000  u13/out_data_mux0001<14>1 (u13/out_data_mux0001<14>1)
      MUXF5:I1->O           1   0.278   0.000  u13/out_data_mux0001<14>_f5 (u13/out_data_mux0001<14>)
      FD:D                      0.268          u13/out_data_14
     ----------------------------------------
     Total                      2.713ns (2.264ns logic, 0.449ns route)
                                        (83.5% logic, 16.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'memory0/vga_enable_cmp_ge0000'
+  Total number of paths / destination ports: 3 / 2
+-------------------------------------------------------------------------
+Offset:              4.689ns (Levels of Logic = 5)
+  Source:            tbre (PAD)
+  Destination:       memory0/Mtridata_data_1_0 (LATCH)
+  Destination Clock: memory0/vga_enable_cmp_ge0000 rising
+
+  Data Path: tbre to memory0/Mtridata_data_1_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.106   0.360  tbre_IBUF (tbre_IBUF)
+     LUT4:I3->O            1   0.612   0.000  memory0/Mtridata_data_1_mux0000<0>1111 (memory0/Mtridata_data_1_mux0000<0>111)
+     MUXF5:I1->O           1   0.278   0.360  memory0/Mtridata_data_1_mux0000<0>111_f5 (memory0/Mtridata_data_1_mux0000<0>11)
+     LUT4:I3->O            3   0.612   0.481  memory0/Mtridata_data_1_mux0000<0>54_SW1 (N1371)
+     LUT3:I2->O            1   0.612   0.000  memory0/Mtridata_data_1_mux0000<0>54 (memory0/Mtridata_data_1_mux0000<0>)
+     LDCP:D                    0.268          memory0/Mtridata_data_1_0
+    ----------------------------------------
+    Total                      4.689ns (3.488ns logic, 1.201ns route)
+                                       (74.4% logic, 25.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk50'
@@ -1036,104 +1341,194 @@ Offset:              1.829ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk101'
-  Total number of paths / destination ports: 868 / 71
+  Total number of paths / destination ports: 322 / 55
 -------------------------------------------------------------------------
-Offset:              11.440ns (Levels of Logic = 7)
+Offset:              9.788ns (Levels of Logic = 6)
   Source:            u9/out_alu_data_15 (FF)
-  Destination:       data_1<0> (PAD)
+  Destination:       en_1 (PAD)
   Source Clock:      clk101 rising
 
-  Data Path: u9/out_alu_data_15 to data_1<0>
+  Data Path: u9/out_alu_data_15 to en_1
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q              64   0.514   1.084  u9/out_alu_data_15 (u9/out_alu_data_15)
-     LUT4:I3->O            2   0.612   0.532  memory0/data_1_cmp_eq000017 (memory0/data_1_cmp_eq000017)
-     LUT3:I0->O            1   0.612   0.426  memory0/data_1_cmp_eq0000139 (N4)
-     LUT4:I1->O            7   0.612   0.605  memory0/data_1_cmp_eq000021 (memory0/en_1_and0000)
-     LUT4:I3->O            6   0.612   0.721  memory0/data_1_mux0000<0>11 (N6)
-     LUT2:I0->O            1   0.612   0.360  memory0/data_1_mux0000<0>45_SW0 (N939)
-     LUT4:I3->O            1   0.612   0.357  memory0/data_1_mux0000<0>45 (data_1_0_IOBUF)
-     IOBUF:I->IO               3.169          data_1_0_IOBUF (data_1<0>)
+     FD:C->Q              62   0.514   1.084  u9/out_alu_data_15 (u9/out_alu_data_15)
+     LUT4:I3->O            2   0.612   0.383  addr_in_led_cmp_eq0000141 (addr_in_led_cmp_eq0000141)
+     LUT4:I3->O            3   0.612   0.481  memory0/Mtrien_data_1_cmp_eq00001 (memory0/rdn_and0000)
+     LUT4:I2->O           19   0.612   1.074  memory0/en_1_cmp_eq000011 (N17)
+     LUT3:I0->O            1   0.612   0.000  memory0/en_1_G (N1454)
+     MUXF5:I1->O           1   0.278   0.357  memory0/en_1 (en_1_OBUF)
+     OBUF:I->O                 3.169          en_1_OBUF (en_1)
     ----------------------------------------
-    Total                     11.440ns (7.355ns logic, 4.085ns route)
-                                       (64.3% logic, 35.7% route)
+    Total                      9.788ns (6.409ns logic, 3.379ns route)
+                                       (65.5% logic, 34.5% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk11'
-  Total number of paths / destination ports: 7 / 7
+  Total number of paths / destination ports: 8 / 7
 -------------------------------------------------------------------------
-Offset:              5.630ns (Levels of Logic = 3)
+Offset:              6.420ns (Levels of Logic = 3)
   Source:            clk10 (FF)
-  Destination:       wrn (PAD)
+  Destination:       rdn (PAD)
   Source Clock:      clk11 rising
 
-  Data Path: clk10 to wrn
+  Data Path: clk10 to rdn
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              9   0.514   0.700  clk10 (clk101)
-     LUT4:I3->O            1   0.612   0.000  memory0/wrn1 (memory0/wrn)
-     MUXF5:I1->O           1   0.278   0.357  memory0/wrn_f5 (wrn_OBUF)
-     OBUF:I->O                 3.169          wrn_OBUF (wrn)
+     FDE:C->Q             11   0.514   0.796  clk10 (clk101)
+     LUT4:I3->O            1   0.612   0.360  memory0/rdn_SW0 (N93)
+     LUT4:I3->O            1   0.612   0.357  memory0/rdn (rdn_OBUF)
+     OBUF:I->O                 3.169          rdn_OBUF (rdn)
     ----------------------------------------
-    Total                      5.630ns (4.573ns logic, 1.057ns route)
-                                       (81.2% logic, 18.8% route)
+    Total                      6.420ns (4.907ns logic, 1.513ns route)
+                                       (76.4% logic, 23.6% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'clk50'
-  Total number of paths / destination ports: 16 / 15
+Timing constraint: Default OFFSET OUT AFTER for Clock 'vga/clk1'
+  Total number of paths / destination ports: 29 / 11
 -------------------------------------------------------------------------
-Offset:              7.340ns (Levels of Logic = 4)
-  Source:            keyboard_ascii/ascii_new (FF)
-  Destination:       data_1<0> (PAD)
-  Source Clock:      clk50 rising
+Offset:              5.524ns (Levels of Logic = 2)
+  Source:            vga/vs1 (FF)
+  Destination:       b<2> (PAD)
+  Source Clock:      vga/clk1 rising
 
-  Data Path: keyboard_ascii/ascii_new to data_1<0>
+  Data Path: vga/vs1 to b<2>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               4   0.514   0.651  keyboard_ascii/ascii_new (keyboard_ascii/ascii_new)
-     LUT2:I0->O            1   0.612   0.426  memory0/data_1_mux0000<0>20 (memory0/data_1_mux0000<0>20)
-     LUT4:I1->O            1   0.612   0.387  memory0/data_1_mux0000<0>30 (memory0/data_1_mux0000<0>30)
-     LUT4:I2->O            1   0.612   0.357  memory0/data_1_mux0000<0>45 (data_1_0_IOBUF)
-     IOBUF:I->IO               3.169          data_1_0_IOBUF (data_1<0>)
+     FDR:C->Q              2   0.514   0.532  vga/vs1 (vga/vs1)
+     LUT3:I0->O            9   0.612   0.697  vga/g<0>1 (b_0_OBUF)
+     OBUF:I->O                 3.169          b_2_OBUF (b<2>)
     ----------------------------------------
-    Total                      7.340ns (5.519ns logic, 1.821ns route)
-                                       (75.2% logic, 24.8% route)
+    Total                      5.524ns (4.295ns logic, 1.229ns route)
+                                       (77.8% logic, 22.2% route)
 
 =========================================================================
-Timing constraint: Default path analysis
-  Total number of paths / destination ports: 3 / 2
+Timing constraint: Default OFFSET OUT AFTER for Clock 'memory0/vga_enable_cmp_ge0000'
+  Total number of paths / destination ports: 16 / 16
 -------------------------------------------------------------------------
-Delay:               7.641ns (Levels of Logic = 5)
-  Source:            tbre (PAD)
-  Destination:       data_1<0> (PAD)
+Offset:              4.114ns (Levels of Logic = 1)
+  Source:            memory0/Mtridata_data_1_15 (LATCH)
+  Destination:       data_1<15> (PAD)
+  Source Clock:      memory0/vga_enable_cmp_ge0000 rising
 
-  Data Path: tbre to data_1<0>
+  Data Path: memory0/Mtridata_data_1_15 to data_1<15>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             1   1.106   0.426  tbre_IBUF (tbre_IBUF)
-     LUT3:I1->O            1   0.612   0.360  memory0/data_1_mux0000<0>10 (memory0/data_1_mux0000<0>10)
-     LUT4:I3->O            1   0.612   0.387  memory0/data_1_mux0000<0>30 (memory0/data_1_mux0000<0>30)
-     LUT4:I2->O            1   0.612   0.357  memory0/data_1_mux0000<0>45 (data_1_0_IOBUF)
-     IOBUF:I->IO               3.169          data_1_0_IOBUF (data_1<0>)
+     LDCP:G->Q             1   0.588   0.357  memory0/Mtridata_data_1_15 (memory0/Mtridata_data_1<15>)
+     IOBUF:I->IO               3.169          data_1_15_IOBUF (data_1<15>)
     ----------------------------------------
-    Total                      7.641ns (6.111ns logic, 1.530ns route)
-                                       (80.0% logic, 20.0% route)
+    Total                      4.114ns (3.757ns logic, 0.357ns route)
+                                       (91.3% logic, 8.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'memory0/Mtrien_data_1_not0001'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              4.114ns (Levels of Logic = 1)
+  Source:            memory0/Mtrien_data_1_1 (LATCH)
+  Destination:       data_1<15> (PAD)
+  Source Clock:      memory0/Mtrien_data_1_not0001 falling
+
+  Data Path: memory0/Mtrien_data_1_1 to data_1<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.588   0.357  memory0/Mtrien_data_1_1 (memory0/Mtrien_data_1_1)
+     IOBUF:T->IO               3.169          data_1_15_IOBUF (data_1<15>)
+    ----------------------------------------
+    Total                      4.114ns (3.757ns logic, 0.357ns route)
+                                       (91.3% logic, 8.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'vga_enable1'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.040ns (Levels of Logic = 1)
+  Source:            vga_enable_led (FF)
+  Destination:       led<15> (PAD)
+  Source Clock:      vga_enable1 falling
+
+  Data Path: vga_enable_led to led<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD_1:C->Q             1   0.514   0.357  vga_enable_led (vga_enable_led)
+     OBUF:I->O                 3.169          led_15_OBUF (led<15>)
+    ----------------------------------------
+    Total                      4.040ns (3.683ns logic, 0.357ns route)
+                                       (91.2% logic, 8.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'u9/out_MemWrite'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.114ns (Levels of Logic = 1)
+  Source:            memwrite_led (LATCH)
+  Destination:       led<2> (PAD)
+  Source Clock:      u9/out_MemWrite falling
+
+  Data Path: memwrite_led to led<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.588   0.357  memwrite_led (memwrite_led)
+     OBUF:I->O                 3.169          led_2_OBUF (led<2>)
+    ----------------------------------------
+    Total                      4.114ns (3.757ns logic, 0.357ns route)
+                                       (91.3% logic, 8.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'addr_in_led_cmp_eq0000'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.114ns (Levels of Logic = 1)
+  Source:            addr_in_led (LATCH)
+  Destination:       led<1> (PAD)
+  Source Clock:      addr_in_led_cmp_eq0000 falling
+
+  Data Path: addr_in_led to led<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.588   0.357  addr_in_led (addr_in_led)
+     OBUF:I->O                 3.169          led_1_OBUF (led<1>)
+    ----------------------------------------
+    Total                      4.114ns (3.757ns logic, 0.357ns route)
+                                       (91.3% logic, 8.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'addr_cmp_led_cmp_ge0000'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.114ns (Levels of Logic = 1)
+  Source:            addr_cmp_led (LATCH)
+  Destination:       led<0> (PAD)
+  Source Clock:      addr_cmp_led_cmp_ge0000 falling
+
+  Data Path: addr_cmp_led to led<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.588   0.357  addr_cmp_led (addr_cmp_led)
+     OBUF:I->O                 3.169          led_0_OBUF (led<0>)
+    ----------------------------------------
+    Total                      4.114ns (3.757ns logic, 0.357ns route)
+                                       (91.3% logic, 8.7% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 26.00 secs
-Total CPU time to Xst completion: 25.97 secs
+Total REAL time to Xst completion: 42.00 secs
+Total CPU time to Xst completion: 42.00 secs
  
 --> 
 
-Total memory usage is 380028 kilobytes
+Total memory usage is 476052 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   37 (   0 filtered)
-Number of infos    :   13 (   0 filtered)
+Number of warnings :   71 (   0 filtered)
+Number of infos    :   18 (   0 filtered)
 

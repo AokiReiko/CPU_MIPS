@@ -11,7 +11,21 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.all;
 
 package my_components is
-
+	
+	component vga 
+   Port ( clk50 : in  STD_LOGIC;
+           reset : in  STD_LOGIC;
+           write_enable : in STD_LOGIC;
+			  data : in std_logic_vector(15 downto 0);
+			  adress : in std_logic_vector(15 downto 0);
+           hs : out  STD_LOGIC;
+           vs : out  STD_LOGIC;
+           r : out  STD_LOGIC_VECTOR (2 downto 0);
+           g : out  STD_LOGIC_VECTOR (2 downto 0);
+           b : out  STD_LOGIC_VECTOR (2 downto 0)
+			  );
+	end component;
+	
   component ps2_keyboard_to_ascii IS
   GENERIC(
       clk_freq                  : INTEGER;  --system clock frequency in Hz
@@ -119,6 +133,11 @@ package my_components is
 
       ascii_new  : in STD_LOGIC;     --flag indicating new ASCII value
       ascii_code : in STD_LOGIC_VECTOR(6 DOWNTO 0);  --ASCII value
+      
+      vga_addr : out STD_LOGIC_VECTOR(15 downto 0);
+      vga_data : out STD_LOGIC_VECTOR(15 downto 0);
+      vga_enable : out STD_LOGIC;
+      vga_led: out STD_LOGIC;
 
     	   memread: in STD_LOGIC;
     	   memwrite: in STD_LOGIC;

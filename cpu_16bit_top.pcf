@@ -1,8 +1,10 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Tue Dec 05 17:46:19 2017
+// Written by: Map P.20131013 on Wed Dec 06 16:43:26 2017
 //! **************************************************************************
 
 SCHEMATIC START;
+COMP "hs" LOCATE = SITE "D6" LEVEL 1;
+COMP "vs" LOCATE = SITE "E6" LEVEL 1;
 COMP "clk" LOCATE = SITE "U9" LEVEL 1;
 COMP "rdn" LOCATE = SITE "C14" LEVEL 1;
 COMP "rst" LOCATE = SITE "U10" LEVEL 1;
@@ -27,6 +29,15 @@ COMP "data_2<6>" LOCATE = SITE "R14" LEVEL 1;
 COMP "data_2<7>" LOCATE = SITE "R12" LEVEL 1;
 COMP "data_2<8>" LOCATE = SITE "R11" LEVEL 1;
 COMP "data_2<9>" LOCATE = SITE "R10" LEVEL 1;
+COMP "b<0>" LOCATE = SITE "D5" LEVEL 1;
+COMP "b<1>" LOCATE = SITE "A6" LEVEL 1;
+COMP "b<2>" LOCATE = SITE "B6" LEVEL 1;
+COMP "g<0>" LOCATE = SITE "B4" LEVEL 1;
+COMP "g<1>" LOCATE = SITE "C4" LEVEL 1;
+COMP "g<2>" LOCATE = SITE "C5" LEVEL 1;
+COMP "r<0>" LOCATE = SITE "A7" LEVEL 1;
+COMP "r<1>" LOCATE = SITE "C3" LEVEL 1;
+COMP "r<2>" LOCATE = SITE "A4" LEVEL 1;
 COMP "en_1" LOCATE = SITE "M15" LEVEL 1;
 COMP "en_2" LOCATE = SITE "N10" LEVEL 1;
 COMP "oe_1" LOCATE = SITE "M16" LEVEL 1;

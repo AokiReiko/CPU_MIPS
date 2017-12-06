@@ -1,10 +1,24 @@
 Release 14.7 Drc P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Tue Dec 05 17:46:51 2017
+Wed Dec 06 16:44:10 2017
 
 drc -z cpu_16bit_top.ncd cpu_16bit_top.pcf
 
+WARNING:PhysDesignRules:372 - Gated clock. Clock net addr_cmp_led_cmp_ge0000 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   memory0/vga_enable_cmp_ge0000 is sourced by a combinatorial pin. This is not
+   good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   memory0/Mtrien_data_1_not0001 is sourced by a combinatorial pin. This is not
+   good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net addr_in_led_cmp_eq0000 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net u5/rega_not0001 is sourced
    by a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
@@ -16,5 +30,5 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net u5/ALUOp_not0001 is sourced
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:367 - The signal <clk_IBUF> is incomplete. The signal
    does not drive any load pins in the design.
-DRC detected 0 errors and 4 warnings.  Please see the previously displayed
+DRC detected 0 errors and 8 warnings.  Please see the previously displayed
 individual error or warning messages for more details.

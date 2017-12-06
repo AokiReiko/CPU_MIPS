@@ -1,18 +1,47 @@
 #-----------------------------------------------------------
-# PlanAhead v14.7 (64-bit)
-# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
-# Start of session at: Tue Dec 05 16:51:17 2017
-# Process ID: 1176
-# Log file: D:/17fall/ComputerOrganization/120402/CPU_MIPS/planAhead_run_3/planAhead.log
-# Journal file: D:/17fall/ComputerOrganization/120402/CPU_MIPS/planAhead_run_3/planAhead.jou
+# PlanAhead v14.2 (64-bit)
+# Build 194362 by xbuild on Fri Jul 20 18:52:11 MDT 2012
+# Start of session at: Tue Dec 05 22:33:35 2017
+# Process ID: 1032
+# Log file: C:/Users/lzm/Desktop/CPU_MIPS/planAhead_run_3/planAhead.log
+# Journal file: C:/Users/lzm/Desktop/CPU_MIPS/planAhead_run_3/planAhead.jou
 #-----------------------------------------------------------
 start_gui
-source D:/17fall/ComputerOrganization/120402/CPU_MIPS/pa.fromNetlist.tcl
+source C:/Users/lzm/Desktop/CPU_MIPS/pa.fromNetlist.tcl
 startgroup
-set_property package_pin U6 [get_ports ps2_clk]
+set_property package_pin D6 [get_ports hs]
 endgroup
 startgroup
-set_property package_pin V6 [get_ports ps2_data]
+set_property package_pin E6 [get_ports vs]
 endgroup
-set_property package_pin "" [get_ports [list  {sw[0]}]]
-save_constraints
+startgroup
+set_property package_pin N9 [get_ports tsre]
+endgroup
+startgroup
+set_property package_pin A7 [get_ports {r[0]}]
+endgroup
+startgroup
+set_property package_pin C3 [get_ports {r[1]}]
+endgroup
+startgroup
+set_property package_pin A4 [get_ports {r[2]}]
+endgroup
+startgroup
+set_property package_pin B4 [get_ports {g[0]}]
+endgroup
+startgroup
+set_property package_pin C4 [get_ports {g[1]}]
+endgroup
+startgroup
+set_property package_pin C5 [get_ports {g[2]}]
+endgroup
+startgroup
+set_property package_pin D5 [get_ports {b[0]}]
+endgroup
+startgroup
+set_property package_pin A6 [get_ports {b[1]}]
+endgroup
+startgroup
+set_property package_pin B6 [get_ports {b[2]}]
+endgroup
+save_design
