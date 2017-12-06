@@ -10,25 +10,25 @@ Target Device  : xc3s1200e
 Target Package : fg320
 Target Speed   : -5
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Wed Dec 06 16:43:02 2017
+Mapped Date    : Thu Dec 07 01:27:01 2017
 
 Design Summary
 --------------
 Number of errors:      0
-Number of warnings:   10
+Number of warnings:    9
 Logic Utilization:
-  Total Number Slice Registers:       1,103 out of  17,344    6%
-    Number used as Flip Flops:        1,049
+  Total Number Slice Registers:       1,072 out of  17,344    6%
+    Number used as Flip Flops:        1,018
     Number used as Latches:              54
-  Number of 4 input LUTs:             2,316 out of  17,344   13%
+  Number of 4 input LUTs:             2,298 out of  17,344   13%
 Logic Distribution:
-  Number of occupied Slices:          1,813 out of   8,672   20%
-    Number of Slices containing only related logic:   1,813 out of   1,813 100%
-    Number of Slices containing unrelated logic:          0 out of   1,813   0%
+  Number of occupied Slices:          1,699 out of   8,672   19%
+    Number of Slices containing only related logic:   1,699 out of   1,699 100%
+    Number of Slices containing unrelated logic:          0 out of   1,699   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:       2,435 out of  17,344   14%
-    Number used as logic:             2,314
-    Number used as a route-thru:        119
+  Total Number of 4 input LUTs:       2,387 out of  17,344   13%
+    Number used as logic:             2,296
+    Number used as a route-thru:         89
     Number used as Shift registers:       2
 
   The Slice Logic Distribution report is not meaningful if the design is
@@ -36,15 +36,15 @@ Logic Distribution:
 
   Number of bonded IOBs:                126 out of     250   50%
     IOB Flip Flops:                       1
-    IOB Latches:                         35
-  Number of BUFGMUXs:                     6 out of      24   25%
+    IOB Latches:                         32
+  Number of BUFGMUXs:                     4 out of      24   16%
   Number of MULT18X18SIOs:                1 out of      28    3%
 
-Average Fanout of Non-Clock Nets:                3.64
+Average Fanout of Non-Clock Nets:                3.67
 
-Peak Memory Usage:  393 MB
-Total REAL time to MAP completion:  24 secs 
-Total CPU time to MAP completion:   24 secs 
+Peak Memory Usage:  392 MB
+Total REAL time to MAP completion:  22 secs 
+Total CPU time to MAP completion:   22 secs 
 
 Table of Contents
 -----------------
@@ -84,9 +84,6 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net
    memory0/Mtrien_data_1_not0001 is sourced by a combinatorial pin. This is not
    good design practice. Use the CE pin to control the loading of data into the
    flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net addr_in_led_cmp_eq0000 is
-   sourced by a combinatorial pin. This is not good design practice. Use the CE
-   pin to control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net u5/rega_not0001 is sourced
    by a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
@@ -96,17 +93,16 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net u5/immediate_not0001 is
 WARNING:PhysDesignRules:372 - Gated clock. Clock net u5/ALUOp_not0001 is sourced
    by a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net addr_cmp_led_cmp_ge0000 is
-   sourced by a combinatorial pin. This is not good design practice. Use the CE
-   pin to control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:367 - The signal <clk_IBUF> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <clk11_IBUF> is incomplete. The signal
    does not drive any load pins in the design.
 
 Section 3 - Informational
 -------------------------
 INFO:Security:54 - 'xc3s1200e' is a WebPack part.
 INFO:LIT:243 - Logical network u15/fout_shift0006<15>1/LO has no load.
-INFO:LIT:395 - The above info message is repeated 17 more times for the
+INFO:LIT:395 - The above info message is repeated 18 more times for the
    following (max. 5 shown):
    sw<15>,
    sw<14>,
@@ -272,9 +268,9 @@ Section 6 - IOB Properties
 | g<1>                               | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
 | g<2>                               | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
 | hs                                 | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
-| led<0>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF2         |          | 0 / 0    |
-| led<1>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF1         |          | 0 / 0    |
-| led<2>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF1         |          | 0 / 0    |
+| led<0>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| led<1>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| led<2>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
 | led<3>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
 | led<4>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
 | led<5>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |

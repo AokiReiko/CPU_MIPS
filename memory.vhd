@@ -53,6 +53,7 @@ begin
 	BF01 <= "00000000000000" & data_ready & (tbre and tsre);
 	BF0E <= "000000000" & ascii_code;
 	BF0F <= "00000000000000" & ascii_new & ascii_rising_edge;
+	vga_led <= ascii_rising_edge;
 
 	process(ascii_new, memread, addr_in)
 	begin
@@ -214,7 +215,6 @@ begin
 			if ( "0"&addr_in >= "0"& x"FFB0" ) then
 				vga_data <= data_in;
 				vga_addr <= addr_in;
-				vga_led <= '1';
 			else
 				data_1 <= data_in;
 			end if;

@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Wed Dec 06 16:43:26 2017
+// Written by: Map P.20131013 on Thu Dec 07 01:27:22 2017
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -129,7 +129,5 @@ COMP "addr_2<7>" LOCATE = SITE "R16" LEVEL 1;
 COMP "addr_2<17>" LOCATE = SITE "U15" LEVEL 1;
 COMP "addr_2<8>" LOCATE = SITE "R18" LEVEL 1;
 COMP "addr_2<9>" LOCATE = SITE "T17" LEVEL 1;
-NET "clk50_BUFGP/IBUFG" BEL "clk50_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
-NET "clk11_BUFGP/IBUFG" BEL "clk11_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
 SCHEMATIC END;
 

@@ -24,7 +24,7 @@ begin
       ifid_write <= '0';
       pc_write <= '0';
       ctrl_clear <= '1';
-    elsif (idex_memread = '1' and (alu_src = '0' and ifid_rt = idex_rt)) then 
+    elsif (idex_memread = '1' and (ifid_rt = idex_rt)) then 
       ifid_write <= '0';
       pc_write <= '0';
       ctrl_clear <= '1';

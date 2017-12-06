@@ -170,15 +170,15 @@ signal addr_cmp_led: STD_LOGIC:='0';
 signal vga_enable_led: STD_LOGIC:='0';
 
 begin
-process (clk11)
+process (clk50)
 begin
-	if (clk11'event and clk11 = '1') then
-		if (conv_integer(count10) = 10) then
-			count10 <= (others => '0');
+	if (clk50'event and clk50 = '1') then
+		--if (conv_integer(count10) = 1) then
+		--	count10 <= (others => '0');
 			clk10 <= not clk10;
-		else
-			count10 <= count10 + 1;
-		end if;
+		--else
+		--	count10 <= count10 + 1;
+		--end if;
 	end if;
 end process;
 process(IFID_inst)
@@ -201,28 +201,7 @@ addr_2 <= temp;
 dyp0 <= "0000000";
 dyp1 <= "0000000";
 --led <= "0000000"& kb_ascii_new & "0" & kb_ascii_code;
-led <= vga_enable_led&"00000000000" & vga_led & memwrite_led & addr_in_led & addr_cmp_led;
-process(EXMEM_MemWrite)
-begin
-	if (EXMEM_MemWrite = '1') then
-		memwrite_led <= '1';
-	end if;
-end process;
-process(EXMEM_AluData)
-begin
-	if (EXMEM_AluData = x"FFB2") then
-		addr_in_led <= '1';
-	end if;
-	if ( "0"&EXMEM_AluData >= "0"& x"FFB0" ) then
-		addr_cmp_led <= '1';
-	end if;
-end process;
-process(vga_enable)
-begin
-	if (vga_enable'event and vga_enable = '0') then
-		vga_enable_led <= '1';
-	end if ;
-end process ;
+led <= vga_led&"000000000000000";
 --led <= (others => '0');
 --dyp0 <= "000" & bp_forwarda & bp_forwardb;
 --dyp1 <= "000" & bp_forwarda & bp_forwardb ;
