@@ -5,16 +5,184 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="info" file="Xst" num="1561" delta="old" >&quot;<arg fmt="%s" index="1">D:/17fall/ComputerOrganization/120602/registers.vhd</arg>&quot; line <arg fmt="%d" index="2">51</arg>: Mux is complete : default of case is discarded
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/cpu_16bit_top</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/17fall/ComputerOrganization/120602/cpu_16bit_top.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">E:/CPU_MIPS/cpu_16bit_top.vhd</arg>&quot;.
 </msg>
 
-<msg type="info" file="Xst" num="1561" delta="old" >&quot;<arg fmt="%s" index="1">D:/17fall/ComputerOrganization/120602/registers.vhd</arg>&quot; line <arg fmt="%d" index="2">75</arg>: Mux is complete : default of case is discarded
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/cpu_16bit_top/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/17fall/ComputerOrganization/120602/cpu_16bit_top.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">E:/CPU_MIPS/cpu_16bit_top.vhd</arg>&quot;.
 </msg>
 
-<msg type="info" file="Xst" num="1561" delta="old" >&quot;<arg fmt="%s" index="1">D:/17fall/ComputerOrganization/120602/registers.vhd</arg>&quot; line <arg fmt="%d" index="2">93</arg>: Mux is complete : default of case is discarded
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/Adder</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/17fall/ComputerOrganization/120602/Adder.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">E:/CPU_MIPS/Adder.vhd</arg>&quot;.
 </msg>
 
-<msg type="warning" file="Xst" num="1610" delta="old" >&quot;<arg fmt="%s" index="1">D:/17fall/ComputerOrganization/120602/vga_char.vhd</arg>&quot; line <arg fmt="%d" index="2">62</arg>: Width mismatch. &lt;<arg fmt="%s" index="3">word0</arg>&gt; has a width of <arg fmt="%d" index="4">7</arg> bits but assigned expression is <arg fmt="%d" index="5">8</arg>-bit wide.
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/Adder/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/17fall/ComputerOrganization/120602/Adder.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">E:/CPU_MIPS/Adder.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/ALU</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/17fall/ComputerOrganization/120602/alu.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">E:/CPU_MIPS/alu.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/ALU/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/17fall/ComputerOrganization/120602/alu.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">E:/CPU_MIPS/alu.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/bypass_unit</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/17fall/ComputerOrganization/120602/bypass_unit.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">E:/CPU_MIPS/bypass_unit.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/bypass_unit/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/17fall/ComputerOrganization/120602/bypass_unit.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">E:/CPU_MIPS/bypass_unit.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/my_components</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/17fall/ComputerOrganization/120602/components.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">E:/CPU_MIPS/components.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/ctrl_unit</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/17fall/ComputerOrganization/120602/ctrl_unit.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">E:/CPU_MIPS/ctrl_unit.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/ctrl_unit/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/17fall/ComputerOrganization/120602/ctrl_unit.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">E:/CPU_MIPS/ctrl_unit.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/equal_unit</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/17fall/ComputerOrganization/120602/equal_unit.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">E:/CPU_MIPS/equal_unit.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/equal_unit/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/17fall/ComputerOrganization/120602/equal_unit.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">E:/CPU_MIPS/equal_unit.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/EXMEM_Reg</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/17fall/ComputerOrganization/120602/EXMEM_Reg.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">E:/CPU_MIPS/EXMEM_Reg.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/EXMEM_Reg/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/17fall/ComputerOrganization/120602/EXMEM_Reg.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">E:/CPU_MIPS/EXMEM_Reg.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/hazard_unit</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/17fall/ComputerOrganization/120602/hazard_unit.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">E:/CPU_MIPS/hazard_unit.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/hazard_unit/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/17fall/ComputerOrganization/120602/hazard_unit.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">E:/CPU_MIPS/hazard_unit.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/IDEX_Reg</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/17fall/ComputerOrganization/120602/IDEX_Reg.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">E:/CPU_MIPS/IDEX_Reg.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/IDEX_Reg/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/17fall/ComputerOrganization/120602/IDEX_Reg.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">E:/CPU_MIPS/IDEX_Reg.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/IFID_Reg</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/17fall/ComputerOrganization/120602/IFID_Reg.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">E:/CPU_MIPS/IFID_Reg.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/IFID_Reg/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/17fall/ComputerOrganization/120602/IFID_Reg.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">E:/CPU_MIPS/IFID_Reg.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/mymemory</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/17fall/ComputerOrganization/120602/memory.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">E:/CPU_MIPS/memory.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/mymemory/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/17fall/ComputerOrganization/120602/memory.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">E:/CPU_MIPS/memory.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/MEMWB_Reg</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/17fall/ComputerOrganization/120602/MEMWB_Reg.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">E:/CPU_MIPS/MEMWB_Reg.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/MEMWB_Reg/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/17fall/ComputerOrganization/120602/MEMWB_Reg.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">E:/CPU_MIPS/MEMWB_Reg.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/Muxa</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/17fall/ComputerOrganization/120602/Muxa.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">E:/CPU_MIPS/Muxa.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/Muxa/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/17fall/ComputerOrganization/120602/Muxa.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">E:/CPU_MIPS/Muxa.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/Muxb</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/17fall/ComputerOrganization/120602/Muxb.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">E:/CPU_MIPS/Muxb.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/Muxb/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/17fall/ComputerOrganization/120602/Muxb.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">E:/CPU_MIPS/Muxb.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/Muxc</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/17fall/ComputerOrganization/120602/Muxc.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">E:/CPU_MIPS/Muxc.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/Muxc/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/17fall/ComputerOrganization/120602/Muxc.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">E:/CPU_MIPS/Muxc.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/Muxpc</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/17fall/ComputerOrganization/120602/Muxpc.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">E:/CPU_MIPS/Muxpc.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/Muxpc/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/17fall/ComputerOrganization/120602/Muxpc.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">E:/CPU_MIPS/Muxpc.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/PC</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/17fall/ComputerOrganization/120602/pc.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">E:/CPU_MIPS/pc.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/PC/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/17fall/ComputerOrganization/120602/pc.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">E:/CPU_MIPS/pc.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/ps2_keyboard_to_ascii</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/17fall/ComputerOrganization/120602/ps2_keyboard_to_ascii.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">E:/CPU_MIPS/ps2_keyboard_to_ascii.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/ps2_keyboard_to_ascii/behavior</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/17fall/ComputerOrganization/120602/ps2_keyboard_to_ascii.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">E:/CPU_MIPS/ps2_keyboard_to_ascii.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/registers</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/17fall/ComputerOrganization/120602/registers.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">E:/CPU_MIPS/registers.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/registers/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/17fall/ComputerOrganization/120602/registers.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">E:/CPU_MIPS/registers.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/vga</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/17fall/ComputerOrganization/120602/vga.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">E:/CPU_MIPS/vga.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/vga/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/17fall/ComputerOrganization/120602/vga.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">E:/CPU_MIPS/vga.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/operation</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/17fall/ComputerOrganization/120602/alu_defination.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">E:/CPU_MIPS/alu_defination.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/ps2_keyboard</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/17fall/ComputerOrganization/120602/ps2_keyboard.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">E:/CPU_MIPS/ps2_keyboard.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/ps2_keyboard/logic</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/17fall/ComputerOrganization/120602/ps2_keyboard.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">E:/CPU_MIPS/ps2_keyboard.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/vga_char</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/17fall/ComputerOrganization/120602/vga_char.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">E:/CPU_MIPS/vga_char.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/vga_char/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/17fall/ComputerOrganization/120602/vga_char.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">E:/CPU_MIPS/vga_char.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/constants</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/17fall/ComputerOrganization/120602/constants.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">E:/CPU_MIPS/constants.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/debounce</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/17fall/ComputerOrganization/120602/debounce.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">E:/CPU_MIPS/debounce.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/debounce/logic</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/17fall/ComputerOrganization/120602/debounce.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">E:/CPU_MIPS/debounce.vhd</arg>&quot;.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">sram2_oe</arg>&gt; in unit &lt;<arg fmt="%s" index="2">flash</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">sram2_addr&lt;17&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">flash</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">sram2_addr&lt;16&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">flash</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">flash_byte</arg>&gt; in unit &lt;<arg fmt="%s" index="2">flash</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">flash_vpen</arg>&gt; in unit &lt;<arg fmt="%s" index="2">flash</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">flash_rp</arg>&gt; in unit &lt;<arg fmt="%s" index="2">flash</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">sram2_en</arg>&gt; in unit &lt;<arg fmt="%s" index="2">flash</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="1561" delta="new" >&quot;<arg fmt="%s" index="1">E:/CPU_MIPS/registers.vhd</arg>&quot; line <arg fmt="%d" index="2">51</arg>: Mux is complete : default of case is discarded
+</msg>
+
+<msg type="info" file="Xst" num="1561" delta="new" >&quot;<arg fmt="%s" index="1">E:/CPU_MIPS/registers.vhd</arg>&quot; line <arg fmt="%d" index="2">75</arg>: Mux is complete : default of case is discarded
+</msg>
+
+<msg type="info" file="Xst" num="1561" delta="new" >&quot;<arg fmt="%s" index="1">E:/CPU_MIPS/registers.vhd</arg>&quot; line <arg fmt="%d" index="2">93</arg>: Mux is complete : default of case is discarded
+</msg>
+
+<msg type="warning" file="Xst" num="1610" delta="new" >&quot;<arg fmt="%s" index="1">E:/CPU_MIPS/vga_char.vhd</arg>&quot; line <arg fmt="%d" index="2">62</arg>: Width mismatch. &lt;<arg fmt="%s" index="3">word0</arg>&gt; has a width of <arg fmt="%d" index="4">7</arg> bits but assigned expression is <arg fmt="%d" index="5">8</arg>-bit wide.
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">rst</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -107,6 +275,12 @@
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">sw</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">flash_rst</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">test</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
 <msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">vga_enable_led</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
@@ -116,7 +290,13 @@
 <msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">temp_hazard</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">sram_data_2</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
 <msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">memwrite_led</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">flash_sram2_data</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">count10</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
@@ -143,13 +323,137 @@
 <msg type="info" file="Xst" num="1767" delta="old" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
 </msg>
 
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Mtridata_flash_data_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">u0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">7 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Mtridata_flash_data_1&gt; &lt;Mtridata_flash_data_2&gt; &lt;Mtridata_flash_data_3&gt; &lt;Mtridata_flash_data_4&gt; &lt;Mtridata_flash_data_5&gt; &lt;Mtridata_flash_data_6&gt; &lt;Mtridata_flash_data_7&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">u0</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">Mtridata_flash_data&lt;0&gt;</arg> and <arg fmt="%s" index="3">Mtridata_flash_data&lt;1&gt;</arg> <arg fmt="%s" index="4">Mtridata_flash_data&lt;1&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">u0</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">Mtridata_flash_data&lt;0&gt;</arg> and <arg fmt="%s" index="3">Mtridata_flash_data&lt;2&gt;</arg> <arg fmt="%s" index="4">Mtridata_flash_data&lt;2&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">u0</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">Mtridata_flash_data&lt;0&gt;</arg> and <arg fmt="%s" index="3">Mtridata_flash_data&lt;3&gt;</arg> <arg fmt="%s" index="4">Mtridata_flash_data&lt;3&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">u0</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">Mtridata_flash_data&lt;0&gt;</arg> and <arg fmt="%s" index="3">Mtridata_flash_data&lt;4&gt;</arg> <arg fmt="%s" index="4">Mtridata_flash_data&lt;4&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">u0</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">Mtridata_flash_data&lt;0&gt;</arg> and <arg fmt="%s" index="3">Mtridata_flash_data&lt;5&gt;</arg> <arg fmt="%s" index="4">Mtridata_flash_data&lt;5&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">u0</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">Mtridata_flash_data&lt;0&gt;</arg> and <arg fmt="%s" index="3">Mtridata_flash_data&lt;6&gt;</arg> <arg fmt="%s" index="4">Mtridata_flash_data&lt;6&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">u0</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">Mtridata_flash_data&lt;0&gt;</arg> and <arg fmt="%s" index="3">Mtridata_flash_data&lt;7&gt;</arg> <arg fmt="%s" index="4">Mtridata_flash_data&lt;7&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Mtridata_flash_data_8</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">u0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">7 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Mtridata_flash_data_9&gt; &lt;Mtridata_flash_data_10&gt; &lt;Mtridata_flash_data_11&gt; &lt;Mtridata_flash_data_12&gt; &lt;Mtridata_flash_data_13&gt; &lt;Mtridata_flash_data_14&gt; &lt;Mtridata_flash_data_15&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">u0</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">Mtridata_flash_data&lt;8&gt;</arg> and <arg fmt="%s" index="3">Mtridata_flash_data&lt;9&gt;</arg> <arg fmt="%s" index="4">Mtridata_flash_data&lt;9&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">u0</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">Mtridata_flash_data&lt;8&gt;</arg> and <arg fmt="%s" index="3">Mtridata_flash_data&lt;10&gt;</arg> <arg fmt="%s" index="4">Mtridata_flash_data&lt;10&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">u0</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">Mtridata_flash_data&lt;10&gt;</arg> and <arg fmt="%s" index="3">Mtridata_flash_data&lt;11&gt;</arg> <arg fmt="%s" index="4">Mtridata_flash_data&lt;11&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">u0</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">Mtridata_flash_data&lt;10&gt;</arg> and <arg fmt="%s" index="3">Mtridata_flash_data&lt;12&gt;</arg> <arg fmt="%s" index="4">Mtridata_flash_data&lt;12&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">u0</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">Mtridata_flash_data&lt;10&gt;</arg> and <arg fmt="%s" index="3">Mtridata_flash_data&lt;13&gt;</arg> <arg fmt="%s" index="4">Mtridata_flash_data&lt;13&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">u0</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">Mtridata_flash_data&lt;10&gt;</arg> and <arg fmt="%s" index="3">Mtridata_flash_data&lt;14&gt;</arg> <arg fmt="%s" index="4">Mtridata_flash_data&lt;14&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">u0</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">Mtridata_flash_data&lt;10&gt;</arg> and <arg fmt="%s" index="3">Mtridata_flash_data&lt;15&gt;</arg> <arg fmt="%s" index="4">Mtridata_flash_data&lt;15&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">flash_addr_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">u0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">6 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;flash_addr_17&gt; &lt;flash_addr_18&gt; &lt;flash_addr_19&gt; &lt;flash_addr_20&gt; &lt;flash_addr_21&gt; &lt;flash_addr_22&gt; </arg>
+</msg>
+
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">b1_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">vga</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;b1_1&gt; &lt;b1_2&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="new" >The value init of the FF/Latch <arg fmt="%s" index="1">flash_finished_signal</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">u0</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">Mtridata_flash_data_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">u0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">Mtridata_flash_data_8</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">u0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">flash_addr_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">u0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">flash_addr</arg>&lt;<arg fmt="%d" index="2">22</arg>:<arg fmt="%d" index="3">17</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">flash</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">Mtridata_flash_data</arg>&lt;<arg fmt="%d" index="2">15</arg>:<arg fmt="%d" index="3">8</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">flash</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="new" >The value init of the FF/Latch <arg fmt="%s" index="1">flash_finished_signal</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">flash</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">Mtridata_flash_data_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">flash</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Mtridata_flash_data_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">flash</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Mtridata_flash_data_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">flash</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Mtridata_flash_data_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">flash</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Mtridata_flash_data_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">flash</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Mtridata_flash_data_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">flash</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Mtridata_flash_data_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">flash</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Mtridata_flash_data_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">flash</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">flash_addr_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">flash</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">flash</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">Mtridata_flash_data&lt;0&gt;</arg> and <arg fmt="%s" index="3">Mtridata_flash_data&lt;1&gt;</arg> <arg fmt="%s" index="4">Mtridata_flash_data&lt;1&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">flash</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">Mtridata_flash_data&lt;0&gt;</arg> and <arg fmt="%s" index="3">Mtridata_flash_data&lt;2&gt;</arg> <arg fmt="%s" index="4">Mtridata_flash_data&lt;2&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">flash</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">Mtridata_flash_data&lt;0&gt;</arg> and <arg fmt="%s" index="3">Mtridata_flash_data&lt;3&gt;</arg> <arg fmt="%s" index="4">Mtridata_flash_data&lt;3&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">flash</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">Mtridata_flash_data&lt;0&gt;</arg> and <arg fmt="%s" index="3">Mtridata_flash_data&lt;4&gt;</arg> <arg fmt="%s" index="4">Mtridata_flash_data&lt;4&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">flash</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">Mtridata_flash_data&lt;0&gt;</arg> and <arg fmt="%s" index="3">Mtridata_flash_data&lt;5&gt;</arg> <arg fmt="%s" index="4">Mtridata_flash_data&lt;5&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">flash</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">Mtridata_flash_data&lt;0&gt;</arg> and <arg fmt="%s" index="3">Mtridata_flash_data&lt;6&gt;</arg> <arg fmt="%s" index="4">Mtridata_flash_data&lt;6&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">flash</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">Mtridata_flash_data&lt;0&gt;</arg> and <arg fmt="%s" index="3">Mtridata_flash_data&lt;7&gt;</arg> <arg fmt="%s" index="4">Mtridata_flash_data&lt;7&gt;</arg> signal will be lost.
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">b1_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">vga</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;b1_1&gt; &lt;b1_2&gt; </arg>
 </msg>
 
 <msg type="warning" file="Xst" num="2170" delta="old" >Unit <arg fmt="%s" index="1">ALU</arg> : the following signal(s) form a combinatorial loop: </msg>
+
+<msg type="warning" file="Xst" num="2040" delta="new" >Unit <arg fmt="%s" index="1">cpu_16bit_top</arg>: <arg fmt="%d" index="2">16</arg> multi-source signals are replaced by logic (pull-up <arg fmt="%s" index="3">yes</arg>): </msg>
 
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">memory0/vga_data_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu_16bit_top</arg>&gt;.
 </msg>

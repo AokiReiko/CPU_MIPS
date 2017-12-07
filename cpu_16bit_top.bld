@@ -1,11 +1,11 @@
-Release 14.7 ngdbuild P.20131013 (nt64)
-Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Release 14.2 ngdbuild P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
--intstyle ise -dd _ngo -sd ../CPU_MIPS -sd xst -nt timestamp -uc
-cpu_16bit_top.ucf -p xc3s1200e-fg320-5 cpu_16bit_top.ngc cpu_16bit_top.ngd
+Command Line: C:\Xilinx\14.2\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+-intstyle ise -dd _ngo -sd xst -nt timestamp -uc cpu_16bit_top.ucf -p
+xc3s1200e-fg320-5 cpu_16bit_top.ngc cpu_16bit_top.ngd
 
-Reading NGO file "D:/17fall/ComputerOrganization/120602/cpu_16bit_top.ngc" ...
+Reading NGO file "E:/CPU_MIPS/cpu_16bit_top.ngc" ...
 Gathering constraint information from source properties...
 Done.
 
@@ -27,10 +27,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 194104 kilobytes
+Total memory usage is 170720 kilobytes
 
 Writing NGD file "cpu_16bit_top.ngd" ...
-Total REAL time to NGDBUILD completion:  4 sec
-Total CPU time to NGDBUILD completion:   4 sec
+Total REAL time to NGDBUILD completion:  6 sec
+Total CPU time to NGDBUILD completion:   5 sec
 
 Writing NGDBUILD log file "cpu_16bit_top.bld"...

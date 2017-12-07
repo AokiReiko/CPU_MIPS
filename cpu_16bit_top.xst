@@ -15,7 +15,7 @@ run
 -rtlview Yes
 -glob_opt AllClockNets
 -read_cores YES
--sd {"D:/17fall/ComputerOrganization/CPU_MIPS"  }
+-sd {"E:/CPU_MIPS"  }
 -write_timing_constraints NO
 -cross_clock_analysis NO
 -hierarchy_separator /

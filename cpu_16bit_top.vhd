@@ -13,7 +13,7 @@ entity cpu_16bit_top is
     Port ( clk : in  STD_LOGIC;
 			  clk11: in std_logic;
 			  clk50: in std_logic;
-           rst : in  STD_LOGIC;
+           rst_press : in  STD_LOGIC;
 			  
            addr_1: out STD_LOGIC_VECTOR(17 downto 0);
     	   addr_2: out STD_LOGIC_VECTOR(17 downto 0);
@@ -44,7 +44,20 @@ entity cpu_16bit_top is
          vs : out  STD_LOGIC;
          r : out  STD_LOGIC_VECTOR (2 downto 0);
          g : out  STD_LOGIC_VECTOR (2 downto 0);
-         b : out  STD_LOGIC_VECTOR (2 downto 0)
+         b : out  STD_LOGIC_VECTOR (2 downto 0);
+			
+			--Flash
+			flash_addr : out std_logic_vector(22 downto 0);		--flash地址线
+			flash_data : inout std_logic_vector(15 downto 0);	--flash数据线
+		
+			flash_byte : out std_logic;	
+			flash_vpen : out std_logic;	
+			flash_rp : out std_logic;		
+		   flash_ce : out std_logic;		
+			flash_oe : out std_logic;		
+			flash_we : out std_logic;
+			flash_rst : in std_logic;
+			test : in std_logic
 			);	
 end cpu_16bit_top;
 
@@ -169,6 +182,23 @@ signal addr_in_led: STD_LOGIC:='0';
 signal addr_cmp_led: STD_LOGIC:='0';
 signal vga_enable_led: STD_LOGIC:='0';
 
+--flash
+signal flash_finished : std_logic:= '0';
+signal flash_sram2_addr : std_logic_vector(17 downto 0);
+signal flash_sram2_data : std_logic_vector(15 downto 0);
+signal flash_oe_2 : std_logic;
+signal flash_we_2 : std_logic;
+signal flash_en_2 : std_logic:='1';
+
+
+--signal sram_addr : std_logic_vector(17 downto 0);
+signal sram_data_2 : std_logic_vector(15 downto 0);
+signal sram_oe_2 : std_logic;
+signal sram_we_2 : std_logic;
+signal sram_en_2 : std_logic:='1';
+
+signal rst : std_logic;
+
 begin
 process (clk50)
 begin
@@ -195,7 +225,10 @@ begin
 	
 	end if;
 end process;
-addr_2 <= temp;
+
+rst <= rst_press and flash_finished;
+
+--addr_2 <= temp;
 --led <= temp_inst & temp_hazard & HD_Ctrl_Flush & exmem_memread
 --& ID_Reg_T & "000" & temp(7 downto 0);
 dyp0 <= "0000000";
@@ -211,6 +244,35 @@ IF_Mem_inst <= data_2;
 sig_pcwrite <= (HD_PCWrite and (not mem_nop));
 memdata_to_equal_unit <= MeMWB_Mux_data when EXMEM_Memtoreg = '1' else EXMEM_AluData;
 IDEX_clear <= HD_Ctrl_Flush or mem_nop;
+
+en_2 <= sram_en_2 when flash_finished = '1' else flash_en_2;
+we_2 <= sram_we_2 when flash_finished = '1' else flash_we_2;
+oe_2 <= sram_oe_2 when flash_finished = '1' else flash_oe_2;
+addr_2 <= temp when flash_finished = '1' else flash_sram2_addr;
+
+
+u0: flash port map(	
+		clk =>clk10,
+		rst=>'1',
+
+		sram2_addr => flash_sram2_addr, 	
+		sram2_data => data_2,
+		
+		sram2_en => flash_en_2,		
+		sram2_oe => flash_oe_2,		
+		sram2_we => flash_we_2,
+		
+		flash_finished => flash_finished,
+		--Flash
+		flash_addr => flash_addr,		
+		flash_data => flash_data,	
+		
+		flash_byte => flash_byte,	
+		flash_vpen => flash_vpen,	
+		flash_rp => flash_rp,		
+		flash_ce => flash_ce,		
+		flash_oe =>flash_oe,		
+		flash_we => flash_we);
 
 u1: Muxpc port map(
 					PCSrc=>ED_pcsrc,
@@ -371,9 +433,9 @@ memory0: mymemory port map(
 					oe_1=>oe_1,
 					we_1=>wE_1,
 					en_1=>en_1,
-					oe_2=>oe_2,
-					we_2=>we_2,
-					en_2=>en_2,
+					oe_2=>sram_oe_2,
+					we_2=>sram_we_2,
+					en_2=>sram_en_2,
 					addr_1=>addr_1,
 					addr_2=>temp,
 					data_1=>data_1,

@@ -12,6 +12,33 @@ use IEEE.STD_LOGIC_1164.all;
 
 package my_components is
 	
+	component flash
+	port(
+		clk : in std_logic;
+		rst : in std_logic;
+
+		sram2_addr : out std_logic_vector(17 downto 0); 	
+		sram2_data : out std_logic_vector(15 downto 0);
+				
+		sram2_en : out std_logic;		
+		sram2_oe : out std_logic;		
+		sram2_we : out std_logic;		
+		
+		flash_finished : out std_logic;
+		
+		--Flash
+		flash_addr : out std_logic_vector(22 downto 0);		
+		flash_data : inout std_logic_vector(15 downto 0);	
+		
+		flash_byte : out std_logic;	
+		flash_vpen : out std_logic;	
+		flash_rp : out std_logic;		
+		flash_ce : out std_logic;		
+		flash_oe : out std_logic;		
+		flash_we : out std_logic		
+	);
+	end component;
+	
 	component vga 
    Port ( clk50 : in  STD_LOGIC;
            reset : in  STD_LOGIC;
