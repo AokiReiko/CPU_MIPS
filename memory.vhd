@@ -64,7 +64,7 @@ begin
 			if (prev_ascii_new = '0' and ascii_new = '1') then
 				ascii_dataready <= '1';
 			end if;
-			prev_ascii_new <= ascii_new;
+		prev_ascii_new <= ascii_new;
 		end if;
 	end process;
 	
@@ -115,7 +115,7 @@ begin
 					we_2 <= '0';
 					en_2 <= '0';
 				end if;
-				if ("0"&addr_in >= "0"& x"FFB0") then
+				if ("0"&addr_in >= "0"& x"F6A0") then
 					wrn <= '1';
 					rdn <= '1';
 					en_1 <= '1';
@@ -216,7 +216,7 @@ begin
 					data_1 <= (others => 'Z');
 				end case;
 		elsif (memwrite = '1') then
-			if ( "0"&addr_in >= "0"& x"FFB0" ) then
+			if ( "0"&addr_in >= "0"& x"F6A0" ) then
 				vga_data <= data_in;
 				vga_addr <= addr_in;
 			else

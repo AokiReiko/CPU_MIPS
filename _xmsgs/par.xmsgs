@@ -21,7 +21,7 @@
 </msg>
 
 <msg type="warning" file="Route" num="455" delta="old" >CLK Net:<arg fmt="%s" index="1">memory0/vga_enable_cmp_ge0000</arg> may have excessive skew because 
-   <arg fmt="%d" index="2">16</arg> CLK pins and <arg fmt="%d" index="3">27</arg> NON_CLK pins failed to route using a CLK template.
+   <arg fmt="%d" index="2">16</arg> CLK pins and <arg fmt="%d" index="3">28</arg> NON_CLK pins failed to route using a CLK template.
 </msg>
 
 <msg type="warning" file="Route" num="455" delta="old" >CLK Net:<arg fmt="%s" index="1">keyboard_ascii/ps2_keyboard_0/debounce_ps2_clk/result</arg> may have excessive skew because 

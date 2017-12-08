@@ -8,7 +8,7 @@
 <msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">u15/fout_shift0006&lt;15&gt;1/LO</arg> has no load.
 </msg>
 
-<msg type="info" file="LIT" num="395" delta="old" >The above <arg fmt="%s" index="1">info</arg> message is repeated <arg fmt="%d" index="2">19</arg> more times for the following (max. 5 shown):
+<msg type="info" file="LIT" num="395" delta="old" >The above <arg fmt="%s" index="1">info</arg> message is repeated <arg fmt="%d" index="2">44</arg> more times for the following (max. 5 shown):
 <arg fmt="%s" index="3">sw&lt;15&gt;,
 sw&lt;14&gt;,
 sw&lt;13&gt;,
@@ -24,6 +24,29 @@ To see the details of these <arg fmt="%s" index="4">info</arg> messages, please 
 </msg>
 
 <msg type="warning" file="Pack" num="266" delta="old" >The function generator <arg fmt="%s" index="1">vga/char/Mrom_Char_mux000266</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">vga/char/Mrom_Char_mux000266_f6/MUXF5.I1</arg>.  <arg fmt="%z" index="3">There is a conflict for the GYMUX.</arg>  The design will exhibit suboptimal timing.
+</msg>
+
+<msg type="warning" file="Pack" num="266" delta="old" >The function generator <arg fmt="%s" index="1">vga/char/Char_mux0000&lt;78&gt;51</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">vga/char/Char_mux0000&lt;73&gt;1_f5</arg>.  <arg fmt="%z" index="3">There is a conflict for the FXMUX.</arg>  The design will exhibit suboptimal timing.
+</msg>
+
+<msg type="warning" file="Pack" num="266" delta="old" >The function generator <arg fmt="%s" index="1">vga/char/Mrom_Char_mux0002962</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">vga/char/Mrom_Char_mux000296_f6/MUXF5.I0</arg>.  <arg fmt="%z" index="3">Unable to resolve the conflicts between two or more collections of symbols which have restrictive placement or routing requirements.  The original symbols are:
+	MUXF5 symbol &quot;vga/char/Mrom_Char_mux000296_f6/MUXF5.I0&quot; (Output Signal = vga/char/Mrom_Char_mux000296_f6/F5.I0)
+	LUT symbol &quot;vga/char/Mrom_Char_mux0002962&quot; (Output Signal = vga/char/Mrom_Char_mux00021032)
+	MUXF5 symbol &quot;vga/char/Mrom_Char_mux0002105_f6/MUXF5.I0&quot; (Output Signal = vga/char/Mrom_Char_mux0002105_f6/F5.I0)
+Failure 1:  Unable to combine the following symbols into a single slice.
+	MUXF5 symbol &quot;vga/char/Mrom_Char_mux000296_f6/MUXF5.I0&quot; (Output Signal = vga/char/Mrom_Char_mux000296_f6/F5.I0)
+	MUXF5 symbol &quot;vga/char/Mrom_Char_mux0002105_f6/MUXF5.I0&quot; (Output Signal = vga/char/Mrom_Char_mux0002105_f6/F5.I0)
+	LUT symbol &quot;vga/char/Mrom_Char_mux0002962&quot; (Output Signal = vga/char/Mrom_Char_mux00021032)
+There is more than one F5MUX.
+Failure 2:  Unable to combine the following symbols into a single slice.
+	MUXF6 symbol &quot;vga/char/Mrom_Char_mux000296_f6/MUXF6&quot; (Output Signal = vga/char/Mrom_Char_mux000296_f6)
+	MUXF5 symbol &quot;vga/char/Mrom_Char_mux000296_f5&quot; (Output Signal = vga/char/Mrom_Char_mux000296_f5)
+	LUT symbol &quot;vga/char/Mrom_Char_mux0002961&quot; (Output Signal = vga/char/Mrom_Char_mux0002961)
+	LUT symbol &quot;vga/char/Mrom_Char_mux000296&quot; (Output Signal = vga/char/Mrom_Char_mux000296)
+	MUXF6 symbol &quot;vga/char/Mrom_Char_mux0002105_f6/MUXF6&quot; (Output Signal = vga/char/Mrom_Char_mux0002105_f6)
+	MUXF5 symbol &quot;vga/char/Mrom_Char_mux0002105_f5&quot; (Output Signal = vga/char/Mrom_Char_mux0002105_f5)
+There is more than one MUXF6.
+</arg>  The design will exhibit suboptimal timing.
 </msg>
 
 <msg type="warning" file="Pack" num="266" delta="old" >The function generator <arg fmt="%s" index="1">vga/char/Mrom_Char_mux000266</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">vga/char/Mrom_Char_mux0002119_f6/MUXF5.I1</arg>.  <arg fmt="%z" index="3">There is a conflict for the GYMUX.</arg>  The design will exhibit suboptimal timing.

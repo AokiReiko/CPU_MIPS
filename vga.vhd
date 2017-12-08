@@ -22,6 +22,7 @@ use		ieee.std_logic_1164.all;
 use		ieee.std_logic_unsigned.all;
 use	ieee.std_logic_arith.all;
 
+
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
 --use IEEE.NUMERIC_STD.ALL;
@@ -51,32 +52,34 @@ architecture Behavioral of vga is
 	signal vector_x : std_logic_vector(9 downto 0):= (others => '0');
 	signal vector_y : std_logic_vector(9 downto 0):= (others => '0');
 	signal clk : std_logic:='0';
-	signal vout : std_logic := '0';  
-	signal data0 : std_logic_vector(559 downto 0):= (6=>'0',5=>'1',4=>'1',3=>'0',2=>'1',1=>'1',0=>'0',others => '0');
+	signal vout : std_logic := '0'; 
+	
+	
+	--signal data0 : std_logic_vector(559 downto 0):= (6=>'0',5=>'1',4=>'1',3=>'0',2=>'1',1=>'1',0=>'0',others => '0');
 	component vga_char
-		port( pos_x : in  STD_LOGIC_VECTOR (9 downto 0);
-           pos_y : in  STD_LOGIC_VECTOR (9 downto 0);
-           word : in  STD_LOGIC_VECTOR (559 downto 0);
+		port( clk50 : in std_logic;
+			  
+			  write_enable : in STD_LOGIC;
+			  data : in std_logic_vector(15 downto 0);
+			  adress : in std_logic_vector(15 downto 0);
+			  
+			  pos_x : in STD_LOGIC_VECTOR(9 downto 0);
+			  pos_y : in std_logic_vector(9 downto 0);
            vout : out  STD_LOGIC);
 	end component;
 begin
-
-	process (write_enable, data, adress)
-		variable bgn : integer range 0 to 200:= 0;
-	begin
-		if(write_enable'event and write_enable = '0' and "0"&adress >= "0"& x"FFB0") then
-			bgn := conv_integer("0"&adress - "01111111110110000"); -- FFB0
-			data0(bgn*7+6 downto bgn*7) <= data(6 downto 0);
-		end if;
-	end process;
 	
 	char: vga_char
 	port map(
-		pos_x(9 downto 0) =>vector_x(9 downto 0),
-      pos_y(9 downto 0) =>vector_y(9 downto 0),
-      word(559 downto 0) =>data0(559 downto 0),
-      vout => vout
+		clk50 => clk50,
+		write_enable => write_enable,
+	   data => data,
+	   adress => adress,
+		pos_x => vector_x,
+	   pos_y => vector_y,
+      vout =>vout
 	);
+	
 	process (clk50)
 	begin
 	   if (clk50'event and clk50='1') then 

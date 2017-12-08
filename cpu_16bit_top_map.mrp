@@ -1,4 +1,4 @@
-Release 14.7 Map P.20131013 (nt64)
+Release 14.2 Map P.28xd (nt64)
 Xilinx Mapping Report File for Design 'cpu_16bit_top'
 
 Design Information
@@ -10,25 +10,25 @@ Target Device  : xc3s1200e
 Target Package : fg320
 Target Speed   : -5
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Fri Dec 08 21:39:19 2017
+Mapped Date    : Sat Dec 09 01:07:16 2017
 
 Design Summary
 --------------
 Number of errors:      0
-Number of warnings:   10
+Number of warnings:   12
 Logic Utilization:
-  Total Number Slice Registers:       1,166 out of  17,344    6%
-    Number used as Flip Flops:        1,112
-    Number used as Latches:              54
-  Number of 4 input LUTs:             2,342 out of  17,344   13%
+  Total Number Slice Registers:         633 out of  17,344    3%
+    Number used as Flip Flops:          578
+    Number used as Latches:              55
+  Number of 4 input LUTs:             1,855 out of  17,344   10%
 Logic Distribution:
-  Number of occupied Slices:          1,940 out of   8,672   22%
-    Number of Slices containing only related logic:   1,940 out of   1,940 100%
-    Number of Slices containing unrelated logic:          0 out of   1,940   0%
+  Number of occupied Slices:          1,368 out of   8,672   15%
+    Number of Slices containing only related logic:   1,368 out of   1,368 100%
+    Number of Slices containing unrelated logic:          0 out of   1,368   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:       2,495 out of  17,344   14%
-    Number used as logic:             2,340
-    Number used as a route-thru:        153
+  Total Number of 4 input LUTs:       2,010 out of  17,344   11%
+    Number used as logic:             1,853
+    Number used as a route-thru:        155
     Number used as Shift registers:       2
 
   The Slice Logic Distribution report is not meaningful if the design is
@@ -37,14 +37,15 @@ Logic Distribution:
   Number of bonded IOBs:                173 out of     250   69%
     IOB Flip Flops:                      16
     IOB Latches:                         32
+  Number of RAMB16s:                      2 out of      28    7%
   Number of BUFGMUXs:                     7 out of      24   29%
   Number of MULT18X18SIOs:                1 out of      28    3%
 
-Average Fanout of Non-Clock Nets:                3.62
+Average Fanout of Non-Clock Nets:                3.68
 
-Peak Memory Usage:  392 MB
-Total REAL time to MAP completion:  26 secs 
-Total CPU time to MAP completion:   26 secs 
+Peak Memory Usage:  358 MB
+Total REAL time to MAP completion:  21 secs 
+Total CPU time to MAP completion:   20 secs 
 
 Table of Contents
 -----------------
@@ -67,12 +68,46 @@ Section 1 - Errors
 
 Section 2 - Warnings
 --------------------
-WARNING:Security:42 - Your software subscription period has lapsed. Your current
-version of Xilinx tools will continue to function, but you no longer qualify for
-Xilinx software updates or new releases.
 WARNING:Pack:266 - The function generator vga/char/Mrom_Char_mux000266 failed to
    merge with F5 multiplexer vga/char/Mrom_Char_mux000266_f6/MUXF5.I1.  There is
    a conflict for the GYMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator vga/char/Char_mux0000<78>51 failed to
+   merge with F5 multiplexer vga/char/Char_mux0000<73>1_f5.  There is a conflict
+   for the FXMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator vga/char/Mrom_Char_mux0002962 failed
+   to merge with F5 multiplexer vga/char/Mrom_Char_mux000296_f6/MUXF5.I0. 
+   Unable to resolve the conflicts between two or more collections of symbols
+   which have restrictive placement or routing requirements.  The original
+   symbols are:
+   	MUXF5 symbol "vga/char/Mrom_Char_mux000296_f6/MUXF5.I0" (Output Signal =
+   vga/char/Mrom_Char_mux000296_f6/F5.I0)
+   	LUT symbol "vga/char/Mrom_Char_mux0002962" (Output Signal =
+   vga/char/Mrom_Char_mux00021032)
+   	MUXF5 symbol "vga/char/Mrom_Char_mux0002105_f6/MUXF5.I0" (Output Signal =
+   vga/char/Mrom_Char_mux0002105_f6/F5.I0)
+   Failure 1:  Unable to combine the following symbols into a single slice.
+   	MUXF5 symbol "vga/char/Mrom_Char_mux000296_f6/MUXF5.I0" (Output Signal =
+   vga/char/Mrom_Char_mux000296_f6/F5.I0)
+   	MUXF5 symbol "vga/char/Mrom_Char_mux0002105_f6/MUXF5.I0" (Output Signal =
+   vga/char/Mrom_Char_mux0002105_f6/F5.I0)
+   	LUT symbol "vga/char/Mrom_Char_mux0002962" (Output Signal =
+   vga/char/Mrom_Char_mux00021032)
+   There is more than one F5MUX.
+   Failure 2:  Unable to combine the following symbols into a single slice.
+   	MUXF6 symbol "vga/char/Mrom_Char_mux000296_f6/MUXF6" (Output Signal =
+   vga/char/Mrom_Char_mux000296_f6)
+   	MUXF5 symbol "vga/char/Mrom_Char_mux000296_f5" (Output Signal =
+   vga/char/Mrom_Char_mux000296_f5)
+   	LUT symbol "vga/char/Mrom_Char_mux0002961" (Output Signal =
+   vga/char/Mrom_Char_mux0002961)
+   	LUT symbol "vga/char/Mrom_Char_mux000296" (Output Signal =
+   vga/char/Mrom_Char_mux000296)
+   	MUXF6 symbol "vga/char/Mrom_Char_mux0002105_f6/MUXF6" (Output Signal =
+   vga/char/Mrom_Char_mux0002105_f6)
+   	MUXF5 symbol "vga/char/Mrom_Char_mux0002105_f5" (Output Signal =
+   vga/char/Mrom_Char_mux0002105_f5)
+   There is more than one MUXF6.
+     The design will exhibit suboptimal timing.
 WARNING:Pack:266 - The function generator vga/char/Mrom_Char_mux000266 failed to
    merge with F5 multiplexer vga/char/Mrom_Char_mux0002119_f6/MUXF5.I1.  There
    is a conflict for the GYMUX.  The design will exhibit suboptimal timing.
@@ -102,9 +137,8 @@ WARNING:PhysDesignRules:367 - The signal <flash_rst_IBUF> is incomplete. The
 
 Section 3 - Informational
 -------------------------
-INFO:Security:54 - 'xc3s1200e' is a WebPack part.
 INFO:LIT:243 - Logical network u15/fout_shift0006<15>1/LO has no load.
-INFO:LIT:395 - The above info message is repeated 19 more times for the
+INFO:LIT:395 - The above info message is repeated 44 more times for the
    following (max. 5 shown):
    sw<15>,
    sw<14>,
@@ -124,9 +158,9 @@ INFO:Pack:1650 - Map created a placed design.
 
 Section 4 - Removed Logic Summary
 ---------------------------------
-   1 block(s) removed
-   4 block(s) optimized away
-   1 signal(s) removed
+  27 block(s) removed
+   6 block(s) optimized away
+  50 signal(s) removed
 
 Section 5 - Removed Logic
 -------------------------
@@ -143,11 +177,98 @@ the lines that are least indented (begin at the leftmost edge).
 
 The signal "u15/fout_shift0006<15>1/LO" is loadless and has been removed.
  Loadless block "u15/fout_shift0006<15>1/LUT3_D_BUF" (BUF) removed.
+The signal "vga/char/u0/douta<15>" is sourceless and has been removed.
+The signal "vga/char/u0/douta<14>" is sourceless and has been removed.
+The signal "vga/char/u0/douta<13>" is sourceless and has been removed.
+The signal "vga/char/u0/douta<12>" is sourceless and has been removed.
+The signal "vga/char/u0/douta<11>" is sourceless and has been removed.
+The signal "vga/char/u0/douta<10>" is sourceless and has been removed.
+The signal "vga/char/u0/douta<9>" is sourceless and has been removed.
+The signal "vga/char/u0/douta<8>" is sourceless and has been removed.
+The signal "vga/char/u0/douta<7>" is sourceless and has been removed.
+The signal "vga/char/u0/douta<6>" is sourceless and has been removed.
+The signal "vga/char/u0/douta<5>" is sourceless and has been removed.
+The signal "vga/char/u0/douta<4>" is sourceless and has been removed.
+The signal "vga/char/u0/douta<3>" is sourceless and has been removed.
+The signal "vga/char/u0/douta<2>" is sourceless and has been removed.
+The signal "vga/char/u0/douta<1>" is sourceless and has been removed.
+The signal "vga/char/u0/douta<0>" is sourceless and has been removed.
+The signal "vga/char/u0/doutb<15>" is sourceless and has been removed.
+The signal "vga/char/u0/doutb<14>" is sourceless and has been removed.
+The signal "vga/char/u0/doutb<13>" is sourceless and has been removed.
+The signal "vga/char/u0/doutb<12>" is sourceless and has been removed.
+The signal "vga/char/u0/doutb<11>" is sourceless and has been removed.
+The signal "vga/char/u0/doutb<10>" is sourceless and has been removed.
+The signal "vga/char/u0/doutb<9>" is sourceless and has been removed.
+The signal "vga/char/u0/doutb<8>" is sourceless and has been removed.
+The signal "vga/char/u0/doutb<7>" is sourceless and has been removed.
+
+The trimmed logic reported below is either:
+   1. part of a cycle
+   2. part of disabled logic
+   3. a side-effect of other trimmed logic
+
+The signal "memory0/vga_data<10>" is unused and has been removed.
+ Unused block "memory0/vga_data_10" (LATCH) removed.
+  The signal "memory0/vga_data_mux0002<10>" is unused and has been removed.
+   Unused block "memory0/vga_data_mux0002<10>1" (ROM) removed.
+The signal "memory0/vga_data<11>" is unused and has been removed.
+ Unused block "memory0/vga_data_11" (LATCH) removed.
+  The signal "memory0/vga_data_mux0002<11>" is unused and has been removed.
+   Unused block "memory0/vga_data_mux0002<11>1" (ROM) removed.
+The signal "memory0/vga_data<12>" is unused and has been removed.
+ Unused block "memory0/vga_data_12" (LATCH) removed.
+  The signal "memory0/vga_data_mux0002<12>" is unused and has been removed.
+   Unused block "memory0/vga_data_mux0002<12>1" (ROM) removed.
+The signal "memory0/vga_data<13>" is unused and has been removed.
+ Unused block "memory0/vga_data_13" (LATCH) removed.
+  The signal "memory0/vga_data_mux0002<13>" is unused and has been removed.
+   Unused block "memory0/vga_data_mux0002<13>1" (ROM) removed.
+The signal "memory0/vga_data<14>" is unused and has been removed.
+ Unused block "memory0/vga_data_14" (LATCH) removed.
+  The signal "memory0/vga_data_mux0002<14>" is unused and has been removed.
+   Unused block "memory0/vga_data_mux0002<14>1" (ROM) removed.
+The signal "memory0/vga_data<15>" is unused and has been removed.
+ Unused block "memory0/vga_data_15" (LATCH) removed.
+  The signal "memory0/vga_data_mux0002<15>" is unused and has been removed.
+   Unused block "memory0/vga_data_mux0002<15>1" (ROM) removed.
+The signal "memory0/vga_data<8>" is unused and has been removed.
+ Unused block "memory0/vga_data_8" (LATCH) removed.
+  The signal "memory0/vga_data_mux0002<8>" is unused and has been removed.
+   Unused block "memory0/vga_data_mux0002<8>1" (ROM) removed.
+The signal "memory0/vga_data<9>" is unused and has been removed.
+ Unused block "memory0/vga_data_9" (LATCH) removed.
+  The signal "memory0/vga_data_mux0002<9>" is unused and has been removed.
+   Unused block "memory0/vga_data_mux0002<9>1" (ROM) removed.
+The signal "vga/char/din_a<10>" is unused and has been removed.
+ Unused block "vga/char/din_a_10" (FF) removed.
+The signal "vga/char/din_a<11>" is unused and has been removed.
+ Unused block "vga/char/din_a_11" (FF) removed.
+The signal "vga/char/din_a<12>" is unused and has been removed.
+ Unused block "vga/char/din_a_12" (FF) removed.
+The signal "vga/char/din_a<13>" is unused and has been removed.
+ Unused block "vga/char/din_a_13" (FF) removed.
+The signal "vga/char/din_a<14>" is unused and has been removed.
+ Unused block "vga/char/din_a_14" (FF) removed.
+The signal "vga/char/din_a<15>" is unused and has been removed.
+ Unused block "vga/char/din_a_15" (FF) removed.
+The signal "vga/char/din_a<8>" is unused and has been removed.
+ Unused block "vga/char/din_a_8" (FF) removed.
+The signal "vga/char/din_a<9>" is unused and has been removed.
+ Unused block "vga/char/din_a_9" (FF) removed.
+Unused block
+"vga/char/u0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/r
+amloop[2].ram.r/s3_noinit.ram/dpram.dp4x4.ram" (RAMB16_S4_S4) removed.
+Unused block
+"vga/char/u0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/r
+amloop[3].ram.r/s3_noinit.ram/dpram.dp4x4.ram" (RAMB16_S4_S4) removed.
 
 Optimized Block(s):
 TYPE 		BLOCK
 GND 		XST_GND
 VCC 		XST_VCC
+GND 		vga/char/u0/XST_GND
+VCC 		vga/char/u0/XST_VCC
 
 To enable printing of redundant blocks removed and signals merged, set the
 detailed map report option and rerun map.

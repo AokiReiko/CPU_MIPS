@@ -23,7 +23,7 @@ USE IEEE.STD_LOGIC_ARITH.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 library work;
 use work.constants.all;
-
+use work.my_components.ALL;
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
 --use IEEE.NUMERIC_STD.ALL;
@@ -34,39 +34,81 @@ use work.constants.all;
 --use UNISIM.VComponents.all;
 
 entity vga_char is
-    Port ( pos_x : in  STD_LOGIC_VECTOR (9 downto 0);
-           pos_y : in  STD_LOGIC_VECTOR (9 downto 0);
-           word : in  STD_LOGIC_VECTOR (559 downto 0);
+    Port ( 
+			  clk50 : in std_logic;
+			  
+			  write_enable : in STD_LOGIC;
+			  data : in std_logic_vector(15 downto 0);
+			  adress : in std_logic_vector(15 downto 0);
+			  
+			  pos_x : in STD_LOGIC_VECTOR(9 downto 0);
+			  pos_y : in std_logic_vector(9 downto 0);
            vout : out  STD_LOGIC
 		--	  wordout : out std_logic_vector (5 downto 0)
 		);
 end vga_char;
 
 architecture Behavioral of vga_char is
+	--GRam
+	
+    signal addr_a :  STD_LOGIC_VECTOR(11 DOWNTO 0);
+    signal din_a :  STD_LOGIC_VECTOR(15 DOWNTO 0) := (others => '1');
+    signal dout_a :  STD_LOGIC_VECTOR(15 DOWNTO 0);
+    signal addr_b :  STD_LOGIC_VECTOR(11 DOWNTO 0);
+    signal din_b :  STD_LOGIC_VECTOR(15 DOWNTO 0);
+	 signal dout_b :  STD_LOGIC_VECTOR(15 DOWNTO 0);
+	 
+	 signal delta_x : integer range 0 to 8 := 0;
+	 signal delta_y : integer range 0 to 16 := 0;
+	
 begin
-	process(pos_x, pos_y, word)
-		variable Char : STD_LOGIC_VECTOR(127 downto 0);
-		variable delta_x : integer range 0 to 7 := 0;
-		variable delta_y : integer range 0 to 15 := 0;
-		variable word0 : std_logic_vector(6 downto 0);
-		variable x : integer range 0 to 79 := 0;
-		variable y : integer range 0 to 29:= 0;
-		variable w : integer range 0 to 559:= 0;
+
+	u0: GRam 
+	port map(
+	 clka => clk50,
+    wea => "1",
+    addra => addr_a,
+    dina => din_a,
+    douta => dout_a,
+    clkb => clk50,
+    web => "0",
+    addrb => addr_b,
+    dinb => (others => 'Z'),
+    doutb => dout_b
+	);
+	
+	process (write_enable, data, adress)
+		variable temp :  STD_LOGIC_VECTOR(15 DOWNTO 0);
+		--variable bgn : integer range 0 to 200:= 0;
+	begin
+		if(write_enable'event and write_enable = '0' and "0"&adress >= "0"& x"F6A0") then
+			din_a <= data;
+			temp := adress - x"F6A0";
+			addr_a <= temp(11 downto 0);
+			--bgn := conv_integer("0"&adress - "01111111110110000"); -- FFB0
+			--data0(bgn*7+6 downto bgn*7) <= data(6 downto 0);
+		end if;
+	end process;
+	
+	process(pos_x, pos_y)
+		variable x : integer range 0 to 80 := 0;
+		variable y : integer range 0 to 30:= 0;
+		variable result : integer range 0 to 2400:= 0;
 	begin
 		x := conv_integer(to_stdlogicvector(to_bitvector(pos_x) srl 3));
 		y := conv_integer(to_stdlogicvector(to_bitvector(pos_y) srl 4));
-		delta_y := conv_integer(pos_y) - y * 32;
-		delta_x := conv_integer(pos_x) - x * 16;
-		w := x * 7; 
-		if y = 2 then
-			word0 := word(w+7 downto w);
-			--wordout <= word0;
-		else
-			word0 := (others=>'1');
-			--wordout <= word0;
-		end if;
- 		
-		case word0 is
+		delta_y <= conv_integer(pos_y) - y * 16;
+		delta_x <= conv_integer(pos_x) - x * 8;
+		
+		result := y * 80 + x;
+		addr_b <=  conv_std_logic_vector(result, 12);
+	end process;
+	
+	
+	process(delta_x, delta_y)
+		variable Char : STD_LOGIC_VECTOR(127 downto 0);
+	begin
+		case dout_b(6 downto 0) is
 			when "0110000" => Char := Char_0;
 			when "0110001" => Char := Char_1;
 			when "0110010" => Char := Char_2;
@@ -107,7 +149,6 @@ begin
 		end case;
 		
 		vout <= Char(127-delta_y*8-delta_x);
-		
 	end process;
 
 end Behavioral;

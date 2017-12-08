@@ -1,14 +1,14 @@
 --------------------------------------------------------------------------------
-Release 14.7 Trace  (nt64)
-Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Release 14.2 Trace  (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 5
+C:\Xilinx\14.2\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 5
 -n 3 -fastpaths -xml cpu_16bit_top.twx cpu_16bit_top.ncd -o cpu_16bit_top.twr
 cpu_16bit_top.pcf -ucf cpu_16bit_top.ucf
 
 Design file:              cpu_16bit_top.ncd
 Physical constraint file: cpu_16bit_top.pcf
-Device,package,speed:     xc3s1200e,fg320,-5 (PRODUCTION 1.27 2013-10-13)
+Device,package,speed:     xc3s1200e,fg320,-5 (PRODUCTION 1.27 2012-07-09)
 Report level:             verbose report
 
 Environment Variable      Effect 
@@ -45,8 +45,8 @@ Setup/Hold to clock clk50
             |Max Setup to|Max Hold to |                  | Clock  |
 Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------------+--------+
-ps2_clk     |    0.836(R)|    0.746(R)|clk50_BUFGP       |   0.000|
-ps2_data    |    0.743(R)|    0.826(R)|clk50_BUFGP       |   0.000|
+ps2_clk     |    1.309(R)|    0.375(R)|clk50_BUFGP       |   0.000|
+ps2_data    |    0.506(R)|    1.014(R)|clk50_BUFGP       |   0.000|
 ------------+------------+------------+------------------+--------+
 
 Clock clk50 to Pad
@@ -54,13 +54,13 @@ Clock clk50 to Pad
             | clk (edge) |                  | Clock  |
 Destination |   to PAD   |Internal Clock(s) | Phase  |
 ------------+------------+------------------+--------+
-en_1        |   10.146(R)|clk50_BUFGP       |   0.000|
-oe_1        |    8.920(R)|clk50_BUFGP       |   0.000|
-oe_2        |   10.814(R)|clk50_BUFGP       |   0.000|
-rdn         |   15.847(R)|clk50_BUFGP       |   0.000|
-we_1        |    8.886(R)|clk50_BUFGP       |   0.000|
-we_2        |   12.311(R)|clk50_BUFGP       |   0.000|
-wrn         |   11.114(R)|clk50_BUFGP       |   0.000|
+en_1        |    9.867(R)|clk50_BUFGP       |   0.000|
+oe_1        |    9.884(R)|clk50_BUFGP       |   0.000|
+oe_2        |   10.002(R)|clk50_BUFGP       |   0.000|
+rdn         |   12.197(R)|clk50_BUFGP       |   0.000|
+we_1        |   10.106(R)|clk50_BUFGP       |   0.000|
+we_2        |   11.219(R)|clk50_BUFGP       |   0.000|
+wrn         |   11.371(R)|clk50_BUFGP       |   0.000|
 ------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clk11
@@ -68,7 +68,7 @@ Clock to Setup on destination clock clk11
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk11          |    4.324|         |         |         |
+clk11          |    4.585|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clk50
@@ -76,18 +76,18 @@ Clock to Setup on destination clock clk50
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk50          |    9.864|         |         |         |
+clk50          |    9.631|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Fri Dec 08 21:40:25 2017 
+Analysis completed Sat Dec 09 01:08:05 2017 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 236 MB
+Peak Memory Usage: 224 MB
 
 
 
