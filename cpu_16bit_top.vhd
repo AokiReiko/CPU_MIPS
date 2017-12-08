@@ -164,8 +164,8 @@ signal temp: STD_LOGIC_VECTOR (17 downto 0) := (others => '0');
 signal temp_inst: STD_LOGIC:='0';
 signal temp_hazard: STD_LOGIC:='0';
 
-signal clk1M:std_logic;
-signal clk10:std_logic:='0';
+signal clk1M:std_logic:='0';
+signal clk25:std_logic:='0';
 signal count10 : std_logic_vector(29 downto 0):=( others => '0');
 
 -- for keyboard
@@ -200,15 +200,23 @@ signal sram_en_2 : std_logic:='1';
 signal rst : std_logic;
 
 begin
+
 process (clk50)
 begin
 	if (clk50'event and clk50 = '1') then
-		--if (conv_integer(count10) = 1) then
-		--	count10 <= (others => '0');
-			clk10 <= not clk10;
-		--else
-		--	count10 <= count10 + 1;
-		--end if;
+		clk25 <= not clk25;
+	end if;
+end process;
+
+process (clk11)
+begin
+	if (clk11'event and clk11 = '1') then
+		if (conv_integer(count10) = 1) then
+			count10 <= (others => '0');
+			clk1M <= not clk1M;
+		else
+			count10 <= count10 + 1;
+		end if;
 	end if;
 end process;
 process(IFID_inst)
@@ -238,7 +246,7 @@ led <= vga_led&"000000000000000";
 --led <= (others => '0');
 --dyp0 <= "000" & bp_forwarda & bp_forwardb;
 --dyp1 <= "000" & bp_forwarda & bp_forwardb ;
-my_clk <= clk10;
+my_clk <= clk25;
 b_register_num <= IFID_inst(10 downto 8) when IFID_inst(15 downto 11) = "11010" else IFID_inst(7 downto 5);
 IF_Mem_inst <= data_2;
 sig_pcwrite <= (HD_PCWrite and (not mem_nop));
@@ -252,7 +260,7 @@ addr_2 <= temp when flash_finished = '1' else flash_sram2_addr;
 
 
 u0: flash port map(	
-		clk =>clk10,
+		clk =>clk1M,
 		rst=>'1',
 
 		sram2_addr => flash_sram2_addr, 	

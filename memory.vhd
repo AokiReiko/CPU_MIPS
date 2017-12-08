@@ -48,19 +48,23 @@ architecture Behavioral of mymemory is
 signal BF01: std_logic_vector(15 downto 0); -- COM
 signal BF0E: std_logic_vector(15 downto 0); -- keyboard ascii code
 signal BF0F: std_logic_vector(15 downto 0); -- keyboard dataready
-signal ascii_rising_edge : STD_LOGIC := '0'; -- whether keyboard data is new
+signal prev_ascii_new : STD_LOGIC := '0'; -- whether keyboard data is new
+signal ascii_dataready : STD_LOGIC := '0'; -- whether keyboard data is new
 begin
 	BF01 <= "00000000000000" & data_ready & (tbre and tsre);
 	BF0E <= "000000000" & ascii_code;
-	BF0F <= "00000000000000" & ascii_new & ascii_rising_edge;
-	vga_led <= ascii_rising_edge;
+	BF0F <= "00000000000000" & ascii_new & ascii_dataready;
+	vga_led <= ascii_dataready;
 
-	process(ascii_new, memread, addr_in)
+	process(clk, memread, addr_in)
 	begin
 		if (memread = '1' and addr_in = x"BF0E") then
-			ascii_rising_edge <= '0';
-		elsif (ascii_new'event and ascii_new='1') then
-			ascii_rising_edge <= '1';
+			ascii_dataready <= '0';
+		elsif (clk'event and clk = '1') then
+			if (prev_ascii_new = '0' and ascii_new = '1') then
+				ascii_dataready <= '1';
+			end if;
+			prev_ascii_new <= ascii_new;
 		end if;
 	end process;
 	

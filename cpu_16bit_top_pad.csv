@@ -1,7 +1,7 @@
-#Release 14.2 - par P.28xd (nt64)
-#Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+#Release 14.7 - par P.20131013 (nt64)
+#Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-#Fri Dec 08 00:03:40 2017
+#Fri Dec 08 21:40:18 2017
 
 #
 ## NOTE: This file is designed to be imported into a spreadsheet program
@@ -32,7 +32,7 @@ A10,dyp1<1>,IOB,IO_L12N_0/GCLK7,OUTPUT,LVCMOS25*,0,12,SLOW,NONE**,,,LOCATED,NO,N
 A11,led<2>,IOB,IO,OUTPUT,LVCMOS25*,0,12,SLOW,NONE**,,,LOCATED,NO,NONE,
 A12,led<8>,IOB,IO,OUTPUT,LVCMOS25*,0,12,SLOW,NONE**,,,LOCATED,NO,NONE,
 A13,led<11>,IOB,IO_L05P_0,OUTPUT,LVCMOS25*,0,12,SLOW,NONE**,,,LOCATED,NO,NONE,
-A14,led<15>,IOB,IO_L04N_0,OUTPUT,LVCMOS25*,0,12,SLOW,NONE**,,,LOCATED,YES,NONE,
+A14,led<15>,IOB,IO_L04N_0,OUTPUT,LVCMOS25*,0,12,SLOW,NONE**,,,LOCATED,NO,NONE,
 A15,,DIFFSI,IP_L02N_0,UNUSED,,0,,,,,,,,,
 A16,data_ready,IBUF,IO_L01N_0,INPUT,LVCMOS25*,0,,,,NONE,,LOCATED,NO,NONE,
 A17,,,TCK,,,,,,,,,,,,
