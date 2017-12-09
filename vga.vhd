@@ -54,6 +54,7 @@ architecture Behavioral of vga is
 	signal clk : std_logic:='0';
 	signal vout : std_logic := '0'; 
 	
+	signal rgb : std_logic_vector(8 downto 0);
 	
 	--signal data0 : std_logic_vector(559 downto 0):= (6=>'0',5=>'1',4=>'1',3=>'0',2=>'1',1=>'1',0=>'0',others => '0');
 	component vga_char
@@ -65,7 +66,8 @@ architecture Behavioral of vga is
 			  
 			  pos_x : in STD_LOGIC_VECTOR(9 downto 0);
 			  pos_y : in std_logic_vector(9 downto 0);
-           vout : out  STD_LOGIC);
+           vout : out  STD_LOGIC;
+			  rgb : out std_logic_vector(8 downto 0));
 	end component;
 begin
 	
@@ -77,7 +79,8 @@ begin
 	   adress => adress,
 		pos_x => vector_x,
 	   pos_y => vector_y,
-      vout =>vout
+      vout =>vout, 
+		rgb => rgb
 	);
 	
 	process (clk50)
@@ -178,9 +181,9 @@ begin
 					b1	<= "000";
 			else
 				if vout = '1' then
-					r1  <= "111";
-					g1	<= "111";
-					b1	<= "111";
+					r1  <= rgb(8 downto 6);
+					g1	<= rgb(5 downto 3);
+					b1	<= rgb(2 downto 0);
 				else
 					r1  <= "000";
 					g1	<= "000";

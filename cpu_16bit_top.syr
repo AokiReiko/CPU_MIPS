@@ -1,5 +1,5 @@
-Release 14.2 - xst P.28xd (nt64)
-Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
@@ -107,62 +107,117 @@ Cores Search Directories           : {"ipcore_dir" "E:/CPU_MIPS"  }
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-WARNING:HDLParsers:3607 - Unit work/GRam is now defined in a different file.  It was defined in "E:/CPU_MIPS/ipcore_dir/GRam_synth.vhd", and is now defined in "E:/CPU_MIPS/GRam.vhd".
-Compiling vhdl file "E:/CPU_MIPS/constants.vhd" in Library work.
-Compiling vhdl file "E:/CPU_MIPS/components.vhd" in Library work.
-Compiling vhdl file "E:/CPU_MIPS/GRam.vhd" in Library work.
+WARNING:HDLParsers:3607 - Unit work/GRam is now defined in a different file.  It was defined in "E:/CPU_MIPS/GRam.vhd", and is now defined in "D:/17fall/ComputerOrganization/120903/ipcore_dir/GRam_synth.vhd".
+WARNING:HDLParsers:3607 - Unit work/GRam/spartan3e is now defined in a different file.  It was defined in "E:/CPU_MIPS/ipcore_dir/GRam_synth.vhd", and is now defined in "D:/17fall/ComputerOrganization/120903/ipcore_dir/GRam_synth.vhd".
+WARNING:HDLParsers:3607 - Unit work/cpu_16bit_top is now defined in a different file.  It was defined in "E:/CPU_MIPS/cpu_16bit_top.vhd", and is now defined in "D:/17fall/ComputerOrganization/120903/cpu_16bit_top.vhd".
+WARNING:HDLParsers:3607 - Unit work/cpu_16bit_top/Behavioral is now defined in a different file.  It was defined in "E:/CPU_MIPS/cpu_16bit_top.vhd", and is now defined in "D:/17fall/ComputerOrganization/120903/cpu_16bit_top.vhd".
+WARNING:HDLParsers:3607 - Unit work/Adder is now defined in a different file.  It was defined in "E:/CPU_MIPS/Adder.vhd", and is now defined in "D:/17fall/ComputerOrganization/120903/Adder.vhd".
+WARNING:HDLParsers:3607 - Unit work/Adder/Behavioral is now defined in a different file.  It was defined in "E:/CPU_MIPS/Adder.vhd", and is now defined in "D:/17fall/ComputerOrganization/120903/Adder.vhd".
+WARNING:HDLParsers:3607 - Unit work/ALU is now defined in a different file.  It was defined in "E:/CPU_MIPS/alu.vhd", and is now defined in "D:/17fall/ComputerOrganization/120903/alu.vhd".
+WARNING:HDLParsers:3607 - Unit work/ALU/Behavioral is now defined in a different file.  It was defined in "E:/CPU_MIPS/alu.vhd", and is now defined in "D:/17fall/ComputerOrganization/120903/alu.vhd".
+WARNING:HDLParsers:3607 - Unit work/bypass_unit is now defined in a different file.  It was defined in "E:/CPU_MIPS/bypass_unit.vhd", and is now defined in "D:/17fall/ComputerOrganization/120903/bypass_unit.vhd".
+WARNING:HDLParsers:3607 - Unit work/bypass_unit/Behavioral is now defined in a different file.  It was defined in "E:/CPU_MIPS/bypass_unit.vhd", and is now defined in "D:/17fall/ComputerOrganization/120903/bypass_unit.vhd".
+WARNING:HDLParsers:3607 - Unit work/ctrl_unit is now defined in a different file.  It was defined in "E:/CPU_MIPS/ctrl_unit.vhd", and is now defined in "D:/17fall/ComputerOrganization/120903/ctrl_unit.vhd".
+WARNING:HDLParsers:3607 - Unit work/ctrl_unit/Behavioral is now defined in a different file.  It was defined in "E:/CPU_MIPS/ctrl_unit.vhd", and is now defined in "D:/17fall/ComputerOrganization/120903/ctrl_unit.vhd".
+WARNING:HDLParsers:3607 - Unit work/equal_unit is now defined in a different file.  It was defined in "E:/CPU_MIPS/equal_unit.vhd", and is now defined in "D:/17fall/ComputerOrganization/120903/equal_unit.vhd".
+WARNING:HDLParsers:3607 - Unit work/equal_unit/Behavioral is now defined in a different file.  It was defined in "E:/CPU_MIPS/equal_unit.vhd", and is now defined in "D:/17fall/ComputerOrganization/120903/equal_unit.vhd".
+WARNING:HDLParsers:3607 - Unit work/EXMEM_Reg is now defined in a different file.  It was defined in "E:/CPU_MIPS/EXMEM_Reg.vhd", and is now defined in "D:/17fall/ComputerOrganization/120903/EXMEM_Reg.vhd".
+WARNING:HDLParsers:3607 - Unit work/EXMEM_Reg/Behavioral is now defined in a different file.  It was defined in "E:/CPU_MIPS/EXMEM_Reg.vhd", and is now defined in "D:/17fall/ComputerOrganization/120903/EXMEM_Reg.vhd".
+WARNING:HDLParsers:3607 - Unit work/flash is now defined in a different file.  It was defined in "E:/CPU_MIPS/flash.vhd", and is now defined in "D:/17fall/ComputerOrganization/120903/flash.vhd".
+WARNING:HDLParsers:3607 - Unit work/flash/bhv is now defined in a different file.  It was defined in "E:/CPU_MIPS/flash.vhd", and is now defined in "D:/17fall/ComputerOrganization/120903/flash.vhd".
+WARNING:HDLParsers:3607 - Unit work/hazard_unit is now defined in a different file.  It was defined in "E:/CPU_MIPS/hazard_unit.vhd", and is now defined in "D:/17fall/ComputerOrganization/120903/hazard_unit.vhd".
+WARNING:HDLParsers:3607 - Unit work/hazard_unit/Behavioral is now defined in a different file.  It was defined in "E:/CPU_MIPS/hazard_unit.vhd", and is now defined in "D:/17fall/ComputerOrganization/120903/hazard_unit.vhd".
+WARNING:HDLParsers:3607 - Unit work/IDEX_Reg is now defined in a different file.  It was defined in "E:/CPU_MIPS/IDEX_Reg.vhd", and is now defined in "D:/17fall/ComputerOrganization/120903/IDEX_Reg.vhd".
+WARNING:HDLParsers:3607 - Unit work/IDEX_Reg/Behavioral is now defined in a different file.  It was defined in "E:/CPU_MIPS/IDEX_Reg.vhd", and is now defined in "D:/17fall/ComputerOrganization/120903/IDEX_Reg.vhd".
+WARNING:HDLParsers:3607 - Unit work/IFID_Reg is now defined in a different file.  It was defined in "E:/CPU_MIPS/IFID_Reg.vhd", and is now defined in "D:/17fall/ComputerOrganization/120903/IFID_Reg.vhd".
+WARNING:HDLParsers:3607 - Unit work/IFID_Reg/Behavioral is now defined in a different file.  It was defined in "E:/CPU_MIPS/IFID_Reg.vhd", and is now defined in "D:/17fall/ComputerOrganization/120903/IFID_Reg.vhd".
+WARNING:HDLParsers:3607 - Unit work/mymemory is now defined in a different file.  It was defined in "E:/CPU_MIPS/memory.vhd", and is now defined in "D:/17fall/ComputerOrganization/120903/memory.vhd".
+WARNING:HDLParsers:3607 - Unit work/mymemory/Behavioral is now defined in a different file.  It was defined in "E:/CPU_MIPS/memory.vhd", and is now defined in "D:/17fall/ComputerOrganization/120903/memory.vhd".
+WARNING:HDLParsers:3607 - Unit work/MEMWB_Reg is now defined in a different file.  It was defined in "E:/CPU_MIPS/MEMWB_Reg.vhd", and is now defined in "D:/17fall/ComputerOrganization/120903/MEMWB_Reg.vhd".
+WARNING:HDLParsers:3607 - Unit work/MEMWB_Reg/Behavioral is now defined in a different file.  It was defined in "E:/CPU_MIPS/MEMWB_Reg.vhd", and is now defined in "D:/17fall/ComputerOrganization/120903/MEMWB_Reg.vhd".
+WARNING:HDLParsers:3607 - Unit work/Muxa is now defined in a different file.  It was defined in "E:/CPU_MIPS/Muxa.vhd", and is now defined in "D:/17fall/ComputerOrganization/120903/Muxa.vhd".
+WARNING:HDLParsers:3607 - Unit work/Muxa/Behavioral is now defined in a different file.  It was defined in "E:/CPU_MIPS/Muxa.vhd", and is now defined in "D:/17fall/ComputerOrganization/120903/Muxa.vhd".
+WARNING:HDLParsers:3607 - Unit work/Muxb is now defined in a different file.  It was defined in "E:/CPU_MIPS/Muxb.vhd", and is now defined in "D:/17fall/ComputerOrganization/120903/Muxb.vhd".
+WARNING:HDLParsers:3607 - Unit work/Muxb/Behavioral is now defined in a different file.  It was defined in "E:/CPU_MIPS/Muxb.vhd", and is now defined in "D:/17fall/ComputerOrganization/120903/Muxb.vhd".
+WARNING:HDLParsers:3607 - Unit work/Muxc is now defined in a different file.  It was defined in "E:/CPU_MIPS/Muxc.vhd", and is now defined in "D:/17fall/ComputerOrganization/120903/Muxc.vhd".
+WARNING:HDLParsers:3607 - Unit work/Muxc/Behavioral is now defined in a different file.  It was defined in "E:/CPU_MIPS/Muxc.vhd", and is now defined in "D:/17fall/ComputerOrganization/120903/Muxc.vhd".
+WARNING:HDLParsers:3607 - Unit work/Muxpc is now defined in a different file.  It was defined in "E:/CPU_MIPS/Muxpc.vhd", and is now defined in "D:/17fall/ComputerOrganization/120903/Muxpc.vhd".
+WARNING:HDLParsers:3607 - Unit work/Muxpc/Behavioral is now defined in a different file.  It was defined in "E:/CPU_MIPS/Muxpc.vhd", and is now defined in "D:/17fall/ComputerOrganization/120903/Muxpc.vhd".
+WARNING:HDLParsers:3607 - Unit work/PC is now defined in a different file.  It was defined in "E:/CPU_MIPS/pc.vhd", and is now defined in "D:/17fall/ComputerOrganization/120903/pc.vhd".
+WARNING:HDLParsers:3607 - Unit work/PC/Behavioral is now defined in a different file.  It was defined in "E:/CPU_MIPS/pc.vhd", and is now defined in "D:/17fall/ComputerOrganization/120903/pc.vhd".
+WARNING:HDLParsers:3607 - Unit work/ps2_keyboard_to_ascii is now defined in a different file.  It was defined in "E:/CPU_MIPS/ps2_keyboard_to_ascii.vhd", and is now defined in "D:/17fall/ComputerOrganization/120903/ps2_keyboard_to_ascii.vhd".
+WARNING:HDLParsers:3607 - Unit work/ps2_keyboard_to_ascii/behavior is now defined in a different file.  It was defined in "E:/CPU_MIPS/ps2_keyboard_to_ascii.vhd", and is now defined in "D:/17fall/ComputerOrganization/120903/ps2_keyboard_to_ascii.vhd".
+WARNING:HDLParsers:3607 - Unit work/registers is now defined in a different file.  It was defined in "E:/CPU_MIPS/registers.vhd", and is now defined in "D:/17fall/ComputerOrganization/120903/registers.vhd".
+WARNING:HDLParsers:3607 - Unit work/registers/Behavioral is now defined in a different file.  It was defined in "E:/CPU_MIPS/registers.vhd", and is now defined in "D:/17fall/ComputerOrganization/120903/registers.vhd".
+WARNING:HDLParsers:3607 - Unit work/vga is now defined in a different file.  It was defined in "E:/CPU_MIPS/vga.vhd", and is now defined in "D:/17fall/ComputerOrganization/120903/vga.vhd".
+WARNING:HDLParsers:3607 - Unit work/vga/Behavioral is now defined in a different file.  It was defined in "E:/CPU_MIPS/vga.vhd", and is now defined in "D:/17fall/ComputerOrganization/120903/vga.vhd".
+WARNING:HDLParsers:3607 - Unit work/operation is now defined in a different file.  It was defined in "E:/CPU_MIPS/alu_defination.vhd", and is now defined in "D:/17fall/ComputerOrganization/120903/alu_defination.vhd".
+WARNING:HDLParsers:3607 - Unit work/ps2_keyboard is now defined in a different file.  It was defined in "E:/CPU_MIPS/ps2_keyboard.vhd", and is now defined in "D:/17fall/ComputerOrganization/120903/ps2_keyboard.vhd".
+WARNING:HDLParsers:3607 - Unit work/ps2_keyboard/logic is now defined in a different file.  It was defined in "E:/CPU_MIPS/ps2_keyboard.vhd", and is now defined in "D:/17fall/ComputerOrganization/120903/ps2_keyboard.vhd".
+WARNING:HDLParsers:3607 - Unit work/vga_char is now defined in a different file.  It was defined in "E:/CPU_MIPS/vga_char.vhd", and is now defined in "D:/17fall/ComputerOrganization/120903/vga_char.vhd".
+WARNING:HDLParsers:3607 - Unit work/vga_char/Behavioral is now defined in a different file.  It was defined in "E:/CPU_MIPS/vga_char.vhd", and is now defined in "D:/17fall/ComputerOrganization/120903/vga_char.vhd".
+WARNING:HDLParsers:3607 - Unit work/my_components is now defined in a different file.  It was defined in "E:/CPU_MIPS/components.vhd", and is now defined in "D:/17fall/ComputerOrganization/120903/components.vhd".
+WARNING:HDLParsers:3607 - Unit work/constants is now defined in a different file.  It was defined in "E:/CPU_MIPS/constants.vhd", and is now defined in "D:/17fall/ComputerOrganization/120903/constants.vhd".
+WARNING:HDLParsers:3607 - Unit work/debounce is now defined in a different file.  It was defined in "E:/CPU_MIPS/debounce.vhd", and is now defined in "D:/17fall/ComputerOrganization/120903/debounce.vhd".
+WARNING:HDLParsers:3607 - Unit work/debounce/logic is now defined in a different file.  It was defined in "E:/CPU_MIPS/debounce.vhd", and is now defined in "D:/17fall/ComputerOrganization/120903/debounce.vhd".
+WARNING:HDLParsers:3607 - Unit work/GRam is now defined in a different file.  It was defined in "D:/17fall/ComputerOrganization/120903/ipcore_dir/GRam_synth.vhd", and is now defined in "D:/17fall/ComputerOrganization/120903/GRam.vhd".
+WARNING:HDLParsers:3607 - Unit work/GRam/GRam_a is now defined in a different file.  It was defined in "E:/CPU_MIPS/GRam.vhd", and is now defined in "D:/17fall/ComputerOrganization/120903/GRam.vhd".
+Compiling vhdl file "D:/17fall/ComputerOrganization/120903/constants.vhd" in Library work.
+Compiling vhdl file "D:/17fall/ComputerOrganization/120903/components.vhd" in Library work.
+Compiling vhdl file "D:/17fall/ComputerOrganization/120903/GRam.vhd" in Library work.
 Architecture gram_a of Entity gram is up to date.
-Compiling vhdl file "E:/CPU_MIPS/debounce.vhd" in Library work.
+Compiling vhdl file "D:/17fall/ComputerOrganization/120903/debounce.vhd" in Library work.
 Architecture logic of Entity debounce is up to date.
-Compiling vhdl file "E:/CPU_MIPS/vga_char.vhd" in Library work.
-Architecture behavioral of Entity vga_char is up to date.
-Compiling vhdl file "E:/CPU_MIPS/ps2_keyboard.vhd" in Library work.
+Compiling vhdl file "D:/17fall/ComputerOrganization/120903/vga_char.vhd" in Library work.
+Entity <vga_char> compiled.
+Entity <vga_char> (Architecture <behavioral>) compiled.
+Compiling vhdl file "D:/17fall/ComputerOrganization/120903/ps2_keyboard.vhd" in Library work.
 Architecture logic of Entity ps2_keyboard is up to date.
-Compiling vhdl file "E:/CPU_MIPS/alu_defination.vhd" in Library work.
-Compiling vhdl file "E:/CPU_MIPS/flash.vhd" in Library work.
+Compiling vhdl file "D:/17fall/ComputerOrganization/120903/alu_defination.vhd" in Library work.
+Compiling vhdl file "D:/17fall/ComputerOrganization/120903/flash.vhd" in Library work.
 Architecture bhv of Entity flash is up to date.
-Compiling vhdl file "E:/CPU_MIPS/Muxpc.vhd" in Library work.
+Compiling vhdl file "D:/17fall/ComputerOrganization/120903/Muxpc.vhd" in Library work.
 Architecture behavioral of Entity muxpc is up to date.
-Compiling vhdl file "E:/CPU_MIPS/pc.vhd" in Library work.
+Compiling vhdl file "D:/17fall/ComputerOrganization/120903/pc.vhd" in Library work.
 Architecture behavioral of Entity pc is up to date.
-Compiling vhdl file "E:/CPU_MIPS/IFID_Reg.vhd" in Library work.
+Compiling vhdl file "D:/17fall/ComputerOrganization/120903/IFID_Reg.vhd" in Library work.
 Architecture behavioral of Entity ifid_reg is up to date.
-Compiling vhdl file "E:/CPU_MIPS/registers.vhd" in Library work.
+Compiling vhdl file "D:/17fall/ComputerOrganization/120903/registers.vhd" in Library work.
 Architecture behavioral of Entity registers is up to date.
-Compiling vhdl file "E:/CPU_MIPS/ctrl_unit.vhd" in Library work.
+Compiling vhdl file "D:/17fall/ComputerOrganization/120903/ctrl_unit.vhd" in Library work.
 Architecture behavioral of Entity ctrl_unit is up to date.
-Compiling vhdl file "E:/CPU_MIPS/equal_unit.vhd" in Library work.
+Compiling vhdl file "D:/17fall/ComputerOrganization/120903/equal_unit.vhd" in Library work.
 Architecture behavioral of Entity equal_unit is up to date.
-Compiling vhdl file "E:/CPU_MIPS/IDEX_Reg.vhd" in Library work.
+Compiling vhdl file "D:/17fall/ComputerOrganization/120903/IDEX_Reg.vhd" in Library work.
 Architecture behavioral of Entity idex_reg is up to date.
-Compiling vhdl file "E:/CPU_MIPS/Muxa.vhd" in Library work.
+Compiling vhdl file "D:/17fall/ComputerOrganization/120903/Muxa.vhd" in Library work.
 Architecture behavioral of Entity muxa is up to date.
-Compiling vhdl file "E:/CPU_MIPS/Muxb.vhd" in Library work.
+Compiling vhdl file "D:/17fall/ComputerOrganization/120903/Muxb.vhd" in Library work.
 Architecture behavioral of Entity muxb is up to date.
-Compiling vhdl file "E:/CPU_MIPS/EXMEM_Reg.vhd" in Library work.
+Compiling vhdl file "D:/17fall/ComputerOrganization/120903/EXMEM_Reg.vhd" in Library work.
 Architecture behavioral of Entity exmem_reg is up to date.
-Compiling vhdl file "E:/CPU_MIPS/MEMWB_Reg.vhd" in Library work.
+Compiling vhdl file "D:/17fall/ComputerOrganization/120903/MEMWB_Reg.vhd" in Library work.
 Architecture behavioral of Entity memwb_reg is up to date.
-Compiling vhdl file "E:/CPU_MIPS/bypass_unit.vhd" in Library work.
+Compiling vhdl file "D:/17fall/ComputerOrganization/120903/bypass_unit.vhd" in Library work.
 Architecture behavioral of Entity bypass_unit is up to date.
-Compiling vhdl file "E:/CPU_MIPS/hazard_unit.vhd" in Library work.
+Compiling vhdl file "D:/17fall/ComputerOrganization/120903/hazard_unit.vhd" in Library work.
 Architecture behavioral of Entity hazard_unit is up to date.
-Compiling vhdl file "E:/CPU_MIPS/memory.vhd" in Library work.
-Entity <mymemory> compiled.
-Entity <mymemory> (Architecture <behavioral>) compiled.
-Compiling vhdl file "E:/CPU_MIPS/alu.vhd" in Library work.
+Compiling vhdl file "D:/17fall/ComputerOrganization/120903/memory.vhd" in Library work.
+Architecture behavioral of Entity mymemory is up to date.
+Compiling vhdl file "D:/17fall/ComputerOrganization/120903/alu.vhd" in Library work.
 Architecture behavioral of Entity alu is up to date.
-Compiling vhdl file "E:/CPU_MIPS/Adder.vhd" in Library work.
+Compiling vhdl file "D:/17fall/ComputerOrganization/120903/Adder.vhd" in Library work.
 Architecture behavioral of Entity adder is up to date.
-Compiling vhdl file "E:/CPU_MIPS/Muxc.vhd" in Library work.
+Compiling vhdl file "D:/17fall/ComputerOrganization/120903/Muxc.vhd" in Library work.
 Architecture behavioral of Entity muxc is up to date.
-Compiling vhdl file "E:/CPU_MIPS/ps2_keyboard_to_ascii.vhd" in Library work.
+Compiling vhdl file "D:/17fall/ComputerOrganization/120903/ps2_keyboard_to_ascii.vhd" in Library work.
 Architecture behavior of Entity ps2_keyboard_to_ascii is up to date.
-Compiling vhdl file "E:/CPU_MIPS/vga.vhd" in Library work.
-Architecture behavioral of Entity vga is up to date.
-Compiling vhdl file "E:/CPU_MIPS/ipcore_dir/GRam_synth.vhd" in Library work.
+Compiling vhdl file "D:/17fall/ComputerOrganization/120903/vga.vhd" in Library work.
+Entity <vga> compiled.
+Entity <vga> (Architecture <behavioral>) compiled.
+Compiling vhdl file "D:/17fall/ComputerOrganization/120903/ipcore_dir/GRam_synth.vhd" in Library work.
 Architecture spartan3e of Entity gram is up to date.
-Compiling vhdl file "E:/CPU_MIPS/cpu_16bit_top.vhd" in Library work.
+Compiling vhdl file "D:/17fall/ComputerOrganization/120903/cpu_16bit_top.vhd" in Library work.
 Architecture behavioral of Entity cpu_16bit_top is up to date.
 
 =========================================================================
@@ -252,9 +307,9 @@ Analyzing Entity <IFID_Reg> in library <work> (Architecture <behavioral>).
 Entity <IFID_Reg> analyzed. Unit <IFID_Reg> generated.
 
 Analyzing Entity <registers> in library <work> (Architecture <behavioral>).
-INFO:Xst:1561 - "E:/CPU_MIPS/registers.vhd" line 51: Mux is complete : default of case is discarded
-INFO:Xst:1561 - "E:/CPU_MIPS/registers.vhd" line 75: Mux is complete : default of case is discarded
-INFO:Xst:1561 - "E:/CPU_MIPS/registers.vhd" line 93: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "D:/17fall/ComputerOrganization/120903/registers.vhd" line 51: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "D:/17fall/ComputerOrganization/120903/registers.vhd" line 75: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "D:/17fall/ComputerOrganization/120903/registers.vhd" line 93: Mux is complete : default of case is discarded
 Entity <registers> analyzed. Unit <registers> generated.
 
 Analyzing Entity <ctrl_unit> in library <work> (Architecture <behavioral>).
@@ -314,8 +369,8 @@ Analyzing Entity <vga> in library <work> (Architecture <behavioral>).
 Entity <vga> analyzed. Unit <vga> generated.
 
 Analyzing Entity <vga_char> in library <work> (Architecture <behavioral>).
-WARNING:Xst:2211 - "E:/CPU_MIPS/vga_char.vhd" line 66: Instantiating black box module <GRam>.
-WARNING:Xst:819 - "E:/CPU_MIPS/vga_char.vhd" line 108: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+WARNING:Xst:2211 - "D:/17fall/ComputerOrganization/120903/vga_char.vhd" line 67: Instantiating black box module <GRam>.
+WARNING:Xst:819 - "D:/17fall/ComputerOrganization/120903/vga_char.vhd" line 109: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <dout_b>
 Entity <vga_char> analyzed. Unit <vga_char> generated.
 
@@ -327,7 +382,7 @@ Entity <vga_char> analyzed. Unit <vga_char> generated.
 Performing bidirectional port resolution...
 
 Synthesizing Unit <flash>.
-    Related source file is "E:/CPU_MIPS/flash.vhd".
+    Related source file is "D:/17fall/ComputerOrganization/120903/flash.vhd".
     Found finite state machine <FSM_0> for signal <flash_state>.
     -----------------------------------------------------------------------
     | States             | 6                                              |
@@ -366,7 +421,7 @@ Unit <flash> synthesized.
 
 
 Synthesizing Unit <Muxpc>.
-    Related source file is "E:/CPU_MIPS/Muxpc.vhd".
+    Related source file is "D:/17fall/ComputerOrganization/120903/Muxpc.vhd".
     Found 16-bit 4-to-1 multiplexer for signal <pc_out>.
     Summary:
 	inferred  16 Multiplexer(s).
@@ -374,7 +429,7 @@ Unit <Muxpc> synthesized.
 
 
 Synthesizing Unit <PC>.
-    Related source file is "E:/CPU_MIPS/pc.vhd".
+    Related source file is "D:/17fall/ComputerOrganization/120903/pc.vhd".
     Found 16-bit register for signal <PC_out>.
     Summary:
 	inferred  16 D-type flip-flop(s).
@@ -382,7 +437,7 @@ Unit <PC> synthesized.
 
 
 Synthesizing Unit <IFID_Reg>.
-    Related source file is "E:/CPU_MIPS/IFID_Reg.vhd".
+    Related source file is "D:/17fall/ComputerOrganization/120903/IFID_Reg.vhd".
 WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 16-bit register for signal <PCNext_out>.
     Found 16-bit register for signal <Instruction_out>.
@@ -392,7 +447,7 @@ Unit <IFID_Reg> synthesized.
 
 
 Synthesizing Unit <registers>.
-    Related source file is "E:/CPU_MIPS/registers.vhd".
+    Related source file is "D:/17fall/ComputerOrganization/120903/registers.vhd".
 WARNING:Xst:646 - Signal <reg_num> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
     Found 16-bit 8-to-1 multiplexer for signal <outB>.
     Found 16-bit register for signal <IH>.
@@ -414,7 +469,7 @@ Unit <registers> synthesized.
 
 
 Synthesizing Unit <ctrl_unit>.
-    Related source file is "E:/CPU_MIPS/ctrl_unit.vhd".
+    Related source file is "D:/17fall/ComputerOrganization/120903/ctrl_unit.vhd".
 WARNING:Xst:737 - Found 4-bit latch for signal <rega>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
 WARNING:Xst:737 - Found 3-bit latch for signal <RegWrite>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -431,7 +486,7 @@ Unit <ctrl_unit> synthesized.
 
 
 Synthesizing Unit <equal_unit>.
-    Related source file is "E:/CPU_MIPS/equal_unit.vhd".
+    Related source file is "D:/17fall/ComputerOrganization/120903/equal_unit.vhd".
     Found 4x2-bit ROM for signal <pc_src$mux0002> created at line 92.
     Found 3-bit comparator equal for signal <real_object_regData$cmp_eq0001> created at line 35.
     Found 3-bit comparator equal for signal <real_object_regData$cmp_eq0003> created at line 33.
@@ -442,7 +497,7 @@ Unit <equal_unit> synthesized.
 
 
 Synthesizing Unit <IDEX_Reg>.
-    Related source file is "E:/CPU_MIPS/IDEX_Reg.vhd".
+    Related source file is "D:/17fall/ComputerOrganization/120903/IDEX_Reg.vhd".
     Found 3-bit register for signal <out_RegDist>.
     Found 16-bit register for signal <out_rega>.
     Found 16-bit register for signal <out_regb>.
@@ -461,7 +516,7 @@ Unit <IDEX_Reg> synthesized.
 
 
 Synthesizing Unit <Muxa>.
-    Related source file is "E:/CPU_MIPS/Muxa.vhd".
+    Related source file is "D:/17fall/ComputerOrganization/120903/Muxa.vhd".
     Found 16-bit 4-to-1 multiplexer for signal <src_out>.
     Summary:
 	inferred  16 Multiplexer(s).
@@ -469,7 +524,7 @@ Unit <Muxa> synthesized.
 
 
 Synthesizing Unit <Muxb>.
-    Related source file is "E:/CPU_MIPS/Muxb.vhd".
+    Related source file is "D:/17fall/ComputerOrganization/120903/Muxb.vhd".
     Found 16-bit 4-to-1 multiplexer for signal <reg_out>.
     Summary:
 	inferred  16 Multiplexer(s).
@@ -477,7 +532,7 @@ Unit <Muxb> synthesized.
 
 
 Synthesizing Unit <EXMEM_Reg>.
-    Related source file is "E:/CPU_MIPS/EXMEM_Reg.vhd".
+    Related source file is "D:/17fall/ComputerOrganization/120903/EXMEM_Reg.vhd".
 WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 3-bit register for signal <out_RegDist>.
     Found 3-bit register for signal <out_RegWrite>.
@@ -492,7 +547,7 @@ Unit <EXMEM_Reg> synthesized.
 
 
 Synthesizing Unit <MEMWB_Reg>.
-    Related source file is "E:/CPU_MIPS/MEMWB_Reg.vhd".
+    Related source file is "D:/17fall/ComputerOrganization/120903/MEMWB_Reg.vhd".
 WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 3-bit register for signal <out_RegDist>.
     Found 3-bit register for signal <out_RegWrite>.
@@ -504,7 +559,7 @@ Unit <MEMWB_Reg> synthesized.
 
 
 Synthesizing Unit <bypass_unit>.
-    Related source file is "E:/CPU_MIPS/bypass_unit.vhd".
+    Related source file is "D:/17fall/ComputerOrganization/120903/bypass_unit.vhd".
 WARNING:Xst:647 - Input <alusrc> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 3-bit comparator equal for signal <forwarda$cmp_eq0001> created at line 23.
     Found 3-bit comparator equal for signal <forwarda$cmp_eq0005> created at line 24.
@@ -516,7 +571,7 @@ Unit <bypass_unit> synthesized.
 
 
 Synthesizing Unit <hazard_unit>.
-    Related source file is "E:/CPU_MIPS/hazard_unit.vhd".
+    Related source file is "D:/17fall/ComputerOrganization/120903/hazard_unit.vhd".
 WARNING:Xst:647 - Input <alu_src> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 3-bit comparator equal for signal <pc_write$cmp_eq0000> created at line 23.
     Found 3-bit comparator equal for signal <pc_write$cmp_eq0001> created at line 26.
@@ -526,7 +581,7 @@ Unit <hazard_unit> synthesized.
 
 
 Synthesizing Unit <mymemory>.
-    Related source file is "E:/CPU_MIPS/memory.vhd".
+    Related source file is "D:/17fall/ComputerOrganization/120903/memory.vhd".
 WARNING:Xst:737 - Found 16-bit latch for signal <vga_data>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 16-bit latch for signal <vga_addr>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:736 - Found 16-bit latch for signal <Mtridata_data_1> created at line 208. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -545,7 +600,7 @@ Unit <mymemory> synthesized.
 
 
 Synthesizing Unit <ALU>.
-    Related source file is "E:/CPU_MIPS/alu.vhd".
+    Related source file is "D:/17fall/ComputerOrganization/120903/alu.vhd".
     Found 16-bit addsub for signal <fout$addsub0000>.
     Found 16-bit comparator equal for signal <fout$cmp_eq0012> created at line 32.
     Found 16-bit comparator greatequal for signal <fout$cmp_ge0000> created at line 40.
@@ -562,7 +617,7 @@ Unit <ALU> synthesized.
 
 
 Synthesizing Unit <Adder>.
-    Related source file is "E:/CPU_MIPS/Adder.vhd".
+    Related source file is "D:/17fall/ComputerOrganization/120903/Adder.vhd".
     Found 16-bit adder for signal <res>.
     Summary:
 	inferred   1 Adder/Subtractor(s).
@@ -570,13 +625,13 @@ Unit <Adder> synthesized.
 
 
 Synthesizing Unit <Muxc>.
-    Related source file is "E:/CPU_MIPS/Muxc.vhd".
+    Related source file is "D:/17fall/ComputerOrganization/120903/Muxc.vhd".
 WARNING:Xst:647 - Input <addr<14:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 Unit <Muxc> synthesized.
 
 
 Synthesizing Unit <debounce>.
-    Related source file is "E:/CPU_MIPS/debounce.vhd".
+    Related source file is "D:/17fall/ComputerOrganization/120903/debounce.vhd".
     Found 1-bit register for signal <result>.
     Found 9-bit up counter for signal <counter_out>.
     Found 1-bit xor2 for signal <counter_set>.
@@ -588,7 +643,7 @@ Unit <debounce> synthesized.
 
 
 Synthesizing Unit <ps2_keyboard>.
-    Related source file is "E:/CPU_MIPS/ps2_keyboard.vhd".
+    Related source file is "D:/17fall/ComputerOrganization/120903/ps2_keyboard.vhd".
     Found 1-bit register for signal <ps2_code_new>.
     Found 8-bit register for signal <ps2_code>.
     Found 12-bit up counter for signal <count_idle>.
@@ -603,23 +658,22 @@ Unit <ps2_keyboard> synthesized.
 
 
 Synthesizing Unit <vga_char>.
-    Related source file is "E:/CPU_MIPS/vga_char.vhd".
-WARNING:Xst:646 - Signal <dout_b<15:7>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Related source file is "D:/17fall/ComputerOrganization/120903/vga_char.vhd".
 WARNING:Xst:646 - Signal <dout_a> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <din_b> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
     Found 64x128-bit ROM for signal <Char$mux0002>.
     Found 1-bit 128-to-1 multiplexer for signal <vout>.
     Found 16-bit tristate buffer for signal <$const0000>.
-    Found 8-bit adder for signal <$sub0000> created at line 151.
+    Found 8-bit adder for signal <$sub0000> created at line 152.
     Found 12-bit register for signal <addr_a>.
     Found 12-bit adder for signal <addr_b>.
-    Found 5x7-bit multiplier for signal <addr_b$mult0000> created at line 103.
+    Found 5x7-bit multiplier for signal <addr_b$mult0000> created at line 104.
     Found 4-bit subtractor for signal <delta_x>.
     Found 5-bit subtractor for signal <delta_y>.
     Found 16-bit register for signal <din_a>.
-    Found 17-bit comparator greatequal for signal <din_a$cmp_ge0000> created at line 84.
-    Found 16-bit subtractor for signal <temp$sub0000> created at line 86.
-    Found 9-bit subtractor for signal <vout$addsub0000> created at line 151.
+    Found 17-bit comparator greatequal for signal <din_a$cmp_ge0000> created at line 85.
+    Found 16-bit subtractor for signal <temp$sub0000> created at line 87.
+    Found 9-bit subtractor for signal <vout$addsub0000> created at line 152.
     Summary:
 	inferred   1 ROM(s).
 	inferred  28 D-type flip-flop(s).
@@ -632,7 +686,7 @@ Unit <vga_char> synthesized.
 
 
 Synthesizing Unit <ps2_keyboard_to_ascii>.
-    Related source file is "E:/CPU_MIPS/ps2_keyboard_to_ascii.vhd".
+    Related source file is "D:/17fall/ComputerOrganization/120903/ps2_keyboard_to_ascii.vhd".
     Found finite state machine <FSM_1> for signal <state>.
     -----------------------------------------------------------------------
     | States             | 4                                              |
@@ -662,32 +716,32 @@ Unit <ps2_keyboard_to_ascii> synthesized.
 
 
 Synthesizing Unit <vga>.
-    Related source file is "E:/CPU_MIPS/vga.vhd".
-    Register <g1> equivalent to <b1> has been removed
-    Register <r1> equivalent to <b1> has been removed
+    Related source file is "D:/17fall/ComputerOrganization/120903/vga.vhd".
     Found 1-bit register for signal <hs>.
     Found 1-bit register for signal <vs>.
     Found 3-bit register for signal <b1>.
     Found 1-bit register for signal <clk>.
+    Found 3-bit register for signal <g1>.
     Found 1-bit register for signal <hs1>.
-    Found 11-bit comparator greatequal for signal <hs1$cmp_ge0000> created at line 129.
-    Found 11-bit comparator less for signal <hs1$cmp_lt0000> created at line 129.
-    Found 11-bit comparator greater for signal <r1$cmp_gt0000> created at line 175.
-    Found 11-bit comparator greater for signal <r1$cmp_gt0001> created at line 175.
+    Found 11-bit comparator greatequal for signal <hs1$cmp_ge0000> created at line 132.
+    Found 11-bit comparator less for signal <hs1$cmp_lt0000> created at line 132.
+    Found 3-bit register for signal <r1>.
+    Found 11-bit comparator greater for signal <r1$cmp_gt0000> created at line 178.
+    Found 11-bit comparator greater for signal <r1$cmp_gt0001> created at line 178.
     Found 10-bit up counter for signal <vector_x>.
     Found 10-bit up counter for signal <vector_y>.
     Found 1-bit register for signal <vs1>.
-    Found 11-bit comparator greatequal for signal <vs1$cmp_ge0000> created at line 142.
-    Found 11-bit comparator less for signal <vs1$cmp_lt0000> created at line 142.
+    Found 11-bit comparator greatequal for signal <vs1$cmp_ge0000> created at line 145.
+    Found 11-bit comparator less for signal <vs1$cmp_lt0000> created at line 145.
     Summary:
 	inferred   2 Counter(s).
-	inferred   8 D-type flip-flop(s).
+	inferred  14 D-type flip-flop(s).
 	inferred   6 Comparator(s).
 Unit <vga> synthesized.
 
 
 Synthesizing Unit <cpu_16bit_top>.
-    Related source file is "E:/CPU_MIPS/cpu_16bit_top.vhd".
+    Related source file is "D:/17fall/ComputerOrganization/120903/cpu_16bit_top.vhd".
 WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <sw> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <flash_rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -737,13 +791,13 @@ Macro Statistics
  16-bit up counter                                     : 1
  30-bit up counter                                     : 1
  9-bit up counter                                      : 2
-# Registers                                            : 105
+# Registers                                            : 107
  1-bit register                                        : 66
  11-bit register                                       : 1
  12-bit register                                       : 1
  16-bit register                                       : 24
  23-bit register                                       : 1
- 3-bit register                                        : 8
+ 3-bit register                                        : 10
  4-bit register                                        : 2
  7-bit register                                        : 1
  8-bit register                                        : 1
@@ -826,7 +880,6 @@ WARNING:Xst:638 - in unit u0 Conflict on KEEP property on signal Mtridata_flash_
 WARNING:Xst:638 - in unit u0 Conflict on KEEP property on signal Mtridata_flash_data<10> and Mtridata_flash_data<14> Mtridata_flash_data<14> signal will be lost.
 WARNING:Xst:638 - in unit u0 Conflict on KEEP property on signal Mtridata_flash_data<10> and Mtridata_flash_data<15> Mtridata_flash_data<15> signal will be lost.
 INFO:Xst:2261 - The FF/Latch <flash_addr_0> in Unit <u0> is equivalent to the following 6 FFs/Latches, which will be removed : <flash_addr_17> <flash_addr_18> <flash_addr_19> <flash_addr_20> <flash_addr_21> <flash_addr_22> 
-INFO:Xst:2261 - The FF/Latch <b1_0> in Unit <vga> is equivalent to the following 2 FFs/Latches, which will be removed : <b1_1> <b1_2> 
 WARNING:Xst:1426 - The value init of the FF/Latch flash_finished_signal hinder the constant cleaning in the block u0.
    You should achieve better results by setting this init to 1.
 WARNING:Xst:1710 - FF/Latch <Mtridata_flash_data_0> (without init value) has a constant value of 1 in block <u0>. This FF/Latch will be trimmed during the optimization process.
@@ -859,8 +912,8 @@ Macro Statistics
  16-bit up counter                                     : 1
  30-bit up counter                                     : 1
  9-bit up counter                                      : 2
-# Registers                                            : 529
- Flip-Flops                                            : 529
+# Registers                                            : 535
+ Flip-Flops                                            : 535
 # Latches                                              : 10
  1-bit latch                                           : 2
  16-bit latch                                          : 4
@@ -913,7 +966,6 @@ WARNING:Xst:638 - in unit flash Conflict on KEEP property on signal Mtridata_fla
 WARNING:Xst:638 - in unit flash Conflict on KEEP property on signal Mtridata_flash_data<0> and Mtridata_flash_data<5> Mtridata_flash_data<5> signal will be lost.
 WARNING:Xst:638 - in unit flash Conflict on KEEP property on signal Mtridata_flash_data<0> and Mtridata_flash_data<6> Mtridata_flash_data<6> signal will be lost.
 WARNING:Xst:638 - in unit flash Conflict on KEEP property on signal Mtridata_flash_data<0> and Mtridata_flash_data<7> Mtridata_flash_data<7> signal will be lost.
-INFO:Xst:2261 - The FF/Latch <b1_0> in Unit <vga> is equivalent to the following 2 FFs/Latches, which will be removed : <b1_1> <b1_2> 
 WARNING:Xst:2170 - Unit ALU : the following signal(s) form a combinatorial loop: fout_shift0006<15>.
 WARNING:Xst:2040 - Unit cpu_16bit_top: 16 multi-source signals are replaced by logic (pull-up yes): data_2<0>_MLTSRCEDGE, data_2<10>_MLTSRCEDGE, data_2<11>_MLTSRCEDGE, data_2<12>_MLTSRCEDGE, data_2<13>_MLTSRCEDGE, data_2<14>_MLTSRCEDGE, data_2<15>_MLTSRCEDGE, data_2<1>_MLTSRCEDGE, data_2<2>_MLTSRCEDGE, data_2<3>_MLTSRCEDGE, data_2<4>_MLTSRCEDGE, data_2<5>_MLTSRCEDGE, data_2<6>_MLTSRCEDGE, data_2<7>_MLTSRCEDGE, data_2<8>_MLTSRCEDGE, data_2<9>_MLTSRCEDGE.
 
@@ -979,8 +1031,8 @@ Unit <cpu_16bit_top> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 600
- Flip-Flops                                            : 600
+# Registers                                            : 608
+ Flip-Flops                                            : 608
 # Shift Registers                                      : 2
  2-bit shift register                                  : 2
 
@@ -1011,33 +1063,33 @@ Design Statistics
 # IOs                              : 189
 
 Cell Usage :
-# BELS                             : 2735
+# BELS                             : 2743
 #      GND                         : 2
 #      INV                         : 32
 #      LUT1                        : 115
 #      LUT2                        : 127
 #      LUT2_D                      : 8
 #      LUT2_L                      : 13
-#      LUT3                        : 377
+#      LUT3                        : 386
 #      LUT3_D                      : 24
 #      LUT3_L                      : 37
 #      LUT4                        : 1108
 #      LUT4_D                      : 32
 #      LUT4_L                      : 71
 #      MUXCY                       : 204
-#      MUXF5                       : 342
+#      MUXF5                       : 341
 #      MUXF6                       : 73
 #      MUXF7                       : 8
 #      MUXF8                       : 4
 #      VCC                         : 2
 #      XORCY                       : 156
-# FlipFlops/Latches                : 697
+# FlipFlops/Latches                : 705
 #      FD                          : 73
 #      FD_1                        : 11
 #      FDCE                        : 17
 #      FDE                         : 138
 #      FDE_1                       : 205
-#      FDR                         : 111
+#      FDR                         : 119
 #      FDRE                        : 40
 #      FDS                         : 6
 #      FDSE                        : 1
@@ -1064,10 +1116,10 @@ Device utilization summary:
 
 Selected Device : 3s1200efg320-5 
 
- Number of Slices:                     1062  out of   8672    12%  
- Number of Slice Flip Flops:            649  out of  17344     3%  
- Number of 4 input LUTs:               1946  out of  17344    11%  
-    Number used as logic:              1944
+ Number of Slices:                     1069  out of   8672    12%  
+ Number of Slice Flip Flops:            657  out of  17344     3%  
+ Number of 4 input LUTs:               1955  out of  17344    11%  
+    Number used as logic:              1953
     Number used as Shift registers:       2
  Number of IOs:                         189
  Number of bonded IOBs:                 170  out of    250    68%  
@@ -1107,7 +1159,7 @@ u5/rega_not0001(u5/rega_not000180:O)                                        | NO
 u5/ALUOp_not0001(u5/ALUOp_not000158:O)                                      | NONE(*)(u5/ALUOp_3)                           | 4     |
 clk50                                                                       | BUFGP                                         | 79    |
 vga_enable1(memory0/vga_enable1:O)                                          | BUFG(*)(vga/char/din_a_0)                     | 28    |
-vga/clk1                                                                    | BUFG                                          | 25    |
+vga/clk1                                                                    | BUFG                                          | 33    |
 keyboard_ascii/ps2_keyboard_0/debounce_ps2_clk/result                       | NONE(keyboard_ascii/ps2_keyboard_0/ps2_word_0)| 11    |
 memory0/vga_enable_cmp_ge0000(memory0/Mcompar_vga_enable_cmp_ge0000_cy<6>:O)| NONE(*)(memory0/Mtridata_data_1_15)           | 16    |
 ----------------------------------------------------------------------------+-----------------------------------------------+-------+
@@ -1277,16 +1329,16 @@ Delay:               20.031ns (Levels of Logic = 17)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'vga/clk1'
-  Clock period: 6.227ns (frequency: 160.587MHz)
-  Total number of paths / destination ports: 645 / 56
+  Clock period: 8.572ns (frequency: 116.657MHz)
+  Total number of paths / destination ports: 1589 / 63
 -------------------------------------------------------------------------
-Delay:               6.227ns (Levels of Logic = 7)
+Delay:               8.572ns (Levels of Logic = 8)
   Source:            vga/vector_x_1 (FF)
-  Destination:       vga/b1_0 (FF)
+  Destination:       vga/g1_2 (FF)
   Source Clock:      vga/clk1 rising
   Destination Clock: vga/clk1 rising
 
-  Data Path: vga/vector_x_1 to vga/b1_0
+  Data Path: vga/vector_x_1 to vga/g1_2
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
@@ -1297,11 +1349,12 @@ Delay:               6.227ns (Levels of Logic = 7)
      MUXF7:I1->O           1   0.451   0.000  vga/char/Mmux_vout_7_f7 (vga/char/Mmux_vout_7_f7)
      MUXF8:I1->O           1   0.451   0.426  vga/char/Mmux_vout_6_f8 (vga/char/Mmux_vout_6_f8)
      LUT3:I1->O            1   0.612   0.000  vga/char/Mmux_vout_2_f5_F (N1535)
-     MUXF5:I0->O           1   0.278   0.000  vga/char/Mmux_vout_2_f5 (vga/r1_mux0001<0>_norst)
-     FDR:D                     0.268          vga/b1_0
+     MUXF5:I0->O           1   0.278   0.509  vga/char/Mmux_vout_2_f5 (vga/vout)
+     LUT4:I0->O            9   0.612   0.697  vga/r1_or0000 (vga/r1_or0000)
+     FDR:R                     0.795          vga/r1_0
     ----------------------------------------
-    Total                      6.227ns (4.278ns logic, 1.949ns route)
-                                       (68.7% logic, 31.3% route)
+    Total                      8.572ns (5.417ns logic, 3.155ns route)
+                                       (63.2% logic, 36.8% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk50'
@@ -1506,7 +1559,7 @@ Offset:              6.219ns (Levels of Logic = 2)
 Timing constraint: Default OFFSET OUT AFTER for Clock 'vga/clk1'
   Total number of paths / destination ports: 29 / 11
 -------------------------------------------------------------------------
-Offset:              5.524ns (Levels of Logic = 2)
+Offset:              5.471ns (Levels of Logic = 2)
   Source:            vga/vs1 (FF)
   Destination:       b<2> (PAD)
   Source Clock:      vga/clk1 rising
@@ -1515,12 +1568,12 @@ Offset:              5.524ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              2   0.514   0.532  vga/vs1 (vga/vs1)
-     LUT3:I0->O            9   0.612   0.697  vga/g<0>1 (b_0_OBUF)
-     OBUF:I->O                 3.169          b_2_OBUF (b<2>)
+     FDR:C->Q             10   0.514   0.819  vga/vs1 (vga/vs1)
+     LUT3:I1->O            1   0.612   0.357  vga/r<2>1 (r_2_OBUF)
+     OBUF:I->O                 3.169          r_2_OBUF (r<2>)
     ----------------------------------------
-    Total                      5.524ns (4.295ns logic, 1.229ns route)
-                                       (77.8% logic, 22.2% route)
+    Total                      5.471ns (4.295ns logic, 1.176ns route)
+                                       (78.5% logic, 21.5% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'memory0/vga_enable_cmp_ge0000'
@@ -1563,14 +1616,14 @@ Offset:              4.114ns (Levels of Logic = 1)
 =========================================================================
 
 
-Total REAL time to Xst completion: 29.00 secs
-Total CPU time to Xst completion: 28.81 secs
+Total REAL time to Xst completion: 32.00 secs
+Total CPU time to Xst completion: 31.68 secs
  
 --> 
 
-Total memory usage is 329320 kilobytes
+Total memory usage is 427588 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   93 (   0 filtered)
-Number of infos    :   26 (   0 filtered)
+Number of warnings :  146 (   0 filtered)
+Number of infos    :   24 (   0 filtered)
 

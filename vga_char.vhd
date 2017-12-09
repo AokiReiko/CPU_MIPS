@@ -43,7 +43,8 @@ entity vga_char is
 			  
 			  pos_x : in STD_LOGIC_VECTOR(9 downto 0);
 			  pos_y : in std_logic_vector(9 downto 0);
-           vout : out  STD_LOGIC
+           vout : out  STD_LOGIC;
+			  rgb : out std_logic_vector(8 downto 0)
 		--	  wordout : out std_logic_vector (5 downto 0)
 		);
 end vga_char;
@@ -62,7 +63,7 @@ architecture Behavioral of vga_char is
 	 signal delta_y : integer range 0 to 16 := 0;
 	
 begin
-
+	rgb <= dout_b(15 downto 7);
 	u0: GRam 
 	port map(
 	 clka => clk50,
