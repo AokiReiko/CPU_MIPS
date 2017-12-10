@@ -10,25 +10,25 @@ Target Device  : xc3s1200e
 Target Package : fg320
 Target Speed   : -5
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Sat Dec 09 19:16:12 2017
+Mapped Date    : Sun Dec 10 16:20:36 2017
 
 Design Summary
 --------------
 Number of errors:      0
 Number of warnings:   12
 Logic Utilization:
-  Total Number Slice Registers:         657 out of  17,344    3%
-    Number used as Flip Flops:          594
+  Total Number Slice Registers:         664 out of  17,344    3%
+    Number used as Flip Flops:          601
     Number used as Latches:              63
-  Number of 4 input LUTs:             1,871 out of  17,344   10%
+  Number of 4 input LUTs:             1,916 out of  17,344   11%
 Logic Distribution:
-  Number of occupied Slices:          1,407 out of   8,672   16%
-    Number of Slices containing only related logic:   1,407 out of   1,407 100%
-    Number of Slices containing unrelated logic:          0 out of   1,407   0%
+  Number of occupied Slices:          1,451 out of   8,672   16%
+    Number of Slices containing only related logic:   1,451 out of   1,451 100%
+    Number of Slices containing unrelated logic:          0 out of   1,451   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:       2,026 out of  17,344   11%
-    Number used as logic:             1,869
-    Number used as a route-thru:        155
+  Total Number of 4 input LUTs:       2,070 out of  17,344   11%
+    Number used as logic:             1,914
+    Number used as a route-thru:        154
     Number used as Shift registers:       2
 
   The Slice Logic Distribution report is not meaningful if the design is
@@ -38,14 +38,15 @@ Logic Distribution:
     IOB Flip Flops:                      16
     IOB Latches:                         32
   Number of RAMB16s:                      4 out of      28   14%
-  Number of BUFGMUXs:                     7 out of      24   29%
+  Number of BUFGMUXs:                     9 out of      24   37%
+  Number of DCMs:                         1 out of       8   12%
   Number of MULT18X18SIOs:                1 out of      28    3%
 
-Average Fanout of Non-Clock Nets:                3.67
+Average Fanout of Non-Clock Nets:                3.58
 
-Peak Memory Usage:  391 MB
-Total REAL time to MAP completion:  20 secs 
-Total CPU time to MAP completion:   19 secs 
+Peak Memory Usage:  350 MB
+Total REAL time to MAP completion:  22 secs 
+Total CPU time to MAP completion:   22 secs 
 
 Table of Contents
 -----------------
@@ -114,13 +115,13 @@ WARNING:Pack:266 - The function generator vga/char/Mrom_Char_mux0002962 failed
 WARNING:Pack:266 - The function generator vga/char/Mrom_Char_mux000266 failed to
    merge with F5 multiplexer vga/char/Mrom_Char_mux0002119_f6/MUXF5.I1.  There
    is a conflict for the GYMUX.  The design will exhibit suboptimal timing.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net u5/immediate_not0001 is
-   sourced by a combinatorial pin. This is not good design practice. Use the CE
-   pin to control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
    memory0/vga_enable_cmp_ge0000 is sourced by a combinatorial pin. This is not
    good design practice. Use the CE pin to control the loading of data into the
    flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net u5/immediate_not0001 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
    memory0/Mtrien_data_1_not0001 is sourced by a combinatorial pin. This is not
    good design practice. Use the CE pin to control the loading of data into the
@@ -159,6 +160,9 @@ INFO:Pack:1716 - Initializing temperature to 85.000 Celsius. (default - Range:
 INFO:Pack:1720 - Initializing voltage to 1.140 Volts. (default - Range: 1.140 to
    1.320 Volts)
 INFO:Pack:1650 - Map created a placed design.
+INFO:PhysDesignRules:772 - To achieve optimal frequency synthesis performance
+   with the CLKFX and CLKFX180 outputs of the DCM comp Inst_dcm/DCM_SP_INST,
+   consult the device Interactive Data Sheet.
 
 Section 4 - Removed Logic Summary
 ---------------------------------

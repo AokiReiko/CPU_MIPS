@@ -198,6 +198,10 @@ signal sram_we_2 : std_logic;
 signal sram_en_2 : std_logic:='1';
 
 signal rst : std_logic;
+signal int: STD_LOGIC:='0';
+signal clk200: STD_LOGIC;
+signal CLK0_OUT: STD_LOGIC;
+
 
 begin
 
@@ -246,7 +250,7 @@ led <= vga_led&"000000000000000";
 --led <= (others => '0');
 --dyp0 <= "000" & bp_forwarda & bp_forwardb;
 --dyp1 <= "000" & bp_forwarda & bp_forwardb ;
-my_clk <= clk25;
+--my_clk <= clk25;
 b_register_num <= IFID_inst(10 downto 8) when IFID_inst(15 downto 11) = "11010" else IFID_inst(7 downto 5);
 IF_Mem_inst <= data_2;
 sig_pcwrite <= (HD_PCWrite and (not mem_nop));
@@ -257,6 +261,17 @@ en_2 <= sram_en_2 when flash_finished = '1' else flash_en_2;
 we_2 <= sram_we_2 when flash_finished = '1' else flash_we_2;
 oe_2 <= sram_oe_2 when flash_finished = '1' else flash_oe_2;
 addr_2 <= temp when flash_finished = '1' else flash_sram2_addr;
+
+process (kb_ascii_code, kb_ascii_new, my_clk)
+begin
+	if (my_clk'event and my_clk = '1') then
+		if (kb_ascii_new = '1' and IF_PC_addr > x"4000" and IF_PC_addr < x"7fff" and kb_ascii_code="0011011") then
+			int <= '1';
+		else 	
+			int <= '0';
+		end if;
+	end if;
+end process;
 
 
 u0: flash port map(	
@@ -291,7 +306,7 @@ u1: Muxpc port map(
 u2: pc port map(
 					clk=>my_clk,
 					rst=>rst,
-					en=>'1',
+					int=>int,
 					PCWrite=>sig_pcwrite,
 					Mux_in=>IF_Mux_addr,
 					PC_out=>IF_PC_addr);
@@ -511,6 +526,14 @@ vga: vga port map(
 				r=>r,
 				g=>g,
 				b=>b);
-	
+Inst_dcm: dcm PORT MAP(
+		CLKIN_IN => clk50,
+		CLKFX_OUT => clk200,
+		CLK0_OUT => CLK0_OUT
+	);
+inst_mydcm: my_dcm port map(
+	clk200=>clk200,
+	clkout=>my_clk
+		);
 end Behavioral;
 

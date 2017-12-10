@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-YILUN-PC::  Sat Dec 09 19:16:35 2017
+AOKIREIKOC8E2::  Sun Dec 10 16:21:02 2017
 
 par -w -intstyle ise -ol std -t 1 cpu_16bit_top_map.ncd cpu_16bit_top.ncd
 cpu_16bit_top.pcf 
@@ -54,10 +54,11 @@ Design Summary Report:
         Number of LOCed External Bidir IOBs      48 out of 48    100%
 
 
-   Number of BUFGMUXs                        7 out of 24     29%
+   Number of BUFGMUXs                        9 out of 24     37%
+   Number of DCMs                            1 out of 8      12%
    Number of MULT18X18SIOs                   1 out of 28      3%
    Number of RAMB16s                         4 out of 28     14%
-   Number of Slices                       1407 out of 8672   16%
+   Number of Slices                       1451 out of 8672   16%
       Number of SLICEMs                     19 out of 4336    1%
 
 
@@ -74,13 +75,13 @@ WARNING:Par:288 - The signal flash_rst_IBUF has no load.  PAR will not attempt t
 Starting Router
 
 
-Phase  1  : 9162 unrouted;      REAL time: 11 secs 
+Phase  1  : 9312 unrouted;      REAL time: 11 secs 
 
-Phase  2  : 8441 unrouted;      REAL time: 11 secs 
+Phase  2  : 8590 unrouted;      REAL time: 11 secs 
 
-Phase  3  : 2499 unrouted;      REAL time: 12 secs 
+Phase  3  : 2600 unrouted;      REAL time: 12 secs 
 
-Phase  4  : 2504 unrouted; (Par is working to improve performance)     REAL time: 13 secs 
+Phase  4  : 2624 unrouted; (Par is working to improve performance)     REAL time: 13 secs 
 
 Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 15 secs 
 
@@ -90,20 +91,20 @@ Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 1
 
 Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 16 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 17 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 18 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 17 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 18 secs 
 
-Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 17 secs 
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 18 secs 
 
-Phase 11  : 0 unrouted; (Par is working to improve performance)     REAL time: 18 secs 
+Phase 11  : 0 unrouted; (Par is working to improve performance)     REAL time: 19 secs 
 WARNING:Route:455 - CLK Net:memory0/vga_enable_cmp_ge0000 may have excessive skew because 
       16 CLK pins and 36 NON_CLK pins failed to route using a CLK template.
 WARNING:Route:455 - CLK Net:keyboard_ascii/ps2_keyboard_0/debounce_ps2_clk/result may have excessive skew because 
-      2 CLK pins and 6 NON_CLK pins failed to route using a CLK template.
+      0 CLK pins and 6 NON_CLK pins failed to route using a CLK template.
 
-Total REAL time to Router completion: 18 secs 
-Total CPU time to Router completion: 18 secs 
+Total REAL time to Router completion: 19 secs 
+Total CPU time to Router completion: 19 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -121,36 +122,38 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|               clk25 | BUFGMUX_X1Y10| No   |  339 |  0.178     |  0.330      |
+|               clk1M |  BUFGMUX_X0Y6| No   |   67 |  0.167     |  0.249      |
 +---------------------+--------------+------+------+------------+-------------+
-|               clk1M |  BUFGMUX_X1Y1| No   |   66 |  0.142     |  0.295      |
+|          vga_enable |  BUFGMUX_X1Y0| No   |   23 |  0.076     |  0.224      |
 +---------------------+--------------+------+------+------------+-------------+
-|         clk50_BUFGP | BUFGMUX_X2Y10| No   |   64 |  0.110     |  0.266      |
+|         clk50_IBUFG | BUFGMUX_X2Y10| No   |   64 |  0.107     |  0.266      |
 +---------------------+--------------+------+------+------------+-------------+
-|             vga/clk | BUFGMUX_X1Y11| No   |   23 |  0.085     |  0.298      |
+|      inst_mydcm/clk |  BUFGMUX_X2Y1| No   |  339 |  0.180     |  0.328      |
 +---------------------+--------------+------+------+------------+-------------+
-|         clk11_BUFGP | BUFGMUX_X2Y11| No   |   16 |  0.070     |  0.259      |
+|              clk200 | BUFGMUX_X1Y10| No   |    3 |  0.004     |  0.186      |
 +---------------------+--------------+------+------+------------+-------------+
-|      u9/out_MemRead |  BUFGMUX_X2Y1| No   |   29 |  0.054     |  0.213      |
+|             vga/clk |  BUFGMUX_X2Y0| No   |   23 |  0.094     |  0.297      |
 +---------------------+--------------+------+------+------------+-------------+
-|          vga_enable |  BUFGMUX_X1Y0| No   |   27 |  0.109     |  0.260      |
+|         clk11_BUFGP | BUFGMUX_X2Y11| No   |   16 |  0.062     |  0.244      |
++---------------------+--------------+------+------+------------+-------------+
+|      u9/out_MemRead |  BUFGMUX_X1Y1| No   |   28 |  0.018     |  0.195      |
 +---------------------+--------------+------+------+------------+-------------+
 |keyboard_ascii/ps2_k |              |      |      |            |             |
 |eyboard_0/debounce_p |              |      |      |            |             |
-|       s2_clk/result |         Local|      |   14 |  0.241     |  2.010      |
-+---------------------+--------------+------+------+------------+-------------+
-|u5/immediate_not0001 |              |      |      |            |             |
-|                     |         Local|      |   16 |  0.131     |  1.613      |
+|       s2_clk/result |         Local|      |   13 |  0.055     |  1.691      |
 +---------------------+--------------+------+------+------------+-------------+
 |memory0/vga_enable_c |              |      |      |            |             |
-|           mp_ge0000 |         Local|      |   52 |  1.499     |  3.480      |
+|           mp_ge0000 |         Local|      |   52 |  1.788     |  3.600      |
++---------------------+--------------+------+------+------------+-------------+
+|u5/immediate_not0001 |              |      |      |            |             |
+|                     |         Local|      |   15 |  0.044     |  1.597      |
 +---------------------+--------------+------+------+------------+-------------+
 |memory0/Mtrien_data_ |              |      |      |            |             |
-|           1_not0001 |         Local|      |   16 |  0.353     |  1.846      |
+|           1_not0001 |         Local|      |   16 |  0.169     |  1.633      |
 +---------------------+--------------+------+------+------------+-------------+
-|     u5/rega_not0001 |         Local|      |   10 |  0.175     |  1.780      |
+|     u5/rega_not0001 |         Local|      |   10 |  0.029     |  1.611      |
 +---------------------+--------------+------+------+------------+-------------+
-|    u5/ALUOp_not0001 |         Local|      |    4 |  0.151     |  1.644      |
+|    u5/ALUOp_not0001 |         Local|      |    4 |  0.033     |  1.503      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -170,26 +173,29 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net key | SETUP       |         N/A|     2.099ns|     N/A|           0
-  board_ascii/ps2_keyboard_0/debounce_ps2_c | HOLD        |     0.850ns|            |       0|           0
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|     7.183ns|     N/A|           0
+  1M                                        | HOLD        |     0.881ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|    10.254ns|     N/A|           0
+  50_IBUFG                                  | HOLD        |     0.932ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ins | SETUP       |         N/A|    18.706ns|     N/A|           0
+  t_mydcm/clk                               | HOLD        |     0.871ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|     3.458ns|     N/A|           0
+  200                                       | HOLD        |     1.304ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net key | SETUP       |         N/A|     1.762ns|     N/A|           0
+  board_ascii/ps2_keyboard_0/debounce_ps2_c | HOLD        |     0.803ns|            |       0|           0
   lk/result                                 |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clk | SETUP       |         N/A|    21.388ns|     N/A|           0
-  25                                        | HOLD        |     0.973ns|            |       0|           0
+  Autotimespec constraint for clock net vga | SETUP       |         N/A|     8.547ns|     N/A|           0
+  /clk                                      | HOLD        |     1.433ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clk | SETUP       |         N/A|     7.352ns|     N/A|           0
-  1M                                        | HOLD        |     1.226ns|            |       0|           0
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|     4.902ns|     N/A|           0
+  11_BUFGP                                  | HOLD        |     0.892ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clk | SETUP       |         N/A|     9.933ns|     N/A|           0
-  50_BUFGP                                  | HOLD        |     0.952ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net vga | SETUP       |         N/A|     9.226ns|     N/A|           0
-  /clk                                      | HOLD        |     1.397ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clk | SETUP       |         N/A|     4.528ns|     N/A|           0
-  11_BUFGP                                  | HOLD        |     0.952ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net u9/ | SETUP       |         N/A|     1.923ns|     N/A|           0
+  Autotimespec constraint for clock net u9/ | SETUP       |         N/A|     2.004ns|     N/A|           0
   out_MemRead                               | HOLD        |     1.200ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
@@ -208,10 +214,10 @@ All signals are completely routed.
 
 WARNING:Par:283 - There are 3 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
-Total REAL time to PAR completion: 19 secs 
-Total CPU time to PAR completion: 18 secs 
+Total REAL time to PAR completion: 21 secs 
+Total CPU time to PAR completion: 20 secs 
 
-Peak Memory Usage:  345 MB
+Peak Memory Usage:  319 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.

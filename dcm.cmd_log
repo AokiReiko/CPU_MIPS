@@ -1,0 +1,2 @@
+xaw2spl {-intstyle ise} Y:/Desktop/desptop/CPU_MIPS/ipcore_dir/dcm.xaw 
+spl2sym -intstyle ise -family spartan3e dcm.spl Y:/Desktop/desptop/CPU_MIPS/dcm.sym 

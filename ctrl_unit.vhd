@@ -68,7 +68,7 @@ begin
 			immediate <= (others => '0');
 			rega <= "0" & instruction(10 downto 8);--读rx
 
-		when "01100" => -- ADDSP + MTSP + BTEQZ
+		when "01100" => -- ADDSP + MTSP + BTEQZ + SW_RS
 			MemRead <= '0';
 			MemWrite <= '0';
 			MemtoReg <= '0';
@@ -112,8 +112,8 @@ begin
 					end if;
 					RegWrite <= "000";--不写
 					rega <= "1111";--不读
-					RegDist <= (others => '0');--无所�				
-					when others => 
+					RegDist <= (others => '0');--	
+				when others => 
 				end case ;
 		when "11101" => -- AND
 			case( instruction(4 downto 0) ) is --AND

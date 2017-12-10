@@ -1,0 +1,11 @@
+[Inputs]
+CLKIN_IN
+RST_IN
+
+[Outputs]
+CLKDV_OUT
+CLK0_OUT
+
+[BiDir]
+[Type]
+BLOCK

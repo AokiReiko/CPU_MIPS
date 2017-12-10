@@ -106,7 +106,7 @@ package my_components is
 	component PC is
     Port ( clk : in  STD_LOGIC;
            rst : in  STD_LOGIC;
-           en  : in  STD_LOGIC;
+           int  : in  STD_LOGIC;
            PCWrite : in  STD_LOGIC;
            Mux_in: in  STD_LOGIC_VECTOR(15 downto 0);
            PC_out: out  STD_LOGIC_VECTOR(15 downto 0));	
@@ -307,6 +307,17 @@ package my_components is
          data_2: in  STD_LOGIC_VECTOR(15 downto 0);
          addr: in  STD_LOGIC_VECTOR(15 downto 0);
            data_out: out  STD_LOGIC_VECTOR(15 downto 0)); 
+end component;
+COMPONENT dcm is
+  PORT(
+    CLKIN_IN : IN std_logic;          
+    CLKFX_OUT : OUT std_logic;
+    CLK0_OUT : OUT std_logic
+    );
+END COMPONENT;
+  component my_dcm is
+    Port ( clk200 : in  STD_LOGIC;
+           clkout : out  STD_LOGIC);
 end component;
 
 end my_components;

@@ -5,515 +5,362 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/GRam</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">E:/CPU_MIPS/GRam.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/17fall/ComputerOrganization/120903/ipcore_dir/GRam_synth.vhd</arg>&quot;.
+<msg type="warning" file="HDLParsers" num="3607" delta="old" >Unit <arg fmt="%s" index="1">work/GRam</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">//mac/home/Desktop/desptop/CPU_MIPS/ipcore_dir/GRam_synth.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">//mac/home/Desktop/desptop/CPU_MIPS/GRam.vhd</arg>&quot;.
 </msg>
 
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/GRam/spartan3e</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">E:/CPU_MIPS/ipcore_dir/GRam_synth.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/17fall/ComputerOrganization/120903/ipcore_dir/GRam_synth.vhd</arg>&quot;.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">sram2_oe</arg>&gt; in unit &lt;<arg fmt="%s" index="2">flash</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/cpu_16bit_top</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">E:/CPU_MIPS/cpu_16bit_top.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/17fall/ComputerOrganization/120903/cpu_16bit_top.vhd</arg>&quot;.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">sram2_addr&lt;17&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">flash</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/cpu_16bit_top/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">E:/CPU_MIPS/cpu_16bit_top.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/17fall/ComputerOrganization/120903/cpu_16bit_top.vhd</arg>&quot;.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">sram2_addr&lt;16&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">flash</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/Adder</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">E:/CPU_MIPS/Adder.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/17fall/ComputerOrganization/120903/Adder.vhd</arg>&quot;.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">flash_byte</arg>&gt; in unit &lt;<arg fmt="%s" index="2">flash</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/Adder/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">E:/CPU_MIPS/Adder.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/17fall/ComputerOrganization/120903/Adder.vhd</arg>&quot;.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">flash_vpen</arg>&gt; in unit &lt;<arg fmt="%s" index="2">flash</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/ALU</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">E:/CPU_MIPS/alu.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/17fall/ComputerOrganization/120903/alu.vhd</arg>&quot;.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">flash_rp</arg>&gt; in unit &lt;<arg fmt="%s" index="2">flash</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/ALU/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">E:/CPU_MIPS/alu.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/17fall/ComputerOrganization/120903/alu.vhd</arg>&quot;.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">sram2_en</arg>&gt; in unit &lt;<arg fmt="%s" index="2">flash</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/bypass_unit</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">E:/CPU_MIPS/bypass_unit.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/17fall/ComputerOrganization/120903/bypass_unit.vhd</arg>&quot;.
+<msg type="info" file="Xst" num="1561" delta="new" >&quot;<arg fmt="%s" index="1">//mac/home/Desktop/desptop/CPU_MIPS/registers.vhd</arg>&quot; line <arg fmt="%d" index="2">51</arg>: Mux is complete : default of case is discarded
 </msg>
 
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/bypass_unit/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">E:/CPU_MIPS/bypass_unit.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/17fall/ComputerOrganization/120903/bypass_unit.vhd</arg>&quot;.
+<msg type="info" file="Xst" num="1561" delta="new" >&quot;<arg fmt="%s" index="1">//mac/home/Desktop/desptop/CPU_MIPS/registers.vhd</arg>&quot; line <arg fmt="%d" index="2">75</arg>: Mux is complete : default of case is discarded
 </msg>
 
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/ctrl_unit</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">E:/CPU_MIPS/ctrl_unit.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/17fall/ComputerOrganization/120903/ctrl_unit.vhd</arg>&quot;.
+<msg type="info" file="Xst" num="1561" delta="new" >&quot;<arg fmt="%s" index="1">//mac/home/Desktop/desptop/CPU_MIPS/registers.vhd</arg>&quot; line <arg fmt="%d" index="2">93</arg>: Mux is complete : default of case is discarded
 </msg>
 
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/ctrl_unit/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">E:/CPU_MIPS/ctrl_unit.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/17fall/ComputerOrganization/120903/ctrl_unit.vhd</arg>&quot;.
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">//mac/home/Desktop/desptop/CPU_MIPS/vga_char.vhd</arg>&quot; line <arg fmt="%d" index="2">67</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">GRam</arg>&gt;.
 </msg>
 
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/equal_unit</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">E:/CPU_MIPS/equal_unit.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/17fall/ComputerOrganization/120903/equal_unit.vhd</arg>&quot;.
-</msg>
-
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/equal_unit/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">E:/CPU_MIPS/equal_unit.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/17fall/ComputerOrganization/120903/equal_unit.vhd</arg>&quot;.
-</msg>
-
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/EXMEM_Reg</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">E:/CPU_MIPS/EXMEM_Reg.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/17fall/ComputerOrganization/120903/EXMEM_Reg.vhd</arg>&quot;.
-</msg>
-
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/EXMEM_Reg/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">E:/CPU_MIPS/EXMEM_Reg.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/17fall/ComputerOrganization/120903/EXMEM_Reg.vhd</arg>&quot;.
-</msg>
-
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/flash</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">E:/CPU_MIPS/flash.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/17fall/ComputerOrganization/120903/flash.vhd</arg>&quot;.
-</msg>
-
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/flash/bhv</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">E:/CPU_MIPS/flash.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/17fall/ComputerOrganization/120903/flash.vhd</arg>&quot;.
-</msg>
-
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/hazard_unit</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">E:/CPU_MIPS/hazard_unit.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/17fall/ComputerOrganization/120903/hazard_unit.vhd</arg>&quot;.
-</msg>
-
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/hazard_unit/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">E:/CPU_MIPS/hazard_unit.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/17fall/ComputerOrganization/120903/hazard_unit.vhd</arg>&quot;.
-</msg>
-
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/IDEX_Reg</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">E:/CPU_MIPS/IDEX_Reg.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/17fall/ComputerOrganization/120903/IDEX_Reg.vhd</arg>&quot;.
-</msg>
-
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/IDEX_Reg/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">E:/CPU_MIPS/IDEX_Reg.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/17fall/ComputerOrganization/120903/IDEX_Reg.vhd</arg>&quot;.
-</msg>
-
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/IFID_Reg</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">E:/CPU_MIPS/IFID_Reg.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/17fall/ComputerOrganization/120903/IFID_Reg.vhd</arg>&quot;.
-</msg>
-
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/IFID_Reg/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">E:/CPU_MIPS/IFID_Reg.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/17fall/ComputerOrganization/120903/IFID_Reg.vhd</arg>&quot;.
-</msg>
-
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/mymemory</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">E:/CPU_MIPS/memory.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/17fall/ComputerOrganization/120903/memory.vhd</arg>&quot;.
-</msg>
-
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/mymemory/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">E:/CPU_MIPS/memory.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/17fall/ComputerOrganization/120903/memory.vhd</arg>&quot;.
-</msg>
-
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/MEMWB_Reg</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">E:/CPU_MIPS/MEMWB_Reg.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/17fall/ComputerOrganization/120903/MEMWB_Reg.vhd</arg>&quot;.
-</msg>
-
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/MEMWB_Reg/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">E:/CPU_MIPS/MEMWB_Reg.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/17fall/ComputerOrganization/120903/MEMWB_Reg.vhd</arg>&quot;.
-</msg>
-
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/Muxa</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">E:/CPU_MIPS/Muxa.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/17fall/ComputerOrganization/120903/Muxa.vhd</arg>&quot;.
-</msg>
-
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/Muxa/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">E:/CPU_MIPS/Muxa.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/17fall/ComputerOrganization/120903/Muxa.vhd</arg>&quot;.
-</msg>
-
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/Muxb</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">E:/CPU_MIPS/Muxb.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/17fall/ComputerOrganization/120903/Muxb.vhd</arg>&quot;.
-</msg>
-
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/Muxb/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">E:/CPU_MIPS/Muxb.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/17fall/ComputerOrganization/120903/Muxb.vhd</arg>&quot;.
-</msg>
-
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/Muxc</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">E:/CPU_MIPS/Muxc.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/17fall/ComputerOrganization/120903/Muxc.vhd</arg>&quot;.
-</msg>
-
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/Muxc/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">E:/CPU_MIPS/Muxc.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/17fall/ComputerOrganization/120903/Muxc.vhd</arg>&quot;.
-</msg>
-
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/Muxpc</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">E:/CPU_MIPS/Muxpc.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/17fall/ComputerOrganization/120903/Muxpc.vhd</arg>&quot;.
-</msg>
-
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/Muxpc/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">E:/CPU_MIPS/Muxpc.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/17fall/ComputerOrganization/120903/Muxpc.vhd</arg>&quot;.
-</msg>
-
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/PC</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">E:/CPU_MIPS/pc.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/17fall/ComputerOrganization/120903/pc.vhd</arg>&quot;.
-</msg>
-
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/PC/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">E:/CPU_MIPS/pc.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/17fall/ComputerOrganization/120903/pc.vhd</arg>&quot;.
-</msg>
-
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/ps2_keyboard_to_ascii</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">E:/CPU_MIPS/ps2_keyboard_to_ascii.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/17fall/ComputerOrganization/120903/ps2_keyboard_to_ascii.vhd</arg>&quot;.
-</msg>
-
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/ps2_keyboard_to_ascii/behavior</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">E:/CPU_MIPS/ps2_keyboard_to_ascii.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/17fall/ComputerOrganization/120903/ps2_keyboard_to_ascii.vhd</arg>&quot;.
-</msg>
-
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/registers</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">E:/CPU_MIPS/registers.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/17fall/ComputerOrganization/120903/registers.vhd</arg>&quot;.
-</msg>
-
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/registers/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">E:/CPU_MIPS/registers.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/17fall/ComputerOrganization/120903/registers.vhd</arg>&quot;.
-</msg>
-
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/vga</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">E:/CPU_MIPS/vga.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/17fall/ComputerOrganization/120903/vga.vhd</arg>&quot;.
-</msg>
-
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/vga/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">E:/CPU_MIPS/vga.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/17fall/ComputerOrganization/120903/vga.vhd</arg>&quot;.
-</msg>
-
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/operation</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">E:/CPU_MIPS/alu_defination.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/17fall/ComputerOrganization/120903/alu_defination.vhd</arg>&quot;.
-</msg>
-
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/ps2_keyboard</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">E:/CPU_MIPS/ps2_keyboard.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/17fall/ComputerOrganization/120903/ps2_keyboard.vhd</arg>&quot;.
-</msg>
-
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/ps2_keyboard/logic</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">E:/CPU_MIPS/ps2_keyboard.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/17fall/ComputerOrganization/120903/ps2_keyboard.vhd</arg>&quot;.
-</msg>
-
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/vga_char</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">E:/CPU_MIPS/vga_char.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/17fall/ComputerOrganization/120903/vga_char.vhd</arg>&quot;.
-</msg>
-
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/vga_char/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">E:/CPU_MIPS/vga_char.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/17fall/ComputerOrganization/120903/vga_char.vhd</arg>&quot;.
-</msg>
-
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/my_components</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">E:/CPU_MIPS/components.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/17fall/ComputerOrganization/120903/components.vhd</arg>&quot;.
-</msg>
-
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/constants</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">E:/CPU_MIPS/constants.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/17fall/ComputerOrganization/120903/constants.vhd</arg>&quot;.
-</msg>
-
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/debounce</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">E:/CPU_MIPS/debounce.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/17fall/ComputerOrganization/120903/debounce.vhd</arg>&quot;.
-</msg>
-
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/debounce/logic</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">E:/CPU_MIPS/debounce.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/17fall/ComputerOrganization/120903/debounce.vhd</arg>&quot;.
-</msg>
-
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/GRam</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/17fall/ComputerOrganization/120903/ipcore_dir/GRam_synth.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/17fall/ComputerOrganization/120903/GRam.vhd</arg>&quot;.
-</msg>
-
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/GRam/GRam_a</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">E:/CPU_MIPS/GRam.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/17fall/ComputerOrganization/120903/GRam.vhd</arg>&quot;.
-</msg>
-
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">sram2_oe</arg>&gt; in unit &lt;<arg fmt="%s" index="2">flash</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
-</msg>
-
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">sram2_addr&lt;17&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">flash</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
-</msg>
-
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">sram2_addr&lt;16&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">flash</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
-</msg>
-
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">flash_byte</arg>&gt; in unit &lt;<arg fmt="%s" index="2">flash</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
-</msg>
-
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">flash_vpen</arg>&gt; in unit &lt;<arg fmt="%s" index="2">flash</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
-</msg>
-
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">flash_rp</arg>&gt; in unit &lt;<arg fmt="%s" index="2">flash</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
-</msg>
-
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">sram2_en</arg>&gt; in unit &lt;<arg fmt="%s" index="2">flash</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
-</msg>
-
-<msg type="info" file="Xst" num="1561" delta="new" >&quot;<arg fmt="%s" index="1">D:/17fall/ComputerOrganization/120903/registers.vhd</arg>&quot; line <arg fmt="%d" index="2">51</arg>: Mux is complete : default of case is discarded
-</msg>
-
-<msg type="info" file="Xst" num="1561" delta="new" >&quot;<arg fmt="%s" index="1">D:/17fall/ComputerOrganization/120903/registers.vhd</arg>&quot; line <arg fmt="%d" index="2">75</arg>: Mux is complete : default of case is discarded
-</msg>
-
-<msg type="info" file="Xst" num="1561" delta="new" >&quot;<arg fmt="%s" index="1">D:/17fall/ComputerOrganization/120903/registers.vhd</arg>&quot; line <arg fmt="%d" index="2">93</arg>: Mux is complete : default of case is discarded
-</msg>
-
-<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">D:/17fall/ComputerOrganization/120903/vga_char.vhd</arg>&quot; line <arg fmt="%d" index="2">67</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">GRam</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="819" delta="new" >&quot;<arg fmt="%s" index="1">D:/17fall/ComputerOrganization/120903/vga_char.vhd</arg>&quot; line <arg fmt="%d" index="2">109</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<msg type="warning" file="Xst" num="819" delta="new" >&quot;<arg fmt="%s" index="1">//mac/home/Desktop/desptop/CPU_MIPS/vga_char.vhd</arg>&quot; line <arg fmt="%d" index="2">109</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
 <arg fmt="%s" index="3">&lt;dout_b&gt;</arg>
 </msg>
 
-<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">rst</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">rst</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">reg_num</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">reg_num</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">4</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">rega</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">4</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">rega</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 </msg>
 
-<msg type="info" file="Xst" num="2371" delta="old" >HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+<msg type="info" file="Xst" num="2371" delta="new" >HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
 </msg>
 
-<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">3</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">RegWrite</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">3</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">RegWrite</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 </msg>
 
-<msg type="info" file="Xst" num="2371" delta="old" >HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+<msg type="info" file="Xst" num="2371" delta="new" >HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
 </msg>
 
-<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">4</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">ALUOp</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">4</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">ALUOp</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 </msg>
 
-<msg type="info" file="Xst" num="2371" delta="old" >HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+<msg type="info" file="Xst" num="2371" delta="new" >HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
 </msg>
 
-<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">16</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">immediate</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">16</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">immediate</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 </msg>
 
-<msg type="info" file="Xst" num="2371" delta="old" >HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+<msg type="info" file="Xst" num="2371" delta="new" >HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
 </msg>
 
-<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">3</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">RegDist</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">3</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">RegDist</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 </msg>
 
-<msg type="info" file="Xst" num="2371" delta="old" >HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+<msg type="info" file="Xst" num="2371" delta="new" >HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
 </msg>
 
-<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">ALUsrc</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">ALUsrc</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 </msg>
 
-<msg type="info" file="Xst" num="2371" delta="old" >HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+<msg type="info" file="Xst" num="2371" delta="new" >HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
 </msg>
 
-<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">rst</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">rst</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">rst</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">rst</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">alusrc</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">alusrc</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">alu_src</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">alu_src</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">16</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">vga_data</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">16</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">vga_data</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 </msg>
 
-<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">16</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">vga_addr</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">16</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">vga_addr</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 </msg>
 
-<msg type="warning" file="Xst" num="736" delta="old" >Found <arg fmt="%d" index="1">16</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">Mtridata_data_1</arg>&gt; created at line <arg fmt="%d" index="3">208</arg>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+<msg type="warning" file="Xst" num="736" delta="new" >Found <arg fmt="%d" index="1">16</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">Mtridata_data_1</arg>&gt; created at line <arg fmt="%d" index="3">208</arg>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 </msg>
 
-<msg type="warning" file="Xst" num="736" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">Mtrien_data_1</arg>&gt; created at line <arg fmt="%d" index="3">208</arg>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+<msg type="warning" file="Xst" num="736" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">Mtrien_data_1</arg>&gt; created at line <arg fmt="%d" index="3">208</arg>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 </msg>
 
-<msg type="info" file="Xst" num="2371" delta="old" >HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+<msg type="info" file="Xst" num="2371" delta="new" >HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
 </msg>
 
-<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">addr&lt;14:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">addr&lt;14:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">dout_a</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">dout_a</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">din_b</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">din_b</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">sw</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">sw</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">flash_rst</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">flash_rst</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">test</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">test</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">vga_enable_led</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">vga_enable_led</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">temp_inst</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">temp_inst</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">temp_hazard</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">temp_hazard</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">sram_data_2</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">sram_data_2</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">memwrite_led</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">memwrite_led</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">flash_sram2_data</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">flash_sram2_data</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">addr_in_led</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">addr_in_led</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">addr_cmp_led</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">addr_cmp_led</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">MeMWB_Memdata</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">MeMWB_Memdata</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">MEMWB_MemtoReg</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">MEMWB_MemtoReg</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">HD_IFFlush</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">HD_IFFlush</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="info" file="Xst" num="1767" delta="old" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">CLK0_OUT</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Mtridata_flash_data_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">u0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">7 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Mtridata_flash_data_1&gt; &lt;Mtridata_flash_data_2&gt; &lt;Mtridata_flash_data_3&gt; &lt;Mtridata_flash_data_4&gt; &lt;Mtridata_flash_data_5&gt; &lt;Mtridata_flash_data_6&gt; &lt;Mtridata_flash_data_7&gt; </arg>
+<msg type="info" file="Xst" num="1767" delta="new" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
 </msg>
 
-<msg type="warning" file="Xst" num="638" delta="old" >in unit <arg fmt="%s" index="1">u0</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">Mtridata_flash_data&lt;0&gt;</arg> and <arg fmt="%s" index="3">Mtridata_flash_data&lt;1&gt;</arg> <arg fmt="%s" index="4">Mtridata_flash_data&lt;1&gt;</arg> signal will be lost.
+<msg type="warning" file="Xst" num="79" delta="new" >Model &apos;<arg fmt="%s" index="1">dcm</arg>&apos; has different characteristics in destination library
 </msg>
 
-<msg type="warning" file="Xst" num="638" delta="old" >in unit <arg fmt="%s" index="1">u0</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">Mtridata_flash_data&lt;0&gt;</arg> and <arg fmt="%s" index="3">Mtridata_flash_data&lt;2&gt;</arg> <arg fmt="%s" index="4">Mtridata_flash_data&lt;2&gt;</arg> signal will be lost.
+<msg type="warning" file="Xst" num="80" delta="new" >Model name has been changed to &apos;<arg fmt="%s" index="1">dcm1</arg>&apos;
 </msg>
 
-<msg type="warning" file="Xst" num="638" delta="old" >in unit <arg fmt="%s" index="1">u0</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">Mtridata_flash_data&lt;0&gt;</arg> and <arg fmt="%s" index="3">Mtridata_flash_data&lt;3&gt;</arg> <arg fmt="%s" index="4">Mtridata_flash_data&lt;3&gt;</arg> signal will be lost.
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Mtridata_flash_data_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">u0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">7 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Mtridata_flash_data_1&gt; &lt;Mtridata_flash_data_2&gt; &lt;Mtridata_flash_data_3&gt; &lt;Mtridata_flash_data_4&gt; &lt;Mtridata_flash_data_5&gt; &lt;Mtridata_flash_data_6&gt; &lt;Mtridata_flash_data_7&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="638" delta="old" >in unit <arg fmt="%s" index="1">u0</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">Mtridata_flash_data&lt;0&gt;</arg> and <arg fmt="%s" index="3">Mtridata_flash_data&lt;4&gt;</arg> <arg fmt="%s" index="4">Mtridata_flash_data&lt;4&gt;</arg> signal will be lost.
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">u0</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">Mtridata_flash_data&lt;0&gt;</arg> and <arg fmt="%s" index="3">Mtridata_flash_data&lt;1&gt;</arg> <arg fmt="%s" index="4">Mtridata_flash_data&lt;1&gt;</arg> signal will be lost.
 </msg>
 
-<msg type="warning" file="Xst" num="638" delta="old" >in unit <arg fmt="%s" index="1">u0</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">Mtridata_flash_data&lt;0&gt;</arg> and <arg fmt="%s" index="3">Mtridata_flash_data&lt;5&gt;</arg> <arg fmt="%s" index="4">Mtridata_flash_data&lt;5&gt;</arg> signal will be lost.
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">u0</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">Mtridata_flash_data&lt;0&gt;</arg> and <arg fmt="%s" index="3">Mtridata_flash_data&lt;2&gt;</arg> <arg fmt="%s" index="4">Mtridata_flash_data&lt;2&gt;</arg> signal will be lost.
 </msg>
 
-<msg type="warning" file="Xst" num="638" delta="old" >in unit <arg fmt="%s" index="1">u0</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">Mtridata_flash_data&lt;0&gt;</arg> and <arg fmt="%s" index="3">Mtridata_flash_data&lt;6&gt;</arg> <arg fmt="%s" index="4">Mtridata_flash_data&lt;6&gt;</arg> signal will be lost.
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">u0</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">Mtridata_flash_data&lt;0&gt;</arg> and <arg fmt="%s" index="3">Mtridata_flash_data&lt;3&gt;</arg> <arg fmt="%s" index="4">Mtridata_flash_data&lt;3&gt;</arg> signal will be lost.
 </msg>
 
-<msg type="warning" file="Xst" num="638" delta="old" >in unit <arg fmt="%s" index="1">u0</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">Mtridata_flash_data&lt;0&gt;</arg> and <arg fmt="%s" index="3">Mtridata_flash_data&lt;7&gt;</arg> <arg fmt="%s" index="4">Mtridata_flash_data&lt;7&gt;</arg> signal will be lost.
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">u0</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">Mtridata_flash_data&lt;0&gt;</arg> and <arg fmt="%s" index="3">Mtridata_flash_data&lt;4&gt;</arg> <arg fmt="%s" index="4">Mtridata_flash_data&lt;4&gt;</arg> signal will be lost.
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Mtridata_flash_data_8</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">u0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">7 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Mtridata_flash_data_9&gt; &lt;Mtridata_flash_data_10&gt; &lt;Mtridata_flash_data_11&gt; &lt;Mtridata_flash_data_12&gt; &lt;Mtridata_flash_data_13&gt; &lt;Mtridata_flash_data_14&gt; &lt;Mtridata_flash_data_15&gt; </arg>
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">u0</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">Mtridata_flash_data&lt;0&gt;</arg> and <arg fmt="%s" index="3">Mtridata_flash_data&lt;5&gt;</arg> <arg fmt="%s" index="4">Mtridata_flash_data&lt;5&gt;</arg> signal will be lost.
 </msg>
 
-<msg type="warning" file="Xst" num="638" delta="old" >in unit <arg fmt="%s" index="1">u0</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">Mtridata_flash_data&lt;8&gt;</arg> and <arg fmt="%s" index="3">Mtridata_flash_data&lt;9&gt;</arg> <arg fmt="%s" index="4">Mtridata_flash_data&lt;9&gt;</arg> signal will be lost.
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">u0</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">Mtridata_flash_data&lt;0&gt;</arg> and <arg fmt="%s" index="3">Mtridata_flash_data&lt;6&gt;</arg> <arg fmt="%s" index="4">Mtridata_flash_data&lt;6&gt;</arg> signal will be lost.
 </msg>
 
-<msg type="warning" file="Xst" num="638" delta="old" >in unit <arg fmt="%s" index="1">u0</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">Mtridata_flash_data&lt;8&gt;</arg> and <arg fmt="%s" index="3">Mtridata_flash_data&lt;10&gt;</arg> <arg fmt="%s" index="4">Mtridata_flash_data&lt;10&gt;</arg> signal will be lost.
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">u0</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">Mtridata_flash_data&lt;0&gt;</arg> and <arg fmt="%s" index="3">Mtridata_flash_data&lt;7&gt;</arg> <arg fmt="%s" index="4">Mtridata_flash_data&lt;7&gt;</arg> signal will be lost.
 </msg>
 
-<msg type="warning" file="Xst" num="638" delta="old" >in unit <arg fmt="%s" index="1">u0</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">Mtridata_flash_data&lt;10&gt;</arg> and <arg fmt="%s" index="3">Mtridata_flash_data&lt;11&gt;</arg> <arg fmt="%s" index="4">Mtridata_flash_data&lt;11&gt;</arg> signal will be lost.
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Mtridata_flash_data_8</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">u0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">7 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Mtridata_flash_data_9&gt; &lt;Mtridata_flash_data_10&gt; &lt;Mtridata_flash_data_11&gt; &lt;Mtridata_flash_data_12&gt; &lt;Mtridata_flash_data_13&gt; &lt;Mtridata_flash_data_14&gt; &lt;Mtridata_flash_data_15&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="638" delta="old" >in unit <arg fmt="%s" index="1">u0</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">Mtridata_flash_data&lt;10&gt;</arg> and <arg fmt="%s" index="3">Mtridata_flash_data&lt;12&gt;</arg> <arg fmt="%s" index="4">Mtridata_flash_data&lt;12&gt;</arg> signal will be lost.
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">u0</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">Mtridata_flash_data&lt;8&gt;</arg> and <arg fmt="%s" index="3">Mtridata_flash_data&lt;9&gt;</arg> <arg fmt="%s" index="4">Mtridata_flash_data&lt;9&gt;</arg> signal will be lost.
 </msg>
 
-<msg type="warning" file="Xst" num="638" delta="old" >in unit <arg fmt="%s" index="1">u0</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">Mtridata_flash_data&lt;10&gt;</arg> and <arg fmt="%s" index="3">Mtridata_flash_data&lt;13&gt;</arg> <arg fmt="%s" index="4">Mtridata_flash_data&lt;13&gt;</arg> signal will be lost.
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">u0</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">Mtridata_flash_data&lt;8&gt;</arg> and <arg fmt="%s" index="3">Mtridata_flash_data&lt;10&gt;</arg> <arg fmt="%s" index="4">Mtridata_flash_data&lt;10&gt;</arg> signal will be lost.
 </msg>
 
-<msg type="warning" file="Xst" num="638" delta="old" >in unit <arg fmt="%s" index="1">u0</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">Mtridata_flash_data&lt;10&gt;</arg> and <arg fmt="%s" index="3">Mtridata_flash_data&lt;14&gt;</arg> <arg fmt="%s" index="4">Mtridata_flash_data&lt;14&gt;</arg> signal will be lost.
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">u0</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">Mtridata_flash_data&lt;10&gt;</arg> and <arg fmt="%s" index="3">Mtridata_flash_data&lt;11&gt;</arg> <arg fmt="%s" index="4">Mtridata_flash_data&lt;11&gt;</arg> signal will be lost.
 </msg>
 
-<msg type="warning" file="Xst" num="638" delta="old" >in unit <arg fmt="%s" index="1">u0</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">Mtridata_flash_data&lt;10&gt;</arg> and <arg fmt="%s" index="3">Mtridata_flash_data&lt;15&gt;</arg> <arg fmt="%s" index="4">Mtridata_flash_data&lt;15&gt;</arg> signal will be lost.
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">u0</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">Mtridata_flash_data&lt;10&gt;</arg> and <arg fmt="%s" index="3">Mtridata_flash_data&lt;12&gt;</arg> <arg fmt="%s" index="4">Mtridata_flash_data&lt;12&gt;</arg> signal will be lost.
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">flash_addr_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">u0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">6 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;flash_addr_17&gt; &lt;flash_addr_18&gt; &lt;flash_addr_19&gt; &lt;flash_addr_20&gt; &lt;flash_addr_21&gt; &lt;flash_addr_22&gt; </arg>
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">u0</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">Mtridata_flash_data&lt;10&gt;</arg> and <arg fmt="%s" index="3">Mtridata_flash_data&lt;13&gt;</arg> <arg fmt="%s" index="4">Mtridata_flash_data&lt;13&gt;</arg> signal will be lost.
 </msg>
 
-<msg type="warning" file="Xst" num="1426" delta="old" >The value init of the FF/Latch <arg fmt="%s" index="1">flash_finished_signal</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">u0</arg>.
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">u0</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">Mtridata_flash_data&lt;10&gt;</arg> and <arg fmt="%s" index="3">Mtridata_flash_data&lt;14&gt;</arg> <arg fmt="%s" index="4">Mtridata_flash_data&lt;14&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">u0</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">Mtridata_flash_data&lt;10&gt;</arg> and <arg fmt="%s" index="3">Mtridata_flash_data&lt;15&gt;</arg> <arg fmt="%s" index="4">Mtridata_flash_data&lt;15&gt;</arg> signal will be lost.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">flash_addr_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">u0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">6 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;flash_addr_17&gt; &lt;flash_addr_18&gt; &lt;flash_addr_19&gt; &lt;flash_addr_20&gt; &lt;flash_addr_21&gt; &lt;flash_addr_22&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="new" >The value init of the FF/Latch <arg fmt="%s" index="1">flash_finished_signal</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">u0</arg>.
 You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">Mtridata_flash_data_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">u0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">Mtridata_flash_data_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">u0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">Mtridata_flash_data_8</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">u0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">Mtridata_flash_data_8</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">u0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">flash_addr_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">u0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">flash_addr_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">u0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2404" delta="old" > FFs/Latches &lt;<arg fmt="%s" index="1">flash_addr</arg>&lt;<arg fmt="%d" index="2">22</arg>:<arg fmt="%d" index="3">17</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">flash</arg>&gt;.
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">flash_addr</arg>&lt;<arg fmt="%d" index="2">22</arg>:<arg fmt="%d" index="3">17</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">flash</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2404" delta="old" > FFs/Latches &lt;<arg fmt="%s" index="1">Mtridata_flash_data</arg>&lt;<arg fmt="%d" index="2">15</arg>:<arg fmt="%d" index="3">8</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">flash</arg>&gt;.
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">Mtridata_flash_data</arg>&lt;<arg fmt="%d" index="2">15</arg>:<arg fmt="%d" index="3">8</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">flash</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1426" delta="old" >The value init of the FF/Latch <arg fmt="%s" index="1">flash_finished_signal</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">flash</arg>.
+<msg type="warning" file="Xst" num="1426" delta="new" >The value init of the FF/Latch <arg fmt="%s" index="1">flash_finished_signal</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">flash</arg>.
 You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">Mtridata_flash_data_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">flash</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">Mtridata_flash_data_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">flash</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Mtridata_flash_data_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">flash</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Mtridata_flash_data_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">flash</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Mtridata_flash_data_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">flash</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Mtridata_flash_data_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">flash</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Mtridata_flash_data_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">flash</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Mtridata_flash_data_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">flash</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Mtridata_flash_data_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">flash</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Mtridata_flash_data_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">flash</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Mtridata_flash_data_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">flash</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Mtridata_flash_data_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">flash</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Mtridata_flash_data_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">flash</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Mtridata_flash_data_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">flash</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Mtridata_flash_data_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">flash</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Mtridata_flash_data_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">flash</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">flash_addr_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">flash</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">flash_addr_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">flash</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="638" delta="old" >in unit <arg fmt="%s" index="1">flash</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">Mtridata_flash_data&lt;0&gt;</arg> and <arg fmt="%s" index="3">Mtridata_flash_data&lt;1&gt;</arg> <arg fmt="%s" index="4">Mtridata_flash_data&lt;1&gt;</arg> signal will be lost.
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">flash</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">Mtridata_flash_data&lt;0&gt;</arg> and <arg fmt="%s" index="3">Mtridata_flash_data&lt;1&gt;</arg> <arg fmt="%s" index="4">Mtridata_flash_data&lt;1&gt;</arg> signal will be lost.
 </msg>
 
-<msg type="warning" file="Xst" num="638" delta="old" >in unit <arg fmt="%s" index="1">flash</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">Mtridata_flash_data&lt;0&gt;</arg> and <arg fmt="%s" index="3">Mtridata_flash_data&lt;2&gt;</arg> <arg fmt="%s" index="4">Mtridata_flash_data&lt;2&gt;</arg> signal will be lost.
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">flash</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">Mtridata_flash_data&lt;0&gt;</arg> and <arg fmt="%s" index="3">Mtridata_flash_data&lt;2&gt;</arg> <arg fmt="%s" index="4">Mtridata_flash_data&lt;2&gt;</arg> signal will be lost.
 </msg>
 
-<msg type="warning" file="Xst" num="638" delta="old" >in unit <arg fmt="%s" index="1">flash</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">Mtridata_flash_data&lt;0&gt;</arg> and <arg fmt="%s" index="3">Mtridata_flash_data&lt;3&gt;</arg> <arg fmt="%s" index="4">Mtridata_flash_data&lt;3&gt;</arg> signal will be lost.
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">flash</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">Mtridata_flash_data&lt;0&gt;</arg> and <arg fmt="%s" index="3">Mtridata_flash_data&lt;3&gt;</arg> <arg fmt="%s" index="4">Mtridata_flash_data&lt;3&gt;</arg> signal will be lost.
 </msg>
 
-<msg type="warning" file="Xst" num="638" delta="old" >in unit <arg fmt="%s" index="1">flash</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">Mtridata_flash_data&lt;0&gt;</arg> and <arg fmt="%s" index="3">Mtridata_flash_data&lt;4&gt;</arg> <arg fmt="%s" index="4">Mtridata_flash_data&lt;4&gt;</arg> signal will be lost.
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">flash</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">Mtridata_flash_data&lt;0&gt;</arg> and <arg fmt="%s" index="3">Mtridata_flash_data&lt;4&gt;</arg> <arg fmt="%s" index="4">Mtridata_flash_data&lt;4&gt;</arg> signal will be lost.
 </msg>
 
-<msg type="warning" file="Xst" num="638" delta="old" >in unit <arg fmt="%s" index="1">flash</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">Mtridata_flash_data&lt;0&gt;</arg> and <arg fmt="%s" index="3">Mtridata_flash_data&lt;5&gt;</arg> <arg fmt="%s" index="4">Mtridata_flash_data&lt;5&gt;</arg> signal will be lost.
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">flash</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">Mtridata_flash_data&lt;0&gt;</arg> and <arg fmt="%s" index="3">Mtridata_flash_data&lt;5&gt;</arg> <arg fmt="%s" index="4">Mtridata_flash_data&lt;5&gt;</arg> signal will be lost.
 </msg>
 
-<msg type="warning" file="Xst" num="638" delta="old" >in unit <arg fmt="%s" index="1">flash</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">Mtridata_flash_data&lt;0&gt;</arg> and <arg fmt="%s" index="3">Mtridata_flash_data&lt;6&gt;</arg> <arg fmt="%s" index="4">Mtridata_flash_data&lt;6&gt;</arg> signal will be lost.
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">flash</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">Mtridata_flash_data&lt;0&gt;</arg> and <arg fmt="%s" index="3">Mtridata_flash_data&lt;6&gt;</arg> <arg fmt="%s" index="4">Mtridata_flash_data&lt;6&gt;</arg> signal will be lost.
 </msg>
 
-<msg type="warning" file="Xst" num="638" delta="old" >in unit <arg fmt="%s" index="1">flash</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">Mtridata_flash_data&lt;0&gt;</arg> and <arg fmt="%s" index="3">Mtridata_flash_data&lt;7&gt;</arg> <arg fmt="%s" index="4">Mtridata_flash_data&lt;7&gt;</arg> signal will be lost.
+<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">flash</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">Mtridata_flash_data&lt;0&gt;</arg> and <arg fmt="%s" index="3">Mtridata_flash_data&lt;7&gt;</arg> <arg fmt="%s" index="4">Mtridata_flash_data&lt;7&gt;</arg> signal will be lost.
 </msg>
 
-<msg type="warning" file="Xst" num="2170" delta="old" >Unit <arg fmt="%s" index="1">ALU</arg> : the following signal(s) form a combinatorial loop: </msg>
+<msg type="warning" file="Xst" num="2170" delta="new" >Unit <arg fmt="%s" index="1">ALU</arg> : the following signal(s) form a combinatorial loop: </msg>
 
-<msg type="warning" file="Xst" num="2040" delta="old" >Unit <arg fmt="%s" index="1">cpu_16bit_top</arg>: <arg fmt="%d" index="2">16</arg> multi-source signals are replaced by logic (pull-up <arg fmt="%s" index="3">yes</arg>): </msg>
+<msg type="warning" file="Xst" num="2040" delta="new" >Unit <arg fmt="%s" index="1">cpu_16bit_top</arg>: <arg fmt="%d" index="2">16</arg> multi-source signals are replaced by logic (pull-up <arg fmt="%s" index="3">yes</arg>): </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u13/out_memdata_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu_16bit_top</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u13/out_memdata_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu_16bit_top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u13/out_memdata_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu_16bit_top</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u13/out_memdata_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu_16bit_top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u13/out_memdata_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu_16bit_top</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u13/out_memdata_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu_16bit_top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u13/out_memdata_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu_16bit_top</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u13/out_memdata_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu_16bit_top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u13/out_memdata_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu_16bit_top</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u13/out_memdata_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu_16bit_top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u13/out_memdata_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu_16bit_top</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u13/out_memdata_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu_16bit_top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u13/out_memdata_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu_16bit_top</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u13/out_memdata_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu_16bit_top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u13/out_memdata_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu_16bit_top</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u13/out_memdata_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu_16bit_top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u13/out_memdata_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu_16bit_top</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u13/out_memdata_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu_16bit_top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u13/out_memdata_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu_16bit_top</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u13/out_memdata_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu_16bit_top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u13/out_memdata_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu_16bit_top</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u13/out_memdata_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu_16bit_top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u13/out_memdata_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu_16bit_top</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u13/out_memdata_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu_16bit_top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u13/out_memdata_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu_16bit_top</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u13/out_memdata_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu_16bit_top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u13/out_memdata_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu_16bit_top</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u13/out_memdata_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu_16bit_top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u13/out_memdata_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu_16bit_top</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u13/out_memdata_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu_16bit_top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u13/out_memdata_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu_16bit_top</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u13/out_memdata_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu_16bit_top</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">u6/out_MemtoReg</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">cpu_16bit_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;u6/out_MemRead&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">u6/out_MemtoReg</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">cpu_16bit_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;u6/out_MemRead&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">u9/out_MemtoReg</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">cpu_16bit_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;u9/out_MemRead&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">u9/out_MemtoReg</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">cpu_16bit_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;u9/out_MemRead&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+<msg type="info" file="Xst" num="2169" delta="new" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 </msg>
 
 </messages>

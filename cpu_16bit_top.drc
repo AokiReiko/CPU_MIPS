@@ -1,17 +1,17 @@
 Release 14.7 Drc P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Sat Dec 09 19:17:04 2017
+Sun Dec 10 16:21:52 2017
 
 drc -z cpu_16bit_top.ncd cpu_16bit_top.pcf
 
-WARNING:PhysDesignRules:372 - Gated clock. Clock net u5/immediate_not0001 is
-   sourced by a combinatorial pin. This is not good design practice. Use the CE
-   pin to control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
    memory0/vga_enable_cmp_ge0000 is sourced by a combinatorial pin. This is not
    good design practice. Use the CE pin to control the loading of data into the
    flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net u5/immediate_not0001 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
    memory0/Mtrien_data_1_not0001 is sourced by a combinatorial pin. This is not
    good design practice. Use the CE pin to control the loading of data into the
@@ -28,5 +28,8 @@ WARNING:PhysDesignRules:367 - The signal <test_IBUF> is incomplete. The signal
    does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <flash_rst_IBUF> is incomplete. The
    signal does not drive any load pins in the design.
+INFO:PhysDesignRules:772 - To achieve optimal frequency synthesis performance
+   with the CLKFX and CLKFX180 outputs of the DCM comp Inst_dcm/DCM_SP_INST,
+   consult the device Interactive Data Sheet.
 DRC detected 0 errors and 8 warnings.  Please see the previously displayed
 individual error or warning messages for more details.

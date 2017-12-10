@@ -185,9 +185,9 @@ begin
 					g1	<= rgb(5 downto 3);
 					b1	<= rgb(2 downto 0);
 				else
-					r1  <= "000";
-					g1	<= "000";
-					b1	<= "000";
+					r1  <= "111";
+					g1	<= "111";
+					b1	<= "111";
 				end if ;
 			end if;
 		end if;		 
@@ -196,9 +196,6 @@ begin
 	process (hs1, vs1, r1, g1, b1)
 	begin
 		if hs1 = '1' and vs1 = '1' then
-			--r <= "000";
-			--g <= "000";
-			--b <= "111";
 			r	<= r1;
 			g	<= g1;
 			b	<= b1;

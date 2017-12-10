@@ -45,8 +45,8 @@ Setup/Hold to clock clk50
             |Max Setup to|Max Hold to |                  | Clock  |
 Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------------+--------+
-ps2_clk     |    0.760(R)|    0.807(R)|clk50_BUFGP       |   0.000|
-ps2_data    |    0.976(R)|    0.634(R)|clk50_BUFGP       |   0.000|
+ps2_clk     |    1.040(R)|    0.586(R)|clk50_IBUFG       |   0.000|
+ps2_data    |    0.819(R)|    0.759(R)|clk50_IBUFG       |   0.000|
 ------------+------------+------------+------------------+--------+
 
 Clock clk50 to Pad
@@ -54,13 +54,13 @@ Clock clk50 to Pad
             | clk (edge) |                  | Clock  |
 Destination |   to PAD   |Internal Clock(s) | Phase  |
 ------------+------------+------------------+--------+
-en_1        |    9.274(R)|clk50_BUFGP       |   0.000|
-oe_1        |    8.706(R)|clk50_BUFGP       |   0.000|
-oe_2        |   11.080(R)|clk50_BUFGP       |   0.000|
-rdn         |   11.823(R)|clk50_BUFGP       |   0.000|
-we_1        |    8.729(R)|clk50_BUFGP       |   0.000|
-we_2        |   11.508(R)|clk50_BUFGP       |   0.000|
-wrn         |   12.331(R)|clk50_BUFGP       |   0.000|
+en_1        |    9.207(R)|clk200            |   0.000|
+oe_1        |    8.822(R)|clk200            |   0.000|
+oe_2        |    8.752(R)|clk200            |   0.000|
+rdn         |    8.990(R)|clk200            |   0.000|
+we_1        |    8.307(R)|clk200            |   0.000|
+we_2        |    9.789(R)|clk200            |   0.000|
+wrn         |    9.258(R)|clk200            |   0.000|
 ------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clk11
@@ -68,7 +68,7 @@ Clock to Setup on destination clock clk11
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk11          |    4.528|         |         |         |
+clk11          |    4.902|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clk50
@@ -76,18 +76,18 @@ Clock to Setup on destination clock clk50
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk50          |    9.933|         |         |         |
+clk50          |   10.254|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Sat Dec 09 19:17:00 2017 
+Analysis completed Sun Dec 10 16:21:30 2017 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 236 MB
+Peak Memory Usage: 210 MB
 
 
 
